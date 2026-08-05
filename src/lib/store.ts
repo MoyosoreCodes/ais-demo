@@ -119,3 +119,11 @@ export function useStore(): StoreApi {
   if (!ctx) throw new Error('useStore must be used within <StoreProvider>');
   return ctx;
 }
+
+export function useClientName(): (id: string) => string {
+  const { db } = useStore();
+  return (id) => {
+    const c = db.clients.find((x) => x.id === id);
+    return c ? `${c.firstName} ${c.lastName}` : id;
+  };
+}

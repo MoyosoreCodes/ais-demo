@@ -1,4 +1,4 @@
-import { type FormEvent, type ReactNode, useMemo, useState } from 'react';
+import { type FormEvent, useMemo, useState } from 'react';
 
 import { useAuth } from '../../app/auth';
 import { DataTable } from '../../components/DataTable';
@@ -7,12 +7,22 @@ import { ReqBadge } from '../../components/ReqBadge';
 import { StatusBadge } from '../../components/StatusBadge';
 import { Timeline } from '../../components/Timeline';
 import { useToast } from '../../components/Toast';
-import { Card, cx, Field, Modal, PageHeader, SimBadge, Stat } from '../../components/ui';
+import {
+  Card,
+  chipClass,
+  cx,
+  Field,
+  Meta,
+  Modal,
+  PageHeader,
+  SimBadge,
+  Stat,
+} from '../../components/ui';
 import { exportTableExcel, exportTablePdf } from '../../lib/export';
 import { nowIso, scr, titleCase } from '../../lib/format';
 import { nextLoanId, uid } from '../../lib/ids';
 import { makeNotification } from '../../lib/sim';
-import { useStore } from '../../lib/store';
+import { useClientName, useStore } from '../../lib/store';
 import { type AuditEntry, type Loan, type Role } from '../../lib/types';
 import { advanceLoan, getWorkflow, orderedStages } from '../../lib/workflow';
 
@@ -35,10 +45,7 @@ export function Loans() {
   const [addOpen, setAddOpen] = useState(false);
 
   const def = getWorkflow(db, 'loan');
-  const clientName = (id: string) => {
-    const c = db.clients.find((x) => x.id === id);
-    return c ? `${c.firstName} ${c.lastName}` : id;
-  };
+  const clientName = useClientName();
 
   const rows = useMemo(
     () => (filter ? db.loans.filter((l) => l.status === filter) : db.loans),
@@ -182,11 +189,16 @@ export function Loans() {
 
       <Card className="mb-4 flex flex-wrap items-center gap-2 p-3">
         <span className="text-xs font-medium text-slate-400">Status</span>
-        <button type="button" onClick={() => setFilter('')} className={chip(filter === '')}>
+        <button type="button" onClick={() => setFilter('')} className={chipClass(filter === '')}>
           All
         </button>
         {PIPELINE.map((s) => (
-          <button key={s} type="button" onClick={() => setFilter(s)} className={chip(filter === s)}>
+          <button
+            key={s}
+            type="button"
+            onClick={() => setFilter(s)}
+            className={chipClass(filter === s)}
+          >
             {titleCase(s)}
           </button>
         ))}
@@ -286,15 +298,6 @@ export function Loans() {
         }}
       />
     </div>
-  );
-}
-
-function chip(activeState: boolean): string {
-  return cx(
-    'rounded-full px-2.5 py-1 text-xs',
-    activeState
-      ? 'bg-primary-600 text-white'
-      : 'border border-slate-300 text-slate-600 hover:border-slate-400',
   );
 }
 
@@ -424,15 +427,6 @@ function LoanDetail({
       <p className="flex items-center gap-1 text-xs text-slate-400">
         <SimBadge label="SMS simulated" /> Applicants are notified on each status change (S13).
       </p>
-    </div>
-  );
-}
-
-function Meta({ label, value }: { label: string; value: ReactNode }) {
-  return (
-    <div>
-      <span className="block text-xs text-slate-400">{label}</span>
-      <span className="font-medium text-slate-800">{value}</span>
     </div>
   );
 }

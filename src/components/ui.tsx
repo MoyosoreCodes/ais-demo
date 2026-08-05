@@ -173,3 +173,51 @@ export function SimBadge({ label = 'simulated' }: { label?: string }) {
     </span>
   );
 }
+
+export function Meta({ label, value }: { label: string; value: ReactNode }) {
+  return (
+    <div>
+      <span className="block text-xs text-slate-400">{label}</span>
+      <span className="font-medium text-slate-800">{value}</span>
+    </div>
+  );
+}
+
+export function Tabs<T extends string>({
+  tabs,
+  value,
+  onChange,
+}: {
+  tabs: { key: T; label: ReactNode }[];
+  value: T;
+  onChange: (key: T) => void;
+}) {
+  return (
+    <div className="mb-4 flex flex-wrap gap-1 border-b border-slate-200">
+      {tabs.map((t) => (
+        <button
+          key={t.key}
+          type="button"
+          onClick={() => onChange(t.key)}
+          className={cx(
+            'relative px-3 py-2 text-sm font-medium',
+            value === t.key ? 'text-primary-700' : 'text-slate-500 hover:text-slate-700',
+          )}
+        >
+          {t.label}
+          {value === t.key && (
+            <span className="absolute inset-x-2 -bottom-px h-0.5 rounded bg-primary-600" />
+          )}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+export const chipClass = (active: boolean): string =>
+  cx(
+    'rounded-full px-2.5 py-1 text-xs',
+    active
+      ? 'bg-primary-600 text-white'
+      : 'border border-slate-300 text-slate-600 hover:border-slate-400',
+  );

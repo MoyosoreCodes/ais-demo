@@ -1,4 +1,4 @@
-import { type FormEvent, type ReactNode, useMemo, useState } from 'react';
+import { type FormEvent, useMemo, useState } from 'react';
 
 import { useAuth } from '../../app/auth';
 import { DataTable } from '../../components/DataTable';
@@ -7,12 +7,21 @@ import { ReqBadge } from '../../components/ReqBadge';
 import { StatusBadge } from '../../components/StatusBadge';
 import { Timeline } from '../../components/Timeline';
 import { useToast } from '../../components/Toast';
-import { Card, cx, Field, Modal, PageHeader, SimBadge, Stat } from '../../components/ui';
+import {
+  Card,
+  chipClass,
+  Field,
+  Meta,
+  Modal,
+  PageHeader,
+  SimBadge,
+  Stat,
+} from '../../components/ui';
 import { labReportPdf } from '../../lib/export';
 import { fmtDate, nowIso, titleCase } from '../../lib/format';
 import { nextSampleId, uid } from '../../lib/ids';
 import { makeNotification } from '../../lib/sim';
-import { useStore } from '../../lib/store';
+import { useClientName, useStore } from '../../lib/store';
 import {
   type AuditEntry,
   type Role,
@@ -82,10 +91,7 @@ export function Lab() {
   const [addOpen, setAddOpen] = useState(false);
 
   const canAct = !!user && LAB_ROLES.includes(user.role);
-  const clientName = (id: string) => {
-    const c = db.clients.find((x) => x.id === id);
-    return c ? `${c.firstName} ${c.lastName}` : id;
-  };
+  const clientName = useClientName();
 
   const rows = useMemo(
     () =>
@@ -197,7 +203,11 @@ export function Lab() {
 
       <Card className="mb-4 flex flex-wrap items-center gap-2 p-3">
         <span className="text-xs font-medium text-slate-400">Type</span>
-        <button type="button" onClick={() => setTypeFilter('')} className={chip(typeFilter === '')}>
+        <button
+          type="button"
+          onClick={() => setTypeFilter('')}
+          className={chipClass(typeFilter === '')}
+        >
           All
         </button>
         {SAMPLE_TYPES.map((t) => (
@@ -205,7 +215,7 @@ export function Lab() {
             key={t}
             type="button"
             onClick={() => setTypeFilter(t)}
-            className={chip(typeFilter === t)}
+            className={chipClass(typeFilter === t)}
           >
             {titleCase(t)}
           </button>
@@ -325,15 +335,6 @@ export function Lab() {
   );
 }
 
-function chip(activeState: boolean): string {
-  return cx(
-    'rounded-full px-2.5 py-1 text-xs capitalize',
-    activeState
-      ? 'bg-primary-600 text-white'
-      : 'border border-slate-300 text-slate-600 hover:border-slate-400',
-  );
-}
-
 function SampleDetail({
   sample,
   canAct,
@@ -363,10 +364,10 @@ function SampleDetail({
   return (
     <div className="space-y-4">
       <div className="grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
-        <M label="Applicant" v={clientName(sample.clientId)} />
-        <M label="Farm" v={farm ? `${farm.name}` : sample.farmId} />
-        <M label="Requested by" v={titleCase(sample.requestedBy)} />
-        <M label="Status" v={<StatusBadge status={sample.status} />} />
+        <Meta label="Applicant" value={clientName(sample.clientId)} />
+        <Meta label="Farm" value={farm ? `${farm.name}` : sample.farmId} />
+        <Meta label="Requested by" value={titleCase(sample.requestedBy)} />
+        <Meta label="Status" value={<StatusBadge status={sample.status} />} />
       </div>
       <p className="flex items-center gap-1.5 text-xs text-slate-500">
         <Icon name="link" size={13} /> Linked to farm {sample.farmId} and client {sample.clientId}{' '}
@@ -486,15 +487,6 @@ function SampleDetail({
       <p className="flex items-center gap-1 text-xs text-slate-400">
         <SimBadge label="SMS/email simulated" /> Release notifies the applicant (S13).
       </p>
-    </div>
-  );
-}
-
-function M({ label, v }: { label: string; v: ReactNode }) {
-  return (
-    <div>
-      <span className="block text-xs text-slate-400">{label}</span>
-      <span className="font-medium text-slate-800">{v}</span>
     </div>
   );
 }

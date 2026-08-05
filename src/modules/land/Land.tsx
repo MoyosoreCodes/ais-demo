@@ -1,4 +1,4 @@
-import { type FormEvent, type ReactNode, useState } from 'react';
+import { type FormEvent, useState } from 'react';
 
 import { useAuth } from '../../app/auth';
 import { Icon } from '../../components/Icon';
@@ -7,12 +7,12 @@ import { ReqBadge } from '../../components/ReqBadge';
 import { StatusBadge } from '../../components/StatusBadge';
 import { Timeline } from '../../components/Timeline';
 import { useToast } from '../../components/Toast';
-import { Card, cx, Field, Modal, PageHeader, Stat } from '../../components/ui';
+import { Card, cx, Field, Meta, Modal, PageHeader, Stat, Tabs } from '../../components/ui';
 import { fmtDate, nowIso, titleCase } from '../../lib/format';
 import { DISTRICT_CENTERS } from '../../lib/geo';
 import { uid } from '../../lib/ids';
 import { makeNotification } from '../../lib/sim';
-import { useStore } from '../../lib/store';
+import { useClientName, useStore } from '../../lib/store';
 import {
   type AuditEntry,
   type LandApplication,
@@ -89,24 +89,15 @@ export function Land() {
         icon="land"
         subtitle="Allocation, assessment, leases and enforcement"
       />
-      <div className="mb-4 flex flex-wrap gap-1 border-b border-slate-200">
-        {(['applications', 'leases', 'enforcement'] as Tab[]).map((t) => (
-          <button
-            key={t}
-            type="button"
-            onClick={() => setTab(t)}
-            className={cx(
-              'relative px-3 py-2 text-sm font-medium capitalize',
-              tab === t ? 'text-primary-700' : 'text-slate-500 hover:text-slate-700',
-            )}
-          >
-            {t}
-            {tab === t && (
-              <span className="absolute inset-x-2 -bottom-px h-0.5 rounded bg-primary-600" />
-            )}
-          </button>
-        ))}
-      </div>
+      <Tabs
+        value={tab}
+        onChange={setTab}
+        tabs={[
+          { key: 'applications', label: 'Applications' },
+          { key: 'leases', label: 'Leases' },
+          { key: 'enforcement', label: 'Enforcement' },
+        ]}
+      />
       {tab === 'applications' && <Applications />}
       {tab === 'leases' && <Leases />}
       {tab === 'enforcement' && <Enforcement />}
@@ -121,10 +112,7 @@ function Applications() {
   const { push } = useToast();
   const [openId, setOpenId] = useState<string | null>(null);
 
-  const clientName = (id: string) => {
-    const c = db.clients.find((x) => x.id === id);
-    return c ? `${c.firstName} ${c.lastName}` : id;
-  };
+  const clientName = useClientName();
   const active = openId ? db.landApplications.find((a) => a.id === openId) : undefined;
   const canRole = (role: Role) => user?.role === role || user?.role === 'admin';
 
@@ -316,10 +304,10 @@ function ApplicationDetail({
   return (
     <div className="space-y-4">
       <div className="grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
-        <M label="Applicant" v={clientName(app.clientId)} />
-        <M label="District" v={app.district} />
-        <M label="Area" v={`${app.areaHa} ha`} />
-        <M label="Status" v={<StatusBadge status={app.status} />} />
+        <Meta label="Applicant" value={clientName(app.clientId)} />
+        <Meta label="District" value={app.district} />
+        <Meta label="Area" value={`${app.areaHa} ha`} />
+        <Meta label="Status" value={<StatusBadge status={app.status} />} />
       </div>
       <div>
         <span className="text-xs text-slate-400">Purpose</span>
@@ -436,10 +424,7 @@ function Leases() {
   const { db, upsert } = useStore();
   const { user } = useAuth();
   const { push } = useToast();
-  const clientName = (id: string) => {
-    const c = db.clients.find((x) => x.id === id);
-    return c ? `${c.firstName} ${c.lastName}` : id;
-  };
+  const clientName = useClientName();
   const daysToExpiry = (endDate: string) =>
     Math.round((new Date(endDate).getTime() - Date.now()) / 86400000);
 
@@ -558,10 +543,7 @@ function Enforcement() {
   const { db, patch } = useStore();
   const { user } = useAuth();
   const { push } = useToast();
-  const clientName = (id: string) => {
-    const c = db.clients.find((x) => x.id === id);
-    return c ? `${c.firstName} ${c.lastName}` : id;
-  };
+  const clientName = useClientName();
   const serve = (id: string) => {
     const c = db.enforcement.find((e) => e.id === id);
     if (!c) return;
@@ -644,15 +626,6 @@ function Enforcement() {
           <p className="mt-2 text-sm text-slate-600">{e.reason}</p>
         </Card>
       ))}
-    </div>
-  );
-}
-
-function M({ label, v }: { label: string; v: ReactNode }) {
-  return (
-    <div>
-      <span className="block text-xs text-slate-400">{label}</span>
-      <span className="font-medium text-slate-800">{v}</span>
     </div>
   );
 }
