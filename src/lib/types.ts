@@ -137,8 +137,9 @@ export interface Farm {
 export const LOAN_STATUSES = [
   'draft',
   'submitted',
+  'screening',
   'assessment',
-  'committee',
+  'approval',
   'approved',
   'rejected',
   'disbursed',
@@ -162,7 +163,15 @@ export interface Loan {
 
 export const SAMPLE_TYPES = ['soil', 'water', 'plant', 'compost'] as const;
 export type SampleType = (typeof SAMPLE_TYPES)[number];
-export const SAMPLE_STATUSES = ['collected', 'registered', 'testing', 'completed'] as const;
+export const SAMPLE_STATUSES = [
+  'requested',
+  'collected',
+  'registered',
+  'testing',
+  'result_entered',
+  'verified',
+  'released',
+] as const;
 export type SampleStatus = (typeof SAMPLE_STATUSES)[number];
 
 export interface SampleResult {
@@ -172,8 +181,16 @@ export interface SampleResult {
   reference: string;
 }
 
+// A chain-of-custody / lifecycle event for a laboratory sample.
+export interface ChainEvent {
+  at: string;
+  by: string;
+  action: string;
+}
+
 export interface Sample {
   id: string; // SMP-2026-001
+  barcode: string;
   clientId: string;
   farmId: string;
   type: SampleType;
@@ -183,9 +200,13 @@ export interface Sample {
   requestedAt: string;
   collectedAt?: string;
   completedAt?: string;
+  verifiedBy?: string;
+  verifiedAt?: string;
+  releasedAt?: string;
   results: SampleResult[];
   resultSummary?: string;
   notified: boolean;
+  chain: ChainEvent[];
 }
 
 export type VisitKind = 'complaint' | 'routine';
@@ -323,12 +344,85 @@ export interface AuditEntry {
   detail: string;
 }
 
+// ── Land Management (S04) ──────────────────────────────────────────────────
+export const LAND_STATUSES = [
+  'submitted',
+  'under_review',
+  'assessment',
+  'decision',
+  'allocated',
+  'rejected',
+  'leased',
+  'enforcement',
+  'retracted',
+  'expired',
+] as const;
+export type LandStatus = (typeof LAND_STATUSES)[number];
+
+export interface LandAssessment {
+  at: string;
+  by: string;
+  findings: string;
+  recommendation: 'allocate' | 'reject';
+  lat: number;
+  lng: number;
+}
+
+export interface LandApplication {
+  id: string; // LA-2026-001
+  clientId: string;
+  farmId?: string;
+  parcelRef: string;
+  district: District;
+  purpose: string;
+  areaHa: number;
+  status: LandStatus;
+  assignedTo?: string;
+  assessment?: LandAssessment;
+  history: WorkflowEvent[];
+  createdAt: string;
+}
+
+export type LeaseStatus = 'active' | 'expired' | 'pending';
+export type PaymentStatus = 'paid' | 'due' | 'overdue';
+
+export interface Lease {
+  id: string; // LSE-2026-001
+  applicationId?: string;
+  clientId: string;
+  parcelRef: string;
+  district: District;
+  startDate: string;
+  endDate: string;
+  status: LeaseStatus;
+  paymentStatus: PaymentStatus;
+  annualRentSCR: number;
+}
+
+export type EnforcementType = 'retraction' | 'eviction';
+
+export interface LandEnforcement {
+  id: string; // ENF-2026-001
+  leaseId?: string;
+  clientId: string;
+  parcelRef: string;
+  type: EnforcementType;
+  reason: string;
+  noticeNo: string;
+  status: 'open' | 'notice_served' | 'closed';
+  issuedAt: string;
+  history: WorkflowEvent[];
+}
+
 // The full in-memory database persisted behind store.ts
 export interface Database {
   clients: Client[];
   farms: Farm[];
   loans: Loan[];
   samples: Sample[];
+  landApplications: LandApplication[];
+  leases: Lease[];
+  enforcement: LandEnforcement[];
   livestockVisits: LivestockVisit[];
   surveillanceCases: SurveillanceCase[];
   vendors: Vendor[];

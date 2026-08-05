@@ -11,84 +11,78 @@
     "section": "A",
     "number": 2,
     "status": "allocated",
-    "vendorId": "VD-2026-002"
+    "vendorId": "VD-2026-005"
   },
   {
     "id": "ST-A03",
     "section": "A",
     "number": 3,
     "status": "allocated",
-    "vendorId": "VD-2026-003"
+    "vendorId": "VD-2026-007"
   },
   {
     "id": "ST-A04",
     "section": "A",
     "number": 4,
     "status": "allocated",
-    "vendorId": "VD-2026-004"
+    "vendorId": "VD-2026-009"
   },
   {
     "id": "ST-A05",
     "section": "A",
     "number": 5,
     "status": "allocated",
-    "vendorId": "VD-2026-006"
+    "vendorId": "VD-2026-010"
   },
   {
     "id": "ST-A06",
     "section": "A",
     "number": 6,
     "status": "allocated",
-    "vendorId": "VD-2026-007"
+    "vendorId": "VD-2026-012"
   },
   {
     "id": "ST-A07",
     "section": "A",
     "number": 7,
     "status": "allocated",
-    "vendorId": "VD-2026-008"
+    "vendorId": "VD-2026-015"
   },
   {
     "id": "ST-A08",
     "section": "A",
     "number": 8,
-    "status": "allocated",
-    "vendorId": "VD-2026-009"
+    "status": "vacant"
   },
   {
     "id": "ST-B01",
     "section": "B",
     "number": 1,
-    "status": "allocated",
-    "vendorId": "VD-2026-010"
+    "status": "vacant"
   },
   {
     "id": "ST-B02",
     "section": "B",
     "number": 2,
-    "status": "allocated",
-    "vendorId": "VD-2026-011"
+    "status": "vacant"
   },
   {
     "id": "ST-B03",
     "section": "B",
     "number": 3,
-    "status": "allocated",
-    "vendorId": "VD-2026-012"
+    "status": "vacant"
   },
   {
     "id": "ST-B04",
     "section": "B",
     "number": 4,
-    "status": "allocated",
-    "vendorId": "VD-2026-013"
+    "status": "vacant"
   },
   {
     "id": "ST-B05",
     "section": "B",
     "number": 5,
-    "status": "allocated",
-    "vendorId": "VD-2026-014"
+    "status": "vacant"
   },
   {
     "id": "ST-B06",

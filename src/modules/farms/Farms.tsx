@@ -13,7 +13,7 @@ import { ReqBadge } from '../../components/ReqBadge';
 import { StatusBadge } from '../../components/StatusBadge';
 import { Card, cx, Field, PageHeader, SimBadge } from '../../components/ui';
 import { fmtDate, nowIso } from '../../lib/format';
-import { degDistance,DISTRICT_CENTERS } from '../../lib/geo';
+import { degDistance, DISTRICT_CENTERS } from '../../lib/geo';
 import { nextFarmId, uid } from '../../lib/ids';
 import { useStore } from '../../lib/store';
 import {

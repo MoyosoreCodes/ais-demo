@@ -1,5 +1,3 @@
-// Leaflet + OpenStreetMap map with a draggable GPS pin and a simulated
-// "use my location" reading. Also renders nearby markers (duplicate proximity).
 import type { LatLngExpression, LeafletEvent } from 'leaflet';
 import { useEffect } from 'react';
 import {
@@ -13,6 +11,7 @@ import {
 } from 'react-leaflet';
 
 import { simulateGps } from '../lib/sim';
+import { brandHex, dangerHex } from '../lib/theme';
 import { Icon } from './Icon';
 import { SimBadge } from './ui';
 
@@ -86,7 +85,7 @@ export function MapPicker({
               center={[m.lat, m.lng]}
               radius={7}
               pathOptions={{
-                color: m.tone === 'danger' ? '#dc2626' : '#0F6B4F',
+                color: m.tone === 'danger' ? dangerHex() : brandHex(600),
                 fillOpacity: 0.35,
               }}
             >

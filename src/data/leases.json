@@ -1,0 +1,86 @@
+[
+  {
+    "id": "LSE-2026-001",
+    "applicationId": "LA-2026-001",
+    "clientId": "CLT-0001",
+    "parcelRef": "PAR-ANB-014",
+    "district": "Anse Boileau",
+    "startDate": "2026-01-11T09:00:00.000Z",
+    "endDate": "2026-08-24T09:00:00.000Z",
+    "status": "active",
+    "paymentStatus": "due",
+    "annualRentSCR": 4500
+  },
+  {
+    "id": "LSE-2026-002",
+    "applicationId": "LA-2026-003",
+    "clientId": "CLT-0010",
+    "parcelRef": "PAR-GAM-139",
+    "district": "Grand Anse Mahé",
+    "startDate": "2025-09-27T09:00:00.000Z",
+    "endDate": "2026-08-11T09:00:00.000Z",
+    "status": "active",
+    "paymentStatus": "paid",
+    "annualRentSCR": 3500
+  },
+  {
+    "id": "LSE-2026-003",
+    "applicationId": "LA-2026-006",
+    "clientId": "CLT-0020",
+    "parcelRef": "PAR-PG-076",
+    "district": "Port Glaud",
+    "startDate": "2026-03-02T09:00:00.000Z",
+    "endDate": "2026-08-07T09:00:00.000Z",
+    "status": "active",
+    "paymentStatus": "paid",
+    "annualRentSCR": 2500
+  },
+  {
+    "id": "LSE-2026-004",
+    "applicationId": "LA-2026-007",
+    "clientId": "CLT-0060",
+    "parcelRef": "PAR-BL-024",
+    "district": "Baie Lazare",
+    "startDate": "2026-03-04T09:00:00.000Z",
+    "endDate": "2026-07-22T09:00:00.000Z",
+    "status": "active",
+    "paymentStatus": "paid",
+    "annualRentSCR": 4500
+  },
+  {
+    "id": "LSE-2026-005",
+    "applicationId": "LA-2026-010",
+    "clientId": "CLT-0034",
+    "parcelRef": "PAR-GAM-121",
+    "district": "Grand Anse Mahé",
+    "startDate": "2026-05-25T09:00:00.000Z",
+    "endDate": "2030-04-06T09:00:00.000Z",
+    "status": "active",
+    "paymentStatus": "paid",
+    "annualRentSCR": 2000
+  },
+  {
+    "id": "LSE-2026-006",
+    "applicationId": "LA-2026-012",
+    "clientId": "CLT-0060",
+    "parcelRef": "PAR-BL-161",
+    "district": "Baie Lazare",
+    "startDate": "2025-10-06T09:00:00.000Z",
+    "endDate": "2030-01-25T09:00:00.000Z",
+    "status": "active",
+    "paymentStatus": "overdue",
+    "annualRentSCR": 3000
+  },
+  {
+    "id": "LSE-2026-007",
+    "applicationId": "LA-2026-017",
+    "clientId": "CLT-0060",
+    "parcelRef": "PAR-BL-008",
+    "district": "Baie Lazare",
+    "startDate": "2025-12-03T09:00:00.000Z",
+    "endDate": "2026-07-27T09:00:00.000Z",
+    "status": "active",
+    "paymentStatus": "overdue",
+    "annualRentSCR": 6000
+  }
+]

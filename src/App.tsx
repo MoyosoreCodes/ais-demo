@@ -18,6 +18,9 @@ import { ClientProfile } from './modules/clients/ClientProfile';
 import { Clients } from './modules/clients/Clients';
 import { Dashboard } from './modules/dashboard/Dashboard';
 import { Farms } from './modules/farms/Farms';
+import { Lab } from './modules/lab/Lab';
+import { Land } from './modules/land/Land';
+import { Loans } from './modules/loans/Loans';
 
 const screen = (key: string) => SCREENS.find((s) => s.key === key)!;
 
@@ -90,7 +93,7 @@ export default function App() {
                     path="land"
                     element={
                       <RequireScreen screen="land">
-                        <Placeholder screen={screen('land')} wave="Wave B" />
+                        <Land />
                       </RequireScreen>
                     }
                   />
@@ -98,7 +101,7 @@ export default function App() {
                     path="loans"
                     element={
                       <RequireScreen screen="loans">
-                        <Placeholder screen={screen('loans')} wave="Wave B" />
+                        <Loans />
                       </RequireScreen>
                     }
                   />
@@ -106,7 +109,7 @@ export default function App() {
                     path="lab"
                     element={
                       <RequireScreen screen="lab">
-                        <Placeholder screen={screen('lab')} wave="Wave B" />
+                        <Lab />
                       </RequireScreen>
                     }
                   />

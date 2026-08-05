@@ -16,7 +16,7 @@ export function Dashboard() {
   ).length;
   const farms = db.farms.filter((f) => f.status === 'active').length;
   const activeLoans = db.loans.filter((l) => !['rejected', 'draft'].includes(l.status)).length;
-  const openSamples = db.samples.filter((s) => s.status !== 'completed').length;
+  const openSamples = db.samples.filter((s) => s.status !== 'released').length;
   const openCases = db.surveillanceCases.filter(
     (s) => !['closed', 'ruled_out'].includes(s.status),
   ).length;

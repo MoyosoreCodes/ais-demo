@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Design tokens — change the colour scheme here; Tailwind primary-* and the PDF/map code read these. */
+:root {
+  --color-primary-50: #ecf7f2;
+  --color-primary-100: #cfe9df;
+  --color-primary-200: #9fd3bf;
+  --color-primary-300: #63b79a;
+  --color-primary-400: #2e9576;
+  --color-primary-500: #158060;
+  --color-primary-600: #0f6b4f; /* brand primary */
+  --color-primary-700: #0c563f;
+  --color-primary-800: #0a4230;
+  --color-primary-900: #072f22;
+  --color-danger: #dc2626;
+}
+
 @layer base {
   html {
     -webkit-font-smoothing: antialiased;

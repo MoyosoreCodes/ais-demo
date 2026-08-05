@@ -1,6 +1,7 @@
 [
   {
     "id": "SMP-2026-001",
+    "barcode": "SC-000412",
     "clientId": "CLT-0001",
     "farmId": "FRM-2026-00001",
     "type": "soil",
@@ -11,75 +12,1145 @@
     "collectedAt": "2026-07-13T09:00:00.000Z",
     "results": [],
     "resultSummary": "",
-    "notified": false
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-07-12T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-07-13T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-07-14T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-07-15T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      }
+    ]
   },
   {
     "id": "SMP-2026-002",
+    "barcode": "SC-651560",
     "clientId": "CLT-0036",
     "farmId": "FRM-2026-00031",
     "type": "soil",
-    "status": "completed",
-    "requestedBy": "officer",
+    "status": "released",
+    "requestedBy": "farmer",
     "assignedTo": "USR-LAB",
     "requestedAt": "2026-06-23T09:00:00.000Z",
     "collectedAt": "2026-06-24T09:00:00.000Z",
-    "completedAt": "2026-07-10T09:00:00.000Z",
+    "completedAt": "2026-06-30T09:00:00.000Z",
+    "verifiedBy": "S. Rose",
+    "verifiedAt": "2026-07-07T09:00:00.000Z",
+    "releasedAt": "2026-07-04T09:00:00.000Z",
     "results": [
       {
         "name": "pH",
-        "value": "7.3",
+        "value": "7.7",
         "unit": "",
         "reference": "6.0 - 7.0"
       },
       {
         "name": "Nitrogen (N)",
-        "value": "0.53",
+        "value": "0.65",
         "unit": "%",
         "reference": "> 0.2"
       },
       {
         "name": "Phosphorus (P)",
-        "value": "27",
+        "value": "38",
         "unit": "ppm",
         "reference": "15 - 30"
       },
       {
         "name": "Organic matter",
-        "value": "4.6",
+        "value": "1.9",
         "unit": "%",
         "reference": "> 3.0"
       }
     ],
-    "resultSummary": "Amend with lime",
-    "notified": false
+    "resultSummary": "Suitable for cultivation",
+    "notified": true,
+    "chain": [
+      {
+        "at": "2026-06-23T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-06-24T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-06-25T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-06-26T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-06-27T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      },
+      {
+        "at": "2026-06-28T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results verified"
+      },
+      {
+        "at": "2026-06-29T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Result released"
+      }
+    ]
   },
   {
     "id": "SMP-2026-003",
-    "clientId": "CLT-0020",
-    "farmId": "FRM-2026-00016",
+    "barcode": "SC-268880",
+    "clientId": "CLT-0036",
+    "farmId": "FRM-2026-00031",
     "type": "soil",
-    "status": "completed",
+    "status": "collected",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-07-09T09:00:00.000Z",
+    "collectedAt": "2026-07-10T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-07-09T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-07-10T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-004",
+    "barcode": "SC-640195",
+    "clientId": "CLT-0073",
+    "farmId": "FRM-2026-00061",
+    "type": "plant",
+    "status": "verified",
     "requestedBy": "farmer",
     "assignedTo": "USR-LAB",
-    "requestedAt": "2026-04-17T09:00:00.000Z",
-    "collectedAt": "2026-04-18T09:00:00.000Z",
-    "completedAt": "2026-07-05T09:00:00.000Z",
+    "requestedAt": "2026-06-17T09:00:00.000Z",
+    "collectedAt": "2026-06-18T09:00:00.000Z",
+    "completedAt": "2026-07-10T09:00:00.000Z",
+    "verifiedBy": "S. Rose",
+    "verifiedAt": "2026-07-03T09:00:00.000Z",
+    "results": [
+      {
+        "name": "Result",
+        "value": "Trace detected",
+        "unit": "",
+        "reference": ""
+      }
+    ],
+    "resultSummary": "Amend with lime",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-06-17T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-06-18T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-06-19T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-06-20T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-06-21T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      },
+      {
+        "at": "2026-06-22T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results verified"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-005",
+    "barcode": "SC-776059",
+    "clientId": "CLT-0059",
+    "farmId": "FRM-2026-00049",
+    "type": "soil",
+    "status": "verified",
+    "requestedBy": "farmer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-04-12T09:00:00.000Z",
+    "collectedAt": "2026-04-13T09:00:00.000Z",
+    "completedAt": "2026-07-06T09:00:00.000Z",
+    "verifiedBy": "S. Rose",
+    "verifiedAt": "2026-06-15T09:00:00.000Z",
     "results": [
       {
         "name": "pH",
-        "value": "5.1",
+        "value": "7.5",
         "unit": "",
         "reference": "6.0 - 7.0"
       },
       {
         "name": "Nitrogen (N)",
-        "value": "0.37",
+        "value": "0.25",
         "unit": "%",
         "reference": "> 0.2"
       },
       {
         "name": "Phosphorus (P)",
-        "value": "40",
+        "value": "34",
+        "unit": "ppm",
+        "reference": "15 - 30"
+      },
+      {
+        "name": "Organic matter",
+        "value": "2.3",
+        "unit": "%",
+        "reference": "> 3.0"
+      }
+    ],
+    "resultSummary": "Suitable for cultivation",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-04-12T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-04-13T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-04-14T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-04-15T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-04-16T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      },
+      {
+        "at": "2026-04-17T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results verified"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-006",
+    "barcode": "SC-127812",
+    "clientId": "CLT-0069",
+    "farmId": "FRM-2026-00057",
+    "type": "compost",
+    "status": "verified",
+    "requestedBy": "farmer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-06-27T09:00:00.000Z",
+    "collectedAt": "2026-06-28T09:00:00.000Z",
+    "completedAt": "2026-07-15T09:00:00.000Z",
+    "verifiedBy": "S. Rose",
+    "verifiedAt": "2026-07-09T09:00:00.000Z",
+    "results": [
+      {
+        "name": "Result",
+        "value": "Trace detected",
+        "unit": "",
+        "reference": ""
+      }
+    ],
+    "resultSummary": "Suitable for cultivation",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-06-27T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-06-28T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-06-29T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-06-30T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-07-01T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      },
+      {
+        "at": "2026-07-02T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results verified"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-007",
+    "barcode": "SC-730235",
+    "clientId": "CLT-0017",
+    "farmId": "FRM-2026-00014",
+    "type": "compost",
+    "status": "collected",
+    "requestedBy": "farmer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-03-26T09:00:00.000Z",
+    "collectedAt": "2026-03-27T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-03-26T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-03-27T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-008",
+    "barcode": "SC-889439",
+    "clientId": "CLT-0068",
+    "farmId": "FRM-2026-00056",
+    "type": "plant",
+    "status": "registered",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-04-24T09:00:00.000Z",
+    "collectedAt": "2026-04-25T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-04-24T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-04-25T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-04-26T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-009",
+    "barcode": "SC-120702",
+    "clientId": "CLT-0040",
+    "farmId": "FRM-2026-00035",
+    "type": "water",
+    "status": "registered",
+    "requestedBy": "farmer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-03-23T09:00:00.000Z",
+    "collectedAt": "2026-03-24T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-03-23T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-03-24T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-03-25T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-010",
+    "barcode": "SC-526966",
+    "clientId": "CLT-0070",
+    "farmId": "FRM-2026-00058",
+    "type": "plant",
+    "status": "result_entered",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-02-15T09:00:00.000Z",
+    "collectedAt": "2026-02-16T09:00:00.000Z",
+    "completedAt": "2026-04-22T09:00:00.000Z",
+    "results": [
+      {
+        "name": "Result",
+        "value": "Trace detected",
+        "unit": "",
+        "reference": ""
+      }
+    ],
+    "resultSummary": "Amend with lime",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-02-15T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-02-16T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-02-17T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-02-18T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-02-19T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-011",
+    "barcode": "SC-542592",
+    "clientId": "CLT-0028",
+    "farmId": "FRM-2026-00024",
+    "type": "compost",
+    "status": "released",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-06-25T09:00:00.000Z",
+    "collectedAt": "2026-06-26T09:00:00.000Z",
+    "completedAt": "2026-07-13T09:00:00.000Z",
+    "verifiedBy": "S. Rose",
+    "verifiedAt": "2026-07-15T09:00:00.000Z",
+    "releasedAt": "2026-07-09T09:00:00.000Z",
+    "results": [
+      {
+        "name": "Result",
+        "value": "Within range",
+        "unit": "",
+        "reference": ""
+      }
+    ],
+    "resultSummary": "Amend with lime",
+    "notified": true,
+    "chain": [
+      {
+        "at": "2026-06-25T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-06-26T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-06-27T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-06-28T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-06-29T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      },
+      {
+        "at": "2026-06-30T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results verified"
+      },
+      {
+        "at": "2026-07-01T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Result released"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-012",
+    "barcode": "SC-829584",
+    "clientId": "CLT-0049",
+    "farmId": "FRM-2026-00041",
+    "type": "soil",
+    "status": "registered",
+    "requestedBy": "farmer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-05-10T09:00:00.000Z",
+    "collectedAt": "2026-05-11T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-05-10T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-05-11T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-05-12T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-013",
+    "barcode": "SC-120163",
+    "clientId": "CLT-0055",
+    "farmId": "FRM-2026-00045",
+    "type": "soil",
+    "status": "collected",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-01-29T09:00:00.000Z",
+    "collectedAt": "2026-01-30T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-01-29T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-01-30T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-014",
+    "barcode": "SC-017292",
+    "clientId": "CLT-0037",
+    "farmId": "FRM-2026-00032",
+    "type": "compost",
+    "status": "registered",
+    "requestedBy": "farmer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-04-17T09:00:00.000Z",
+    "collectedAt": "2026-04-18T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-04-17T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-04-18T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-04-19T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-015",
+    "barcode": "SC-685052",
+    "clientId": "CLT-0047",
+    "farmId": "FRM-2026-00039",
+    "type": "water",
+    "status": "testing",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-02-18T09:00:00.000Z",
+    "collectedAt": "2026-02-19T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-02-18T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-02-19T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-02-20T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-02-21T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-016",
+    "barcode": "SC-742028",
+    "clientId": "CLT-0014",
+    "farmId": "FRM-2026-00012",
+    "type": "soil",
+    "status": "testing",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-07-12T09:00:00.000Z",
+    "collectedAt": "2026-07-13T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-07-12T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-07-13T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-07-14T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-07-15T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-017",
+    "barcode": "SC-798865",
+    "clientId": "CLT-0004",
+    "farmId": "FRM-2026-00004",
+    "type": "plant",
+    "status": "verified",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-04-26T09:00:00.000Z",
+    "collectedAt": "2026-04-27T09:00:00.000Z",
+    "completedAt": "2026-06-14T09:00:00.000Z",
+    "verifiedBy": "S. Rose",
+    "verifiedAt": "2026-07-13T09:00:00.000Z",
+    "results": [
+      {
+        "name": "Result",
+        "value": "Elevated",
+        "unit": "",
+        "reference": ""
+      }
+    ],
+    "resultSummary": "Amend with lime",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-04-26T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-04-27T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-04-28T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-04-29T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-04-30T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      },
+      {
+        "at": "2026-05-01T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results verified"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-018",
+    "barcode": "SC-547196",
+    "clientId": "CLT-0048",
+    "farmId": "FRM-2026-00040",
+    "type": "compost",
+    "status": "collected",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-04-01T09:00:00.000Z",
+    "collectedAt": "2026-04-02T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-04-01T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-04-02T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-019",
+    "barcode": "SC-450399",
+    "clientId": "CLT-0049",
+    "farmId": "FRM-2026-00041",
+    "type": "soil",
+    "status": "collected",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-03-11T09:00:00.000Z",
+    "collectedAt": "2026-03-12T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-03-11T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-03-12T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-020",
+    "barcode": "SC-645436",
+    "clientId": "CLT-0033",
+    "farmId": "FRM-2026-00029",
+    "type": "plant",
+    "status": "verified",
+    "requestedBy": "farmer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-06-05T09:00:00.000Z",
+    "collectedAt": "2026-06-06T09:00:00.000Z",
+    "completedAt": "2026-06-13T09:00:00.000Z",
+    "verifiedBy": "S. Rose",
+    "verifiedAt": "2026-06-26T09:00:00.000Z",
+    "results": [
+      {
+        "name": "Result",
+        "value": "Trace detected",
+        "unit": "",
+        "reference": ""
+      }
+    ],
+    "resultSummary": "Suitable for cultivation",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-06-05T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-06-06T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-06-07T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-06-08T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-06-09T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      },
+      {
+        "at": "2026-06-10T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results verified"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-021",
+    "barcode": "SC-032661",
+    "clientId": "CLT-0025",
+    "farmId": "FRM-2026-00021",
+    "type": "compost",
+    "status": "registered",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-05-12T09:00:00.000Z",
+    "collectedAt": "2026-05-13T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-05-12T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-05-13T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-05-14T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-022",
+    "barcode": "SC-661953",
+    "clientId": "CLT-0070",
+    "farmId": "FRM-2026-00058",
+    "type": "compost",
+    "status": "registered",
+    "requestedBy": "farmer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-03-11T09:00:00.000Z",
+    "collectedAt": "2026-03-12T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-03-11T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-03-12T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-03-13T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-023",
+    "barcode": "SC-000715",
+    "clientId": "CLT-0059",
+    "farmId": "FRM-2026-00049",
+    "type": "soil",
+    "status": "testing",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-03-12T09:00:00.000Z",
+    "collectedAt": "2026-03-13T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-03-12T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-03-13T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-03-14T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-03-15T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-024",
+    "barcode": "SC-692491",
+    "clientId": "CLT-0026",
+    "farmId": "FRM-2026-00022",
+    "type": "soil",
+    "status": "result_entered",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-05-18T09:00:00.000Z",
+    "collectedAt": "2026-05-19T09:00:00.000Z",
+    "completedAt": "2026-07-08T09:00:00.000Z",
+    "results": [
+      {
+        "name": "pH",
+        "value": "6.6",
+        "unit": "",
+        "reference": "6.0 - 7.0"
+      },
+      {
+        "name": "Nitrogen (N)",
+        "value": "0.49",
+        "unit": "%",
+        "reference": "> 0.2"
+      },
+      {
+        "name": "Phosphorus (P)",
+        "value": "15",
+        "unit": "ppm",
+        "reference": "15 - 30"
+      },
+      {
+        "name": "Organic matter",
+        "value": "4.3",
+        "unit": "%",
+        "reference": "> 3.0"
+      }
+    ],
+    "resultSummary": "Suitable for cultivation",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-05-18T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-05-19T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-05-20T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-05-21T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-05-22T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-025",
+    "barcode": "SC-232870",
+    "clientId": "CLT-0005",
+    "farmId": "FRM-2026-00005",
+    "type": "compost",
+    "status": "result_entered",
+    "requestedBy": "farmer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-07-09T09:00:00.000Z",
+    "collectedAt": "2026-07-10T09:00:00.000Z",
+    "completedAt": "2026-07-13T09:00:00.000Z",
+    "results": [
+      {
+        "name": "Result",
+        "value": "Within range",
+        "unit": "",
+        "reference": ""
+      }
+    ],
+    "resultSummary": "Monitor nitrogen levels",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-07-09T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-07-10T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-07-11T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-07-12T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-07-13T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-026",
+    "barcode": "SC-430281",
+    "clientId": "CLT-0023",
+    "farmId": "FRM-2026-00019",
+    "type": "soil",
+    "status": "registered",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-02-06T09:00:00.000Z",
+    "collectedAt": "2026-02-07T09:00:00.000Z",
+    "results": [],
+    "resultSummary": "",
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-02-06T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-02-07T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-02-08T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      }
+    ]
+  },
+  {
+    "id": "SMP-2026-027",
+    "barcode": "SC-656655",
+    "clientId": "CLT-0060",
+    "farmId": "FRM-2026-00050",
+    "type": "soil",
+    "status": "verified",
+    "requestedBy": "officer",
+    "assignedTo": "USR-LAB",
+    "requestedAt": "2026-01-17T09:00:00.000Z",
+    "collectedAt": "2026-01-18T09:00:00.000Z",
+    "completedAt": "2026-04-01T09:00:00.000Z",
+    "verifiedBy": "S. Rose",
+    "verifiedAt": "2026-03-17T09:00:00.000Z",
+    "results": [
+      {
+        "name": "pH",
+        "value": "7.5",
+        "unit": "",
+        "reference": "6.0 - 7.0"
+      },
+      {
+        "name": "Nitrogen (N)",
+        "value": "0.12",
+        "unit": "%",
+        "reference": "> 0.2"
+      },
+      {
+        "name": "Phosphorus (P)",
+        "value": "14",
         "unit": "ppm",
         "reference": "15 - 30"
       },
@@ -90,119 +1161,55 @@
         "reference": "> 3.0"
       }
     ],
-    "resultSummary": "Amend with lime",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-004",
-    "clientId": "CLT-0013",
-    "farmId": "FRM-2026-00011",
-    "type": "plant",
-    "status": "testing",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-05T09:00:00.000Z",
-    "collectedAt": "2026-06-06T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-005",
-    "clientId": "CLT-0058",
-    "farmId": "FRM-2026-00048",
-    "type": "water",
-    "status": "completed",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-05-29T09:00:00.000Z",
-    "collectedAt": "2026-05-30T09:00:00.000Z",
-    "completedAt": "2026-06-22T09:00:00.000Z",
-    "results": [
+    "resultSummary": "Monitor nitrogen levels",
+    "notified": false,
+    "chain": [
       {
-        "name": "Result",
-        "value": "Trace detected",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Amend with lime",
-    "notified": true
-  },
-  {
-    "id": "SMP-2026-006",
-    "clientId": "CLT-0026",
-    "farmId": "FRM-2026-00022",
-    "type": "compost",
-    "status": "collected",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-02-19T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-007",
-    "clientId": "CLT-0007",
-    "farmId": "FRM-2026-00007",
-    "type": "compost",
-    "status": "completed",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-28T09:00:00.000Z",
-    "collectedAt": "2026-03-29T09:00:00.000Z",
-    "completedAt": "2026-07-02T09:00:00.000Z",
-    "results": [
+        "at": "2026-01-17T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
       {
-        "name": "Result",
-        "value": "Elevated",
-        "unit": "",
-        "reference": ""
+        "at": "2026-01-18T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-01-19T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-01-20T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-01-21T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      },
+      {
+        "at": "2026-01-22T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results verified"
       }
-    ],
-    "resultSummary": "Suitable for cultivation",
-    "notified": true
+    ]
   },
   {
-    "id": "SMP-2026-008",
-    "clientId": "CLT-0061",
-    "farmId": "FRM-2026-00051",
-    "type": "soil",
-    "status": "registered",
+    "id": "SMP-2026-028",
+    "barcode": "SC-715661",
+    "clientId": "CLT-0012",
+    "farmId": "FRM-2026-00010",
+    "type": "compost",
+    "status": "verified",
     "requestedBy": "farmer",
     "assignedTo": "USR-LAB",
     "requestedAt": "2026-01-25T09:00:00.000Z",
     "collectedAt": "2026-01-26T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-009",
-    "clientId": "CLT-0047",
-    "farmId": "FRM-2026-00039",
-    "type": "plant",
-    "status": "registered",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-02-03T09:00:00.000Z",
-    "collectedAt": "2026-02-04T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-010",
-    "clientId": "CLT-0013",
-    "farmId": "FRM-2026-00011",
-    "type": "water",
-    "status": "completed",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-30T09:00:00.000Z",
-    "collectedAt": "2026-03-31T09:00:00.000Z",
-    "completedAt": "2026-05-14T09:00:00.000Z",
+    "completedAt": "2026-05-20T09:00:00.000Z",
+    "verifiedBy": "S. Rose",
+    "verifiedAt": "2026-02-08T09:00:00.000Z",
     "results": [
       {
         "name": "Result",
@@ -211,470 +1218,129 @@
         "reference": ""
       }
     ],
-    "resultSummary": "Amend with lime",
-    "notified": true
-  },
-  {
-    "id": "SMP-2026-011",
-    "clientId": "CLT-0021",
-    "farmId": "FRM-2026-00017",
-    "type": "compost",
-    "status": "completed",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-04-04T09:00:00.000Z",
-    "collectedAt": "2026-04-05T09:00:00.000Z",
-    "completedAt": "2026-05-23T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Elevated",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Amend with lime",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-012",
-    "clientId": "CLT-0027",
-    "farmId": "FRM-2026-00023",
-    "type": "soil",
-    "status": "completed",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-02-27T09:00:00.000Z",
-    "collectedAt": "2026-02-28T09:00:00.000Z",
-    "completedAt": "2026-05-02T09:00:00.000Z",
-    "results": [
-      {
-        "name": "pH",
-        "value": "6.6",
-        "unit": "",
-        "reference": "6.0 - 7.0"
-      },
-      {
-        "name": "Nitrogen (N)",
-        "value": "0.21",
-        "unit": "%",
-        "reference": "> 0.2"
-      },
-      {
-        "name": "Phosphorus (P)",
-        "value": "6",
-        "unit": "ppm",
-        "reference": "15 - 30"
-      },
-      {
-        "name": "Organic matter",
-        "value": "2.7",
-        "unit": "%",
-        "reference": "> 3.0"
-      }
-    ],
     "resultSummary": "Suitable for cultivation",
-    "notified": true
-  },
-  {
-    "id": "SMP-2026-013",
-    "clientId": "CLT-0037",
-    "farmId": "FRM-2026-00032",
-    "type": "plant",
-    "status": "collected",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-05-28T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-014",
-    "clientId": "CLT-0062",
-    "farmId": "FRM-2026-00052",
-    "type": "soil",
-    "status": "completed",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-27T09:00:00.000Z",
-    "collectedAt": "2026-06-28T09:00:00.000Z",
-    "completedAt": "2026-06-30T09:00:00.000Z",
-    "results": [
+    "notified": false,
+    "chain": [
       {
-        "name": "pH",
-        "value": "5.4",
-        "unit": "",
-        "reference": "6.0 - 7.0"
+        "at": "2026-01-25T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
       },
       {
-        "name": "Nitrogen (N)",
-        "value": "0.74",
-        "unit": "%",
-        "reference": "> 0.2"
+        "at": "2026-01-26T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
       },
       {
-        "name": "Phosphorus (P)",
-        "value": "23",
-        "unit": "ppm",
-        "reference": "15 - 30"
+        "at": "2026-01-27T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
       },
       {
-        "name": "Organic matter",
-        "value": "4.6",
-        "unit": "%",
-        "reference": "> 3.0"
+        "at": "2026-01-28T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-01-29T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      },
+      {
+        "at": "2026-01-30T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results verified"
       }
-    ],
-    "resultSummary": "Suitable for cultivation",
-    "notified": true
-  },
-  {
-    "id": "SMP-2026-015",
-    "clientId": "CLT-0003",
-    "farmId": "FRM-2026-00003",
-    "type": "soil",
-    "status": "completed",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-04-01T09:00:00.000Z",
-    "collectedAt": "2026-04-02T09:00:00.000Z",
-    "completedAt": "2026-04-22T09:00:00.000Z",
-    "results": [
-      {
-        "name": "pH",
-        "value": "7.1",
-        "unit": "",
-        "reference": "6.0 - 7.0"
-      },
-      {
-        "name": "Nitrogen (N)",
-        "value": "0.75",
-        "unit": "%",
-        "reference": "> 0.2"
-      },
-      {
-        "name": "Phosphorus (P)",
-        "value": "11",
-        "unit": "ppm",
-        "reference": "15 - 30"
-      },
-      {
-        "name": "Organic matter",
-        "value": "2.2",
-        "unit": "%",
-        "reference": "> 3.0"
-      }
-    ],
-    "resultSummary": "Amend with lime",
-    "notified": true
-  },
-  {
-    "id": "SMP-2026-016",
-    "clientId": "CLT-0057",
-    "farmId": "FRM-2026-00047",
-    "type": "plant",
-    "status": "collected",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-03T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-017",
-    "clientId": "CLT-0032",
-    "farmId": "FRM-2026-00028",
-    "type": "plant",
-    "status": "completed",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-05-03T09:00:00.000Z",
-    "collectedAt": "2026-05-04T09:00:00.000Z",
-    "completedAt": "2026-06-07T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Elevated",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Amend with lime",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-018",
-    "clientId": "CLT-0010",
-    "farmId": "FRM-2026-00009",
-    "type": "water",
-    "status": "testing",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-01-16T09:00:00.000Z",
-    "collectedAt": "2026-01-17T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-019",
-    "clientId": "CLT-0005",
-    "farmId": "FRM-2026-00005",
-    "type": "soil",
-    "status": "completed",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-04-24T09:00:00.000Z",
-    "collectedAt": "2026-04-25T09:00:00.000Z",
-    "completedAt": "2026-06-09T09:00:00.000Z",
-    "results": [
-      {
-        "name": "pH",
-        "value": "7.2",
-        "unit": "",
-        "reference": "6.0 - 7.0"
-      },
-      {
-        "name": "Nitrogen (N)",
-        "value": "0.77",
-        "unit": "%",
-        "reference": "> 0.2"
-      },
-      {
-        "name": "Phosphorus (P)",
-        "value": "12",
-        "unit": "ppm",
-        "reference": "15 - 30"
-      },
-      {
-        "name": "Organic matter",
-        "value": "3.6",
-        "unit": "%",
-        "reference": "> 3.0"
-      }
-    ],
-    "resultSummary": "Amend with lime",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-020",
-    "clientId": "CLT-0039",
-    "farmId": "FRM-2026-00034",
-    "type": "plant",
-    "status": "registered",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-05-16T09:00:00.000Z",
-    "collectedAt": "2026-05-17T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-021",
-    "clientId": "CLT-0021",
-    "farmId": "FRM-2026-00017",
-    "type": "soil",
-    "status": "collected",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-21T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-022",
-    "clientId": "CLT-0065",
-    "farmId": "FRM-2026-00054",
-    "type": "soil",
-    "status": "completed",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-17T09:00:00.000Z",
-    "collectedAt": "2026-03-18T09:00:00.000Z",
-    "completedAt": "2026-04-13T09:00:00.000Z",
-    "results": [
-      {
-        "name": "pH",
-        "value": "5.6",
-        "unit": "",
-        "reference": "6.0 - 7.0"
-      },
-      {
-        "name": "Nitrogen (N)",
-        "value": "0.39",
-        "unit": "%",
-        "reference": "> 0.2"
-      },
-      {
-        "name": "Phosphorus (P)",
-        "value": "29",
-        "unit": "ppm",
-        "reference": "15 - 30"
-      },
-      {
-        "name": "Organic matter",
-        "value": "1.0",
-        "unit": "%",
-        "reference": "> 3.0"
-      }
-    ],
-    "resultSummary": "Monitor nitrogen levels",
-    "notified": true
-  },
-  {
-    "id": "SMP-2026-023",
-    "clientId": "CLT-0005",
-    "farmId": "FRM-2026-00005",
-    "type": "water",
-    "status": "registered",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-12T09:00:00.000Z",
-    "collectedAt": "2026-03-13T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-024",
-    "clientId": "CLT-0012",
-    "farmId": "FRM-2026-00010",
-    "type": "water",
-    "status": "registered",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-05-21T09:00:00.000Z",
-    "collectedAt": "2026-05-22T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-025",
-    "clientId": "CLT-0023",
-    "farmId": "FRM-2026-00019",
-    "type": "soil",
-    "status": "completed",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-04-26T09:00:00.000Z",
-    "collectedAt": "2026-04-27T09:00:00.000Z",
-    "completedAt": "2026-06-27T09:00:00.000Z",
-    "results": [
-      {
-        "name": "pH",
-        "value": "5.3",
-        "unit": "",
-        "reference": "6.0 - 7.0"
-      },
-      {
-        "name": "Nitrogen (N)",
-        "value": "0.69",
-        "unit": "%",
-        "reference": "> 0.2"
-      },
-      {
-        "name": "Phosphorus (P)",
-        "value": "9",
-        "unit": "ppm",
-        "reference": "15 - 30"
-      },
-      {
-        "name": "Organic matter",
-        "value": "4.8",
-        "unit": "%",
-        "reference": "> 3.0"
-      }
-    ],
-    "resultSummary": "Suitable for cultivation",
-    "notified": true
-  },
-  {
-    "id": "SMP-2026-026",
-    "clientId": "CLT-0013",
-    "farmId": "FRM-2026-00011",
-    "type": "compost",
-    "status": "testing",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-02-24T09:00:00.000Z",
-    "collectedAt": "2026-02-25T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
-  },
-  {
-    "id": "SMP-2026-027",
-    "clientId": "CLT-0026",
-    "farmId": "FRM-2026-00022",
-    "type": "water",
-    "status": "completed",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-18T09:00:00.000Z",
-    "collectedAt": "2026-03-19T09:00:00.000Z",
-    "completedAt": "2026-05-06T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Trace detected",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Monitor nitrogen levels",
-    "notified": true
-  },
-  {
-    "id": "SMP-2026-028",
-    "clientId": "CLT-0022",
-    "farmId": "FRM-2026-00018",
-    "type": "compost",
-    "status": "completed",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-18T09:00:00.000Z",
-    "collectedAt": "2026-06-19T09:00:00.000Z",
-    "completedAt": "2026-06-29T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Trace detected",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Monitor nitrogen levels",
-    "notified": true
+    ]
   },
   {
     "id": "SMP-2026-029",
-    "clientId": "CLT-0026",
-    "farmId": "FRM-2026-00022",
-    "type": "compost",
-    "status": "collected",
-    "requestedBy": "farmer",
+    "barcode": "SC-211688",
+    "clientId": "CLT-0005",
+    "farmId": "FRM-2026-00005",
+    "type": "plant",
+    "status": "released",
+    "requestedBy": "officer",
     "assignedTo": "USR-LAB",
-    "requestedAt": "2026-05-24T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false
+    "requestedAt": "2026-06-16T09:00:00.000Z",
+    "collectedAt": "2026-06-17T09:00:00.000Z",
+    "completedAt": "2026-07-03T09:00:00.000Z",
+    "verifiedBy": "S. Rose",
+    "verifiedAt": "2026-06-24T09:00:00.000Z",
+    "releasedAt": "2026-07-15T09:00:00.000Z",
+    "results": [
+      {
+        "name": "Result",
+        "value": "Within range",
+        "unit": "",
+        "reference": ""
+      }
+    ],
+    "resultSummary": "Suitable for cultivation",
+    "notified": true,
+    "chain": [
+      {
+        "at": "2026-06-16T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-06-17T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      },
+      {
+        "at": "2026-06-18T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Registered in lab"
+      },
+      {
+        "at": "2026-06-19T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Testing started"
+      },
+      {
+        "at": "2026-06-20T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results entered"
+      },
+      {
+        "at": "2026-06-21T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Results verified"
+      },
+      {
+        "at": "2026-06-22T09:00:00.000Z",
+        "by": "S. Rose (Lab)",
+        "action": "Result released"
+      }
+    ]
   },
   {
     "id": "SMP-2026-030",
-    "clientId": "CLT-0051",
-    "farmId": "FRM-2026-00043",
-    "type": "compost",
+    "barcode": "SC-716754",
+    "clientId": "CLT-0074",
+    "farmId": "FRM-2026-00062",
+    "type": "soil",
     "status": "collected",
-    "requestedBy": "officer",
+    "requestedBy": "farmer",
     "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-06T09:00:00.000Z",
+    "requestedAt": "2026-06-17T09:00:00.000Z",
+    "collectedAt": "2026-06-18T09:00:00.000Z",
     "results": [],
     "resultSummary": "",
-    "notified": false
+    "notified": false,
+    "chain": [
+      {
+        "at": "2026-06-17T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Request submitted"
+      },
+      {
+        "at": "2026-06-18T09:00:00.000Z",
+        "by": "Field Officer",
+        "action": "Sample collected"
+      }
+    ]
   }
 ]

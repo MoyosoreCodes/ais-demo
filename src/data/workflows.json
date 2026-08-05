@@ -4,16 +4,22 @@
     "name": "Loan Approval",
     "stages": [
       {
-        "id": "assessment",
-        "name": "Technical Assessment",
+        "id": "screening",
+        "name": "Screening",
         "actorRole": "agriculture_officer",
         "order": 1
       },
       {
-        "id": "committee",
+        "id": "assessment",
+        "name": "Technical Assessment",
+        "actorRole": "agriculture_officer",
+        "order": 2
+      },
+      {
+        "id": "approval",
         "name": "Loan Committee",
         "actorRole": "supervisor",
-        "order": 2
+        "order": 3
       }
     ]
   },
@@ -28,10 +34,16 @@
         "order": 1
       },
       {
+        "id": "assessment",
+        "name": "Site Assessment",
+        "actorRole": "field_officer",
+        "order": 2
+      },
+      {
         "id": "decision",
         "name": "Allocation Decision",
         "actorRole": "supervisor",
-        "order": 2
+        "order": 3
       }
     ]
   }

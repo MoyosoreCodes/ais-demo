@@ -54,8 +54,8 @@
     "purpose": "Cassava processing",
     "amountSCR": 102000,
     "termMonths": 48,
-    "status": "committee",
-    "currentStageId": "committee",
+    "status": "approval",
+    "currentStageId": "approval",
     "docs": [
       {
         "id": "D-L3",
@@ -118,8 +118,8 @@
     "purpose": "Banana sucker stock",
     "amountSCR": 178000,
     "termMonths": 48,
-    "status": "committee",
-    "currentStageId": "committee",
+    "status": "assessment",
+    "currentStageId": "assessment",
     "docs": [
       {
         "id": "D-L5",
@@ -182,8 +182,8 @@
     "purpose": "Cold storage unit",
     "amountSCR": 149000,
     "termMonths": 12,
-    "status": "committee",
-    "currentStageId": "committee",
+    "status": "assessment",
+    "currentStageId": "assessment",
     "docs": [
       {
         "id": "D-L7",
@@ -247,7 +247,7 @@
     "amountSCR": 131000,
     "termMonths": 48,
     "status": "submitted",
-    "currentStageId": "assessment",
+    "currentStageId": "screening",
     "docs": [
       {
         "id": "D-L9",
@@ -311,7 +311,7 @@
     "amountSCR": 26000,
     "termMonths": 12,
     "status": "submitted",
-    "currentStageId": "assessment",
+    "currentStageId": "screening",
     "docs": [
       {
         "id": "D-L11",
@@ -374,7 +374,7 @@
     "purpose": "Cassava processing",
     "amountSCR": 212000,
     "termMonths": 24,
-    "status": "disbursed",
+    "status": "approved",
     "currentStageId": "done",
     "docs": [
       {
@@ -470,7 +470,7 @@
     "purpose": "Drip irrigation kit",
     "amountSCR": 162000,
     "termMonths": 24,
-    "status": "disbursed",
+    "status": "approved",
     "currentStageId": "done",
     "docs": [
       {
@@ -502,8 +502,8 @@
     "purpose": "Banana sucker stock",
     "amountSCR": 27000,
     "termMonths": 36,
-    "status": "assessment",
-    "currentStageId": "assessment",
+    "status": "screening",
+    "currentStageId": "screening",
     "docs": [
       {
         "id": "D-L17",
@@ -599,7 +599,7 @@
     "amountSCR": 194000,
     "termMonths": 12,
     "status": "submitted",
-    "currentStageId": "assessment",
+    "currentStageId": "screening",
     "docs": [
       {
         "id": "D-L20",
@@ -631,7 +631,7 @@
     "amountSCR": 180000,
     "termMonths": 12,
     "status": "submitted",
-    "currentStageId": "assessment",
+    "currentStageId": "screening",
     "docs": [
       {
         "id": "D-L21",
@@ -726,8 +726,8 @@
     "purpose": "Fencing & security",
     "amountSCR": 168000,
     "termMonths": 24,
-    "status": "committee",
-    "currentStageId": "committee",
+    "status": "approval",
+    "currentStageId": "approval",
     "docs": [
       {
         "id": "D-L24",

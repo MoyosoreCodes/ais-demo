@@ -1,0 +1,451 @@
+[
+  {
+    "id": "LA-2026-001",
+    "clientId": "CLT-0001",
+    "farmId": "FRM-2026-00001",
+    "parcelRef": "PAR-ANB-014",
+    "district": "Anse Boileau",
+    "purpose": "Banana + poultry",
+    "areaHa": 1.6,
+    "status": "leased",
+    "assignedTo": "USR-OFFICER",
+    "assessment": {
+      "at": "2025-12-27T09:00:00.000Z",
+      "by": "R. Confait",
+      "findings": "Parcel suitable; access road present.",
+      "recommendation": "allocate",
+      "lat": -4.7291,
+      "lng": 55.4863
+    },
+    "history": [
+      {
+        "at": "2025-11-27T09:00:00.000Z",
+        "by": "Marie-Ange Hoareau",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      },
+      {
+        "at": "2025-12-17T09:00:00.000Z",
+        "by": "J. Payet",
+        "action": "Assigned for assessment",
+        "fromStatus": "under_review",
+        "toStatus": "assessment"
+      },
+      {
+        "at": "2025-12-27T09:00:00.000Z",
+        "by": "R. Confait",
+        "action": "Site assessment submitted",
+        "fromStatus": "assessment",
+        "toStatus": "decision"
+      },
+      {
+        "at": "2026-01-01T09:00:00.000Z",
+        "by": "G. Vidot (Supervisor)",
+        "action": "Allocated",
+        "fromStatus": "decision",
+        "toStatus": "allocated"
+      },
+      {
+        "at": "2026-01-06T09:00:00.000Z",
+        "by": "J. Payet",
+        "action": "Lease created",
+        "fromStatus": "allocated",
+        "toStatus": "leased"
+      }
+    ],
+    "createdAt": "2025-11-27T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-002",
+    "clientId": "CLT-0009",
+    "farmId": "FRM-2026-00008",
+    "parcelRef": "PAR-BL-080",
+    "district": "Baie Lazare",
+    "purpose": "Livestock grazing",
+    "areaHa": 2.2,
+    "status": "decision",
+    "assignedTo": "USR-OFFICER2",
+    "assessment": {
+      "at": "2025-09-23T09:00:00.000Z",
+      "by": "R. Confait",
+      "findings": "Suitable with conditions",
+      "recommendation": "allocate",
+      "lat": -4.73929,
+      "lng": 55.49227
+    },
+    "history": [
+      {
+        "at": "2025-09-13T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2025-09-13T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-003",
+    "clientId": "CLT-0010",
+    "farmId": "FRM-2026-00009",
+    "parcelRef": "PAR-GAM-139",
+    "district": "Grand Anse Mahé",
+    "purpose": "Orchard",
+    "areaHa": 1.86,
+    "status": "allocated",
+    "assignedTo": "USR-OFFICER",
+    "assessment": {
+      "at": "2025-12-20T09:00:00.000Z",
+      "by": "R. Confait",
+      "findings": "Suitable",
+      "recommendation": "allocate",
+      "lat": -4.67097,
+      "lng": 55.46451
+    },
+    "history": [
+      {
+        "at": "2025-12-10T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2025-12-10T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-004",
+    "clientId": "CLT-0032",
+    "farmId": "FRM-2026-00028",
+    "parcelRef": "PAR-GAM-148",
+    "district": "Grand Anse Mahé",
+    "purpose": "Orchard",
+    "areaHa": 0.32,
+    "status": "assessment",
+    "assignedTo": "USR-OFFICER2",
+    "history": [
+      {
+        "at": "2025-10-05T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2025-10-05T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-005",
+    "clientId": "CLT-0023",
+    "farmId": "FRM-2026-00019",
+    "parcelRef": "PAR-LD-183",
+    "district": "La Digue",
+    "purpose": "Mixed farming",
+    "areaHa": 2.1,
+    "status": "rejected",
+    "assignedTo": "USR-OFFICER2",
+    "history": [
+      {
+        "at": "2026-03-19T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2026-03-19T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-006",
+    "clientId": "CLT-0020",
+    "farmId": "FRM-2026-00016",
+    "parcelRef": "PAR-PG-076",
+    "district": "Port Glaud",
+    "purpose": "Livestock grazing",
+    "areaHa": 1.78,
+    "status": "allocated",
+    "assignedTo": "USR-OFFICER",
+    "assessment": {
+      "at": "2026-03-05T09:00:00.000Z",
+      "by": "R. Confait",
+      "findings": "Suitable",
+      "recommendation": "allocate",
+      "lat": -4.66998,
+      "lng": 55.41399
+    },
+    "history": [
+      {
+        "at": "2026-02-23T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2026-02-23T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-007",
+    "clientId": "CLT-0060",
+    "farmId": "FRM-2026-00050",
+    "parcelRef": "PAR-BL-024",
+    "district": "Baie Lazare",
+    "purpose": "Livestock grazing",
+    "areaHa": 1.87,
+    "status": "allocated",
+    "assignedTo": "USR-OFFICER2",
+    "assessment": {
+      "at": "2025-12-04T09:00:00.000Z",
+      "by": "R. Confait",
+      "findings": "Suitable",
+      "recommendation": "allocate",
+      "lat": -4.74852,
+      "lng": 55.4915
+    },
+    "history": [
+      {
+        "at": "2025-11-24T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2025-11-24T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-008",
+    "clientId": "CLT-0050",
+    "farmId": "FRM-2026-00042",
+    "parcelRef": "PAR-AB-096",
+    "district": "Anse Boileau",
+    "purpose": "Orchard",
+    "areaHa": 0.38,
+    "status": "rejected",
+    "assignedTo": "USR-OFFICER2",
+    "history": [
+      {
+        "at": "2026-04-10T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2026-04-10T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-009",
+    "clientId": "CLT-0012",
+    "farmId": "FRM-2026-00010",
+    "parcelRef": "PAR-PG-074",
+    "district": "Port Glaud",
+    "purpose": "Poultry unit",
+    "areaHa": 1.3,
+    "status": "assessment",
+    "assignedTo": "USR-OFFICER",
+    "history": [
+      {
+        "at": "2025-10-12T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2025-10-12T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-010",
+    "clientId": "CLT-0034",
+    "farmId": "FRM-2026-00030",
+    "parcelRef": "PAR-GAM-121",
+    "district": "Grand Anse Mahé",
+    "purpose": "Livestock grazing",
+    "areaHa": 2.48,
+    "status": "leased",
+    "assignedTo": "USR-OFFICER2",
+    "assessment": {
+      "at": "2026-04-27T09:00:00.000Z",
+      "by": "R. Confait",
+      "findings": "Suitable",
+      "recommendation": "allocate",
+      "lat": -4.68583,
+      "lng": 55.46159
+    },
+    "history": [
+      {
+        "at": "2026-04-17T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2026-04-17T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-011",
+    "clientId": "CLT-0057",
+    "farmId": "FRM-2026-00047",
+    "parcelRef": "PAR-BSAP-075",
+    "district": "Baie Ste Anne Praslin",
+    "purpose": "Orchard",
+    "areaHa": 1.25,
+    "status": "assessment",
+    "assignedTo": "USR-OFFICER",
+    "history": [
+      {
+        "at": "2026-03-16T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2026-03-16T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-012",
+    "clientId": "CLT-0060",
+    "farmId": "FRM-2026-00050",
+    "parcelRef": "PAR-BL-161",
+    "district": "Baie Lazare",
+    "purpose": "Livestock grazing",
+    "areaHa": 0.87,
+    "status": "leased",
+    "assignedTo": "USR-OFFICER",
+    "assessment": {
+      "at": "2025-12-19T09:00:00.000Z",
+      "by": "R. Confait",
+      "findings": "Suitable",
+      "recommendation": "allocate",
+      "lat": -4.74142,
+      "lng": 55.48707
+    },
+    "history": [
+      {
+        "at": "2025-12-09T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2025-12-09T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-013",
+    "clientId": "CLT-0032",
+    "farmId": "FRM-2026-00028",
+    "parcelRef": "PAR-GAM-105",
+    "district": "Grand Anse Mahé",
+    "purpose": "Orchard",
+    "areaHa": 0.62,
+    "status": "submitted",
+    "assignedTo": "USR-OFFICER",
+    "history": [
+      {
+        "at": "2026-03-01T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2026-03-01T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-014",
+    "clientId": "CLT-0044",
+    "farmId": "FRM-2026-00038",
+    "parcelRef": "PAR-T-135",
+    "district": "Takamaka",
+    "purpose": "Poultry unit",
+    "areaHa": 1.63,
+    "status": "assessment",
+    "assignedTo": "USR-OFFICER2",
+    "history": [
+      {
+        "at": "2025-11-10T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2025-11-10T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-015",
+    "clientId": "CLT-0026",
+    "farmId": "FRM-2026-00022",
+    "parcelRef": "PAR-GAM-002",
+    "district": "Grand Anse Mahé",
+    "purpose": "Livestock grazing",
+    "areaHa": 3.1,
+    "status": "rejected",
+    "assignedTo": "USR-OFFICER",
+    "history": [
+      {
+        "at": "2025-09-11T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2025-09-11T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-016",
+    "clientId": "CLT-0040",
+    "farmId": "FRM-2026-00035",
+    "parcelRef": "PAR-BL-112",
+    "district": "Baie Lazare",
+    "purpose": "Livestock grazing",
+    "areaHa": 1.13,
+    "status": "rejected",
+    "assignedTo": "USR-OFFICER2",
+    "history": [
+      {
+        "at": "2026-06-05T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2026-06-05T09:00:00.000Z"
+  },
+  {
+    "id": "LA-2026-017",
+    "clientId": "CLT-0060",
+    "farmId": "FRM-2026-00050",
+    "parcelRef": "PAR-BL-008",
+    "district": "Baie Lazare",
+    "purpose": "Mixed farming",
+    "areaHa": 0.93,
+    "status": "allocated",
+    "assignedTo": "USR-OFFICER2",
+    "assessment": {
+      "at": "2025-09-11T09:00:00.000Z",
+      "by": "R. Confait",
+      "findings": "Suitable with conditions",
+      "recommendation": "allocate",
+      "lat": -4.73898,
+      "lng": 55.47983
+    },
+    "history": [
+      {
+        "at": "2025-09-01T09:00:00.000Z",
+        "by": "Applicant",
+        "action": "Application submitted",
+        "fromStatus": "",
+        "toStatus": "submitted"
+      }
+    ],
+    "createdAt": "2025-09-01T09:00:00.000Z"
+  }
+]

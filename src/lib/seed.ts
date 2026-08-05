@@ -3,8 +3,11 @@
 import audit from '../data/audit.json';
 import clients from '../data/clients.json';
 import documents from '../data/documents.json';
+import enforcement from '../data/enforcement.json';
 import farms from '../data/farms.json';
 import inspections from '../data/inspections.json';
+import landApplications from '../data/landApplications.json';
+import leases from '../data/leases.json';
 import livestockVisits from '../data/livestockVisits.json';
 import loans from '../data/loans.json';
 import notifications from '../data/notifications.json';
@@ -22,6 +25,9 @@ const SEED = {
   farms,
   loans,
   samples,
+  landApplications,
+  leases,
+  enforcement,
   livestockVisits,
   surveillanceCases,
   vendors,

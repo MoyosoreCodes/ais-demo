@@ -154,12 +154,14 @@ const farmerFarms = farms.filter((f) => f.clientId !== 'CLT-0002')
 // ---- workflows (metadata-driven, admin-configurable on S11) ---------------
 const workflows = [
   { id: 'loan', name: 'Loan Approval', stages: [
-    { id: 'assessment', name: 'Technical Assessment', actorRole: 'agriculture_officer', order: 1 },
-    { id: 'committee', name: 'Loan Committee', actorRole: 'supervisor', order: 2 },
+    { id: 'screening', name: 'Screening', actorRole: 'agriculture_officer', order: 1 },
+    { id: 'assessment', name: 'Technical Assessment', actorRole: 'agriculture_officer', order: 2 },
+    { id: 'approval', name: 'Loan Committee', actorRole: 'supervisor', order: 3 },
   ] },
   { id: 'land', name: 'Land Allocation', stages: [
     { id: 'review', name: 'Application Review', actorRole: 'agriculture_officer', order: 1 },
-    { id: 'decision', name: 'Allocation Decision', actorRole: 'supervisor', order: 2 },
+    { id: 'assessment', name: 'Site Assessment', actorRole: 'field_officer', order: 2 },
+    { id: 'decision', name: 'Allocation Decision', actorRole: 'supervisor', order: 3 },
   ] },
 ]
 
@@ -182,8 +184,8 @@ const loanPurposes = ['Drip irrigation kit', 'Greenhouse tunnel', 'Layer cages',
   'Cassava processing', 'Cold storage unit', 'Tractor implement', 'Banana sucker stock', 'Fencing & security']
 for (let i = 0; i < 24; i++) {
   const f = pick(farmerFarms)
-  const status = pick(['submitted', 'assessment', 'assessment', 'committee', 'approved', 'approved', 'disbursed', 'rejected'])
-  const stage = status === 'assessment' ? 'assessment' : status === 'committee' ? 'committee' : status === 'submitted' ? 'assessment' : 'done'
+  const status = pick(['submitted', 'screening', 'assessment', 'assessment', 'approval', 'approved', 'approved', 'disbursed', 'rejected'])
+  const stage = ['screening', 'assessment', 'approval'].includes(status) ? status : status === 'submitted' ? 'screening' : 'done'
   const created = int(2, 200)
   loans.push({
     id: nextLoanId(), clientId: f.clientId, farmId: f.id, purpose: pick(loanPurposes),
@@ -204,28 +206,113 @@ const soilResults = () => ([
   { name: 'Phosphorus (P)', value: int(5, 40) + '', unit: 'ppm', reference: '15 - 30' },
   { name: 'Organic matter', value: (1 + rnd() * 4).toFixed(1), unit: '%', reference: '> 3.0' },
 ])
-// Marie-Ange's soil test (fixed, in testing -> demo completes it)
+const SAMPLE_FLOW = ['requested', 'collected', 'registered', 'testing', 'result_entered', 'verified', 'released']
+const SAMPLE_LABEL = {
+  requested: 'Request submitted', collected: 'Sample collected', registered: 'Registered in lab',
+  testing: 'Testing started', result_entered: 'Results entered', verified: 'Results verified', released: 'Result released',
+}
+const barcode = () => `SC-${pad(int(0, 999999), 6)}`
+const chainFor = (status, reqDay) => {
+  const idx = SAMPLE_FLOW.indexOf(status)
+  const events = []
+  for (let k = 0; k <= idx; k++) {
+    const s = SAMPLE_FLOW[k]
+    const by = s === 'requested' ? 'Applicant' : s === 'collected' ? 'Field Officer' : 'S. Rose (Lab)'
+    events.push({ at: daysAgo(Math.max(0, reqDay - k)), by, action: SAMPLE_LABEL[s] })
+  }
+  return events
+}
+// Marie-Ange's soil test (fixed, in testing -> the demo enters + verifies + releases it)
 samples.push({
-  id: nextSmpId(), clientId: 'CLT-0001', farmId: 'FRM-2026-00001', type: 'soil', status: 'testing',
+  id: nextSmpId(), barcode: 'SC-000412', clientId: 'CLT-0001', farmId: 'FRM-2026-00001', type: 'soil', status: 'testing',
   requestedBy: 'farmer', assignedTo: 'USR-LAB', requestedAt: daysAgo(3), collectedAt: daysAgo(2),
-  results: [], resultSummary: '', notified: false,
+  results: [], resultSummary: '', notified: false, chain: chainFor('testing', 3),
 })
 for (let i = 0; i < 29; i++) {
   const f = pick(farmerFarms)
   const type = pick(['soil', 'soil', 'water', 'plant', 'compost'])
-  const status = pick(['collected', 'registered', 'testing', 'completed', 'completed'])
+  const status = pick(['collected', 'registered', 'testing', 'result_entered', 'verified', 'released', 'released'])
   const req = int(2, 180)
-  const done = status === 'completed'
+  const past = ['result_entered', 'verified', 'released'].includes(status)
+  const released = status === 'released'
+  const verified = status === 'verified' || released
   samples.push({
-    id: nextSmpId(), clientId: f.clientId, farmId: f.id, type, status,
+    id: nextSmpId(), barcode: barcode(), clientId: f.clientId, farmId: f.id, type, status,
     requestedBy: chance(0.5) ? 'farmer' : 'officer', assignedTo: 'USR-LAB',
-    requestedAt: daysAgo(req), collectedAt: status === 'collected' ? undefined : daysAgo(req - 1),
-    completedAt: done ? daysAgo(int(0, req - 2 < 1 ? 1 : req - 2)) : undefined,
-    results: done && type === 'soil' ? soilResults() : done ? [{ name: 'Result', value: pick(['Within range', 'Elevated', 'Trace detected']), unit: '', reference: '' }] : [],
-    resultSummary: done ? pick(['Suitable for cultivation', 'Amend with lime', 'Monitor nitrogen levels']) : '',
-    notified: done && chance(0.7),
+    requestedAt: daysAgo(req), collectedAt: daysAgo(Math.max(1, req - 1)),
+    completedAt: past ? daysAgo(int(0, Math.max(1, req - 3))) : undefined,
+    verifiedBy: verified ? 'S. Rose' : undefined,
+    verifiedAt: verified ? daysAgo(int(0, Math.max(1, req - 4))) : undefined,
+    releasedAt: released ? daysAgo(int(0, Math.max(1, req - 5))) : undefined,
+    results: past && type === 'soil' ? soilResults() : past ? [{ name: 'Result', value: pick(['Within range', 'Elevated', 'Trace detected']), unit: '', reference: '' }] : [],
+    resultSummary: past ? pick(['Suitable for cultivation', 'Amend with lime', 'Monitor nitrogen levels']) : '',
+    notified: released && chance(0.8),
+    chain: chainFor(status, req),
   })
 }
+
+// ---- land applications, leases, enforcement ------------------------------
+const landApplications = []
+const leases = []
+const enforcement = []
+let laSeq = 0, lseSeq = 0, enfSeq = 0
+const nextLa = () => `LA-2026-${pad(++laSeq, 3)}`
+const nextLse = () => `LSE-2026-${pad(++lseSeq, 3)}`
+const nextEnf = () => `ENF-2026-${pad(++enfSeq, 3)}`
+const parcel = (d) => `PAR-${d.split(' ').map((w) => w[0]).join('').toUpperCase()}-${pad(int(1, 199), 3)}`
+const landPurposes = ['Crop cultivation', 'Poultry unit', 'Mixed farming', 'Greenhouse', 'Orchard', 'Livestock grazing']
+// Marie-Ange: allocated + active lease on Rivière Doux
+const maApp = {
+  id: nextLa(), clientId: 'CLT-0001', farmId: 'FRM-2026-00001', parcelRef: 'PAR-ANB-014', district: 'Anse Boileau',
+  purpose: 'Banana + poultry', areaHa: 1.6, status: 'leased', assignedTo: 'USR-OFFICER',
+  assessment: { at: daysAgo(200), by: 'R. Confait', findings: 'Parcel suitable; access road present.', recommendation: 'allocate', lat: -4.7291, lng: 55.4863 },
+  history: [
+    { at: daysAgo(230), by: 'Marie-Ange Hoareau', action: 'Application submitted', fromStatus: '', toStatus: 'submitted' },
+    { at: daysAgo(210), by: 'J. Payet', action: 'Assigned for assessment', fromStatus: 'under_review', toStatus: 'assessment' },
+    { at: daysAgo(200), by: 'R. Confait', action: 'Site assessment submitted', fromStatus: 'assessment', toStatus: 'decision' },
+    { at: daysAgo(195), by: 'G. Vidot (Supervisor)', action: 'Allocated', fromStatus: 'decision', toStatus: 'allocated' },
+    { at: daysAgo(190), by: 'J. Payet', action: 'Lease created', fromStatus: 'allocated', toStatus: 'leased' },
+  ],
+  createdAt: daysAgo(230),
+}
+landApplications.push(maApp)
+leases.push({ id: nextLse(), applicationId: maApp.id, clientId: 'CLT-0001', parcelRef: 'PAR-ANB-014', district: 'Anse Boileau', startDate: daysAgo(185), endDate: daysAhead(40), status: 'active', paymentStatus: 'due', annualRentSCR: 4500 })
+const landStatuses = ['submitted', 'under_review', 'assessment', 'decision', 'allocated', 'rejected', 'leased']
+for (let i = 0; i < 16; i++) {
+  const c = pick(clients.filter((x) => x.stakeholderType !== 'vendor'))
+  const f = farms.find((ff) => ff.clientId === c.id)
+  const status = pick(landStatuses)
+  const created = int(20, 320)
+  const pref = parcel(c.district)
+  const [ala, aln] = geo(c.district)
+  const app = {
+    id: nextLa(), clientId: c.id, farmId: f?.id, parcelRef: pref, district: c.district,
+    purpose: pick(landPurposes), areaHa: +(0.3 + rnd() * 3).toFixed(2), status,
+    assignedTo: pick(['USR-OFFICER', 'USR-OFFICER2']),
+    assessment: ['decision', 'allocated', 'leased'].includes(status)
+      ? { at: daysAgo(created - 10), by: 'R. Confait', findings: pick(['Suitable', 'Suitable with conditions', 'Partly waterlogged']), recommendation: status === 'rejected' ? 'reject' : 'allocate', lat: ala, lng: aln }
+      : undefined,
+    history: [{ at: daysAgo(created), by: 'Applicant', action: 'Application submitted', fromStatus: '', toStatus: 'submitted' }],
+    createdAt: daysAgo(created),
+  }
+  landApplications.push(app)
+  if (['allocated', 'leased'].includes(status)) {
+    const start = int(30, 300)
+    const expSoon = chance(0.3)
+    leases.push({ id: nextLse(), applicationId: app.id, clientId: c.id, parcelRef: pref, district: c.district,
+      startDate: daysAgo(start), endDate: expSoon ? daysAhead(int(5, 45)) : daysAhead(int(200, 3000)),
+      status: 'active', paymentStatus: pick(['paid', 'due', 'overdue']), annualRentSCR: int(2, 12) * 500 })
+  }
+}
+const enfClient = pick(clients.filter((x) => x.stakeholderType !== 'vendor'))
+enforcement.push({
+  id: nextEnf(), clientId: enfClient.id, parcelRef: parcel(enfClient.district), type: 'retraction',
+  reason: 'Non-compliance: land left uncultivated beyond 12 months', noticeNo: 'EN-2026-0007', status: 'notice_served', issuedAt: daysAgo(20),
+  history: [
+    { at: daysAgo(30), by: 'J. Payet', action: 'Non-compliance flagged', fromStatus: '', toStatus: 'open' },
+    { at: daysAgo(20), by: 'G. Vidot (Supervisor)', action: 'Retraction notice served', fromStatus: 'open', toStatus: 'notice_served' },
+  ],
+})
 
 // ---- livestock visits ----------------------------------------------------
 const livestockVisits = []
@@ -392,8 +479,9 @@ for (let i = 0; i < 22; i++) {
 
 // ---- write ---------------------------------------------------------------
 const files = {
-  users, clients, farms, loans, samples, livestockVisits, surveillanceCases,
-  vendors, stalls, inspections, documents, notifications, workflows, audit,
+  users, clients, farms, loans, samples, landApplications, leases, enforcement,
+  livestockVisits, surveillanceCases, vendors, stalls, inspections, documents,
+  notifications, workflows, audit,
 }
 for (const [name, data] of Object.entries(files)) {
   writeFileSync(join(DATA, `${name}.json`), JSON.stringify(data, null, 2))

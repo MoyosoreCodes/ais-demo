@@ -4,19 +4,19 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Government-service neutral: deep green/teal primary (#0F6B4F).
-        // Deliberately NOT Cutting-Edge's pink bid branding.
+        // Government-service neutral primary. Values are CSS design tokens defined
+        // in src/index.css :root — change the scheme there, not here.
         primary: {
-          50: '#ECF7F2',
-          100: '#CFE9DF',
-          200: '#9FD3BF',
-          300: '#63B79A',
-          400: '#2E9576',
-          500: '#158060',
-          600: '#0F6B4F',
-          700: '#0C563F',
-          800: '#0A4230',
-          900: '#072F22',
+          50: 'var(--color-primary-50)',
+          100: 'var(--color-primary-100)',
+          200: 'var(--color-primary-200)',
+          300: 'var(--color-primary-300)',
+          400: 'var(--color-primary-400)',
+          500: 'var(--color-primary-500)',
+          600: 'var(--color-primary-600)',
+          700: 'var(--color-primary-700)',
+          800: 'var(--color-primary-800)',
+          900: 'var(--color-primary-900)',
         },
       },
       fontFamily: {

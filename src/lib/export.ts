@@ -1,19 +1,18 @@
-// PDF (jsPDF + autotable) and Excel (xlsx) export helpers. Every PDF carries the
-// fictional-data footer required by the demo constraints.
 import { jsPDF } from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import * as XLSX from 'xlsx';
 
 import { fmtDate, fmtDateTime, nowIso } from './format';
+import { brandRgb } from './theme';
 import type { Client, Farm, Sample } from './types';
 
 const FOOTER = 'FICTIONAL DEMONSTRATION DATA — AIS prototype, not an official record';
-const PRIMARY: [number, number, number] = [15, 107, 79]; // #0F6B4F
+const primary = (): [number, number, number] => brandRgb(600);
 
 type Cell = string | number;
 
 function drawChrome(doc: jsPDF, title: string, subtitle?: string): void {
-  doc.setFillColor(PRIMARY[0], PRIMARY[1], PRIMARY[2]);
+  doc.setFillColor(primary()[0], primary()[1], primary()[2]);
   doc.rect(0, 0, doc.internal.pageSize.getWidth(), 20, 'F');
   doc.setTextColor(255, 255, 255);
   doc.setFontSize(13);
@@ -52,7 +51,7 @@ export function exportTablePdf({ title, subtitle, columns, rows, filename }: Tab
     body: rows.map((r) => r.map((c) => String(c))),
     startY: 46,
     styles: { fontSize: 9, cellPadding: 2.5 },
-    headStyles: { fillColor: PRIMARY, textColor: 255 },
+    headStyles: { fillColor: primary(), textColor: 255 },
     alternateRowStyles: { fillColor: [245, 248, 246] },
     margin: { top: 46 },
     didDrawPage: () => {
@@ -112,7 +111,7 @@ export function labReportPdf(sample: Sample, client: Client, farm: Farm): void {
     head: [['Parameter', 'Result', 'Unit', 'Reference']],
     body: sample.results.map((r) => [r.name, r.value, r.unit, r.reference]),
     startY: 92,
-    headStyles: { fillColor: PRIMARY, textColor: 255 },
+    headStyles: { fillColor: primary(), textColor: 255 },
     styles: { fontSize: 10 },
     didDrawPage: () => stampFooter(doc),
   });

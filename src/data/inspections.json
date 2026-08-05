@@ -13,137 +13,10 @@
   },
   {
     "id": "INS-2026-002",
-    "farmId": "FRM-2026-00011",
-    "clientId": "CLT-0013",
+    "farmId": "FRM-2026-00012",
+    "clientId": "CLT-0014",
     "type": "land",
-    "scheduledFor": "2026-07-08T09:00:00.000Z",
-    "assignedTo": "USR-OFFICER",
-    "status": "completed",
-    "findings": "Minor irrigation issue noted",
-    "photos": [
-      {
-        "id": "P-0",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-07-02T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 1124,
-        "simulated": true
-      }
-    ],
-    "capturedOffline": false,
-    "completedAt": "2026-06-17T09:00:00.000Z"
-  },
-  {
-    "id": "INS-2026-003",
-    "farmId": "FRM-2026-00042",
-    "clientId": "CLT-0050",
-    "type": "land",
-    "scheduledFor": "2026-04-25T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "pending_sync",
-    "findings": "Boundary matches lease",
-    "photos": [
-      {
-        "id": "P-1",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-07-03T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 1601,
-        "simulated": true
-      }
-    ],
-    "capturedOffline": true,
-    "completedAt": "2026-07-12T09:00:00.000Z"
-  },
-  {
-    "id": "INS-2026-004",
-    "farmId": "FRM-2026-00013",
-    "clientId": "CLT-0015",
-    "type": "compliance",
-    "scheduledFor": "2026-05-15T09:00:00.000Z",
-    "assignedTo": "USR-OFFICER",
-    "status": "completed",
-    "findings": "Boundary matches lease",
-    "photos": [
-      {
-        "id": "P-2",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-06-29T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 2086,
-        "simulated": true
-      }
-    ],
-    "capturedOffline": false,
-    "completedAt": "2026-06-27T09:00:00.000Z"
-  },
-  {
-    "id": "INS-2026-005",
-    "farmId": "FRM-2026-00007",
-    "clientId": "CLT-0007",
-    "type": "land",
-    "scheduledFor": "2026-07-17T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "scheduled",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-006",
-    "farmId": "FRM-2026-00039",
-    "clientId": "CLT-0047",
-    "type": "farm",
-    "scheduledFor": "2026-04-15T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "pending_sync",
-    "findings": "Compliant with permit conditions",
-    "photos": [
-      {
-        "id": "P-4",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-06-18T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 1687,
-        "simulated": true
-      }
-    ],
-    "capturedOffline": true,
-    "completedAt": "2026-07-06T09:00:00.000Z"
-  },
-  {
-    "id": "INS-2026-007",
-    "farmId": "FRM-2026-00046",
-    "clientId": "CLT-0056",
-    "type": "farm",
     "scheduledFor": "2026-05-30T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "pending_sync",
-    "findings": "Compliant with permit conditions",
-    "photos": [
-      {
-        "id": "P-5",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-06-25T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 1483,
-        "simulated": true
-      }
-    ],
-    "capturedOffline": true,
-    "completedAt": "2026-06-21T09:00:00.000Z"
-  },
-  {
-    "id": "INS-2026-008",
-    "farmId": "FRM-2026-00061",
-    "clientId": "CLT-0073",
-    "type": "farm",
-    "scheduledFor": "2026-06-24T09:00:00.000Z",
     "assignedTo": "USR-FIELD2",
     "status": "in_progress",
     "findings": "",
@@ -151,81 +24,164 @@
     "capturedOffline": false
   },
   {
-    "id": "INS-2026-009",
-    "farmId": "FRM-2026-00029",
-    "clientId": "CLT-0033",
-    "type": "farm",
-    "scheduledFor": "2026-03-19T09:00:00.000Z",
+    "id": "INS-2026-003",
+    "farmId": "FRM-2026-00013",
+    "clientId": "CLT-0015",
+    "type": "land",
+    "scheduledFor": "2026-03-27T09:00:00.000Z",
     "assignedTo": "USR-OFFICER",
-    "status": "completed",
-    "findings": "Follow-up required",
+    "status": "pending_sync",
+    "findings": "Minor irrigation issue noted",
     "photos": [
       {
-        "id": "P-7",
+        "id": "P-1",
         "name": "field-photo-1.jpg",
         "category": "report",
-        "uploadedAt": "2026-06-16T09:00:00.000Z",
+        "uploadedAt": "2026-06-18T09:00:00.000Z",
         "verified": true,
-        "sizeKb": 293,
+        "sizeKb": 1698,
         "simulated": true
       }
     ],
-    "capturedOffline": false,
-    "completedAt": "2026-06-26T09:00:00.000Z"
+    "capturedOffline": true,
+    "completedAt": "2026-06-24T09:00:00.000Z"
   },
   {
-    "id": "INS-2026-010",
+    "id": "INS-2026-004",
+    "farmId": "FRM-2026-00047",
+    "clientId": "CLT-0057",
+    "type": "land",
+    "scheduledFor": "2026-06-15T09:00:00.000Z",
+    "assignedTo": "USR-FIELD",
+    "status": "in_progress",
+    "findings": "",
+    "photos": [],
+    "capturedOffline": false
+  },
+  {
+    "id": "INS-2026-005",
+    "farmId": "FRM-2026-00025",
+    "clientId": "CLT-0029",
+    "type": "land",
+    "scheduledFor": "2026-05-20T09:00:00.000Z",
+    "assignedTo": "USR-FIELD",
+    "status": "in_progress",
+    "findings": "",
+    "photos": [],
+    "capturedOffline": false
+  },
+  {
+    "id": "INS-2026-006",
     "farmId": "FRM-2026-00058",
     "clientId": "CLT-0070",
     "type": "compliance",
-    "scheduledFor": "2026-04-25T09:00:00.000Z",
+    "scheduledFor": "2026-06-16T09:00:00.000Z",
+    "assignedTo": "USR-OFFICER",
+    "status": "pending_sync",
+    "findings": "Minor irrigation issue noted",
+    "photos": [
+      {
+        "id": "P-4",
+        "name": "field-photo-1.jpg",
+        "category": "report",
+        "uploadedAt": "2026-07-10T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 2189,
+        "simulated": true
+      }
+    ],
+    "capturedOffline": true,
+    "completedAt": "2026-07-14T09:00:00.000Z"
+  },
+  {
+    "id": "INS-2026-007",
+    "farmId": "FRM-2026-00011",
+    "clientId": "CLT-0013",
+    "type": "land",
+    "scheduledFor": "2026-05-27T09:00:00.000Z",
+    "assignedTo": "USR-OFFICER",
+    "status": "in_progress",
+    "findings": "",
+    "photos": [],
+    "capturedOffline": false
+  },
+  {
+    "id": "INS-2026-008",
+    "farmId": "FRM-2026-00035",
+    "clientId": "CLT-0040",
+    "type": "compliance",
+    "scheduledFor": "2026-07-27T09:00:00.000Z",
+    "assignedTo": "USR-FIELD",
+    "status": "scheduled",
+    "findings": "",
+    "photos": [],
+    "capturedOffline": false
+  },
+  {
+    "id": "INS-2026-009",
+    "farmId": "FRM-2026-00021",
+    "clientId": "CLT-0025",
+    "type": "compliance",
+    "scheduledFor": "2026-06-20T09:00:00.000Z",
     "assignedTo": "USR-FIELD",
     "status": "pending_sync",
     "findings": "Minor irrigation issue noted",
     "photos": [
       {
-        "id": "P-8",
+        "id": "P-7",
         "name": "field-photo-1.jpg",
         "category": "report",
-        "uploadedAt": "2026-06-23T09:00:00.000Z",
+        "uploadedAt": "2026-07-10T09:00:00.000Z",
         "verified": true,
-        "sizeKb": 212,
+        "sizeKb": 1657,
         "simulated": true
       }
     ],
     "capturedOffline": true,
-    "completedAt": "2026-07-10T09:00:00.000Z"
+    "completedAt": "2026-06-27T09:00:00.000Z"
+  },
+  {
+    "id": "INS-2026-010",
+    "farmId": "FRM-2026-00028",
+    "clientId": "CLT-0032",
+    "type": "land",
+    "scheduledFor": "2026-03-17T09:00:00.000Z",
+    "assignedTo": "USR-FIELD2",
+    "status": "in_progress",
+    "findings": "",
+    "photos": [],
+    "capturedOffline": false
   },
   {
     "id": "INS-2026-011",
-    "farmId": "FRM-2026-00047",
-    "clientId": "CLT-0057",
-    "type": "land",
-    "scheduledFor": "2026-05-05T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
+    "farmId": "FRM-2026-00021",
+    "clientId": "CLT-0025",
+    "type": "farm",
+    "scheduledFor": "2026-06-02T09:00:00.000Z",
+    "assignedTo": "USR-FIELD2",
     "status": "completed",
-    "findings": "Follow-up required",
+    "findings": "Minor irrigation issue noted",
     "photos": [
       {
         "id": "P-9",
         "name": "field-photo-1.jpg",
         "category": "report",
-        "uploadedAt": "2026-06-18T09:00:00.000Z",
+        "uploadedAt": "2026-07-13T09:00:00.000Z",
         "verified": true,
-        "sizeKb": 457,
+        "sizeKb": 1095,
         "simulated": true
       }
     ],
-    "capturedOffline": true,
-    "completedAt": "2026-06-29T09:00:00.000Z"
+    "capturedOffline": false,
+    "completedAt": "2026-07-12T09:00:00.000Z"
   },
   {
     "id": "INS-2026-012",
-    "farmId": "FRM-2026-00046",
-    "clientId": "CLT-0056",
-    "type": "farm",
-    "scheduledFor": "2026-03-25T09:00:00.000Z",
-    "assignedTo": "USR-FIELD2",
+    "farmId": "FRM-2026-00009",
+    "clientId": "CLT-0010",
+    "type": "land",
+    "scheduledFor": "2026-06-29T09:00:00.000Z",
+    "assignedTo": "USR-FIELD",
     "status": "in_progress",
     "findings": "",
     "photos": [],
@@ -233,61 +189,72 @@
   },
   {
     "id": "INS-2026-013",
-    "farmId": "FRM-2026-00055",
-    "clientId": "CLT-0066",
-    "type": "compliance",
-    "scheduledFor": "2026-05-06T09:00:00.000Z",
-    "assignedTo": "USR-OFFICER",
-    "status": "in_progress",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-014",
-    "farmId": "FRM-2026-00027",
-    "clientId": "CLT-0031",
-    "type": "land",
-    "scheduledFor": "2026-07-07T09:00:00.000Z",
-    "assignedTo": "USR-OFFICER",
-    "status": "in_progress",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-015",
-    "farmId": "FRM-2026-00062",
-    "clientId": "CLT-0074",
-    "type": "compliance",
-    "scheduledFor": "2026-07-20T09:00:00.000Z",
-    "assignedTo": "USR-OFFICER",
+    "farmId": "FRM-2026-00042",
+    "clientId": "CLT-0050",
+    "type": "farm",
+    "scheduledFor": "2026-07-26T09:00:00.000Z",
+    "assignedTo": "USR-FIELD2",
     "status": "scheduled",
     "findings": "",
     "photos": [],
     "capturedOffline": false
   },
   {
-    "id": "INS-2026-016",
-    "farmId": "FRM-2026-00060",
-    "clientId": "CLT-0072",
+    "id": "INS-2026-014",
+    "farmId": "FRM-2026-00041",
+    "clientId": "CLT-0049",
     "type": "farm",
-    "scheduledFor": "2026-06-19T09:00:00.000Z",
+    "scheduledFor": "2026-07-19T09:00:00.000Z",
+    "assignedTo": "USR-FIELD",
+    "status": "scheduled",
+    "findings": "",
+    "photos": [],
+    "capturedOffline": false
+  },
+  {
+    "id": "INS-2026-015",
+    "farmId": "FRM-2026-00053",
+    "clientId": "CLT-0063",
+    "type": "land",
+    "scheduledFor": "2026-05-31T09:00:00.000Z",
+    "assignedTo": "USR-FIELD",
+    "status": "completed",
+    "findings": "Boundary matches lease",
+    "photos": [
+      {
+        "id": "P-13",
+        "name": "field-photo-1.jpg",
+        "category": "report",
+        "uploadedAt": "2026-06-17T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1854,
+        "simulated": true
+      }
+    ],
+    "capturedOffline": false,
+    "completedAt": "2026-07-04T09:00:00.000Z"
+  },
+  {
+    "id": "INS-2026-016",
+    "farmId": "FRM-2026-00057",
+    "clientId": "CLT-0069",
+    "type": "land",
+    "scheduledFor": "2026-05-09T09:00:00.000Z",
     "assignedTo": "USR-FIELD",
     "status": "pending_sync",
-    "findings": "Compliant with permit conditions",
+    "findings": "Minor irrigation issue noted",
     "photos": [
       {
         "id": "P-14",
         "name": "field-photo-1.jpg",
         "category": "report",
-        "uploadedAt": "2026-06-29T09:00:00.000Z",
+        "uploadedAt": "2026-07-13T09:00:00.000Z",
         "verified": true,
-        "sizeKb": 453,
+        "sizeKb": 489,
         "simulated": true
       }
     ],
     "capturedOffline": true,
-    "completedAt": "2026-06-21T09:00:00.000Z"
+    "completedAt": "2026-07-10T09:00:00.000Z"
   }
 ]

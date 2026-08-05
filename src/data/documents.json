@@ -20,140 +20,95 @@
     "id": "DOC-2026-002",
     "title": "Farm permit — poultry",
     "category": "permit",
-    "clientId": "CLT-0066",
+    "clientId": "CLT-0049",
     "tags": [
       "permit",
-      "Baie Lazare",
-      "Rose"
+      "Port Glaud",
+      "Quatre"
     ],
-    "fullText": "Farm permit — poultry for Marguerite Rose, Baie Lazare. Migrated from paper archive.",
+    "fullText": "Farm permit — poultry for Gilbert Quatre, Port Glaud. Migrated from paper archive.",
     "year": 2019,
-    "source": "migrated",
-    "addedAt": "2026-06-05T09:00:00.000Z"
+    "source": "uploaded",
+    "addedAt": "2026-04-30T09:00:00.000Z"
   },
   {
     "id": "DOC-2026-003",
     "title": "National ID scan",
     "category": "id",
-    "clientId": "CLT-0065",
+    "clientId": "CLT-0071",
     "tags": [
       "id",
-      "Anse Aux Pins",
-      "Larue"
+      "Grand Anse Praslin",
+      "Nibourette"
     ],
-    "fullText": "National ID scan for Nadege Larue, Anse Aux Pins. Migrated from paper archive.",
-    "year": 2024,
+    "fullText": "National ID scan for Ronny Nibourette, Grand Anse Praslin. Migrated from paper archive.",
+    "year": 2016,
     "source": "uploaded",
-    "addedAt": "2026-04-20T09:00:00.000Z"
+    "addedAt": "2026-04-24T09:00:00.000Z"
   },
   {
     "id": "DOC-2026-004",
     "title": "Soil survey report 2021",
     "category": "report",
-    "clientId": "CLT-0002",
+    "clientId": "CLT-0031",
     "tags": [
       "report",
-      "Anse Boileau",
-      "Hoareau"
+      "Anse Aux Pins",
+      "Radegonde"
     ],
-    "fullText": "Soil survey report 2021 for Marieange Hoareau, Anse Boileau. Migrated from paper archive.",
-    "year": 2021,
+    "fullText": "Soil survey report 2021 for Marguerite Radegonde, Anse Aux Pins. Migrated from paper archive.",
+    "year": 2018,
     "source": "migrated",
-    "addedAt": "2026-03-22T09:00:00.000Z"
+    "addedAt": "2026-04-23T09:00:00.000Z"
   },
   {
     "id": "DOC-2026-005",
     "title": "Correspondence — irrigation request",
     "category": "correspondence",
-    "clientId": "CLT-0019",
+    "clientId": "CLT-0010",
     "tags": [
       "correspondence",
-      "Port Glaud",
-      "Confait"
+      "Grand Anse Mahé",
+      "Labrosse"
     ],
-    "fullText": "Correspondence — irrigation request for Cynthia Confait, Port Glaud. Migrated from paper archive.",
-    "year": 2019,
-    "source": "migrated",
-    "addedAt": "2026-04-17T09:00:00.000Z"
+    "fullText": "Correspondence — irrigation request for Marguerite Labrosse, Grand Anse Mahé. Migrated from paper archive.",
+    "year": 2016,
+    "source": "uploaded",
+    "addedAt": "2026-04-15T09:00:00.000Z"
   },
   {
     "id": "DOC-2026-006",
     "title": "Parcel sketch map",
     "category": "map",
-    "clientId": "CLT-0073",
+    "clientId": "CLT-0070",
     "tags": [
       "map",
-      "Anse Royale",
-      "Onezime"
+      "Anse Aux Pins",
+      "Hoareau"
     ],
-    "fullText": "Parcel sketch map for Ronny Onezime, Anse Royale. Migrated from paper archive.",
-    "year": 2019,
+    "fullText": "Parcel sketch map for Jean Hoareau, Anse Aux Pins. Migrated from paper archive.",
+    "year": 2020,
     "source": "migrated",
-    "addedAt": "2026-06-13T09:00:00.000Z"
+    "addedAt": "2026-04-25T09:00:00.000Z"
   },
   {
     "id": "DOC-2026-007",
     "title": "Lease renewal notice",
     "category": "lease",
-    "clientId": "CLT-0047",
+    "clientId": "CLT-0054",
     "tags": [
       "lease",
       "Baie Ste Anne Praslin",
-      "Servina"
+      "Dugasse"
     ],
-    "fullText": "Lease renewal notice for Murielle Servina, Baie Ste Anne Praslin. Migrated from paper archive.",
-    "year": 2016,
-    "source": "migrated",
-    "addedAt": "2026-05-24T09:00:00.000Z"
+    "fullText": "Lease renewal notice for Danny Dugasse, Baie Ste Anne Praslin. Migrated from paper archive.",
+    "year": 2018,
+    "source": "uploaded",
+    "addedAt": "2026-04-24T09:00:00.000Z"
   },
   {
     "id": "DOC-2026-008",
     "title": "Livestock movement permit",
-    "category": "permit",
-    "clientId": "CLT-0061",
-    "tags": [
-      "permit",
-      "Anse Royale",
-      "Rassool"
-    ],
-    "fullText": "Livestock movement permit for Wilna Rassool, Anse Royale. Migrated from paper archive.",
-    "year": 2019,
-    "source": "migrated",
-    "addedAt": "2026-04-09T09:00:00.000Z"
-  },
-  {
-    "id": "DOC-2026-009",
-    "title": "Inspection report 2022",
-    "category": "report",
-    "clientId": "CLT-0060",
-    "tags": [
-      "report",
-      "Baie Lazare",
-      "Dugasse"
-    ],
-    "fullText": "Inspection report 2022 for Vincent Dugasse, Baie Lazare. Migrated from paper archive.",
-    "year": 2024,
-    "source": "migrated",
-    "addedAt": "2026-04-12T09:00:00.000Z"
-  },
-  {
-    "id": "DOC-2026-010",
-    "title": "Loan disbursement letter",
-    "category": "correspondence",
-    "clientId": "CLT-0064",
-    "tags": [
-      "correspondence",
-      "La Digue",
-      "Nourrice"
-    ],
-    "fullText": "Loan disbursement letter for Robert Nourrice, La Digue. Migrated from paper archive.",
-    "year": 2018,
-    "source": "uploaded",
-    "addedAt": "2026-05-03T09:00:00.000Z"
-  },
-  {
-    "id": "DOC-2026-011",
-    "title": "Land allocation certificate",
     "category": "permit",
     "clientId": "CLT-0037",
     "tags": [
@@ -161,69 +116,114 @@
       "Takamaka",
       "Uranie"
     ],
-    "fullText": "Land allocation certificate for Robert Uranie, Takamaka. Migrated from paper archive.",
+    "fullText": "Livestock movement permit for Robert Uranie, Takamaka. Migrated from paper archive.",
+    "year": 2023,
+    "source": "migrated",
+    "addedAt": "2026-04-12T09:00:00.000Z"
+  },
+  {
+    "id": "DOC-2026-009",
+    "title": "Inspection report 2022",
+    "category": "report",
+    "clientId": "CLT-0041",
+    "tags": [
+      "report",
+      "La Digue",
+      "Camille"
+    ],
+    "fullText": "Inspection report 2022 for Marguerite Camille, La Digue. Migrated from paper archive.",
+    "year": 2024,
+    "source": "migrated",
+    "addedAt": "2026-06-22T09:00:00.000Z"
+  },
+  {
+    "id": "DOC-2026-010",
+    "title": "Loan disbursement letter",
+    "category": "correspondence",
+    "clientId": "CLT-0070",
+    "tags": [
+      "correspondence",
+      "Anse Aux Pins",
+      "Hoareau"
+    ],
+    "fullText": "Loan disbursement letter for Jean Hoareau, Anse Aux Pins. Migrated from paper archive.",
     "year": 2022,
     "source": "uploaded",
-    "addedAt": "2026-06-17T09:00:00.000Z"
+    "addedAt": "2026-05-23T09:00:00.000Z"
+  },
+  {
+    "id": "DOC-2026-011",
+    "title": "Land allocation certificate",
+    "category": "permit",
+    "clientId": "CLT-0067",
+    "tags": [
+      "permit",
+      "Baie Lazare",
+      "Payet"
+    ],
+    "fullText": "Land allocation certificate for Lucie Payet, Baie Lazare. Migrated from paper archive.",
+    "year": 2018,
+    "source": "migrated",
+    "addedAt": "2026-07-05T09:00:00.000Z"
   },
   {
     "id": "DOC-2026-012",
     "title": "Water sampling report",
     "category": "report",
-    "clientId": "CLT-0049",
+    "clientId": "CLT-0053",
     "tags": [
       "report",
-      "Port Glaud",
-      "Quatre"
+      "Anse Royale",
+      "Nourrice"
     ],
-    "fullText": "Water sampling report for Gilbert Quatre, Port Glaud. Migrated from paper archive.",
-    "year": 2020,
+    "fullText": "Water sampling report for Steve Nourrice, Anse Royale. Migrated from paper archive.",
+    "year": 2019,
     "source": "migrated",
-    "addedAt": "2026-03-22T09:00:00.000Z"
+    "addedAt": "2026-04-23T09:00:00.000Z"
   },
   {
     "id": "DOC-2026-013",
     "title": "Vendor registration form",
     "category": "correspondence",
-    "clientId": "CLT-0044",
+    "clientId": "CLT-0013",
     "tags": [
       "correspondence",
-      "Takamaka",
-      "Faure"
+      "Anse Royale",
+      "Camille"
     ],
-    "fullText": "Vendor registration form for Josephine Faure, Takamaka. Migrated from paper archive.",
+    "fullText": "Vendor registration form for Sylvia Camille, Anse Royale. Migrated from paper archive.",
     "year": 2015,
-    "source": "migrated",
-    "addedAt": "2026-04-23T09:00:00.000Z"
+    "source": "uploaded",
+    "addedAt": "2026-03-27T09:00:00.000Z"
   },
   {
     "id": "DOC-2026-014",
     "title": "Boundary survey",
     "category": "map",
-    "clientId": "CLT-0060",
+    "clientId": "CLT-0035",
     "tags": [
       "map",
       "Baie Lazare",
-      "Dugasse"
+      "Uranie"
     ],
-    "fullText": "Boundary survey for Vincent Dugasse, Baie Lazare. Migrated from paper archive.",
-    "year": 2021,
+    "fullText": "Boundary survey for Marie Uranie, Baie Lazare. Migrated from paper archive.",
+    "year": 2024,
     "source": "migrated",
-    "addedAt": "2026-05-13T09:00:00.000Z"
+    "addedAt": "2026-06-05T09:00:00.000Z"
   },
   {
     "id": "DOC-2026-015",
     "title": "Old paper registry card",
     "category": "id",
-    "clientId": "CLT-0021",
+    "clientId": "CLT-0061",
     "tags": [
       "id",
       "Anse Royale",
-      "Bristol"
+      "Rassool"
     ],
-    "fullText": "Old paper registry card for Antoinette Bristol, Anse Royale. Migrated from paper archive.",
-    "year": 2022,
-    "source": "uploaded",
-    "addedAt": "2026-05-13T09:00:00.000Z"
+    "fullText": "Old paper registry card for Wilna Rassool, Anse Royale. Migrated from paper archive.",
+    "year": 2019,
+    "source": "migrated",
+    "addedAt": "2026-04-02T09:00:00.000Z"
   }
 ]
