@@ -1,0 +1,165 @@
+[
+  {
+    "id": "VD-2026-001",
+    "clientId": "CLT-0001",
+    "name": "Marie-Ange Hoareau",
+    "traderType": "produce",
+    "phone": "+248 2 000 012",
+    "district": "Anse Boileau",
+    "stallId": "ST-A01",
+    "registrationStatus": "active",
+    "registeredAt": "2026-07-14T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-002",
+    "clientId": "CLT-0001",
+    "name": "Marie-Ange Hoareau",
+    "traderType": "mixed",
+    "phone": "+248 2 000 012",
+    "district": "Anse Boileau",
+    "stallId": "ST-A02",
+    "registrationStatus": "pending",
+    "registeredAt": "2026-01-03T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-003",
+    "clientId": "CLT-0008",
+    "name": "Steve Vidot",
+    "traderType": "produce",
+    "phone": "+248 2 000 018",
+    "district": "Takamaka",
+    "stallId": "ST-A03",
+    "registrationStatus": "active",
+    "registeredAt": "2026-06-29T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-004",
+    "clientId": "CLT-0011",
+    "name": "Steve Rassool",
+    "traderType": "livestock",
+    "phone": "+248 2 000 021",
+    "district": "Baie Ste Anne Praslin",
+    "stallId": "ST-A04",
+    "registrationStatus": "suspended",
+    "registeredAt": "2026-04-15T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-005",
+    "clientId": "CLT-0013",
+    "name": "Sylvia Camille",
+    "traderType": "produce",
+    "phone": "+248 2 000 023",
+    "district": "Anse Royale",
+    "registrationStatus": "expired",
+    "registeredAt": "2026-01-21T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-006",
+    "clientId": "CLT-0016",
+    "name": "Christelle Julienne",
+    "traderType": "produce",
+    "phone": "+248 2 000 026",
+    "district": "Anse Royale",
+    "stallId": "ST-A05",
+    "registrationStatus": "expired",
+    "registeredAt": "2026-02-25T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-007",
+    "clientId": "CLT-0018",
+    "name": "Ronny Zialor",
+    "traderType": "produce",
+    "phone": "+248 2 000 028",
+    "district": "La Digue",
+    "stallId": "ST-A06",
+    "registrationStatus": "pending",
+    "registeredAt": "2026-01-09T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-008",
+    "clientId": "CLT-0022",
+    "name": "Georges Onezime",
+    "traderType": "livestock",
+    "phone": "+248 2 000 032",
+    "district": "Port Glaud",
+    "stallId": "ST-A07",
+    "registrationStatus": "active",
+    "registeredAt": "2026-01-23T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-009",
+    "clientId": "CLT-0035",
+    "name": "Marie Uranie",
+    "traderType": "produce",
+    "phone": "+248 2 000 045",
+    "district": "Baie Lazare",
+    "stallId": "ST-A08",
+    "registrationStatus": "suspended",
+    "registeredAt": "2026-07-08T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-010",
+    "clientId": "CLT-0041",
+    "name": "Marguerite Camille",
+    "traderType": "produce",
+    "phone": "+248 2 000 051",
+    "district": "La Digue",
+    "stallId": "ST-B01",
+    "registrationStatus": "suspended",
+    "registeredAt": "2026-02-17T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-011",
+    "clientId": "CLT-0045",
+    "name": "Georges Tirant",
+    "traderType": "livestock",
+    "phone": "+248 2 000 055",
+    "district": "Anse Boileau",
+    "stallId": "ST-B02",
+    "registrationStatus": "active",
+    "registeredAt": "2026-01-23T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-012",
+    "clientId": "CLT-0046",
+    "name": "Andy Vidot",
+    "traderType": "produce",
+    "phone": "+248 2 000 056",
+    "district": "Grand Anse Praslin",
+    "stallId": "ST-B03",
+    "registrationStatus": "expired",
+    "registeredAt": "2026-04-26T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-013",
+    "clientId": "CLT-0052",
+    "name": "Roselyne Nourrice",
+    "traderType": "produce",
+    "phone": "+248 2 000 062",
+    "district": "La Digue",
+    "stallId": "ST-B04",
+    "registrationStatus": "suspended",
+    "registeredAt": "2026-05-28T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-014",
+    "clientId": "CLT-0053",
+    "name": "Steve Nourrice",
+    "traderType": "produce",
+    "phone": "+248 2 000 063",
+    "district": "Anse Royale",
+    "stallId": "ST-B05",
+    "registrationStatus": "active",
+    "registeredAt": "2026-01-05T09:00:00.000Z"
+  },
+  {
+    "id": "VD-2026-015",
+    "clientId": "CLT-0055",
+    "name": "Brian Zialor",
+    "traderType": "mixed",
+    "phone": "+248 2 000 065",
+    "district": "Grand Anse Mahé",
+    "registrationStatus": "active",
+    "registeredAt": "2026-06-10T09:00:00.000Z"
+  }
+]

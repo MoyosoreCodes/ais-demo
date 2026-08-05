@@ -1,0 +1,90 @@
+[
+  {
+    "id": "USR-ADMIN",
+    "username": "admin@demo",
+    "name": "A. Melanie (Admin)",
+    "role": "admin",
+    "active": true,
+    "phone": "+248 2 000 042",
+    "password": "Demo2026!",
+    "twoFactor": true,
+    "lastLogin": "2026-07-15T09:00:00.000Z"
+  },
+  {
+    "id": "USR-OFFICER",
+    "username": "officer@demo",
+    "name": "J. Payet",
+    "role": "agriculture_officer",
+    "active": true,
+    "phone": "+248 2 000 019",
+    "password": "Demo2026!",
+    "twoFactor": true,
+    "lastLogin": "2026-07-15T09:00:00.000Z"
+  },
+  {
+    "id": "USR-FIELD",
+    "username": "field@demo",
+    "name": "R. Confait",
+    "role": "field_officer",
+    "active": true,
+    "phone": "+248 2 000 070",
+    "password": "Demo2026!",
+    "twoFactor": false,
+    "lastLogin": "2026-07-14T09:00:00.000Z"
+  },
+  {
+    "id": "USR-LAB",
+    "username": "lab@demo",
+    "name": "S. Rose",
+    "role": "lab_staff",
+    "active": true,
+    "phone": "+248 2 000 092",
+    "password": "Demo2026!",
+    "twoFactor": false,
+    "lastLogin": "2026-07-14T09:00:00.000Z"
+  },
+  {
+    "id": "USR-SUP",
+    "username": "supervisor@demo",
+    "name": "G. Vidot (Supervisor)",
+    "role": "supervisor",
+    "active": true,
+    "phone": "+248 2 000 019",
+    "password": "Demo2026!",
+    "twoFactor": true,
+    "lastLogin": "2026-07-13T09:00:00.000Z"
+  },
+  {
+    "id": "USR-FARMER",
+    "username": "farmer@demo",
+    "name": "Marie-Ange Hoareau",
+    "role": "farmer",
+    "active": true,
+    "phone": "+248 2 000 012",
+    "clientId": "CLT-0001",
+    "password": "Demo2026!",
+    "twoFactor": true,
+    "lastLogin": "2026-07-15T09:00:00.000Z"
+  },
+  {
+    "id": "USR-OFFICER2",
+    "username": "d.rose@demo",
+    "name": "D. Servina",
+    "role": "agriculture_officer",
+    "active": true,
+    "phone": "+248 2 000 037",
+    "password": "Demo2026!",
+    "twoFactor": false,
+    "lastLogin": "2026-07-12T09:00:00.000Z"
+  },
+  {
+    "id": "USR-FIELD2",
+    "username": "k.bonne@demo",
+    "name": "K. Bonne",
+    "role": "field_officer",
+    "active": false,
+    "phone": "+248 2 000 012",
+    "password": "Demo2026!",
+    "twoFactor": false
+  }
+]

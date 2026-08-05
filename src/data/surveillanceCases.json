@@ -1,0 +1,162 @@
+[
+  {
+    "id": "SV-2026-001",
+    "clientId": "CLT-0001",
+    "farmId": "FRM-2026-00001",
+    "suspectedDisease": "Newcastle disease",
+    "species": "Broiler",
+    "status": "investigating",
+    "assignedTo": "USR-OFFICER",
+    "linkedSampleId": "SMP-2026-001",
+    "reportedAt": "2026-07-14T09:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-07-14T09:00:00.000Z",
+        "by": "Marie-Ange Hoareau",
+        "action": "Reported suspected case",
+        "fromStatus": "",
+        "toStatus": "reported"
+      },
+      {
+        "at": "2026-07-14T09:00:00.000Z",
+        "by": "J. Payet",
+        "action": "Assigned & sampling requested",
+        "fromStatus": "reported",
+        "toStatus": "investigating"
+      }
+    ]
+  },
+  {
+    "id": "SV-2026-002",
+    "clientId": "CLT-0032",
+    "farmId": "FRM-2026-00028",
+    "suspectedDisease": "Foot rot",
+    "species": "Layer",
+    "status": "ruled_out",
+    "assignedTo": "USR-OFFICER2",
+    "reportedAt": "2026-06-03T09:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-05-08T09:00:00.000Z",
+        "by": "Reporter",
+        "action": "Reported suspected case",
+        "fromStatus": "",
+        "toStatus": "reported"
+      }
+    ]
+  },
+  {
+    "id": "SV-2026-003",
+    "clientId": "CLT-0050",
+    "farmId": "FRM-2026-00042",
+    "suspectedDisease": "Foot rot",
+    "species": "Layer",
+    "status": "assigned",
+    "assignedTo": "USR-OFFICER",
+    "reportedAt": "2026-03-28T09:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-04-01T09:00:00.000Z",
+        "by": "Reporter",
+        "action": "Reported suspected case",
+        "fromStatus": "",
+        "toStatus": "reported"
+      }
+    ]
+  },
+  {
+    "id": "SV-2026-004",
+    "clientId": "CLT-0061",
+    "farmId": "FRM-2026-00051",
+    "suspectedDisease": "Newcastle disease",
+    "species": "Pig",
+    "status": "closed",
+    "assignedTo": "USR-OFFICER2",
+    "reportedAt": "2026-07-03T09:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-04-21T09:00:00.000Z",
+        "by": "Reporter",
+        "action": "Reported suspected case",
+        "fromStatus": "",
+        "toStatus": "reported"
+      }
+    ]
+  },
+  {
+    "id": "SV-2026-005",
+    "clientId": "CLT-0039",
+    "farmId": "FRM-2026-00034",
+    "suspectedDisease": "Coccidiosis",
+    "species": "Pig",
+    "status": "reported",
+    "assignedTo": "USR-OFFICER2",
+    "reportedAt": "2026-03-17T09:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-04-08T09:00:00.000Z",
+        "by": "Reporter",
+        "action": "Reported suspected case",
+        "fromStatus": "",
+        "toStatus": "reported"
+      }
+    ]
+  },
+  {
+    "id": "SV-2026-006",
+    "clientId": "CLT-0071",
+    "farmId": "FRM-2026-00059",
+    "suspectedDisease": "Coccidiosis",
+    "species": "Broiler",
+    "status": "reported",
+    "assignedTo": "USR-OFFICER",
+    "reportedAt": "2026-06-12T09:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-03-14T09:00:00.000Z",
+        "by": "Reporter",
+        "action": "Reported suspected case",
+        "fromStatus": "",
+        "toStatus": "reported"
+      }
+    ]
+  },
+  {
+    "id": "SV-2026-007",
+    "clientId": "CLT-0038",
+    "farmId": "FRM-2026-00033",
+    "suspectedDisease": "Newcastle disease",
+    "species": "Goat",
+    "status": "ruled_out",
+    "assignedTo": "USR-OFFICER2",
+    "reportedAt": "2026-02-21T09:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-05-05T09:00:00.000Z",
+        "by": "Reporter",
+        "action": "Reported suspected case",
+        "fromStatus": "",
+        "toStatus": "reported"
+      }
+    ]
+  },
+  {
+    "id": "SV-2026-008",
+    "clientId": "CLT-0062",
+    "farmId": "FRM-2026-00052",
+    "suspectedDisease": "Foot rot",
+    "species": "Goat",
+    "status": "investigating",
+    "assignedTo": "USR-OFFICER",
+    "reportedAt": "2026-05-06T09:00:00.000Z",
+    "history": [
+      {
+        "at": "2026-06-18T09:00:00.000Z",
+        "by": "Reporter",
+        "action": "Reported suspected case",
+        "fromStatus": "",
+        "toStatus": "reported"
+      }
+    ]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "loan",
+    "name": "Loan Approval",
+    "stages": [
+      {
+        "id": "assessment",
+        "name": "Technical Assessment",
+        "actorRole": "agriculture_officer",
+        "order": 1
+      },
+      {
+        "id": "committee",
+        "name": "Loan Committee",
+        "actorRole": "supervisor",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "land",
+    "name": "Land Allocation",
+    "stages": [
+      {
+        "id": "review",
+        "name": "Application Review",
+        "actorRole": "agriculture_officer",
+        "order": 1
+      },
+      {
+        "id": "decision",
+        "name": "Allocation Decision",
+        "actorRole": "supervisor",
+        "order": 2
+      }
+    ]
+  }
+]

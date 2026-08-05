@@ -1,0 +1,1744 @@
+[
+  {
+    "id": "FRM-2026-00001",
+    "clientId": "CLT-0001",
+    "name": "Rivière Doux Farm",
+    "district": "Anse Boileau",
+    "lat": -4.7291,
+    "lng": 55.4863,
+    "sizeHa": 1.6,
+    "tenure": "leased",
+    "crops": [
+      "Banana"
+    ],
+    "livestock": [
+      "Broiler"
+    ],
+    "docs": [
+      {
+        "id": "D-F1",
+        "name": "Lease agreement 2019.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-07-07T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 209,
+        "simulated": true
+      },
+      {
+        "id": "D-F2",
+        "name": "ID card.jpg",
+        "category": "id",
+        "uploadedAt": "2026-07-07T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1658,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2026-07-07T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00002",
+    "clientId": "CLT-0002",
+    "name": "Riviere Doux (legacy)",
+    "district": "Anse Boileau",
+    "lat": -4.7292,
+    "lng": 55.4861,
+    "sizeHa": 1.6,
+    "tenure": "leased",
+    "crops": [
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2025-09-18T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00003",
+    "clientId": "CLT-0003",
+    "name": "Val Adrienne Farm",
+    "district": "Anse Aux Pins",
+    "lat": -4.69206,
+    "lng": 55.51792,
+    "sizeHa": 3.31,
+    "tenure": "owned",
+    "crops": [
+      "Sweet potato",
+      "Breadfruit"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-04-17T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00004",
+    "clientId": "CLT-0004",
+    "name": "Val Gappy Farm",
+    "district": "Anse Royale",
+    "lat": -4.74385,
+    "lng": 55.51594,
+    "sizeHa": 0.87,
+    "tenure": "family",
+    "crops": [
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-4",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-07-09T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 216,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2026-06-14T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00005",
+    "clientId": "CLT-0005",
+    "name": "Beau Adrienne Farm",
+    "district": "Anse Royale",
+    "lat": -4.737,
+    "lng": 55.51748,
+    "sizeHa": 4.17,
+    "tenure": "state_land",
+    "crops": [
+      "Sweet potato",
+      "Cassava"
+    ],
+    "livestock": [
+      "Broiler"
+    ],
+    "docs": [
+      {
+        "id": "D-5",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-06-16T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 2045,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2025-09-13T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00006",
+    "clientId": "CLT-0006",
+    "name": "Grand Esparon Farm",
+    "district": "La Digue",
+    "lat": -4.36265,
+    "lng": 55.84195,
+    "sizeHa": 4.24,
+    "tenure": "leased",
+    "crops": [
+      "Cassava"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2025-10-13T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00007",
+    "clientId": "CLT-0007",
+    "name": "Anse Dugasse Farm",
+    "district": "Port Glaud",
+    "lat": -4.66791,
+    "lng": 55.41424,
+    "sizeHa": 1.68,
+    "tenure": "family",
+    "crops": [
+      "Breadfruit",
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-7",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-05-17T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1746,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2026-01-01T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00008",
+    "clientId": "CLT-0009",
+    "name": "Beau Servina Farm",
+    "district": "Baie Lazare",
+    "lat": -4.74203,
+    "lng": 55.49454,
+    "sizeHa": 1.68,
+    "tenure": "leased",
+    "crops": [
+      "Banana",
+      "Sweet potato",
+      "Breadfruit"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2025-09-29T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00009",
+    "clientId": "CLT-0010",
+    "name": "Val Esparon Farm",
+    "district": "Grand Anse Mahé",
+    "lat": -4.68319,
+    "lng": 55.46008,
+    "sizeHa": 2.57,
+    "tenure": "owned",
+    "crops": [
+      "Papaya"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-9",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-06-11T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1885,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2026-02-25T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00010",
+    "clientId": "CLT-0012",
+    "name": "Val Quatre Farm",
+    "district": "Port Glaud",
+    "lat": -4.65418,
+    "lng": 55.43066,
+    "sizeHa": 3.67,
+    "tenure": "leased",
+    "crops": [
+      "Sweet potato",
+      "Cassava"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-10",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2025-10-24T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1645,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2025-10-06T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00011",
+    "clientId": "CLT-0013",
+    "name": "Beau Bristol Farm",
+    "district": "Anse Royale",
+    "lat": -4.73997,
+    "lng": 55.51075,
+    "sizeHa": 1.95,
+    "tenure": "family",
+    "crops": [
+      "Cassava",
+      "Chilli"
+    ],
+    "livestock": [
+      "Goat"
+    ],
+    "docs": [
+      {
+        "id": "D-11",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-06-20T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 385,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-05-14T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00012",
+    "clientId": "CLT-0014",
+    "name": "Val Souffe Farm",
+    "district": "Takamaka",
+    "lat": -4.76022,
+    "lng": 55.50022,
+    "sizeHa": 0.7,
+    "tenure": "family",
+    "crops": [
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-12",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-06-25T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 2136,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-02-04T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00013",
+    "clientId": "CLT-0015",
+    "name": "Grand Labrosse Farm",
+    "district": "Port Glaud",
+    "lat": -4.65729,
+    "lng": 55.42002,
+    "sizeHa": 3.65,
+    "tenure": "state_land",
+    "crops": [
+      "Banana",
+      "Cassava"
+    ],
+    "livestock": [
+      "Goat"
+    ],
+    "docs": [
+      {
+        "id": "D-13",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2026-07-12T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1837,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-07-10T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00014",
+    "clientId": "CLT-0017",
+    "name": "Grand Camille Farm",
+    "district": "Baie Lazare",
+    "lat": -4.74197,
+    "lng": 55.49648,
+    "sizeHa": 2.9,
+    "tenure": "owned",
+    "crops": [
+      "Papaya",
+      "Chilli"
+    ],
+    "livestock": [
+      "Pig",
+      "Broiler"
+    ],
+    "docs": [
+      {
+        "id": "D-14",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-02-26T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 1856,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-01-04T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00015",
+    "clientId": "CLT-0019",
+    "name": "Anse Julienne Farm",
+    "district": "Port Glaud",
+    "lat": -4.65786,
+    "lng": 55.41787,
+    "sizeHa": 0.46,
+    "tenure": "family",
+    "crops": [
+      "Sweet potato",
+      "Chilli"
+    ],
+    "livestock": [
+      "Pig"
+    ],
+    "docs": [
+      {
+        "id": "D-15",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-06-02T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1758,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2026-01-13T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00016",
+    "clientId": "CLT-0020",
+    "name": "Mont Rose Farm",
+    "district": "Port Glaud",
+    "lat": -4.66766,
+    "lng": 55.41624,
+    "sizeHa": 1.86,
+    "tenure": "state_land",
+    "crops": [
+      "Cassava",
+      "Banana"
+    ],
+    "livestock": [
+      "Pig",
+      "Goat"
+    ],
+    "docs": [
+      {
+        "id": "D-16",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-06-03T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 142,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-02-02T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00017",
+    "clientId": "CLT-0021",
+    "name": "Mont Julienne Farm",
+    "district": "Anse Royale",
+    "lat": -4.74971,
+    "lng": 55.50922,
+    "sizeHa": 4.45,
+    "tenure": "state_land",
+    "crops": [
+      "Cassava"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-17",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-01-20T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1908,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2025-09-04T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00018",
+    "clientId": "CLT-0022",
+    "name": "Val Uranie Farm",
+    "district": "Port Glaud",
+    "lat": -4.66889,
+    "lng": 55.42624,
+    "sizeHa": 0.87,
+    "tenure": "state_land",
+    "crops": [
+      "Papaya",
+      "Cassava",
+      "Chilli"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2026-05-15T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00019",
+    "clientId": "CLT-0023",
+    "name": "Mont Zialor Farm",
+    "district": "La Digue",
+    "lat": -4.34767,
+    "lng": 55.83193,
+    "sizeHa": 2.52,
+    "tenure": "owned",
+    "crops": [
+      "Papaya",
+      "Lettuce"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-19",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-03-02T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1172,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2026-02-06T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00020",
+    "clientId": "CLT-0024",
+    "name": "Beau Julienne Farm",
+    "district": "Takamaka",
+    "lat": -4.77078,
+    "lng": 55.50701,
+    "sizeHa": 1.16,
+    "tenure": "family",
+    "crops": [
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-06-02T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00021",
+    "clientId": "CLT-0025",
+    "name": "Mont Gappy Farm",
+    "district": "Baie Lazare",
+    "lat": -4.75592,
+    "lng": 55.48369,
+    "sizeHa": 2.21,
+    "tenure": "family",
+    "crops": [
+      "Cassava",
+      "Lettuce"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-01-30T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00022",
+    "clientId": "CLT-0026",
+    "name": "Val Gappy Farm",
+    "district": "Grand Anse Mahé",
+    "lat": -4.6698,
+    "lng": 55.46876,
+    "sizeHa": 1.92,
+    "tenure": "state_land",
+    "crops": [
+      "Chilli"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-06-23T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00023",
+    "clientId": "CLT-0027",
+    "name": "Anse Bristol Farm",
+    "district": "Anse Boileau",
+    "lat": -4.72168,
+    "lng": 55.49297,
+    "sizeHa": 4.49,
+    "tenure": "leased",
+    "crops": [
+      "Lettuce"
+    ],
+    "livestock": [
+      "Goat"
+    ],
+    "docs": [],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-03-30T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00024",
+    "clientId": "CLT-0028",
+    "name": "Val Tirant Farm",
+    "district": "La Digue",
+    "lat": -4.36117,
+    "lng": 55.83183,
+    "sizeHa": 0.6,
+    "tenure": "leased",
+    "crops": [
+      "Banana",
+      "Sweet potato"
+    ],
+    "livestock": [
+      "Pig"
+    ],
+    "docs": [],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-05-26T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00025",
+    "clientId": "CLT-0029",
+    "name": "Mont Tirant Farm",
+    "district": "Grand Anse Praslin",
+    "lat": -4.32289,
+    "lng": 55.71784,
+    "sizeHa": 1.62,
+    "tenure": "family",
+    "crops": [
+      "Breadfruit",
+      "Papaya"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-25",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-06-02T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1135,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-05-31T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00026",
+    "clientId": "CLT-0030",
+    "name": "Beau Gappy Farm",
+    "district": "Baie Ste Anne Praslin",
+    "lat": -4.34737,
+    "lng": 55.75512,
+    "sizeHa": 1.36,
+    "tenure": "owned",
+    "crops": [
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-26",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2025-09-21T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 637,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2025-08-31T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00027",
+    "clientId": "CLT-0031",
+    "name": "Val Mancienne Farm",
+    "district": "Anse Aux Pins",
+    "lat": -4.69741,
+    "lng": 55.51384,
+    "sizeHa": 4.54,
+    "tenure": "owned",
+    "crops": [
+      "Lettuce"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-27",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-06-19T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1817,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-05-27T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00028",
+    "clientId": "CLT-0032",
+    "name": "Val Julienne Farm",
+    "district": "Grand Anse Mahé",
+    "lat": -4.67068,
+    "lng": 55.47052,
+    "sizeHa": 2.29,
+    "tenure": "family",
+    "crops": [
+      "Sweet potato",
+      "Chilli"
+    ],
+    "livestock": [
+      "Layer"
+    ],
+    "docs": [
+      {
+        "id": "D-28",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-05-01T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1693,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2026-03-30T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00029",
+    "clientId": "CLT-0033",
+    "name": "Val Radegonde Farm",
+    "district": "Baie Ste Anne Praslin",
+    "lat": -4.36198,
+    "lng": 55.76522,
+    "sizeHa": 0.42,
+    "tenure": "state_land",
+    "crops": [
+      "Lettuce",
+      "Chilli"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-29",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-02-22T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 2342,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2025-10-24T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00030",
+    "clientId": "CLT-0034",
+    "name": "Mont Nourrice Farm",
+    "district": "Grand Anse Mahé",
+    "lat": -4.68173,
+    "lng": 55.45549,
+    "sizeHa": 3.06,
+    "tenure": "family",
+    "crops": [
+      "Cassava",
+      "Sweet potato"
+    ],
+    "livestock": [
+      "Broiler",
+      "Goat"
+    ],
+    "docs": [
+      {
+        "id": "D-30",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-07-05T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 952,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2026-06-26T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00031",
+    "clientId": "CLT-0036",
+    "name": "Anse Confait Farm",
+    "district": "Baie Ste Anne Praslin",
+    "lat": -4.35185,
+    "lng": 55.76145,
+    "sizeHa": 4.57,
+    "tenure": "state_land",
+    "crops": [
+      "Banana",
+      "Chilli"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-31",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2026-03-07T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 524,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2025-08-30T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00032",
+    "clientId": "CLT-0037",
+    "name": "Grand Faure Farm",
+    "district": "Takamaka",
+    "lat": -4.77657,
+    "lng": 55.49851,
+    "sizeHa": 2.51,
+    "tenure": "state_land",
+    "crops": [
+      "Breadfruit"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-32",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2026-04-01T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 504,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-01-07T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00033",
+    "clientId": "CLT-0038",
+    "name": "Val Payet Farm",
+    "district": "Port Glaud",
+    "lat": -4.66272,
+    "lng": 55.42165,
+    "sizeHa": 0.89,
+    "tenure": "leased",
+    "crops": [
+      "Chilli",
+      "Sweet potato"
+    ],
+    "livestock": [
+      "Goat"
+    ],
+    "docs": [
+      {
+        "id": "D-33",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2025-12-07T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1807,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2025-10-06T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00034",
+    "clientId": "CLT-0039",
+    "name": "Anse Nourrice Farm",
+    "district": "Anse Aux Pins",
+    "lat": -4.68208,
+    "lng": 55.50866,
+    "sizeHa": 1.52,
+    "tenure": "leased",
+    "crops": [
+      "Banana",
+      "Breadfruit",
+      "Chilli"
+    ],
+    "livestock": [
+      "Pig"
+    ],
+    "docs": [],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2025-12-04T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00035",
+    "clientId": "CLT-0040",
+    "name": "Val Labrosse Farm",
+    "district": "Baie Lazare",
+    "lat": -4.75484,
+    "lng": 55.48107,
+    "sizeHa": 2.46,
+    "tenure": "owned",
+    "crops": [
+      "Lettuce",
+      "Chilli"
+    ],
+    "livestock": [
+      "Broiler"
+    ],
+    "docs": [
+      {
+        "id": "D-35",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-04-30T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1388,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-04-24T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00036",
+    "clientId": "CLT-0042",
+    "name": "Beau Souffe Farm",
+    "district": "Grand Anse Mahé",
+    "lat": -4.67157,
+    "lng": 55.46606,
+    "sizeHa": 1.54,
+    "tenure": "state_land",
+    "crops": [
+      "Chilli",
+      "Banana",
+      "Lettuce"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-36",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-01-17T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 363,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2025-12-20T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00037",
+    "clientId": "CLT-0043",
+    "name": "Val Sinon Farm",
+    "district": "Port Glaud",
+    "lat": -4.65737,
+    "lng": 55.42464,
+    "sizeHa": 2.21,
+    "tenure": "family",
+    "crops": [
+      "Sweet potato",
+      "Chilli"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-37",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2026-06-04T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1785,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-04-30T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00038",
+    "clientId": "CLT-0044",
+    "name": "Mont Servina Farm",
+    "district": "Takamaka",
+    "lat": -4.77484,
+    "lng": 55.50177,
+    "sizeHa": 2.49,
+    "tenure": "family",
+    "crops": [
+      "Lettuce",
+      "Cassava"
+    ],
+    "livestock": [
+      "Layer",
+      "Goat"
+    ],
+    "docs": [
+      {
+        "id": "D-38",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-02-15T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 2275,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2025-12-01T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00039",
+    "clientId": "CLT-0047",
+    "name": "Beau Adrienne Farm",
+    "district": "Baie Ste Anne Praslin",
+    "lat": -4.35418,
+    "lng": 55.75711,
+    "sizeHa": 4.59,
+    "tenure": "state_land",
+    "crops": [
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-39",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2025-12-05T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 934,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2025-09-15T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00040",
+    "clientId": "CLT-0048",
+    "name": "Anse Quatre Farm",
+    "district": "Grand Anse Mahé",
+    "lat": -4.68147,
+    "lng": 55.45367,
+    "sizeHa": 1.69,
+    "tenure": "state_land",
+    "crops": [
+      "Cassava"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2025-12-08T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00041",
+    "clientId": "CLT-0049",
+    "name": "Mont Rassool Farm",
+    "district": "Port Glaud",
+    "lat": -4.66545,
+    "lng": 55.41884,
+    "sizeHa": 1.79,
+    "tenure": "family",
+    "crops": [
+      "Lettuce"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-41",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-01-03T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1610,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2025-10-11T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00042",
+    "clientId": "CLT-0050",
+    "name": "Val Rose Farm",
+    "district": "Anse Boileau",
+    "lat": -4.72168,
+    "lng": 55.47685,
+    "sizeHa": 0.81,
+    "tenure": "family",
+    "crops": [
+      "Papaya",
+      "Lettuce",
+      "Sweet potato"
+    ],
+    "livestock": [
+      "Goat",
+      "Layer"
+    ],
+    "docs": [
+      {
+        "id": "D-42",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-06-26T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1012,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-06-19T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00043",
+    "clientId": "CLT-0051",
+    "name": "Beau Larue Farm",
+    "district": "La Digue",
+    "lat": -4.34897,
+    "lng": 55.8359,
+    "sizeHa": 3.83,
+    "tenure": "family",
+    "crops": [
+      "Breadfruit",
+      "Cassava"
+    ],
+    "livestock": [
+      "Pig"
+    ],
+    "docs": [
+      {
+        "id": "D-43",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-03-27T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 1084,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2025-11-14T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00044",
+    "clientId": "CLT-0054",
+    "name": "Mont Servina Farm",
+    "district": "Baie Ste Anne Praslin",
+    "lat": -4.35024,
+    "lng": 55.76929,
+    "sizeHa": 2.04,
+    "tenure": "owned",
+    "crops": [
+      "Papaya",
+      "Banana"
+    ],
+    "livestock": [
+      "Broiler",
+      "Pig"
+    ],
+    "docs": [
+      {
+        "id": "D-44",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-07-08T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1769,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2025-10-02T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00045",
+    "clientId": "CLT-0055",
+    "name": "Grand Bonne Farm",
+    "district": "Grand Anse Mahé",
+    "lat": -4.68669,
+    "lng": 55.47055,
+    "sizeHa": 0.95,
+    "tenure": "family",
+    "crops": [
+      "Papaya",
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-45",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2026-06-03T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 205,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-05-30T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00046",
+    "clientId": "CLT-0056",
+    "name": "Grand Labrosse Farm",
+    "district": "La Digue",
+    "lat": -4.35976,
+    "lng": 55.84391,
+    "sizeHa": 1.13,
+    "tenure": "family",
+    "crops": [
+      "Chilli"
+    ],
+    "livestock": [
+      "Goat",
+      "Pig"
+    ],
+    "docs": [
+      {
+        "id": "D-46",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2026-06-23T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 1821,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-06-01T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00047",
+    "clientId": "CLT-0057",
+    "name": "Anse Radegonde Farm",
+    "district": "Baie Ste Anne Praslin",
+    "lat": -4.34604,
+    "lng": 55.75015,
+    "sizeHa": 3,
+    "tenure": "leased",
+    "crops": [
+      "Chilli",
+      "Lettuce",
+      "Papaya"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2025-11-09T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00048",
+    "clientId": "CLT-0058",
+    "name": "Mont Adrienne Farm",
+    "district": "La Digue",
+    "lat": -4.36518,
+    "lng": 55.837,
+    "sizeHa": 3,
+    "tenure": "family",
+    "crops": [
+      "Sweet potato",
+      "Chilli"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-48",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-06-16T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1467,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-05-17T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00049",
+    "clientId": "CLT-0059",
+    "name": "Beau Larue Farm",
+    "district": "Anse Royale",
+    "lat": -4.74909,
+    "lng": 55.51219,
+    "sizeHa": 1.19,
+    "tenure": "owned",
+    "crops": [
+      "Cassava"
+    ],
+    "livestock": [
+      "Layer"
+    ],
+    "docs": [
+      {
+        "id": "D-49",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-07-11T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1478,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-07-08T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00050",
+    "clientId": "CLT-0060",
+    "name": "Grand Gappy Farm",
+    "district": "Baie Lazare",
+    "lat": -4.75116,
+    "lng": 55.47931,
+    "sizeHa": 1.89,
+    "tenure": "family",
+    "crops": [
+      "Breadfruit"
+    ],
+    "livestock": [
+      "Broiler"
+    ],
+    "docs": [
+      {
+        "id": "D-50",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-03-17T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1848,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-03-14T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00051",
+    "clientId": "CLT-0061",
+    "name": "Anse Larue Farm",
+    "district": "Anse Royale",
+    "lat": -4.7498,
+    "lng": 55.51509,
+    "sizeHa": 3.85,
+    "tenure": "owned",
+    "crops": [
+      "Sweet potato",
+      "Banana",
+      "Cassava"
+    ],
+    "livestock": [
+      "Broiler",
+      "Pig"
+    ],
+    "docs": [
+      {
+        "id": "D-51",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2026-05-31T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 1365,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-05-14T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00052",
+    "clientId": "CLT-0062",
+    "name": "Val Hoareau Farm",
+    "district": "Grand Anse Praslin",
+    "lat": -4.31879,
+    "lng": 55.70717,
+    "sizeHa": 0.78,
+    "tenure": "owned",
+    "crops": [
+      "Breadfruit",
+      "Cassava"
+    ],
+    "livestock": [
+      "Goat"
+    ],
+    "docs": [
+      {
+        "id": "D-52",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-06-12T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 1864,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2026-04-10T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00053",
+    "clientId": "CLT-0063",
+    "name": "Val Tirant Farm",
+    "district": "Baie Lazare",
+    "lat": -4.75356,
+    "lng": 55.48435,
+    "sizeHa": 1.92,
+    "tenure": "owned",
+    "crops": [
+      "Sweet potato"
+    ],
+    "livestock": [
+      "Pig"
+    ],
+    "docs": [
+      {
+        "id": "D-53",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-05-31T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 604,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2025-09-25T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00054",
+    "clientId": "CLT-0065",
+    "name": "Val Morel Farm",
+    "district": "Anse Aux Pins",
+    "lat": -4.69506,
+    "lng": 55.51976,
+    "sizeHa": 4.58,
+    "tenure": "leased",
+    "crops": [
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-05-03T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00055",
+    "clientId": "CLT-0066",
+    "name": "Mont Rassool Farm",
+    "district": "Baie Lazare",
+    "lat": -4.75121,
+    "lng": 55.47867,
+    "sizeHa": 0.99,
+    "tenure": "state_land",
+    "crops": [
+      "Papaya",
+      "Breadfruit",
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-05-17T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00056",
+    "clientId": "CLT-0068",
+    "name": "Anse Nibourette Farm",
+    "district": "Takamaka",
+    "lat": -4.76878,
+    "lng": 55.5118,
+    "sizeHa": 4.2,
+    "tenure": "state_land",
+    "crops": [
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-56",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2026-01-14T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 1926,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "officer",
+    "createdAt": "2025-12-24T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00057",
+    "clientId": "CLT-0069",
+    "name": "Grand Julienne Farm",
+    "district": "Grand Anse Praslin",
+    "lat": -4.32566,
+    "lng": 55.71243,
+    "sizeHa": 1.52,
+    "tenure": "family",
+    "crops": [
+      "Banana"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-57",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-04-30T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 1205,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-03-25T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00058",
+    "clientId": "CLT-0070",
+    "name": "Beau Gappy Farm",
+    "district": "Anse Aux Pins",
+    "lat": -4.69022,
+    "lng": 55.50748,
+    "sizeHa": 2.72,
+    "tenure": "family",
+    "crops": [
+      "Lettuce",
+      "Sweet potato"
+    ],
+    "livestock": [
+      "Pig",
+      "Goat"
+    ],
+    "docs": [],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-02-02T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00059",
+    "clientId": "CLT-0071",
+    "name": "Anse Rassool Farm",
+    "district": "Grand Anse Praslin",
+    "lat": -4.32298,
+    "lng": 55.70593,
+    "sizeHa": 2.58,
+    "tenure": "state_land",
+    "crops": [
+      "Cassava",
+      "Papaya"
+    ],
+    "livestock": [
+      "Broiler"
+    ],
+    "docs": [],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "online",
+    "createdAt": "2026-05-18T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00060",
+    "clientId": "CLT-0072",
+    "name": "Anse Uranie Farm",
+    "district": "Grand Anse Praslin",
+    "lat": -4.31432,
+    "lng": 55.70046,
+    "sizeHa": 2.53,
+    "tenure": "state_land",
+    "crops": [
+      "Papaya"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-60",
+        "name": "Supporting document.pdf",
+        "category": "permit",
+        "uploadedAt": "2026-07-05T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 1769,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "pending",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-07-04T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00061",
+    "clientId": "CLT-0073",
+    "name": "Anse Tirant Farm",
+    "district": "Anse Royale",
+    "lat": -4.74608,
+    "lng": 55.5219,
+    "sizeHa": 2.38,
+    "tenure": "leased",
+    "crops": [
+      "Sweet potato"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-61",
+        "name": "Supporting document.pdf",
+        "category": "id",
+        "uploadedAt": "2026-07-03T09:00:00.000Z",
+        "verified": true,
+        "sizeKb": 395,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "verified",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-05-24T09:00:00.000Z"
+  },
+  {
+    "id": "FRM-2026-00062",
+    "clientId": "CLT-0074",
+    "name": "Mont Payet Farm",
+    "district": "Anse Boileau",
+    "lat": -4.7262,
+    "lng": 55.48836,
+    "sizeHa": 3,
+    "tenure": "family",
+    "crops": [
+      "Papaya"
+    ],
+    "livestock": [],
+    "docs": [
+      {
+        "id": "D-62",
+        "name": "Supporting document.pdf",
+        "category": "lease",
+        "uploadedAt": "2026-04-29T09:00:00.000Z",
+        "verified": false,
+        "sizeKb": 196,
+        "simulated": true
+      }
+    ],
+    "verificationStatus": "rejected",
+    "status": "active",
+    "source": "migrated",
+    "createdAt": "2026-01-07T09:00:00.000Z"
+  }
+]
