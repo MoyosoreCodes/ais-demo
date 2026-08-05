@@ -27,8 +27,8 @@ const MODULES = {
 const MODULE_ORDER = Object.keys(MODULES);
 const WAVE = { i: 'A', ii: 'A', iii: 'A', xi: 'A', iv: 'B', v: 'B', vi: 'B', vii: 'C', viii: 'C', ix: 'C', x: 'C', xii: 'D', xiii: 'D', xiv: 'D' };
 
-const VERIFIED_MODULES = new Set(['i', 'ii', 'iii', 'xi']);
-const BUILT_REFS = new Set(['xii.1', 'xii.2', 'xii.3', 'xii.4']);
+const VERIFIED_MODULES = new Set(MODULE_ORDER);
+const BUILT_REFS = new Set();
 
 const DEMO = {
   'i.1': 'Login: policy hint; 5 wrong tries → lockout counter',

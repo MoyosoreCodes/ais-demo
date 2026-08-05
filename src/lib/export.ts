@@ -82,6 +82,29 @@ export function exportTableExcel({
 }
 
 // Templated laboratory report PDF (req vi.7).
+export function exportTableCsv({
+  columns,
+  rows,
+  filename,
+}: {
+  columns: string[];
+  rows: Cell[][];
+  filename: string;
+}): void {
+  const esc = (c: Cell) => {
+    const s = String(c);
+    return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s;
+  };
+  const csv = [columns, ...rows, [], [FOOTER]].map((r) => r.map(esc).join(',')).join('\n');
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+}
+
 export function labReportPdf(sample: Sample, client: Client, farm: Farm): void {
   const doc = new jsPDF();
   drawChrome(

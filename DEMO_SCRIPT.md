@@ -1,6 +1,6 @@
 # DEMO_SCRIPT — AIS Phase 1 Prototype
 
-A scripted walk-through, kept in sync with the build. **Wave A is live** (S01, S02, S03, S11, plus a KPI landing on S12); Waves B–D screens show a planned view listing the requirements they will evidence.
+A scripted walk-through, kept in sync with the build. **All 13 screens (S01–S13) are live** across the four waves; every Appendix A6 row is demonstrable.
 
 ## 0. Setup
 
