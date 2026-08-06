@@ -1,0 +1,127 @@
+[
+  {
+    "id": "MIG-2019-A",
+    "name": "Legacy smallholder register (1998–2014)",
+    "source": "Paper district registers, volumes 1–7",
+    "runOn": "2025-11-02",
+    "recordsRead": 65,
+    "recordsMigrated": 62,
+    "recordsRejected": 3,
+    "checks": [
+      {
+        "id": "CHK-A1",
+        "name": "Client record count",
+        "description": "Migrated client records equal the source register count.",
+        "expected": 27,
+        "actual": 27,
+        "result": "pass"
+      },
+      {
+        "id": "CHK-A2",
+        "name": "NIN format",
+        "description": "Every migrated NIN matches the national format.",
+        "expected": 27,
+        "actual": 27,
+        "result": "pass"
+      },
+      {
+        "id": "CHK-A3",
+        "name": "Duplicate detection",
+        "description": "Candidate duplicates flagged for officer review rather than auto-merged.",
+        "expected": 1,
+        "actual": 1,
+        "result": "warn",
+        "note": "CLT-2019-0311 flagged as a candidate duplicate of CLT-2026-0001; awaiting officer confirmation."
+      },
+      {
+        "id": "CHK-A4",
+        "name": "Orphan farm records",
+        "description": "Every migrated farm resolves to a client record.",
+        "expected": 0,
+        "actual": 0,
+        "result": "pass"
+      },
+      {
+        "id": "CHK-A5",
+        "name": "Illegible source pages",
+        "description": "Source pages that could not be transcribed.",
+        "expected": 0,
+        "actual": 3,
+        "result": "fail",
+        "note": "3 register entries illegible; originals retained for manual re-keying."
+      }
+    ]
+  },
+  {
+    "id": "MIG-2019-B",
+    "name": "Lease and land allocation files (2015–2019)",
+    "source": "District land files and allocation minutes",
+    "runOn": "2025-11-06",
+    "recordsRead": 39,
+    "recordsMigrated": 38,
+    "recordsRejected": 1,
+    "checks": [
+      {
+        "id": "CHK-B1",
+        "name": "Lease term validity",
+        "description": "Every lease has a start date earlier than its end date.",
+        "expected": 25,
+        "actual": 25,
+        "result": "pass"
+      },
+      {
+        "id": "CHK-B2",
+        "name": "Parcel reference format",
+        "description": "Parcel references match the PR/DD/NNNN pattern.",
+        "expected": 25,
+        "actual": 25,
+        "result": "pass"
+      },
+      {
+        "id": "CHK-B3",
+        "name": "Rent amount present",
+        "description": "Annual rent recorded for every lease.",
+        "expected": 25,
+        "actual": 24,
+        "result": "warn",
+        "note": "1 legacy lease carried no legible rent figure; defaulted and flagged."
+      }
+    ]
+  },
+  {
+    "id": "MIG-2026-C",
+    "name": "Scanned document backlog (2020–2025)",
+    "source": "Departmental scanning programme",
+    "runOn": "2026-02-22",
+    "recordsRead": 16,
+    "recordsMigrated": 15,
+    "recordsRejected": 1,
+    "checks": [
+      {
+        "id": "CHK-C1",
+        "name": "Index metadata complete",
+        "description": "Category and at least three tags on every document.",
+        "expected": 16,
+        "actual": 16,
+        "result": "pass"
+      },
+      {
+        "id": "CHK-C2",
+        "name": "Full-text extraction",
+        "description": "Searchable text extracted for every scanned document.",
+        "expected": 16,
+        "actual": 16,
+        "result": "pass"
+      },
+      {
+        "id": "CHK-C3",
+        "name": "Page legibility",
+        "description": "All scanned pages legible at 300 dpi.",
+        "expected": 16,
+        "actual": 15,
+        "result": "fail",
+        "note": "1 document flagged for re-scanning."
+      }
+    ]
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ENF-2026-100",
+    "leaseId": "LSE-2022-0105",
+    "clientId": "CLT-2026-0027",
+    "type": "warning",
+    "raisedOn": "2026-03-10",
+    "raisedByUserId": "USR-005",
+    "reason": "Parcel left uncultivated contrary to lease condition 4(b).",
+    "status": "upheld",
+    "noticeServedOn": "2026-03-15",
+    "history": [
+      {
+        "id": "ENH-0-1",
+        "at": "2026-03-10T09:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Enforcement action raised"
+      },
+      {
+        "id": "ENH-0-2",
+        "at": "2026-03-15T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Notice served to lessee"
+      }
+    ]
+  },
+  {
+    "id": "ENF-2026-101",
+    "leaseId": "LSE-2023-0107",
+    "clientId": "CLT-2026-0013",
+    "type": "warning",
+    "raisedOn": "2025-09-22",
+    "raisedByUserId": "USR-005",
+    "reason": "Unauthorised sub-letting of the leased parcel.",
+    "status": "upheld",
+    "noticeServedOn": "2025-09-27",
+    "history": [
+      {
+        "id": "ENH-1-1",
+        "at": "2025-09-22T09:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Enforcement action raised"
+      },
+      {
+        "id": "ENH-1-2",
+        "at": "2025-09-27T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Notice served to lessee"
+      }
+    ]
+  },
+  {
+    "id": "ENF-2026-102",
+    "leaseId": "LSE-2021-0108",
+    "clientId": "CLT-2016-0237",
+    "type": "warning",
+    "raisedOn": "2025-10-14",
+    "raisedByUserId": "USR-005",
+    "reason": "Unauthorised sub-letting of the leased parcel.",
+    "status": "open",
+    "noticeServedOn": "2025-10-19",
+    "history": [
+      {
+        "id": "ENH-2-1",
+        "at": "2025-10-14T09:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Enforcement action raised"
+      },
+      {
+        "id": "ENH-2-2",
+        "at": "2025-10-19T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Notice served to lessee"
+      }
+    ]
+  },
+  {
+    "id": "ENF-2026-103",
+    "leaseId": "LSE-2024-0109",
+    "clientId": "CLT-2026-0009",
+    "type": "eviction-notice",
+    "raisedOn": "2026-01-02",
+    "raisedByUserId": "USR-005",
+    "reason": "Sustained non-compliance with lease conditions following two written warnings.",
+    "status": "enforced",
+    "noticeServedOn": "2026-01-07",
+    "history": [
+      {
+        "id": "ENH-3-1",
+        "at": "2026-01-02T09:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Enforcement action raised"
+      },
+      {
+        "id": "ENH-3-2",
+        "at": "2026-01-07T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Notice served to lessee"
+      }
+    ]
+  }
+]

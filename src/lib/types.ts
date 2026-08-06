@@ -1,6 +1,18 @@
-// Domain model for the AIS demonstration prototype.
-// NOTE: erasableSyntaxOnly is enabled, so we use `as const` arrays + union types
-// instead of TS enums throughout.
+import type { IntakeFieldConfig } from './intake'
+
+/**
+ * Domain model for the AIS Phase 1 demonstration prototype.
+ *
+ * Every entity below maps to one or more Appendix A6 requirement rows
+ * (see CLAUDE.md §8 and TRACEABILITY.md). Identifiers are the demo's
+ * linking currency: Client ID ties farms, loans, lab samples, livestock
+ * services, surveillance cases, leases, inspections and documents to a
+ * single farmer record (ii.5, iii.6, vi.6, vii.4, viii.4).
+ */
+
+/* ------------------------------------------------------------------ *
+ * Reference values
+ * ------------------------------------------------------------------ */
 
 export const ROLES = [
   'admin',
@@ -9,8 +21,8 @@ export const ROLES = [
   'lab_staff',
   'supervisor',
   'farmer',
-] as const;
-export type Role = (typeof ROLES)[number];
+] as const
+export type Role = (typeof ROLES)[number]
 
 export const ROLE_LABELS: Record<Role, string> = {
   admin: 'Administrator',
@@ -19,420 +31,629 @@ export const ROLE_LABELS: Record<Role, string> = {
   lab_staff: 'Laboratory Staff',
   supervisor: 'Supervisor',
   farmer: 'Farmer',
-};
+}
 
-// Seychelles districts used across registries, maps and dashboards.
+export const ISLANDS = ['Mahé', 'Praslin', 'La Digue'] as const
+export type Island = (typeof ISLANDS)[number]
+
 export const DISTRICTS = [
   'Anse Boileau',
   'Baie Lazare',
   'Grand Anse Mahé',
   'Anse Royale',
   'Anse Aux Pins',
-  'Takamaka',
-  'Port Glaud',
   'Baie Ste Anne Praslin',
-  'Grand Anse Praslin',
   'La Digue',
-] as const;
-export type District = (typeof DISTRICTS)[number];
+] as const
+export type District = (typeof DISTRICTS)[number]
 
 export const CROPS = [
-  'Banana',
-  'Cassava',
-  'Sweet potato',
-  'Chilli',
-  'Lettuce',
-  'Papaya',
-  'Breadfruit',
-] as const;
-export const LIVESTOCK = ['Broiler', 'Layer', 'Pig', 'Goat'] as const;
+  'banana',
+  'cassava',
+  'sweet potato',
+  'chilli',
+  'lettuce',
+  'papaya',
+  'breadfruit',
+] as const
+export type Crop = (typeof CROPS)[number]
 
-export interface ChangeLog {
-  at: string;
-  by: string;
-  field: string;
-  from: string;
-  to: string;
+export const LIVESTOCK_TYPES = ['broiler', 'layer', 'pig', 'goat'] as const
+export type LivestockType = (typeof LIVESTOCK_TYPES)[number]
+
+export const SAMPLE_TYPES = ['soil', 'water', 'plant', 'compost'] as const
+export type SampleType = (typeof SAMPLE_TYPES)[number]
+
+/* ------------------------------------------------------------------ *
+ * Shared value objects
+ * ------------------------------------------------------------------ */
+
+/** One entry of an entity's change history (ii.4, iv.8, x.5). */
+export interface ChangeEvent {
+  id: string
+  at: string
+  actorUserId: string
+  actorName: string
+  action: string
+  field?: string
+  from?: string
+  to?: string
+  note?: string
 }
 
-export interface WorkflowEvent {
-  at: string;
-  by: string;
-  action: string;
-  fromStatus: string;
-  toStatus: string;
-  note?: string;
-}
-
+/**
+ * A simulated document attachment. `simulated: true` is rendered in the UI —
+ * no real file is stored, per the honesty constraint in CLAUDE.md §2.
+ */
 export interface DocRef {
-  id: string;
-  name: string;
-  category: string;
-  uploadedAt: string;
-  verified: boolean;
-  sizeKb: number;
-  simulated: true;
+  id: string
+  name: string
+  category: string
+  sizeKb: number
+  uploadedOn: string
+  uploadedBy: string
+  verification: 'pending' | 'verified' | 'rejected'
+  verifiedBy?: string
+  verifiedOn?: string
+  simulated: true
 }
+
+/** A simulated inspection photo (x.4). Rendered as a generated placeholder. */
+export interface PhotoRef {
+  id: string
+  caption: string
+  takenOn: string
+  /** Deterministic seed for the generated placeholder image. */
+  swatch: string
+  simulated: true
+}
+
+/* ------------------------------------------------------------------ *
+ * Module i — users, authentication, audit
+ * ------------------------------------------------------------------ */
 
 export interface User {
-  id: string;
-  username: string; // email-style login
-  name: string;
-  role: Role;
-  active: boolean;
-  phone?: string;
-  clientId?: string; // farmers are linked to their client record
-  password: string; // demo only — real system stores a salted hash
-  lastLogin?: string;
-  twoFactor: boolean;
+  id: string
+  email: string
+  fullName: string
+  role: Role
+  /** Present only for role === 'farmer'; ties the login to a client record. */
+  clientId?: string
+  status: 'active' | 'suspended' | 'deactivated'
+  createdOn: string
+  lastLoginOn?: string
+  phone: string
+  /** PBKDF2-SHA256 salt, hex. Passwords are never stored in clear (i.1). */
+  salt: string
+  /** PBKDF2-SHA256 derived key, hex. */
+  passwordHash: string
+  /** Iteration count used to derive `passwordHash`. */
+  iterations: number
+  /** Two-factor state (i.8). Channel is simulated in this prototype. */
+  twoFactor: { enabled: boolean; channel: 'sms' | 'email' | 'totp'; simulated: true }
+  /** True when the account was matched against SeyID (simulated). */
+  seyIdLinked: boolean
+  failedLoginCount: number
+  lockedUntil?: string
+  mustResetPassword: boolean
 }
 
-export type ClientStatus = 'active' | 'inactive' | 'merged';
-export type ClientSource = 'self_service' | 'officer' | 'migrated';
-export type StakeholderType = 'farmer' | 'vendor' | 'both';
+/** Append-only, hash-chained audit entry (i.7, v.5, xi.4). */
+export interface AuditEntry {
+  id: string
+  seq: number
+  at: string
+  actorUserId: string
+  actorName: string
+  actorRole: Role
+  action: string
+  entityType: string
+  entityId: string
+  detail: string
+  /** Hash of the previous entry — makes retro-editing detectable. */
+  prevHash: string
+  /** Hash over this entry's payload + prevHash. */
+  hash: string
+}
+
+/* ------------------------------------------------------------------ *
+ * Module ii — client management
+ * ------------------------------------------------------------------ */
 
 export interface Client {
-  id: string;
-  nin: string; // fictional, always 999- prefix
-  firstName: string;
-  lastName: string;
-  gender: 'F' | 'M' | 'Other';
-  dob: string;
-  phone: string;
-  email: string;
-  address: string;
-  district: District;
-  stakeholderType: StakeholderType;
-  seyidVerified: boolean;
-  status: ClientStatus;
-  source: ClientSource;
-  mergedInto?: string;
-  createdAt: string;
-  updatedAt: string;
-  history: ChangeLog[];
+  id: string
+  /** Fictional NIN — always the obviously fake `999-` prefix (CLAUDE.md §2). */
+  nin: string
+  firstName: string
+  lastName: string
+  gender: 'F' | 'M'
+  dateOfBirth: string
+  phone: string
+  email: string
+  district: District
+  island: Island
+  address: string
+  stakeholderType: 'farmer' | 'vendor' | 'cooperative'
+  status: 'active' | 'inactive' | 'merged'
+  registeredOn: string
+  registeredVia: 'self-service' | 'officer-assisted' | 'migrated'
+  /** True once SeyID (simulated) returned a match on the NIN (ii.3, i.8). */
+  seyIdVerified: boolean
+  /** Set when this record was merged away by duplicate resolution (ii.7). */
+  mergedIntoId?: string
+  notes?: string
+  history: ChangeEvent[]
 }
 
-export type Tenure = 'owned' | 'leased' | 'state_land' | 'family';
-export type VerificationStatus = 'pending' | 'verified' | 'rejected';
-export type FarmSource = 'online' | 'officer' | 'migrated';
+/* ------------------------------------------------------------------ *
+ * Module iii — farm registration
+ * ------------------------------------------------------------------ */
+
+export interface FarmLivestock {
+  type: LivestockType
+  headcount: number
+}
 
 export interface Farm {
-  id: string; // FRM-2026-00001
-  clientId: string;
-  name: string;
-  district: District;
-  lat: number;
-  lng: number;
-  sizeHa: number;
-  tenure: Tenure;
-  crops: string[];
-  livestock: string[];
-  docs: DocRef[];
-  verificationStatus: VerificationStatus;
-  status: 'active' | 'merged';
-  source: FarmSource;
-  createdAt: string;
+  id: string
+  clientId: string
+  name: string
+  district: District
+  island: Island
+  lat: number
+  lng: number
+  parcelRef: string
+  sizeHa: number
+  tenure: 'owned' | 'leased-state' | 'leased-private' | 'family'
+  crops: Crop[]
+  livestock: FarmLivestock[]
+  waterSource: 'rainwater' | 'borehole' | 'river' | 'mains' | 'none'
+  status: 'pending' | 'registered' | 'rejected'
+  registeredOn: string
+  registeredVia: 'online' | 'back-office' | 'migrated'
+  documents: DocRef[]
+  history: ChangeEvent[]
 }
 
-export const LOAN_STATUSES = [
-  'draft',
-  'submitted',
-  'screening',
-  'assessment',
-  'approval',
-  'approved',
-  'rejected',
-  'disbursed',
-] as const;
-export type LoanStatus = (typeof LOAN_STATUSES)[number];
+/* ------------------------------------------------------------------ *
+ * Module iv — land management
+ * ------------------------------------------------------------------ */
+
+export interface LandApplication {
+  id: string
+  clientId: string
+  parcelRef: string
+  district: District
+  island: Island
+  lat: number
+  lng: number
+  requestedAreaHa: number
+  purpose: string
+  status: WorkflowStatus
+  submittedOn: string
+  workflowId: string
+  currentStageId: string | null
+  stageInstances: StageInstance[]
+  assessments: LandAssessment[]
+  documents: DocRef[]
+  history: ChangeEvent[]
+}
+
+export interface LandAssessment {
+  id: string
+  assessedOn: string
+  assessorUserId: string
+  soilSuitability: 'high' | 'moderate' | 'low'
+  slope: 'flat' | 'gentle' | 'steep'
+  waterAccess: boolean
+  accessRoad: boolean
+  recommendation: 'approve' | 'approve-with-conditions' | 'reject'
+  notes: string
+}
+
+export interface Lease {
+  id: string
+  clientId: string
+  farmId?: string
+  parcelRef: string
+  district: District
+  areaHa: number
+  startDate: string
+  endDate: string
+  annualRentScr: number
+  status: 'pending' | 'active' | 'expired' | 'terminated'
+  paymentStatus: 'current' | 'due' | 'overdue'
+  lastPaymentOn?: string
+  nextPaymentDue: string
+  documents: DocRef[]
+  history: ChangeEvent[]
+}
+
+export interface EnforcementAction {
+  id: string
+  leaseId: string
+  clientId: string
+  type: 'warning' | 'retraction-notice' | 'eviction-notice' | 'resolved'
+  raisedOn: string
+  raisedByUserId: string
+  reason: string
+  status: 'open' | 'under-review' | 'upheld' | 'withdrawn' | 'enforced'
+  noticeServedOn?: string
+  history: ChangeEvent[]
+}
+
+/* ------------------------------------------------------------------ *
+ * Module v — loans
+ * ------------------------------------------------------------------ */
+
+export type WorkflowStatus =
+  | 'draft'
+  | 'submitted'
+  | 'under-review'
+  | 'approved'
+  | 'rejected'
+  | 'withdrawn'
+
+export type LoanStatus = WorkflowStatus | 'disbursed' | 'repaying' | 'closed'
+
+/** One stage of a running workflow instance (xi.1, xi.2, v.3). */
+export interface StageInstance {
+  stageId: string
+  name: string
+  actorRole: Role
+  status: 'pending' | 'in-progress' | 'approved' | 'rejected' | 'skipped'
+  decidedByUserId?: string
+  decidedOn?: string
+  comment?: string
+}
 
 export interface Loan {
-  id: string; // LN-2026-001
-  clientId: string;
-  farmId: string;
-  purpose: string;
-  amountSCR: number;
-  termMonths: number;
-  status: LoanStatus;
-  currentStageId: string;
-  docs: DocRef[];
-  history: WorkflowEvent[];
-  createdAt: string;
-  updatedAt: string;
+  id: string
+  clientId: string
+  farmId: string
+  purpose: string
+  amountScr: number
+  termMonths: number
+  interestRatePct: number
+  status: LoanStatus
+  submittedOn: string
+  workflowId: string
+  currentStageId: string | null
+  stageInstances: StageInstance[]
+  documents: DocRef[]
+  /** Per-application append-only trail (v.5). */
+  history: ChangeEvent[]
+  disbursedOn?: string
+  balanceScr?: number
 }
 
-export const SAMPLE_TYPES = ['soil', 'water', 'plant', 'compost'] as const;
-export type SampleType = (typeof SAMPLE_TYPES)[number];
-export const SAMPLE_STATUSES = [
-  'requested',
-  'collected',
-  'registered',
-  'testing',
-  'result_entered',
-  'verified',
-  'released',
-] as const;
-export type SampleStatus = (typeof SAMPLE_STATUSES)[number];
+/* ------------------------------------------------------------------ *
+ * Module vi — sampling & laboratory
+ * ------------------------------------------------------------------ */
 
-export interface SampleResult {
-  name: string;
-  value: string;
-  unit: string;
-  reference: string;
-}
+export type SampleStatus =
+  | 'requested'
+  | 'collected'
+  | 'registered'
+  | 'testing'
+  | 'completed'
+  | 'cancelled'
 
-// A chain-of-custody / lifecycle event for a laboratory sample.
-export interface ChainEvent {
-  at: string;
-  by: string;
-  action: string;
+export interface LabResult {
+  parameter: string
+  value: number | string
+  unit: string
+  method: string
+  referenceRange: string
+  flag: 'normal' | 'low' | 'high'
 }
 
 export interface Sample {
-  id: string; // SMP-2026-001
-  barcode: string;
-  clientId: string;
-  farmId: string;
-  type: SampleType;
-  status: SampleStatus;
-  requestedBy: 'farmer' | 'officer';
-  assignedTo?: string;
-  requestedAt: string;
-  collectedAt?: string;
-  completedAt?: string;
-  verifiedBy?: string;
-  verifiedAt?: string;
-  releasedAt?: string;
-  results: SampleResult[];
-  resultSummary?: string;
-  notified: boolean;
-  chain: ChainEvent[];
+  id: string
+  type: SampleType
+  clientId: string
+  farmId: string
+  requestedOn: string
+  requestedVia: 'online' | 'back-office'
+  requestedByUserId: string
+  status: SampleStatus
+  collectedOn?: string
+  registeredOn?: string
+  testingStartedOn?: string
+  completedOn?: string
+  labTechUserId?: string
+  purpose: string
+  results: LabResult[]
+  interpretation?: string
+  recommendation?: string
+  /** Set when the "notify applicant" action fired (vi.8). */
+  notifiedOn?: string
+  history: ChangeEvent[]
 }
 
-export type VisitKind = 'complaint' | 'routine';
-export type VisitStatus = 'reported' | 'assigned' | 'in_progress' | 'resolved' | 'completed';
+/* ------------------------------------------------------------------ *
+ * Module vii — livestock services
+ * ------------------------------------------------------------------ */
 
 export interface LivestockVisit {
-  id: string;
-  clientId: string;
-  farmId: string;
-  kind: VisitKind;
-  species: string;
-  status: VisitStatus;
-  assignedTo?: string;
-  observations: string;
-  findings: string;
-  date: string;
+  id: string
+  type: 'routine' | 'complaint'
+  clientId: string
+  farmId: string
+  species: LivestockType
+  scheduledOn: string
+  visitedOn?: string
+  officerUserId: string
+  status: 'registered' | 'assigned' | 'in-progress' | 'resolved' | 'closed'
+  complaintSummary?: string
+  observations: string
+  findings: string
+  actionTaken: string
+  followUpOn?: string
+  history: ChangeEvent[]
 }
 
-export const SURVEILLANCE_STATUSES = [
-  'reported',
-  'assigned',
-  'investigating',
-  'confirmed',
-  'ruled_out',
-  'closed',
-] as const;
-export type SurveillanceStatus = (typeof SURVEILLANCE_STATUSES)[number];
+/* ------------------------------------------------------------------ *
+ * Module viii — passive surveillance
+ * ------------------------------------------------------------------ */
 
 export interface SurveillanceCase {
-  id: string;
-  clientId: string;
-  farmId: string;
-  suspectedDisease: string;
-  species: string;
-  status: SurveillanceStatus;
-  assignedTo?: string;
-  linkedSampleId?: string;
-  reportedAt: string;
-  history: WorkflowEvent[];
+  id: string
+  clientId: string
+  farmId: string
+  suspectedDisease: string
+  species: LivestockType
+  reportedOn: string
+  reportedBy: string
+  reportedVia: 'farmer-portal' | 'officer' | 'hotline'
+  assignedOfficerUserId?: string
+  status:
+    | 'reported'
+    | 'assigned'
+    | 'investigating'
+    | 'sampled'
+    | 'confirmed'
+    | 'negative'
+    | 'closed'
+  /** Cross-module link to the laboratory result (viii.4). */
+  linkedSampleId?: string
+  affectedCount: number
+  mortalityCount: number
+  notes: string
+  history: ChangeEvent[]
 }
 
-export type VendorStatus = 'pending' | 'active' | 'suspended' | 'expired';
+/* ------------------------------------------------------------------ *
+ * Module ix — vendors & market
+ * ------------------------------------------------------------------ */
 
 export interface Vendor {
-  id: string;
-  clientId?: string;
-  name: string;
-  traderType: 'produce' | 'livestock' | 'processed' | 'mixed';
-  phone: string;
-  district: District;
-  stallId?: string;
-  registrationStatus: VendorStatus;
-  registeredAt: string;
+  id: string
+  /** Present when the vendor is also a registered farmer (ii.5). */
+  clientId?: string
+  fullName: string
+  tradeName: string
+  category: 'produce' | 'fish' | 'value-added' | 'crafts'
+  phone: string
+  email: string
+  market: string
+  licenceNo: string
+  stallId?: string
+  registrationStatus: 'pending' | 'active' | 'suspended' | 'expired'
+  registeredOn: string
+  expiresOn: string
+  history: ChangeEvent[]
 }
 
 export interface Stall {
-  id: string;
-  section: string;
-  number: number;
-  status: 'vacant' | 'allocated';
-  vendorId?: string;
+  id: string
+  market: string
+  section: string
+  row: string
+  number: number
+  status: 'vacant' | 'allocated' | 'reserved' | 'maintenance'
+  vendorId?: string
+  allocatedOn?: string
+  monthlyFeeScr: number
 }
 
-export type InspectionStatus = 'scheduled' | 'in_progress' | 'completed' | 'pending_sync';
+/* ------------------------------------------------------------------ *
+ * Module x — field operations & inspections
+ * ------------------------------------------------------------------ */
 
 export interface Inspection {
-  id: string;
-  farmId: string;
-  clientId: string;
-  type: 'farm' | 'land' | 'compliance';
-  scheduledFor: string;
-  assignedTo: string;
-  status: InspectionStatus;
-  findings: string;
-  photos: DocRef[];
-  capturedOffline: boolean;
-  completedAt?: string;
+  id: string
+  clientId: string
+  farmId: string
+  type: 'farm-compliance' | 'land-lease' | 'loan-verification' | 'biosecurity'
+  scheduledOn: string
+  officerUserId: string
+  status: 'scheduled' | 'in-progress' | 'completed' | 'cancelled'
+  completedOn?: string
+  observations: string
+  findings: string
+  outcome: 'compliant' | 'minor-issues' | 'non-compliant' | 'not-assessed'
+  photos: PhotoRef[]
+  /** True when captured on a device with no connectivity (x.3, simulated). */
+  capturedOffline: boolean
+  syncedOn?: string
+  history: ChangeEvent[]
 }
 
-export type DocCategory = 'lease' | 'permit' | 'id' | 'report' | 'correspondence' | 'map';
-
-export interface DigitizedDoc {
-  id: string;
-  title: string;
-  category: DocCategory;
-  clientId?: string;
-  farmId?: string;
-  tags: string[];
-  fullText: string;
-  year: number;
-  source: 'migrated' | 'uploaded';
-  addedAt: string;
+/** A submission held in the device queue while offline (x.3, simulated). */
+export interface QueuedSubmission {
+  id: string
+  queuedAt: string
+  kind: 'inspection'
+  label: string
+  payload: Inspection
 }
 
-export type NotificationChannel = 'email' | 'sms' | 'in_app';
-
-export interface AppNotification {
-  id: string;
-  channel: NotificationChannel;
-  to: string;
-  clientId?: string;
-  subject: string;
-  body: string;
-  template: string;
-  event: string;
-  status: 'queued' | 'sent' | 'read';
-  simulated: true;
-  createdAt: string;
-}
+/* ------------------------------------------------------------------ *
+ * Module xi — workflow definitions
+ * ------------------------------------------------------------------ */
 
 export interface WorkflowStage {
-  id: string;
-  name: string;
-  actorRole: Role;
-  order: number;
+  id: string
+  name: string
+  actorRole: Role
+  slaDays: number
+  description: string
 }
 
+/** Admin-editable approval hierarchy — no redeploy required (xi.6). */
 export interface WorkflowDef {
-  id: string; // 'loan' | 'land'
-  name: string;
-  stages: WorkflowStage[];
+  id: string
+  name: string
+  entity: 'loan' | 'land'
+  stages: WorkflowStage[]
+  updatedOn: string
+  updatedByUserId: string
 }
 
-export type AuditCategory = 'auth' | 'workflow' | 'admin' | 'data';
+/* ------------------------------------------------------------------ *
+ * Module xiii — notifications
+ * ------------------------------------------------------------------ */
 
-export interface AuditEntry {
-  id: string;
-  at: string;
-  actor: string;
-  actorRole: Role | 'system';
-  action: string;
-  category: AuditCategory;
-  entity?: string;
-  entityId?: string;
-  detail: string;
+export type NotificationChannel = 'email' | 'sms' | 'in-app'
+
+export interface NotificationTemplate {
+  id: string
+  name: string
+  channel: NotificationChannel
+  event: string
+  subject: string
+  /** Body with `{{placeholder}}` tokens. */
+  body: string
 }
 
-// ── Land Management (S04) ──────────────────────────────────────────────────
-export const LAND_STATUSES = [
-  'submitted',
-  'under_review',
-  'assessment',
-  'decision',
-  'allocated',
-  'rejected',
-  'leased',
-  'enforcement',
-  'retracted',
-  'expired',
-] as const;
-export type LandStatus = (typeof LAND_STATUSES)[number];
-
-export interface LandAssessment {
-  at: string;
-  by: string;
-  findings: string;
-  recommendation: 'allocate' | 'reject';
-  lat: number;
-  lng: number;
+export interface AppNotification {
+  id: string
+  channel: NotificationChannel
+  templateId: string
+  event: string
+  recipientClientId?: string
+  recipientUserId?: string
+  recipientAddress: string
+  subject: string
+  body: string
+  sentOn: string
+  read: boolean
+  relatedType?: string
+  relatedId?: string
+  /** Email and SMS delivery is simulated; the UI labels it as such. */
+  simulated: boolean
 }
 
-export interface LandApplication {
-  id: string; // LA-2026-001
-  clientId: string;
-  farmId?: string;
-  parcelRef: string;
-  district: District;
-  purpose: string;
-  areaHa: number;
-  status: LandStatus;
-  assignedTo?: string;
-  assessment?: LandAssessment;
-  history: WorkflowEvent[];
-  createdAt: string;
+export interface FeedbackMessage {
+  id: string
+  fromClientId?: string
+  fromUserId?: string
+  fromName: string
+  subject: string
+  body: string
+  category: 'question' | 'complaint' | 'suggestion' | 'support'
+  sentOn: string
+  status: 'new' | 'acknowledged' | 'resolved'
+  response?: string
+  respondedOn?: string
 }
 
-export type LeaseStatus = 'active' | 'expired' | 'pending';
-export type PaymentStatus = 'paid' | 'due' | 'overdue';
+/* ------------------------------------------------------------------ *
+ * Module xiv — digitized documents & migration
+ * ------------------------------------------------------------------ */
 
-export interface Lease {
-  id: string; // LSE-2026-001
-  applicationId?: string;
-  clientId: string;
-  parcelRef: string;
-  district: District;
-  startDate: string;
-  endDate: string;
-  status: LeaseStatus;
-  paymentStatus: PaymentStatus;
-  annualRentSCR: number;
+export interface DigitizedDocument {
+  id: string
+  title: string
+  category:
+    | 'lease'
+    | 'permit'
+    | 'loan-file'
+    | 'lab-report'
+    | 'land-record'
+    | 'registration-form'
+    | 'correspondence'
+  clientId?: string
+  farmId?: string
+  originalDate: string
+  scannedOn: string
+  scannedByUserId: string
+  pages: number
+  tags: string[]
+  /** Indexed text backing the full-text search (xiv.4). */
+  ocrText: string
+  migrationBatch: string
+  validation: 'pass' | 'warn' | 'fail'
+  validationNote?: string
+  /** Deterministic seed for the generated placeholder scan image. */
+  swatch: string
+  simulated: true
 }
 
-export type EnforcementType = 'retraction' | 'eviction';
-
-export interface LandEnforcement {
-  id: string; // ENF-2026-001
-  leaseId?: string;
-  clientId: string;
-  parcelRef: string;
-  type: EnforcementType;
-  reason: string;
-  noticeNo: string;
-  status: 'open' | 'notice_served' | 'closed';
-  issuedAt: string;
-  history: WorkflowEvent[];
+export interface MigrationBatch {
+  id: string
+  name: string
+  source: string
+  runOn: string
+  recordsRead: number
+  recordsMigrated: number
+  recordsRejected: number
+  checks: MigrationCheck[]
 }
 
-// The full in-memory database persisted behind store.ts
-export interface Database {
-  clients: Client[];
-  farms: Farm[];
-  loans: Loan[];
-  samples: Sample[];
-  landApplications: LandApplication[];
-  leases: Lease[];
-  enforcement: LandEnforcement[];
-  livestockVisits: LivestockVisit[];
-  surveillanceCases: SurveillanceCase[];
-  vendors: Vendor[];
-  stalls: Stall[];
-  inspections: Inspection[];
-  users: User[];
-  documents: DigitizedDoc[];
-  notifications: AppNotification[];
-  workflows: WorkflowDef[];
-  audit: AuditEntry[];
+export interface MigrationCheck {
+  id: string
+  name: string
+  description: string
+  expected: number
+  actual: number
+  result: 'pass' | 'warn' | 'fail'
+  note?: string
 }
 
-export type CollectionKey = keyof Database;
+/* ------------------------------------------------------------------ *
+ * Aggregate database
+ * ------------------------------------------------------------------ */
+
+export interface AisDatabase {
+  schemaVersion: number
+  seededOn: string
+  users: User[]
+  clients: Client[]
+  farms: Farm[]
+  landApplications: LandApplication[]
+  leases: Lease[]
+  enforcementActions: EnforcementAction[]
+  loans: Loan[]
+  samples: Sample[]
+  livestockVisits: LivestockVisit[]
+  surveillanceCases: SurveillanceCase[]
+  vendors: Vendor[]
+  stalls: Stall[]
+  inspections: Inspection[]
+  workflows: WorkflowDef[]
+  notifications: AppNotification[]
+  notificationTemplates: NotificationTemplate[]
+  feedback: FeedbackMessage[]
+  documents: DigitizedDocument[]
+  migrationBatches: MigrationBatch[]
+  audit: AuditEntry[]
+  /** Device-side offline queue (x.3) — not part of the seed. */
+  outbox: QueuedSubmission[]
+  /** Admin-configurable security policy (i.1). */
+  securityPolicy: SecurityPolicy
+  /** Admin-configurable farm-registration intake fields (iii.3). */
+  intakeFields: IntakeFieldConfig[]
+}
+
+export interface SecurityPolicy {
+  minPasswordLength: number
+  requireUppercase: boolean
+  requireNumber: boolean
+  requireSymbol: boolean
+  maxFailedLogins: number
+  lockoutMinutes: number
+  sessionTimeoutMinutes: number
+  require2fa: boolean
+}

@@ -1,73 +1,143 @@
-// Metadata-driven workflow engine (loan/land). Stage definitions live in the DB
-// (db.workflows) and are editable from S11 without a code change (req xi.6).
-import { nowIso } from './format';
-import type {
-  Database,
-  Loan,
-  LoanStatus,
-  WorkflowDef,
-  WorkflowEvent,
-  WorkflowStage,
-} from './types';
+/**
+ * Metadata-driven workflow engine (xi.1, xi.2, xi.6).
+ *
+ * Stages are read from `WorkflowDef` records held in the store, not from code.
+ * Editing a definition on S11 therefore changes how the next application is
+ * routed without a redeploy — that is the ★ claim behind xi.6.
+ */
 
-export const getWorkflow = (db: Database, id: string): WorkflowDef | undefined =>
-  db.workflows.find((w) => w.id === id);
+import type { StageInstance, WorkflowDef, WorkflowStatus } from './types'
 
-export const orderedStages = (def: WorkflowDef): WorkflowStage[] =>
-  [...def.stages].sort((a, b) => a.order - b.order);
+/** Materialise a fresh set of stage instances from a definition. */
+export const instantiate = (wf: WorkflowDef): StageInstance[] =>
+  wf.stages.map((s, i) => ({
+    stageId: s.id,
+    name: s.name,
+    actorRole: s.actorRole,
+    status: i === 0 ? 'in-progress' : 'pending',
+  }))
 
-export const currentStage = (def: WorkflowDef, loan: Loan): WorkflowStage | undefined =>
-  def.stages.find((s) => s.id === loan.currentStageId);
+export const currentStage = (stages: StageInstance[]): StageInstance | undefined =>
+  stages.find((s) => s.status === 'in-progress') ?? stages.find((s) => s.status === 'pending')
 
-export type LoanAction = 'advance' | 'reject' | 'disburse';
+export const stageIndex = (stages: StageInstance[], stageId: string): number =>
+  stages.findIndex((s) => s.stageId === stageId)
 
-export interface LoanTransition {
-  status: LoanStatus;
-  currentStageId: string;
-  event: WorkflowEvent;
+export interface Decision {
+  stageId: string
+  outcome: 'approved' | 'rejected'
+  byUserId: string
+  on: string
+  comment?: string
 }
 
-// The pipeline is derived from the configured stages, so adding/removing a stage
-// on S11 changes the approval path immediately.
-export function advanceLoan(
-  def: WorkflowDef,
-  loan: Loan,
-  action: LoanAction,
-  by: string,
-  note?: string,
-): LoanTransition {
-  const at = nowIso();
-  if (action === 'reject') {
-    return {
-      status: 'rejected',
-      currentStageId: 'done',
-      event: { at, by, action: 'Rejected', fromStatus: loan.status, toStatus: 'rejected', note },
-    };
-  }
-  if (action === 'disburse') {
-    return {
-      status: 'disbursed',
-      currentStageId: 'done',
-      event: { at, by, action: 'Disbursed', fromStatus: loan.status, toStatus: 'disbursed', note },
-    };
-  }
-  const pipe = ['submitted', ...orderedStages(def).map((s) => s.id), 'approved'];
-  const idx = pipe.indexOf(loan.status);
-  const nextStatus = (idx < 0 ? pipe[1] : pipe[Math.min(idx + 1, pipe.length - 1)]) as LoanStatus;
-  const currentStageId = def.stages.some((s) => s.id === nextStatus) ? nextStatus : 'done';
-  const stageName =
-    def.stages.find((s) => s.id === nextStatus)?.name ??
-    (nextStatus === 'approved' ? 'Approved' : nextStatus);
-  return {
-    status: nextStatus,
-    currentStageId,
-    event: {
-      at,
-      by,
-      action: `Advanced to ${stageName}`,
-      fromStatus: loan.status,
-      toStatus: nextStatus,
-      note,
-    },
-  };
+export interface AdvanceResult {
+  stages: StageInstance[]
+  status: WorkflowStatus
+  currentStageId: string | null
+  /** True when this decision closed the whole workflow. */
+  final: boolean
 }
+
+/**
+ * Apply a decision and route onwards. A rejection at any stage is terminal;
+ * an approval either promotes the next stage or completes the workflow.
+ */
+export function advance(stages: StageInstance[], decision: Decision): AdvanceResult {
+  const idx = stageIndex(stages, decision.stageId)
+  if (idx === -1) {
+    return {
+      stages,
+      status: 'under-review',
+      currentStageId: currentStage(stages)?.stageId ?? null,
+      final: false,
+    }
+  }
+
+  const next = stages.map((s, i) => {
+    if (i === idx) {
+      return {
+        ...s,
+        status: decision.outcome,
+        decidedByUserId: decision.byUserId,
+        decidedOn: decision.on,
+        comment: decision.comment,
+      }
+    }
+    if (decision.outcome === 'rejected' && i > idx && s.status === 'pending') {
+      return { ...s, status: 'skipped' as const }
+    }
+    if (decision.outcome === 'approved' && i === idx + 1) {
+      return { ...s, status: 'in-progress' as const }
+    }
+    return s
+  })
+
+  if (decision.outcome === 'rejected') {
+    return { stages: next, status: 'rejected', currentStageId: null, final: true }
+  }
+
+  const isLast = idx === stages.length - 1
+  return isLast
+    ? { stages: next, status: 'approved', currentStageId: null, final: true }
+    : { stages: next, status: 'under-review', currentStageId: next[idx + 1].stageId, final: false }
+}
+
+/** Progress as a 0–1 fraction, for the status tracker bars. */
+export const progress = (stages: StageInstance[]): number => {
+  if (!stages.length) return 0
+  const done = stages.filter((s) => s.status === 'approved' || s.status === 'rejected').length
+  return done / stages.length
+}
+
+export const STATUS_ORDER: WorkflowStatus[] = [
+  'draft',
+  'submitted',
+  'under-review',
+  'approved',
+  'rejected',
+  'withdrawn',
+]
+
+export const STATUS_LABELS: Record<string, string> = {
+  draft: 'Draft',
+  submitted: 'Submitted',
+  'under-review': 'Under review',
+  approved: 'Approved',
+  rejected: 'Rejected',
+  withdrawn: 'Withdrawn',
+  disbursed: 'Disbursed',
+  repaying: 'Repaying',
+  closed: 'Closed',
+  pending: 'Pending',
+  'in-progress': 'In progress',
+  skipped: 'Skipped',
+  active: 'Active',
+  expired: 'Expired',
+  terminated: 'Terminated',
+  requested: 'Requested',
+  collected: 'Collected',
+  registered: 'Registered',
+  testing: 'Testing',
+  completed: 'Completed',
+  cancelled: 'Cancelled',
+  reported: 'Reported',
+  assigned: 'Assigned',
+  investigating: 'Investigating',
+  sampled: 'Sampled',
+  confirmed: 'Confirmed',
+  negative: 'Negative',
+  resolved: 'Resolved',
+  scheduled: 'Scheduled',
+  suspended: 'Suspended',
+  vacant: 'Vacant',
+  allocated: 'Allocated',
+  reserved: 'Reserved',
+  maintenance: 'Maintenance',
+  inactive: 'Inactive',
+  merged: 'Merged',
+  deactivated: 'Deactivated',
+}
+
+export const statusLabel = (status: string): string =>
+  STATUS_LABELS[status] ?? status.replace(/-/g, ' ')

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Neutral crest placeholder">
+  <path d="M32 3 57 12v22c0 14.2-9.8 24.3-25 27C16.8 58.3 7 48.2 7 34V12z" fill="#0F6B4F"/>
+  <path d="M32 8 52 15v19c0 11.6-8 19.9-20 22.3C20 53.9 12 45.6 12 34V15z" fill="#EAF5F1"/>
+  <path d="M32 17c5 5 7.5 10 7.5 15 0 5.6-3.2 10-7.5 13.5-4.3-3.5-7.5-7.9-7.5-13.5 0-5 2.5-10 7.5-15z" fill="#0F6B4F"/>
+  <path d="M32 20v25" stroke="#EAF5F1" stroke-width="1.6" stroke-linecap="round"/>
+</svg>

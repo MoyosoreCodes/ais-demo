@@ -1,0 +1,1339 @@
+[
+  {
+    "id": "LA-2025-101",
+    "clientId": "CLT-2026-0059",
+    "parcelRef": "PR/BSAP/8707",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "lat": -4.32103,
+    "lng": 55.75277,
+    "requestedAreaHa": 2.99,
+    "purpose": "Fruit orchard establishment",
+    "status": "approved",
+    "submittedOn": "2025-07-13",
+    "workflowId": "land-allocation",
+    "currentStageId": null,
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2025-07-20",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-003",
+        "decidedOn": "2025-08-01",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "approved",
+        "decidedByUserId": "USR-005",
+        "decidedOn": "2025-08-13",
+        "comment": "Cleared at this stage."
+      }
+    ],
+    "assessments": [
+      {
+        "id": "LAS-1",
+        "assessedOn": "2025-08-01",
+        "assessorUserId": "USR-003",
+        "soilSuitability": "low",
+        "slope": "steep",
+        "waterAccess": true,
+        "accessRoad": false,
+        "recommendation": "approve",
+        "notes": "Slope will require terracing before cultivation."
+      }
+    ],
+    "documents": [
+      {
+        "id": "LAD-1",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 400,
+        "uploadedOn": "2025-07-13",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      },
+      {
+        "id": "LAD-1-b",
+        "name": "Site assessment report.pdf",
+        "category": "Assessment",
+        "sizeKb": 990,
+        "uploadedOn": "2025-08-01",
+        "uploadedBy": "USR-003",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2025-101-1",
+        "at": "2025-07-13T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Marguerite Labiche",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2025-101-2",
+        "at": "2025-07-20T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2025-101-3",
+        "at": "2025-08-01T11:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Stage \"Site assessment\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2025-101-4",
+        "at": "2025-08-13T11:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Stage \"Allocation decision\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  },
+  {
+    "id": "LA-2024-102",
+    "clientId": "CLT-2026-0055",
+    "parcelRef": "PR/BL/6792",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "lat": -4.7471,
+    "lng": 55.48912,
+    "requestedAreaHa": 0.75,
+    "purpose": "New poultry unit",
+    "status": "under-review",
+    "submittedOn": "2024-12-22",
+    "workflowId": "land-allocation",
+    "currentStageId": "stg-site",
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2024-12-29",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "pending"
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "pending"
+      }
+    ],
+    "assessments": [],
+    "documents": [
+      {
+        "id": "LAD-2",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 427,
+        "uploadedOn": "2024-12-22",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2024-102-1",
+        "at": "2024-12-22T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Damien Bonnelame",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2024-102-2",
+        "at": "2024-12-29T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  },
+  {
+    "id": "LA-2025-103",
+    "clientId": "CLT-2016-0266",
+    "parcelRef": "PR/AR/5112",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "lat": -4.74841,
+    "lng": 55.50572,
+    "requestedAreaHa": 3.2,
+    "purpose": "Agro-processing shed",
+    "status": "under-review",
+    "submittedOn": "2025-04-09",
+    "workflowId": "land-allocation",
+    "currentStageId": "stg-site",
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2025-04-16",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "pending"
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "pending"
+      }
+    ],
+    "assessments": [],
+    "documents": [
+      {
+        "id": "LAD-3",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 325,
+        "uploadedOn": "2025-04-09",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2025-103-1",
+        "at": "2025-04-09T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Dominique Zialor",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2025-103-2",
+        "at": "2025-04-16T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  },
+  {
+    "id": "LA-2024-104",
+    "clientId": "CLT-2021-0211",
+    "parcelRef": "PR/AAP/5698",
+    "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "lat": -4.68865,
+    "lng": 55.51473,
+    "requestedAreaHa": 2.17,
+    "purpose": "Expansion of vegetable production",
+    "status": "under-review",
+    "submittedOn": "2024-11-13",
+    "workflowId": "land-allocation",
+    "currentStageId": "stg-site",
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2024-11-20",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "pending"
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "pending"
+      }
+    ],
+    "assessments": [],
+    "documents": [
+      {
+        "id": "LAD-4",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 405,
+        "uploadedOn": "2024-11-13",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2024-104-1",
+        "at": "2024-11-13T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Yolande Marengo",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2024-104-2",
+        "at": "2024-11-20T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  },
+  {
+    "id": "LA-2025-105",
+    "clientId": "CLT-2017-0270",
+    "parcelRef": "PR/GAM/6117",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "lat": -4.6781,
+    "lng": 55.46763,
+    "requestedAreaHa": 0.33,
+    "purpose": "Fruit orchard establishment",
+    "status": "approved",
+    "submittedOn": "2025-12-06",
+    "workflowId": "land-allocation",
+    "currentStageId": null,
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2025-12-13",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-003",
+        "decidedOn": "2025-12-25",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "approved",
+        "decidedByUserId": "USR-005",
+        "decidedOn": "2026-01-06",
+        "comment": "Cleared at this stage."
+      }
+    ],
+    "assessments": [
+      {
+        "id": "LAS-5",
+        "assessedOn": "2025-12-25",
+        "assessorUserId": "USR-003",
+        "soilSuitability": "high",
+        "slope": "gentle",
+        "waterAccess": true,
+        "accessRoad": true,
+        "recommendation": "approve",
+        "notes": "Parcel is workable with modest clearing. Access adequate for light vehicles."
+      }
+    ],
+    "documents": [
+      {
+        "id": "LAD-5",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 397,
+        "uploadedOn": "2025-12-06",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      },
+      {
+        "id": "LAD-5-b",
+        "name": "Site assessment report.pdf",
+        "category": "Assessment",
+        "sizeKb": 513,
+        "uploadedOn": "2025-12-25",
+        "uploadedBy": "USR-003",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2025-105-1",
+        "at": "2025-12-06T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Roland Kilindo",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2025-105-2",
+        "at": "2025-12-13T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2025-105-3",
+        "at": "2025-12-25T11:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Stage \"Site assessment\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2025-105-4",
+        "at": "2026-01-06T11:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Stage \"Allocation decision\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  },
+  {
+    "id": "LA-2025-106",
+    "clientId": "CLT-2016-0237",
+    "parcelRef": "PR/BL/7010",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "lat": -4.74563,
+    "lng": 55.48961,
+    "requestedAreaHa": 1.08,
+    "purpose": "Expansion of vegetable production",
+    "status": "rejected",
+    "submittedOn": "2025-10-23",
+    "workflowId": "land-allocation",
+    "currentStageId": null,
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2025-10-30",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-003",
+        "decidedOn": "2025-11-11",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "rejected",
+        "decidedByUserId": "USR-005",
+        "decidedOn": "2025-11-23",
+        "comment": "Parcel required for a competing public purpose."
+      }
+    ],
+    "assessments": [
+      {
+        "id": "LAS-6",
+        "assessedOn": "2025-11-11",
+        "assessorUserId": "USR-003",
+        "soilSuitability": "moderate",
+        "slope": "gentle",
+        "waterAccess": false,
+        "accessRoad": true,
+        "recommendation": "reject",
+        "notes": "Water access limited in the dry season; rainwater harvesting recommended."
+      }
+    ],
+    "documents": [
+      {
+        "id": "LAD-6",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 458,
+        "uploadedOn": "2025-10-23",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      },
+      {
+        "id": "LAD-6-b",
+        "name": "Site assessment report.pdf",
+        "category": "Assessment",
+        "sizeKb": 740,
+        "uploadedOn": "2025-11-11",
+        "uploadedBy": "USR-003",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2025-106-1",
+        "at": "2025-10-23T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Antoine Confait",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2025-106-2",
+        "at": "2025-10-30T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2025-106-3",
+        "at": "2025-11-11T11:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Stage \"Site assessment\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2025-106-4",
+        "at": "2025-11-23T11:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Stage \"Allocation decision\" rejected",
+        "note": "Parcel required for a competing public purpose."
+      }
+    ]
+  },
+  {
+    "id": "LA-2024-107",
+    "clientId": "CLT-2017-0208",
+    "parcelRef": "PR/AB/5483",
+    "district": "Anse Boileau",
+    "island": "Mahé",
+    "lat": -4.72176,
+    "lng": 55.48734,
+    "requestedAreaHa": 0.56,
+    "purpose": "Nursery and propagation unit",
+    "status": "under-review",
+    "submittedOn": "2024-08-27",
+    "workflowId": "land-allocation",
+    "currentStageId": "stg-site",
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2024-09-03",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "pending"
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "pending"
+      }
+    ],
+    "assessments": [],
+    "documents": [
+      {
+        "id": "LAD-7",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 393,
+        "uploadedOn": "2024-08-27",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2024-107-1",
+        "at": "2024-08-27T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Therese Hollanda",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2024-107-2",
+        "at": "2024-09-03T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  },
+  {
+    "id": "LA-2025-108",
+    "clientId": "CLT-2026-0059",
+    "parcelRef": "PR/BSAP/5695",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "lat": -4.32131,
+    "lng": 55.74553,
+    "requestedAreaHa": 0.99,
+    "purpose": "Fruit orchard establishment",
+    "status": "submitted",
+    "submittedOn": "2025-08-10",
+    "workflowId": "land-allocation",
+    "currentStageId": "stg-screen",
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "pending"
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "pending"
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "pending"
+      }
+    ],
+    "assessments": [],
+    "documents": [
+      {
+        "id": "LAD-8",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 441,
+        "uploadedOn": "2025-08-10",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2025-108-1",
+        "at": "2025-08-10T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Marguerite Labiche",
+        "action": "Land allocation application submitted"
+      }
+    ]
+  },
+  {
+    "id": "LA-2025-109",
+    "clientId": "CLT-2026-0030",
+    "parcelRef": "PR/BSAP/6743",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "lat": -4.32356,
+    "lng": 55.74422,
+    "requestedAreaHa": 3.4,
+    "purpose": "Fodder production for goats",
+    "status": "rejected",
+    "submittedOn": "2025-04-12",
+    "workflowId": "land-allocation",
+    "currentStageId": null,
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2025-04-19",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-003",
+        "decidedOn": "2025-05-01",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "rejected",
+        "decidedByUserId": "USR-005",
+        "decidedOn": "2025-05-13",
+        "comment": "Parcel required for a competing public purpose."
+      }
+    ],
+    "assessments": [
+      {
+        "id": "LAS-9",
+        "assessedOn": "2025-05-01",
+        "assessorUserId": "USR-003",
+        "soilSuitability": "moderate",
+        "slope": "flat",
+        "waterAccess": true,
+        "accessRoad": true,
+        "recommendation": "reject",
+        "notes": "Water access limited in the dry season; rainwater harvesting recommended."
+      }
+    ],
+    "documents": [
+      {
+        "id": "LAD-9",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 209,
+        "uploadedOn": "2025-04-12",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      },
+      {
+        "id": "LAD-9-b",
+        "name": "Site assessment report.pdf",
+        "category": "Assessment",
+        "sizeKb": 401,
+        "uploadedOn": "2025-05-01",
+        "uploadedBy": "USR-003",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2025-109-1",
+        "at": "2025-04-12T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Roland Nourrice",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2025-109-2",
+        "at": "2025-04-19T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2025-109-3",
+        "at": "2025-05-01T11:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Stage \"Site assessment\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2025-109-4",
+        "at": "2025-05-13T11:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Stage \"Allocation decision\" rejected",
+        "note": "Parcel required for a competing public purpose."
+      }
+    ]
+  },
+  {
+    "id": "LA-2024-110",
+    "clientId": "CLT-2026-0055",
+    "parcelRef": "PR/BL/7645",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "lat": -4.74184,
+    "lng": 55.49347,
+    "requestedAreaHa": 3.01,
+    "purpose": "Fodder production for goats",
+    "status": "approved",
+    "submittedOn": "2024-08-17",
+    "workflowId": "land-allocation",
+    "currentStageId": null,
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2024-08-24",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-003",
+        "decidedOn": "2024-09-05",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "approved",
+        "decidedByUserId": "USR-005",
+        "decidedOn": "2024-09-17",
+        "comment": "Cleared at this stage."
+      }
+    ],
+    "assessments": [
+      {
+        "id": "LAS-10",
+        "assessedOn": "2024-09-05",
+        "assessorUserId": "USR-003",
+        "soilSuitability": "moderate",
+        "slope": "steep",
+        "waterAccess": true,
+        "accessRoad": true,
+        "recommendation": "approve-with-conditions",
+        "notes": "Water access limited in the dry season; rainwater harvesting recommended."
+      }
+    ],
+    "documents": [
+      {
+        "id": "LAD-10",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 154,
+        "uploadedOn": "2024-08-17",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      },
+      {
+        "id": "LAD-10-b",
+        "name": "Site assessment report.pdf",
+        "category": "Assessment",
+        "sizeKb": 464,
+        "uploadedOn": "2024-09-05",
+        "uploadedBy": "USR-003",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2024-110-1",
+        "at": "2024-08-17T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Damien Bonnelame",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2024-110-2",
+        "at": "2024-08-24T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2024-110-3",
+        "at": "2024-09-05T11:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Stage \"Site assessment\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2024-110-4",
+        "at": "2024-09-17T11:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Stage \"Allocation decision\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  },
+  {
+    "id": "LA-2026-111",
+    "clientId": "CLT-2026-0019",
+    "parcelRef": "PR/AB/7525",
+    "district": "Anse Boileau",
+    "island": "Mahé",
+    "lat": -4.71942,
+    "lng": 55.48391,
+    "requestedAreaHa": 1.28,
+    "purpose": "Expansion of vegetable production",
+    "status": "approved",
+    "submittedOn": "2026-01-15",
+    "workflowId": "land-allocation",
+    "currentStageId": null,
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2026-01-22",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-003",
+        "decidedOn": "2026-02-03",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "approved",
+        "decidedByUserId": "USR-005",
+        "decidedOn": "2026-02-15",
+        "comment": "Cleared at this stage."
+      }
+    ],
+    "assessments": [
+      {
+        "id": "LAS-11",
+        "assessedOn": "2026-02-03",
+        "assessorUserId": "USR-003",
+        "soilSuitability": "low",
+        "slope": "steep",
+        "waterAccess": true,
+        "accessRoad": true,
+        "recommendation": "approve-with-conditions",
+        "notes": "Parcel is workable with modest clearing. Access adequate for light vehicles."
+      }
+    ],
+    "documents": [
+      {
+        "id": "LAD-11",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 321,
+        "uploadedOn": "2026-01-15",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      },
+      {
+        "id": "LAD-11-b",
+        "name": "Site assessment report.pdf",
+        "category": "Assessment",
+        "sizeKb": 1217,
+        "uploadedOn": "2026-02-03",
+        "uploadedBy": "USR-003",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2026-111-1",
+        "at": "2026-01-15T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Wilfred Hoareau",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2026-111-2",
+        "at": "2026-01-22T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2026-111-3",
+        "at": "2026-02-03T11:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Stage \"Site assessment\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2026-111-4",
+        "at": "2026-02-15T11:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Stage \"Allocation decision\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  },
+  {
+    "id": "LA-2026-112",
+    "clientId": "CLT-2026-0058",
+    "parcelRef": "PR/GAM/5014",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "lat": -4.67586,
+    "lng": 55.46364,
+    "requestedAreaHa": 3.69,
+    "purpose": "Agro-processing shed",
+    "status": "approved",
+    "submittedOn": "2026-03-10",
+    "workflowId": "land-allocation",
+    "currentStageId": null,
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2026-03-17",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-003",
+        "decidedOn": "2026-03-29",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "approved",
+        "decidedByUserId": "USR-005",
+        "decidedOn": "2026-04-10",
+        "comment": "Cleared at this stage."
+      }
+    ],
+    "assessments": [
+      {
+        "id": "LAS-12",
+        "assessedOn": "2026-03-29",
+        "assessorUserId": "USR-003",
+        "soilSuitability": "low",
+        "slope": "gentle",
+        "waterAccess": true,
+        "accessRoad": true,
+        "recommendation": "approve",
+        "notes": "Water access limited in the dry season; rainwater harvesting recommended."
+      }
+    ],
+    "documents": [
+      {
+        "id": "LAD-12",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 423,
+        "uploadedOn": "2026-03-10",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      },
+      {
+        "id": "LAD-12-b",
+        "name": "Site assessment report.pdf",
+        "category": "Assessment",
+        "sizeKb": 1388,
+        "uploadedOn": "2026-03-29",
+        "uploadedBy": "USR-003",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2026-112-1",
+        "at": "2026-03-10T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Alcide Rassool",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2026-112-2",
+        "at": "2026-03-17T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2026-112-3",
+        "at": "2026-03-29T11:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Stage \"Site assessment\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2026-112-4",
+        "at": "2026-04-10T11:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Stage \"Allocation decision\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  },
+  {
+    "id": "LA-2024-113",
+    "clientId": "CLT-2026-0014",
+    "parcelRef": "PR/GAM/7009",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "lat": -4.67833,
+    "lng": 55.46253,
+    "requestedAreaHa": 1.95,
+    "purpose": "Agro-processing shed",
+    "status": "approved",
+    "submittedOn": "2024-10-21",
+    "workflowId": "land-allocation",
+    "currentStageId": null,
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2024-10-28",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-003",
+        "decidedOn": "2024-11-09",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "approved",
+        "decidedByUserId": "USR-005",
+        "decidedOn": "2024-11-21",
+        "comment": "Cleared at this stage."
+      }
+    ],
+    "assessments": [
+      {
+        "id": "LAS-13",
+        "assessedOn": "2024-11-09",
+        "assessorUserId": "USR-003",
+        "soilSuitability": "high",
+        "slope": "flat",
+        "waterAccess": true,
+        "accessRoad": false,
+        "recommendation": "approve-with-conditions",
+        "notes": "Slope will require terracing before cultivation."
+      }
+    ],
+    "documents": [
+      {
+        "id": "LAD-13",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 454,
+        "uploadedOn": "2024-10-21",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      },
+      {
+        "id": "LAD-13-b",
+        "name": "Site assessment report.pdf",
+        "category": "Assessment",
+        "sizeKb": 442,
+        "uploadedOn": "2024-11-09",
+        "uploadedBy": "USR-003",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2024-113-1",
+        "at": "2024-10-21T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Lucienne Zialor",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2024-113-2",
+        "at": "2024-10-28T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2024-113-3",
+        "at": "2024-11-09T11:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Stage \"Site assessment\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2024-113-4",
+        "at": "2024-11-21T11:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Stage \"Allocation decision\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  },
+  {
+    "id": "LA-2025-114",
+    "clientId": "CLT-2026-0009",
+    "parcelRef": "PR/GAM/5403",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "lat": -4.67895,
+    "lng": 55.46519,
+    "requestedAreaHa": 0.77,
+    "purpose": "Fodder production for goats",
+    "status": "approved",
+    "submittedOn": "2025-12-12",
+    "workflowId": "land-allocation",
+    "currentStageId": null,
+    "stageInstances": [
+      {
+        "stageId": "stg-screen",
+        "name": "Eligibility screening",
+        "actorRole": "agriculture_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-002",
+        "decidedOn": "2025-12-19",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-site",
+        "name": "Site assessment",
+        "actorRole": "field_officer",
+        "status": "approved",
+        "decidedByUserId": "USR-003",
+        "decidedOn": "2025-12-31",
+        "comment": "Cleared at this stage."
+      },
+      {
+        "stageId": "stg-decision",
+        "name": "Allocation decision",
+        "actorRole": "supervisor",
+        "status": "approved",
+        "decidedByUserId": "USR-005",
+        "decidedOn": "2026-01-12",
+        "comment": "Cleared at this stage."
+      }
+    ],
+    "assessments": [
+      {
+        "id": "LAS-14",
+        "assessedOn": "2025-12-31",
+        "assessorUserId": "USR-003",
+        "soilSuitability": "low",
+        "slope": "flat",
+        "waterAccess": true,
+        "accessRoad": true,
+        "recommendation": "approve",
+        "notes": "Water access limited in the dry season; rainwater harvesting recommended."
+      }
+    ],
+    "documents": [
+      {
+        "id": "LAD-14",
+        "name": "Application form.pdf",
+        "category": "Application",
+        "sizeKb": 184,
+        "uploadedOn": "2025-12-12",
+        "uploadedBy": "SELF",
+        "verification": "verified",
+        "simulated": true
+      },
+      {
+        "id": "LAD-14-b",
+        "name": "Site assessment report.pdf",
+        "category": "Assessment",
+        "sizeKb": 1372,
+        "uploadedOn": "2025-12-31",
+        "uploadedBy": "USR-003",
+        "verification": "verified",
+        "simulated": true
+      }
+    ],
+    "history": [
+      {
+        "id": "LAH-LA-2025-114-1",
+        "at": "2025-12-12T10:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Alcide Confait",
+        "action": "Land allocation application submitted"
+      },
+      {
+        "id": "LAH-LA-2025-114-2",
+        "at": "2025-12-19T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stage \"Eligibility screening\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2025-114-3",
+        "at": "2025-12-31T11:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Stage \"Site assessment\" approved",
+        "note": "Cleared at this stage."
+      },
+      {
+        "id": "LAH-LA-2025-114-4",
+        "at": "2026-01-12T11:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Stage \"Allocation decision\" approved",
+        "note": "Cleared at this stage."
+      }
+    ]
+  }
+]

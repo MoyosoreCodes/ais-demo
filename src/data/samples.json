@@ -1,1345 +1,1185 @@
 [
   {
-    "id": "SMP-2026-001",
-    "barcode": "SC-000412",
-    "clientId": "CLT-0001",
+    "id": "LAB-2026-0031",
+    "type": "soil",
+    "clientId": "CLT-2026-0001",
     "farmId": "FRM-2026-00001",
-    "type": "soil",
-    "status": "testing",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-07-12T09:00:00.000Z",
-    "collectedAt": "2026-07-13T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-07-12T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-07-13T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-07-14T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-07-15T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-002",
-    "barcode": "SC-651560",
-    "clientId": "CLT-0036",
-    "farmId": "FRM-2026-00031",
-    "type": "soil",
-    "status": "released",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-23T09:00:00.000Z",
-    "collectedAt": "2026-06-24T09:00:00.000Z",
-    "completedAt": "2026-06-30T09:00:00.000Z",
-    "verifiedBy": "S. Rose",
-    "verifiedAt": "2026-07-07T09:00:00.000Z",
-    "releasedAt": "2026-07-04T09:00:00.000Z",
+    "requestedOn": "2026-03-08",
+    "requestedVia": "online",
+    "requestedByUserId": "SELF",
+    "status": "completed",
+    "collectedOn": "2026-03-11",
+    "registeredOn": "2026-03-12",
+    "testingStartedOn": "2026-03-14",
+    "completedOn": "2026-03-20",
+    "labTechUserId": "USR-004",
+    "purpose": "Soil fertility assessment ahead of poultry-house siting and banana block replanting.",
     "results": [
       {
-        "name": "pH",
-        "value": "7.7",
+        "parameter": "pH (H₂O)",
+        "value": 5.2,
         "unit": "",
-        "reference": "6.0 - 7.0"
+        "method": "SM-4500-H",
+        "referenceRange": "5.5 – 7.0",
+        "flag": "low"
       },
       {
-        "name": "Nitrogen (N)",
-        "value": "0.65",
+        "parameter": "Organic matter",
+        "value": 4.1,
         "unit": "%",
-        "reference": "> 0.2"
+        "method": "Walkley-Black",
+        "referenceRange": "> 3.0",
+        "flag": "normal"
       },
       {
-        "name": "Phosphorus (P)",
-        "value": "38",
-        "unit": "ppm",
-        "reference": "15 - 30"
-      },
-      {
-        "name": "Organic matter",
-        "value": "1.9",
+        "parameter": "Nitrogen (total)",
+        "value": 0.18,
         "unit": "%",
-        "reference": "> 3.0"
+        "method": "Kjeldahl",
+        "referenceRange": "0.15 – 0.30",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Phosphorus (available)",
+        "value": 11.4,
+        "unit": "mg/kg",
+        "method": "Olsen",
+        "referenceRange": "15 – 40",
+        "flag": "low"
+      },
+      {
+        "parameter": "Potassium (exchangeable)",
+        "value": 168,
+        "unit": "mg/kg",
+        "method": "NH₄OAc",
+        "referenceRange": "120 – 300",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Electrical conductivity",
+        "value": 0.34,
+        "unit": "dS/m",
+        "method": "SM-2510-B",
+        "referenceRange": "< 1.0",
+        "flag": "normal"
       }
     ],
-    "resultSummary": "Suitable for cultivation",
-    "notified": true,
-    "chain": [
+    "interpretation": "Moderately acidic soil with good organic matter. Available phosphorus is below the target range and pH is marginally low for banana.",
+    "recommendation": "Apply agricultural lime at 1.5 t/ha to raise pH toward 6.0. Correct phosphorus with a basal rock-phosphate dressing before replanting. Re-test in 9 months.",
+    "notifiedOn": "2026-03-20",
+    "history": [
       {
-        "at": "2026-06-23T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
+        "id": "SH-1",
+        "at": "2026-03-08T08:40:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Marie-Ange Hoareau",
+        "action": "Sampling request submitted via farmer portal"
       },
       {
-        "at": "2026-06-24T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
+        "id": "SH-2",
+        "at": "2026-03-11T09:15:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Sample collected on farm",
+        "note": "4 sub-samples, 0–20 cm, composited."
       },
       {
-        "at": "2026-06-25T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
+        "id": "SH-3",
+        "at": "2026-03-12T10:05:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Sample registered at laboratory"
       },
       {
-        "at": "2026-06-26T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
+        "id": "SH-4",
+        "at": "2026-03-14T08:30:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
         "action": "Testing started"
       },
       {
-        "at": "2026-06-27T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
+        "id": "SH-5",
+        "at": "2026-03-20T14:20:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Results entered and validated"
       },
       {
-        "at": "2026-06-28T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results verified"
-      },
-      {
-        "at": "2026-06-29T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Result released"
+        "id": "SH-6",
+        "at": "2026-03-20T14:25:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Applicant notified (SMS + email, simulated)"
       }
     ]
   },
   {
-    "id": "SMP-2026-003",
-    "barcode": "SC-268880",
-    "clientId": "CLT-0036",
-    "farmId": "FRM-2026-00031",
-    "type": "soil",
-    "status": "collected",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-07-09T09:00:00.000Z",
-    "collectedAt": "2026-07-10T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-07-09T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-07-10T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-004",
-    "barcode": "SC-640195",
-    "clientId": "CLT-0073",
-    "farmId": "FRM-2026-00061",
-    "type": "plant",
-    "status": "verified",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-17T09:00:00.000Z",
-    "collectedAt": "2026-06-18T09:00:00.000Z",
-    "completedAt": "2026-07-10T09:00:00.000Z",
-    "verifiedBy": "S. Rose",
-    "verifiedAt": "2026-07-03T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Trace detected",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Amend with lime",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-06-17T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-06-18T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-06-19T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-06-20T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-06-21T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      },
-      {
-        "at": "2026-06-22T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results verified"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-005",
-    "barcode": "SC-776059",
-    "clientId": "CLT-0059",
-    "farmId": "FRM-2026-00049",
-    "type": "soil",
-    "status": "verified",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-04-12T09:00:00.000Z",
-    "collectedAt": "2026-04-13T09:00:00.000Z",
-    "completedAt": "2026-07-06T09:00:00.000Z",
-    "verifiedBy": "S. Rose",
-    "verifiedAt": "2026-06-15T09:00:00.000Z",
-    "results": [
-      {
-        "name": "pH",
-        "value": "7.5",
-        "unit": "",
-        "reference": "6.0 - 7.0"
-      },
-      {
-        "name": "Nitrogen (N)",
-        "value": "0.25",
-        "unit": "%",
-        "reference": "> 0.2"
-      },
-      {
-        "name": "Phosphorus (P)",
-        "value": "34",
-        "unit": "ppm",
-        "reference": "15 - 30"
-      },
-      {
-        "name": "Organic matter",
-        "value": "2.3",
-        "unit": "%",
-        "reference": "> 3.0"
-      }
-    ],
-    "resultSummary": "Suitable for cultivation",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-04-12T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-04-13T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-04-14T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-04-15T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-04-16T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      },
-      {
-        "at": "2026-04-17T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results verified"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-006",
-    "barcode": "SC-127812",
-    "clientId": "CLT-0069",
-    "farmId": "FRM-2026-00057",
+    "id": "LAB-2026-0101",
     "type": "compost",
-    "status": "verified",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-27T09:00:00.000Z",
-    "collectedAt": "2026-06-28T09:00:00.000Z",
-    "completedAt": "2026-07-15T09:00:00.000Z",
-    "verifiedBy": "S. Rose",
-    "verifiedAt": "2026-07-09T09:00:00.000Z",
+    "clientId": "CLT-2021-0204",
+    "farmId": "FRM-2021-00231",
+    "requestedOn": "2026-01-03",
+    "requestedVia": "online",
+    "requestedByUserId": "SELF",
+    "status": "completed",
+    "collectedOn": "2026-01-06",
+    "registeredOn": "2026-01-07",
+    "testingStartedOn": "2026-01-09",
+    "completedOn": "2026-01-15",
+    "labTechUserId": "USR-004",
+    "purpose": "Pre-planting assessment",
     "results": [
       {
-        "name": "Result",
-        "value": "Trace detected",
+        "parameter": "pH",
+        "value": 8,
         "unit": "",
-        "reference": ""
+        "method": "SM-4500-H",
+        "referenceRange": "6.5 – 8.0",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Moisture",
+        "value": 36,
+        "unit": "%",
+        "method": "Gravimetric",
+        "referenceRange": "40 – 60",
+        "flag": "low"
+      },
+      {
+        "parameter": "C:N ratio",
+        "value": 10.3,
+        "unit": "",
+        "method": "Dry combustion",
+        "referenceRange": "15 – 25",
+        "flag": "low"
+      },
+      {
+        "parameter": "Maturity (Solvita)",
+        "value": 5,
+        "unit": "index",
+        "method": "Solvita",
+        "referenceRange": "≥ 6",
+        "flag": "normal"
       }
     ],
-    "resultSummary": "Suitable for cultivation",
-    "notified": false,
-    "chain": [
+    "interpretation": "All measured parameters fall within the reference ranges.",
+    "recommendation": "Apply corrective amendment and re-test in 6 months.",
+    "notifiedOn": "2026-01-15",
+    "history": [
       {
-        "at": "2026-06-27T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
+        "id": "SH-LAB-2026-0101-1",
+        "at": "2026-01-03T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
       },
       {
-        "at": "2026-06-28T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-06-29T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-06-30T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-07-01T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      },
-      {
-        "at": "2026-07-02T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results verified"
+        "id": "SH-LAB-2026-0101-2",
+        "at": "2026-01-15T15:00:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Results entered and validated"
       }
     ]
   },
   {
-    "id": "SMP-2026-007",
-    "barcode": "SC-730235",
-    "clientId": "CLT-0017",
-    "farmId": "FRM-2026-00014",
-    "type": "compost",
-    "status": "collected",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-26T09:00:00.000Z",
-    "collectedAt": "2026-03-27T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-03-26T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-03-27T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-008",
-    "barcode": "SC-889439",
-    "clientId": "CLT-0068",
-    "farmId": "FRM-2026-00056",
-    "type": "plant",
-    "status": "registered",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-04-24T09:00:00.000Z",
-    "collectedAt": "2026-04-25T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-04-24T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-04-25T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-04-26T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-009",
-    "barcode": "SC-120702",
-    "clientId": "CLT-0040",
+    "id": "LAB-2025-0102",
+    "type": "water",
+    "clientId": "CLT-2026-0051",
     "farmId": "FRM-2026-00035",
-    "type": "water",
-    "status": "registered",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-23T09:00:00.000Z",
-    "collectedAt": "2026-03-24T09:00:00.000Z",
+    "requestedOn": "2025-05-31",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "requested",
+    "purpose": "Routine fertility monitoring",
     "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
+    "history": [
       {
-        "at": "2026-03-23T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-03-24T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-03-25T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
+        "id": "SH-LAB-2025-0102-1",
+        "at": "2025-05-31T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
       }
     ]
   },
   {
-    "id": "SMP-2026-010",
-    "barcode": "SC-526966",
-    "clientId": "CLT-0070",
-    "farmId": "FRM-2026-00058",
+    "id": "LAB-2025-0103",
     "type": "plant",
-    "status": "result_entered",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-02-15T09:00:00.000Z",
-    "collectedAt": "2026-02-16T09:00:00.000Z",
-    "completedAt": "2026-04-22T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Trace detected",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Amend with lime",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-02-15T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-02-16T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-02-17T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-02-18T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-02-19T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-011",
-    "barcode": "SC-542592",
-    "clientId": "CLT-0028",
-    "farmId": "FRM-2026-00024",
-    "type": "compost",
-    "status": "released",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-25T09:00:00.000Z",
-    "collectedAt": "2026-06-26T09:00:00.000Z",
-    "completedAt": "2026-07-13T09:00:00.000Z",
-    "verifiedBy": "S. Rose",
-    "verifiedAt": "2026-07-15T09:00:00.000Z",
-    "releasedAt": "2026-07-09T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Within range",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Amend with lime",
-    "notified": true,
-    "chain": [
-      {
-        "at": "2026-06-25T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-06-26T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-06-27T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-06-28T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-06-29T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      },
-      {
-        "at": "2026-06-30T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results verified"
-      },
-      {
-        "at": "2026-07-01T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Result released"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-012",
-    "barcode": "SC-829584",
-    "clientId": "CLT-0049",
-    "farmId": "FRM-2026-00041",
-    "type": "soil",
+    "clientId": "CLT-2021-0261",
+    "farmId": "FRM-2021-00223",
+    "requestedOn": "2025-01-14",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
     "status": "registered",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-05-10T09:00:00.000Z",
-    "collectedAt": "2026-05-11T09:00:00.000Z",
+    "collectedOn": "2025-01-17",
+    "registeredOn": "2025-01-18",
+    "labTechUserId": "USR-004",
+    "purpose": "Pre-planting assessment",
     "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
+    "history": [
       {
-        "at": "2026-05-10T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-05-11T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-05-12T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
+        "id": "SH-LAB-2025-0103-1",
+        "at": "2025-01-14T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
       }
     ]
   },
   {
-    "id": "SMP-2026-013",
-    "barcode": "SC-120163",
-    "clientId": "CLT-0055",
-    "farmId": "FRM-2026-00045",
-    "type": "soil",
-    "status": "collected",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-01-29T09:00:00.000Z",
-    "collectedAt": "2026-01-30T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-01-29T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-01-30T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-014",
-    "barcode": "SC-017292",
-    "clientId": "CLT-0037",
-    "farmId": "FRM-2026-00032",
+    "id": "LAB-2025-0104",
     "type": "compost",
-    "status": "registered",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-04-17T09:00:00.000Z",
-    "collectedAt": "2026-04-18T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-04-17T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-04-18T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-04-19T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-015",
-    "barcode": "SC-685052",
-    "clientId": "CLT-0047",
-    "farmId": "FRM-2026-00039",
-    "type": "water",
-    "status": "testing",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-02-18T09:00:00.000Z",
-    "collectedAt": "2026-02-19T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-02-18T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-02-19T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-02-20T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-02-21T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-016",
-    "barcode": "SC-742028",
-    "clientId": "CLT-0014",
-    "farmId": "FRM-2026-00012",
-    "type": "soil",
-    "status": "testing",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-07-12T09:00:00.000Z",
-    "collectedAt": "2026-07-13T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-07-12T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-07-13T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-07-14T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-07-15T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-017",
-    "barcode": "SC-798865",
-    "clientId": "CLT-0004",
-    "farmId": "FRM-2026-00004",
-    "type": "plant",
-    "status": "verified",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-04-26T09:00:00.000Z",
-    "collectedAt": "2026-04-27T09:00:00.000Z",
-    "completedAt": "2026-06-14T09:00:00.000Z",
-    "verifiedBy": "S. Rose",
-    "verifiedAt": "2026-07-13T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Elevated",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Amend with lime",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-04-26T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-04-27T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-04-28T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-04-29T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-04-30T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      },
-      {
-        "at": "2026-05-01T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results verified"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-018",
-    "barcode": "SC-547196",
-    "clientId": "CLT-0048",
-    "farmId": "FRM-2026-00040",
-    "type": "compost",
-    "status": "collected",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-04-01T09:00:00.000Z",
-    "collectedAt": "2026-04-02T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-04-01T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-04-02T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-019",
-    "barcode": "SC-450399",
-    "clientId": "CLT-0049",
-    "farmId": "FRM-2026-00041",
-    "type": "soil",
-    "status": "collected",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-11T09:00:00.000Z",
-    "collectedAt": "2026-03-12T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-03-11T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-03-12T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-020",
-    "barcode": "SC-645436",
-    "clientId": "CLT-0033",
-    "farmId": "FRM-2026-00029",
-    "type": "plant",
-    "status": "verified",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-05T09:00:00.000Z",
-    "collectedAt": "2026-06-06T09:00:00.000Z",
-    "completedAt": "2026-06-13T09:00:00.000Z",
-    "verifiedBy": "S. Rose",
-    "verifiedAt": "2026-06-26T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Trace detected",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Suitable for cultivation",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-06-05T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-06-06T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-06-07T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-06-08T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-06-09T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      },
-      {
-        "at": "2026-06-10T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results verified"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-021",
-    "barcode": "SC-032661",
-    "clientId": "CLT-0025",
-    "farmId": "FRM-2026-00021",
-    "type": "compost",
-    "status": "registered",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-05-12T09:00:00.000Z",
-    "collectedAt": "2026-05-13T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-05-12T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-05-13T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-05-14T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-022",
-    "barcode": "SC-661953",
-    "clientId": "CLT-0070",
-    "farmId": "FRM-2026-00058",
-    "type": "compost",
-    "status": "registered",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-11T09:00:00.000Z",
-    "collectedAt": "2026-03-12T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-03-11T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-03-12T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-03-13T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-023",
-    "barcode": "SC-000715",
-    "clientId": "CLT-0059",
-    "farmId": "FRM-2026-00049",
-    "type": "soil",
-    "status": "testing",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-03-12T09:00:00.000Z",
-    "collectedAt": "2026-03-13T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-03-12T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-03-13T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-03-14T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-03-15T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-024",
-    "barcode": "SC-692491",
-    "clientId": "CLT-0026",
-    "farmId": "FRM-2026-00022",
-    "type": "soil",
-    "status": "result_entered",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-05-18T09:00:00.000Z",
-    "collectedAt": "2026-05-19T09:00:00.000Z",
-    "completedAt": "2026-07-08T09:00:00.000Z",
-    "results": [
-      {
-        "name": "pH",
-        "value": "6.6",
-        "unit": "",
-        "reference": "6.0 - 7.0"
-      },
-      {
-        "name": "Nitrogen (N)",
-        "value": "0.49",
-        "unit": "%",
-        "reference": "> 0.2"
-      },
-      {
-        "name": "Phosphorus (P)",
-        "value": "15",
-        "unit": "ppm",
-        "reference": "15 - 30"
-      },
-      {
-        "name": "Organic matter",
-        "value": "4.3",
-        "unit": "%",
-        "reference": "> 3.0"
-      }
-    ],
-    "resultSummary": "Suitable for cultivation",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-05-18T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-05-19T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-05-20T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-05-21T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-05-22T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-025",
-    "barcode": "SC-232870",
-    "clientId": "CLT-0005",
-    "farmId": "FRM-2026-00005",
-    "type": "compost",
-    "status": "result_entered",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-07-09T09:00:00.000Z",
-    "collectedAt": "2026-07-10T09:00:00.000Z",
-    "completedAt": "2026-07-13T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Within range",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Monitor nitrogen levels",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-07-09T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-07-10T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-07-11T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-07-12T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-07-13T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-026",
-    "barcode": "SC-430281",
-    "clientId": "CLT-0023",
-    "farmId": "FRM-2026-00019",
-    "type": "soil",
-    "status": "registered",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-02-06T09:00:00.000Z",
-    "collectedAt": "2026-02-07T09:00:00.000Z",
-    "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-02-06T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-02-07T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-02-08T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-027",
-    "barcode": "SC-656655",
-    "clientId": "CLT-0060",
-    "farmId": "FRM-2026-00050",
-    "type": "soil",
-    "status": "verified",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-01-17T09:00:00.000Z",
-    "collectedAt": "2026-01-18T09:00:00.000Z",
-    "completedAt": "2026-04-01T09:00:00.000Z",
-    "verifiedBy": "S. Rose",
-    "verifiedAt": "2026-03-17T09:00:00.000Z",
-    "results": [
-      {
-        "name": "pH",
-        "value": "7.5",
-        "unit": "",
-        "reference": "6.0 - 7.0"
-      },
-      {
-        "name": "Nitrogen (N)",
-        "value": "0.12",
-        "unit": "%",
-        "reference": "> 0.2"
-      },
-      {
-        "name": "Phosphorus (P)",
-        "value": "14",
-        "unit": "ppm",
-        "reference": "15 - 30"
-      },
-      {
-        "name": "Organic matter",
-        "value": "4.9",
-        "unit": "%",
-        "reference": "> 3.0"
-      }
-    ],
-    "resultSummary": "Monitor nitrogen levels",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-01-17T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-01-18T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-01-19T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-01-20T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-01-21T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      },
-      {
-        "at": "2026-01-22T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results verified"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-028",
-    "barcode": "SC-715661",
-    "clientId": "CLT-0012",
+    "clientId": "CLT-2026-0018",
     "farmId": "FRM-2026-00010",
-    "type": "compost",
-    "status": "verified",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-01-25T09:00:00.000Z",
-    "collectedAt": "2026-01-26T09:00:00.000Z",
-    "completedAt": "2026-05-20T09:00:00.000Z",
-    "verifiedBy": "S. Rose",
-    "verifiedAt": "2026-02-08T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Within range",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Suitable for cultivation",
-    "notified": false,
-    "chain": [
-      {
-        "at": "2026-01-25T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-01-26T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-01-27T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-01-28T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-01-29T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      },
-      {
-        "at": "2026-01-30T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results verified"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-029",
-    "barcode": "SC-211688",
-    "clientId": "CLT-0005",
-    "farmId": "FRM-2026-00005",
-    "type": "plant",
-    "status": "released",
-    "requestedBy": "officer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-16T09:00:00.000Z",
-    "collectedAt": "2026-06-17T09:00:00.000Z",
-    "completedAt": "2026-07-03T09:00:00.000Z",
-    "verifiedBy": "S. Rose",
-    "verifiedAt": "2026-06-24T09:00:00.000Z",
-    "releasedAt": "2026-07-15T09:00:00.000Z",
-    "results": [
-      {
-        "name": "Result",
-        "value": "Within range",
-        "unit": "",
-        "reference": ""
-      }
-    ],
-    "resultSummary": "Suitable for cultivation",
-    "notified": true,
-    "chain": [
-      {
-        "at": "2026-06-16T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
-      },
-      {
-        "at": "2026-06-17T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
-      },
-      {
-        "at": "2026-06-18T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Registered in lab"
-      },
-      {
-        "at": "2026-06-19T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Testing started"
-      },
-      {
-        "at": "2026-06-20T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results entered"
-      },
-      {
-        "at": "2026-06-21T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Results verified"
-      },
-      {
-        "at": "2026-06-22T09:00:00.000Z",
-        "by": "S. Rose (Lab)",
-        "action": "Result released"
-      }
-    ]
-  },
-  {
-    "id": "SMP-2026-030",
-    "barcode": "SC-716754",
-    "clientId": "CLT-0074",
-    "farmId": "FRM-2026-00062",
-    "type": "soil",
-    "status": "collected",
-    "requestedBy": "farmer",
-    "assignedTo": "USR-LAB",
-    "requestedAt": "2026-06-17T09:00:00.000Z",
-    "collectedAt": "2026-06-18T09:00:00.000Z",
+    "requestedOn": "2025-06-28",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "requested",
+    "purpose": "Irrigation water quality check",
     "results": [],
-    "resultSummary": "",
-    "notified": false,
-    "chain": [
+    "history": [
       {
-        "at": "2026-06-17T09:00:00.000Z",
-        "by": "Applicant",
-        "action": "Request submitted"
+        "id": "SH-LAB-2025-0104-1",
+        "at": "2025-06-28T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0105",
+    "type": "water",
+    "clientId": "CLT-2026-0069",
+    "farmId": "FRM-2026-00020",
+    "requestedOn": "2025-07-12",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
+    "status": "registered",
+    "collectedOn": "2025-07-15",
+    "registeredOn": "2025-07-16",
+    "labTechUserId": "USR-004",
+    "purpose": "Irrigation water quality check",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0105-1",
+        "at": "2025-07-12T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0106",
+    "type": "plant",
+    "clientId": "CLT-2021-0220",
+    "farmId": "FRM-2021-00224",
+    "requestedOn": "2025-11-07",
+    "requestedVia": "online",
+    "requestedByUserId": "SELF",
+    "status": "testing",
+    "collectedOn": "2025-11-10",
+    "registeredOn": "2025-11-11",
+    "testingStartedOn": "2025-11-13",
+    "labTechUserId": "USR-004",
+    "purpose": "Pre-planting assessment",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0106-1",
+        "at": "2025-11-07T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2026-0107",
+    "type": "soil",
+    "clientId": "CLT-2021-0261",
+    "farmId": "FRM-2026-00047",
+    "requestedOn": "2026-02-09",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "completed",
+    "collectedOn": "2026-02-12",
+    "registeredOn": "2026-02-13",
+    "testingStartedOn": "2026-02-15",
+    "completedOn": "2026-02-21",
+    "labTechUserId": "USR-004",
+    "purpose": "Pre-planting assessment",
+    "results": [
+      {
+        "parameter": "pH (H₂O)",
+        "value": 5.6,
+        "unit": "",
+        "method": "SM-4500-H",
+        "referenceRange": "5.5 – 7.0",
+        "flag": "normal"
       },
       {
-        "at": "2026-06-18T09:00:00.000Z",
-        "by": "Field Officer",
-        "action": "Sample collected"
+        "parameter": "Organic matter",
+        "value": 2.7,
+        "unit": "%",
+        "method": "Walkley-Black",
+        "referenceRange": "> 3.0",
+        "flag": "low"
+      },
+      {
+        "parameter": "Nitrogen (total)",
+        "value": 0.06,
+        "unit": "%",
+        "method": "Kjeldahl",
+        "referenceRange": "0.15 – 0.30",
+        "flag": "low"
+      },
+      {
+        "parameter": "Phosphorus (available)",
+        "value": 18.6,
+        "unit": "mg/kg",
+        "method": "Olsen",
+        "referenceRange": "15 – 40",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Potassium (exchangeable)",
+        "value": 253,
+        "unit": "mg/kg",
+        "method": "NH₄OAc",
+        "referenceRange": "120 – 300",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Electrical conductivity",
+        "value": 0.64,
+        "unit": "dS/m",
+        "method": "SM-2510-B",
+        "referenceRange": "< 1.0",
+        "flag": "normal"
+      }
+    ],
+    "interpretation": "Results consistent with the reported field symptoms.",
+    "recommendation": "Maintain the current fertiliser programme and re-test in 12 months.",
+    "notifiedOn": "2026-02-21",
+    "history": [
+      {
+        "id": "SH-LAB-2026-0107-1",
+        "at": "2026-02-09T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      },
+      {
+        "id": "SH-LAB-2026-0107-2",
+        "at": "2026-02-21T15:00:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Results entered and validated"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2026-0108",
+    "type": "compost",
+    "clientId": "CLT-2026-0003",
+    "farmId": "FRM-2026-00048",
+    "requestedOn": "2026-02-13",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "completed",
+    "collectedOn": "2026-02-16",
+    "registeredOn": "2026-02-17",
+    "testingStartedOn": "2026-02-19",
+    "completedOn": "2026-02-25",
+    "labTechUserId": "USR-004",
+    "purpose": "Routine fertility monitoring",
+    "results": [
+      {
+        "parameter": "pH",
+        "value": 6.1,
+        "unit": "",
+        "method": "SM-4500-H",
+        "referenceRange": "6.5 – 8.0",
+        "flag": "low"
+      },
+      {
+        "parameter": "Moisture",
+        "value": 68,
+        "unit": "%",
+        "method": "Gravimetric",
+        "referenceRange": "40 – 60",
+        "flag": "high"
+      },
+      {
+        "parameter": "C:N ratio",
+        "value": 30.9,
+        "unit": "",
+        "method": "Dry combustion",
+        "referenceRange": "15 – 25",
+        "flag": "high"
+      },
+      {
+        "parameter": "Maturity (Solvita)",
+        "value": 5,
+        "unit": "index",
+        "method": "Solvita",
+        "referenceRange": "≥ 6",
+        "flag": "normal"
+      }
+    ],
+    "interpretation": "One parameter falls outside the reference range; corrective action advised.",
+    "recommendation": "Apply corrective amendment and re-test in 6 months.",
+    "notifiedOn": "2026-02-25",
+    "history": [
+      {
+        "id": "SH-LAB-2026-0108-1",
+        "at": "2026-02-13T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      },
+      {
+        "id": "SH-LAB-2026-0108-2",
+        "at": "2026-02-25T15:00:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Results entered and validated"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0109",
+    "type": "soil",
+    "clientId": "CLT-2026-0069",
+    "farmId": "FRM-2026-00015",
+    "requestedOn": "2025-02-13",
+    "requestedVia": "online",
+    "requestedByUserId": "SELF",
+    "status": "collected",
+    "collectedOn": "2025-02-16",
+    "purpose": "Compost maturity verification",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0109-1",
+        "at": "2025-02-13T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0110",
+    "type": "plant",
+    "clientId": "CLT-2016-0237",
+    "farmId": "FRM-2026-00034",
+    "requestedOn": "2025-01-22",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
+    "status": "collected",
+    "collectedOn": "2025-01-25",
+    "purpose": "Disease investigation support",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0110-1",
+        "at": "2025-01-22T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0111",
+    "type": "soil",
+    "clientId": "CLT-2026-0014",
+    "farmId": "FRM-2026-00014",
+    "requestedOn": "2025-12-16",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "registered",
+    "collectedOn": "2025-12-19",
+    "registeredOn": "2025-12-20",
+    "labTechUserId": "USR-004",
+    "purpose": "Suspected nutrient deficiency",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0111-1",
+        "at": "2025-12-16T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0112",
+    "type": "water",
+    "clientId": "CLT-2026-0016",
+    "farmId": "FRM-2026-00051",
+    "requestedOn": "2025-03-09",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
+    "status": "registered",
+    "collectedOn": "2025-03-12",
+    "registeredOn": "2025-03-13",
+    "labTechUserId": "USR-004",
+    "purpose": "Disease investigation support",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0112-1",
+        "at": "2025-03-09T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0113",
+    "type": "soil",
+    "clientId": "CLT-2026-0050",
+    "farmId": "FRM-2026-00013",
+    "requestedOn": "2025-03-18",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "requested",
+    "purpose": "Suspected nutrient deficiency",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0113-1",
+        "at": "2025-03-18T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2026-0114",
+    "type": "soil",
+    "clientId": "CLT-2026-0048",
+    "farmId": "FRM-2026-00042",
+    "requestedOn": "2026-02-12",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "testing",
+    "collectedOn": "2026-02-15",
+    "registeredOn": "2026-02-16",
+    "testingStartedOn": "2026-02-18",
+    "labTechUserId": "USR-004",
+    "purpose": "Routine fertility monitoring",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2026-0114-1",
+        "at": "2026-02-12T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2026-0115",
+    "type": "compost",
+    "clientId": "CLT-2026-0038",
+    "farmId": "FRM-2026-00005",
+    "requestedOn": "2026-02-21",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
+    "status": "collected",
+    "collectedOn": "2026-02-24",
+    "purpose": "Pre-planting assessment",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2026-0115-1",
+        "at": "2026-02-21T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0116",
+    "type": "soil",
+    "clientId": "CLT-2016-0266",
+    "farmId": "FRM-2016-00243",
+    "requestedOn": "2025-03-09",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
+    "status": "completed",
+    "collectedOn": "2025-03-12",
+    "registeredOn": "2025-03-13",
+    "testingStartedOn": "2025-03-15",
+    "completedOn": "2025-03-21",
+    "labTechUserId": "USR-004",
+    "purpose": "Suspected nutrient deficiency",
+    "results": [
+      {
+        "parameter": "pH (H₂O)",
+        "value": 6.8,
+        "unit": "",
+        "method": "SM-4500-H",
+        "referenceRange": "5.5 – 7.0",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Organic matter",
+        "value": 4,
+        "unit": "%",
+        "method": "Walkley-Black",
+        "referenceRange": "> 3.0",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Nitrogen (total)",
+        "value": 0.19,
+        "unit": "%",
+        "method": "Kjeldahl",
+        "referenceRange": "0.15 – 0.30",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Phosphorus (available)",
+        "value": 22.5,
+        "unit": "mg/kg",
+        "method": "Olsen",
+        "referenceRange": "15 – 40",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Potassium (exchangeable)",
+        "value": 175,
+        "unit": "mg/kg",
+        "method": "NH₄OAc",
+        "referenceRange": "120 – 300",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Electrical conductivity",
+        "value": 1.27,
+        "unit": "dS/m",
+        "method": "SM-2510-B",
+        "referenceRange": "< 1.0",
+        "flag": "high"
+      }
+    ],
+    "interpretation": "All measured parameters fall within the reference ranges.",
+    "recommendation": "Maintain the current fertiliser programme and re-test in 12 months.",
+    "notifiedOn": "2025-03-21",
+    "history": [
+      {
+        "id": "SH-LAB-2025-0116-1",
+        "at": "2025-03-09T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      },
+      {
+        "id": "SH-LAB-2025-0116-2",
+        "at": "2025-03-21T15:00:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Results entered and validated"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0117",
+    "type": "soil",
+    "clientId": "CLT-2026-0027",
+    "farmId": "FRM-2026-00026",
+    "requestedOn": "2025-11-09",
+    "requestedVia": "back-office",
+    "requestedByUserId": "SELF",
+    "status": "registered",
+    "collectedOn": "2025-11-12",
+    "registeredOn": "2025-11-13",
+    "labTechUserId": "USR-004",
+    "purpose": "Pre-planting assessment",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0117-1",
+        "at": "2025-11-09T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0118",
+    "type": "compost",
+    "clientId": "CLT-2026-0038",
+    "farmId": "FRM-2026-00005",
+    "requestedOn": "2025-01-07",
+    "requestedVia": "back-office",
+    "requestedByUserId": "SELF",
+    "status": "completed",
+    "collectedOn": "2025-01-10",
+    "registeredOn": "2025-01-11",
+    "testingStartedOn": "2025-01-13",
+    "completedOn": "2025-01-19",
+    "labTechUserId": "USR-004",
+    "purpose": "Routine fertility monitoring",
+    "results": [
+      {
+        "parameter": "pH",
+        "value": 8.2,
+        "unit": "",
+        "method": "SM-4500-H",
+        "referenceRange": "6.5 – 8.0",
+        "flag": "high"
+      },
+      {
+        "parameter": "Moisture",
+        "value": 51,
+        "unit": "%",
+        "method": "Gravimetric",
+        "referenceRange": "40 – 60",
+        "flag": "normal"
+      },
+      {
+        "parameter": "C:N ratio",
+        "value": 28.2,
+        "unit": "",
+        "method": "Dry combustion",
+        "referenceRange": "15 – 25",
+        "flag": "high"
+      },
+      {
+        "parameter": "Maturity (Solvita)",
+        "value": 6,
+        "unit": "index",
+        "method": "Solvita",
+        "referenceRange": "≥ 6",
+        "flag": "normal"
+      }
+    ],
+    "interpretation": "All measured parameters fall within the reference ranges.",
+    "recommendation": "Apply corrective amendment and re-test in 6 months.",
+    "notifiedOn": "2025-01-19",
+    "history": [
+      {
+        "id": "SH-LAB-2025-0118-1",
+        "at": "2025-01-07T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      },
+      {
+        "id": "SH-LAB-2025-0118-2",
+        "at": "2025-01-19T15:00:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Results entered and validated"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0119",
+    "type": "soil",
+    "clientId": "CLT-2021-0261",
+    "farmId": "FRM-2021-00223",
+    "requestedOn": "2025-09-26",
+    "requestedVia": "back-office",
+    "requestedByUserId": "SELF",
+    "status": "requested",
+    "purpose": "Irrigation water quality check",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0119-1",
+        "at": "2025-09-26T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2026-0120",
+    "type": "soil",
+    "clientId": "CLT-2026-0013",
+    "farmId": "FRM-2026-00027",
+    "requestedOn": "2026-01-14",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "registered",
+    "collectedOn": "2026-01-17",
+    "registeredOn": "2026-01-18",
+    "labTechUserId": "USR-004",
+    "purpose": "Suspected nutrient deficiency",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2026-0120-1",
+        "at": "2026-01-14T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0121",
+    "type": "plant",
+    "clientId": "CLT-2026-0023",
+    "farmId": "FRM-2026-00033",
+    "requestedOn": "2025-08-09",
+    "requestedVia": "back-office",
+    "requestedByUserId": "SELF",
+    "status": "completed",
+    "collectedOn": "2025-08-12",
+    "registeredOn": "2025-08-13",
+    "testingStartedOn": "2025-08-15",
+    "completedOn": "2025-08-21",
+    "labTechUserId": "USR-004",
+    "purpose": "Suspected nutrient deficiency",
+    "results": [
+      {
+        "parameter": "Leaf nitrogen",
+        "value": 3.23,
+        "unit": "%",
+        "method": "Kjeldahl",
+        "referenceRange": "2.5 – 3.5",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Leaf phosphorus",
+        "value": 0.34,
+        "unit": "%",
+        "method": "ICP-OES",
+        "referenceRange": "0.15 – 0.30",
+        "flag": "high"
+      },
+      {
+        "parameter": "Leaf potassium",
+        "value": 3,
+        "unit": "%",
+        "method": "ICP-OES",
+        "referenceRange": "2.0 – 4.0",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Pathogen screen",
+        "value": "Not detected",
+        "unit": "",
+        "method": "Culture + microscopy",
+        "referenceRange": "Not detected",
+        "flag": "normal"
+      }
+    ],
+    "interpretation": "One parameter falls outside the reference range; corrective action advised.",
+    "recommendation": "Refer to the extension officer for a follow-up field visit.",
+    "notifiedOn": "2025-08-21",
+    "history": [
+      {
+        "id": "SH-LAB-2025-0121-1",
+        "at": "2025-08-09T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      },
+      {
+        "id": "SH-LAB-2025-0121-2",
+        "at": "2025-08-21T15:00:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Results entered and validated"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0122",
+    "type": "plant",
+    "clientId": "CLT-2026-0023",
+    "farmId": "FRM-2026-00021",
+    "requestedOn": "2025-08-13",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
+    "status": "completed",
+    "collectedOn": "2025-08-16",
+    "registeredOn": "2025-08-17",
+    "testingStartedOn": "2025-08-19",
+    "completedOn": "2025-08-25",
+    "labTechUserId": "USR-004",
+    "purpose": "Irrigation water quality check",
+    "results": [
+      {
+        "parameter": "Leaf nitrogen",
+        "value": 3.92,
+        "unit": "%",
+        "method": "Kjeldahl",
+        "referenceRange": "2.5 – 3.5",
+        "flag": "high"
+      },
+      {
+        "parameter": "Leaf phosphorus",
+        "value": 0.2,
+        "unit": "%",
+        "method": "ICP-OES",
+        "referenceRange": "0.15 – 0.30",
+        "flag": "normal"
+      },
+      {
+        "parameter": "Leaf potassium",
+        "value": 1.21,
+        "unit": "%",
+        "method": "ICP-OES",
+        "referenceRange": "2.0 – 4.0",
+        "flag": "low"
+      },
+      {
+        "parameter": "Pathogen screen",
+        "value": "Fusarium spp. detected",
+        "unit": "",
+        "method": "Culture + microscopy",
+        "referenceRange": "Not detected",
+        "flag": "high"
+      }
+    ],
+    "interpretation": "Results consistent with the reported field symptoms.",
+    "recommendation": "Maintain the current fertiliser programme and re-test in 12 months.",
+    "notifiedOn": "2025-08-25",
+    "history": [
+      {
+        "id": "SH-LAB-2025-0122-1",
+        "at": "2025-08-13T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      },
+      {
+        "id": "SH-LAB-2025-0122-2",
+        "at": "2025-08-25T15:00:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Results entered and validated"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0123",
+    "type": "compost",
+    "clientId": "CLT-2017-0239",
+    "farmId": "FRM-2017-00230",
+    "requestedOn": "2025-10-28",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
+    "status": "registered",
+    "collectedOn": "2025-10-31",
+    "registeredOn": "2025-11-01",
+    "labTechUserId": "USR-004",
+    "purpose": "Pre-planting assessment",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0123-1",
+        "at": "2025-10-28T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0124",
+    "type": "soil",
+    "clientId": "CLT-2016-0237",
+    "farmId": "FRM-2026-00034",
+    "requestedOn": "2025-04-09",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "collected",
+    "collectedOn": "2025-04-12",
+    "purpose": "Disease investigation support",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0124-1",
+        "at": "2025-04-09T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2026-0125",
+    "type": "soil",
+    "clientId": "CLT-2026-0013",
+    "farmId": "FRM-2026-00027",
+    "requestedOn": "2026-01-02",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
+    "status": "registered",
+    "collectedOn": "2026-01-05",
+    "registeredOn": "2026-01-06",
+    "labTechUserId": "USR-004",
+    "purpose": "Compost maturity verification",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2026-0125-1",
+        "at": "2026-01-02T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0126",
+    "type": "soil",
+    "clientId": "CLT-2020-0226",
+    "farmId": "FRM-2020-00255",
+    "requestedOn": "2025-02-04",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
+    "status": "collected",
+    "collectedOn": "2025-02-07",
+    "purpose": "Routine fertility monitoring",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0126-1",
+        "at": "2025-02-04T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2026-0127",
+    "type": "soil",
+    "clientId": "CLT-2026-0069",
+    "farmId": "FRM-2026-00015",
+    "requestedOn": "2026-01-09",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "requested",
+    "purpose": "Disease investigation support",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2026-0127-1",
+        "at": "2026-01-09T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0128",
+    "type": "soil",
+    "clientId": "CLT-2016-0237",
+    "farmId": "FRM-2016-00238",
+    "requestedOn": "2025-01-17",
+    "requestedVia": "online",
+    "requestedByUserId": "USR-002",
+    "status": "collected",
+    "collectedOn": "2025-01-20",
+    "purpose": "Irrigation water quality check",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0128-1",
+        "at": "2025-01-17T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0129",
+    "type": "plant",
+    "clientId": "CLT-2016-0266",
+    "farmId": "FRM-2016-00243",
+    "requestedOn": "2025-12-20",
+    "requestedVia": "back-office",
+    "requestedByUserId": "SELF",
+    "status": "collected",
+    "collectedOn": "2025-12-23",
+    "purpose": "Compost maturity verification",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0129-1",
+        "at": "2025-12-20T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2025-0130",
+    "type": "soil",
+    "clientId": "CLT-2021-0220",
+    "farmId": "FRM-2021-00224",
+    "requestedOn": "2025-11-06",
+    "requestedVia": "back-office",
+    "requestedByUserId": "SELF",
+    "status": "collected",
+    "collectedOn": "2025-11-09",
+    "purpose": "Routine fertility monitoring",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-LAB-2025-0130-1",
+        "at": "2025-11-06T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Sampling request registered"
+      }
+    ]
+  },
+  {
+    "id": "LAB-2026-0044",
+    "type": "plant",
+    "clientId": "CLT-2026-0001",
+    "farmId": "FRM-2026-00001",
+    "requestedOn": "2026-03-27",
+    "requestedVia": "back-office",
+    "requestedByUserId": "USR-002",
+    "status": "testing",
+    "collectedOn": "2026-03-27",
+    "registeredOn": "2026-03-28",
+    "testingStartedOn": "2026-03-28",
+    "labTechUserId": "USR-004",
+    "purpose": "Diagnostic submission supporting surveillance case SUR-2026-004 (suspected Newcastle disease).",
+    "results": [],
+    "history": [
+      {
+        "id": "SH-N-1",
+        "at": "2026-03-27T13:20:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Diagnostic samples collected and submitted"
+      },
+      {
+        "id": "SH-N-2",
+        "at": "2026-03-28T09:05:00.000Z",
+        "actorUserId": "USR-004",
+        "actorName": "S. Dogley",
+        "action": "Sample registered; testing started"
       }
     ]
   }

@@ -1,159 +1,358 @@
 [
   {
-    "id": "VD-2026-001",
-    "clientId": "CLT-0001",
-    "name": "Marie-Ange Hoareau",
-    "traderType": "produce",
-    "phone": "+248 2 000 012",
-    "district": "Anse Boileau",
-    "stallId": "ST-A01",
+    "id": "VND-2026-009",
+    "clientId": "CLT-2026-0001",
+    "fullName": "Marie-Ange Hoareau",
+    "tradeName": "Rivière Doux Produce",
+    "category": "produce",
+    "phone": "+248 2 000 001",
+    "email": "marie-ange.hoareau@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2026/0091",
+    "stallId": "VM-A04",
     "registrationStatus": "active",
-    "registeredAt": "2026-07-14T09:00:00.000Z"
+    "registeredOn": "2026-03-16",
+    "expiresOn": "2027-03-16",
+    "history": [
+      {
+        "id": "VN-1",
+        "at": "2026-03-16T10:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered against existing client record"
+      },
+      {
+        "id": "VN-2",
+        "at": "2026-03-16T10:06:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Stall VM-A04 allocated",
+        "field": "stallId",
+        "to": "VM-A04"
+      }
+    ]
   },
   {
-    "id": "VD-2026-002",
-    "clientId": "CLT-0001",
-    "name": "Marie-Ange Hoareau",
-    "traderType": "livestock",
-    "phone": "+248 2 000 012",
-    "district": "Anse Boileau",
-    "registrationStatus": "pending",
-    "registeredAt": "2026-01-19T09:00:00.000Z"
-  },
-  {
-    "id": "VD-2026-003",
-    "clientId": "CLT-0008",
-    "name": "Steve Vidot",
-    "traderType": "mixed",
-    "phone": "+248 2 000 018",
-    "district": "Takamaka",
+    "id": "VND-2025-101",
+    "clientId": "CLT-2026-0045",
+    "fullName": "Roland Labiche",
+    "tradeName": "Cascade Growers",
+    "category": "produce",
+    "phone": "+248 2 000 060",
+    "email": "roland.labiche45@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2025/0101",
     "registrationStatus": "active",
-    "registeredAt": "2026-01-24T09:00:00.000Z"
+    "registeredOn": "2025-04-14",
+    "expiresOn": "2026-04-14",
+    "history": [
+      {
+        "id": "VN-1-1",
+        "at": "2025-04-14T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ],
+    "stallId": "VM-B08"
   },
   {
-    "id": "VD-2026-004",
-    "clientId": "CLT-0011",
-    "name": "Steve Rassool",
-    "traderType": "livestock",
-    "phone": "+248 2 000 021",
-    "district": "Baie Ste Anne Praslin",
-    "registrationStatus": "suspended",
-    "registeredAt": "2026-03-04T09:00:00.000Z"
-  },
-  {
-    "id": "VD-2026-005",
-    "clientId": "CLT-0013",
-    "name": "Sylvia Camille",
-    "traderType": "processed",
-    "phone": "+248 2 000 023",
-    "district": "Anse Royale",
-    "stallId": "ST-A02",
-    "registrationStatus": "suspended",
-    "registeredAt": "2026-05-25T09:00:00.000Z"
-  },
-  {
-    "id": "VD-2026-006",
-    "clientId": "CLT-0016",
-    "name": "Christelle Julienne",
-    "traderType": "processed",
-    "phone": "+248 2 000 026",
-    "district": "Anse Royale",
-    "registrationStatus": "active",
-    "registeredAt": "2025-12-17T09:00:00.000Z"
-  },
-  {
-    "id": "VD-2026-007",
-    "clientId": "CLT-0018",
-    "name": "Ronny Zialor",
-    "traderType": "produce",
-    "phone": "+248 2 000 028",
-    "district": "La Digue",
-    "stallId": "ST-A03",
-    "registrationStatus": "active",
-    "registeredAt": "2026-02-13T09:00:00.000Z"
-  },
-  {
-    "id": "VD-2026-008",
-    "clientId": "CLT-0022",
-    "name": "Georges Onezime",
-    "traderType": "processed",
-    "phone": "+248 2 000 032",
-    "district": "Port Glaud",
-    "registrationStatus": "active",
-    "registeredAt": "2026-03-22T09:00:00.000Z"
-  },
-  {
-    "id": "VD-2026-009",
-    "clientId": "CLT-0035",
-    "name": "Marie Uranie",
-    "traderType": "mixed",
-    "phone": "+248 2 000 045",
-    "district": "Baie Lazare",
-    "stallId": "ST-A04",
-    "registrationStatus": "suspended",
-    "registeredAt": "2026-03-22T09:00:00.000Z"
-  },
-  {
-    "id": "VD-2026-010",
-    "clientId": "CLT-0041",
-    "name": "Marguerite Camille",
-    "traderType": "produce",
-    "phone": "+248 2 000 051",
-    "district": "La Digue",
-    "stallId": "ST-A05",
-    "registrationStatus": "active",
-    "registeredAt": "2026-01-13T09:00:00.000Z"
-  },
-  {
-    "id": "VD-2026-011",
-    "clientId": "CLT-0045",
-    "name": "Georges Tirant",
-    "traderType": "produce",
+    "id": "VND-2024-102",
+    "clientId": "CLT-2018-0240",
+    "fullName": "Norbert Hoareau",
+    "tradeName": "Coral Traders",
+    "category": "fish",
     "phone": "+248 2 000 055",
-    "district": "Anse Boileau",
+    "email": "norbert.hoareau902@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2024/0102",
     "registrationStatus": "active",
-    "registeredAt": "2026-05-31T09:00:00.000Z"
+    "registeredOn": "2024-05-25",
+    "expiresOn": "2025-05-25",
+    "history": [
+      {
+        "id": "VN-2-1",
+        "at": "2024-05-25T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ],
+    "stallId": "VM-C05"
   },
   {
-    "id": "VD-2026-012",
-    "clientId": "CLT-0046",
-    "name": "Andy Vidot",
-    "traderType": "produce",
-    "phone": "+248 2 000 056",
-    "district": "Grand Anse Praslin",
-    "stallId": "ST-A06",
+    "id": "VND-2024-103",
+    "clientId": "CLT-2026-0021",
+    "fullName": "Antoine Adrienne",
+    "tradeName": "Takamaka Harvest",
+    "category": "produce",
+    "phone": "+248 2 000 036",
+    "email": "antoine.adrienne21@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2024/0103",
     "registrationStatus": "expired",
-    "registeredAt": "2026-01-27T09:00:00.000Z"
+    "registeredOn": "2024-08-13",
+    "expiresOn": "2025-08-13",
+    "history": [
+      {
+        "id": "VN-3-1",
+        "at": "2024-08-13T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ]
   },
   {
-    "id": "VD-2026-013",
-    "clientId": "CLT-0052",
-    "name": "Roselyne Nourrice",
-    "traderType": "produce",
-    "phone": "+248 2 000 062",
-    "district": "La Digue",
-    "registrationStatus": "active",
-    "registeredAt": "2026-07-01T09:00:00.000Z"
-  },
-  {
-    "id": "VD-2026-014",
-    "clientId": "CLT-0053",
-    "name": "Steve Nourrice",
-    "traderType": "produce",
-    "phone": "+248 2 000 063",
-    "district": "Anse Royale",
+    "id": "VND-2024-104",
+    "clientId": "CLT-2017-0208",
+    "fullName": "Therese Hollanda",
+    "tradeName": "Cascade Market Stall",
+    "category": "crafts",
+    "phone": "+248 2 000 023",
+    "email": "therese.hollanda8@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2024/0104",
     "registrationStatus": "expired",
-    "registeredAt": "2026-06-27T09:00:00.000Z"
+    "registeredOn": "2024-10-21",
+    "expiresOn": "2025-10-21",
+    "history": [
+      {
+        "id": "VN-4-1",
+        "at": "2024-10-21T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ]
   },
   {
-    "id": "VD-2026-015",
-    "clientId": "CLT-0055",
-    "name": "Brian Zialor",
-    "traderType": "produce",
-    "phone": "+248 2 000 065",
-    "district": "Grand Anse Mahé",
-    "stallId": "ST-A07",
+    "id": "VND-2026-105",
+    "clientId": "CLT-2021-0261",
+    "fullName": "Angeline Nourrice",
+    "tradeName": "Fresh Harvest",
+    "category": "produce",
+    "phone": "+248 2 000 076",
+    "email": "angeline.nourrice61@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2026/0105",
     "registrationStatus": "active",
-    "registeredAt": "2026-05-12T09:00:00.000Z"
+    "registeredOn": "2026-02-26",
+    "expiresOn": "2027-02-26",
+    "history": [
+      {
+        "id": "VN-5-1",
+        "at": "2026-02-26T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ],
+    "stallId": "VM-B04"
+  },
+  {
+    "id": "VND-2025-106",
+    "clientId": "CLT-2026-0014",
+    "fullName": "Lucienne Zialor",
+    "tradeName": "Takamaka Produce",
+    "category": "produce",
+    "phone": "+248 2 000 029",
+    "email": "lucienne.zialor14@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2025/0106",
+    "registrationStatus": "active",
+    "registeredOn": "2025-03-14",
+    "expiresOn": "2026-03-14",
+    "history": [
+      {
+        "id": "VN-6-1",
+        "at": "2025-03-14T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ],
+    "stallId": "VM-B07"
+  },
+  {
+    "id": "VND-2024-107",
+    "clientId": "CLT-2017-0270",
+    "fullName": "Roland Kilindo",
+    "tradeName": "Fresh Provisions",
+    "category": "produce",
+    "phone": "+248 2 000 085",
+    "email": "roland.kilindo70@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2024/0107",
+    "registrationStatus": "active",
+    "registeredOn": "2024-12-04",
+    "expiresOn": "2025-12-04",
+    "history": [
+      {
+        "id": "VN-7-1",
+        "at": "2024-12-04T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ],
+    "stallId": "VM-B06"
+  },
+  {
+    "id": "VND-2025-108",
+    "clientId": "CLT-2021-0212",
+    "fullName": "Emmanuel Servina",
+    "tradeName": "Coral Growers",
+    "category": "fish",
+    "phone": "+248 2 000 027",
+    "email": "emmanuel.servina908@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2025/0108",
+    "registrationStatus": "suspended",
+    "registeredOn": "2025-04-04",
+    "expiresOn": "2026-04-04",
+    "history": [
+      {
+        "id": "VN-8-1",
+        "at": "2025-04-04T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ]
+  },
+  {
+    "id": "VND-2025-109",
+    "fullName": "Genevieve Hollanda",
+    "tradeName": "Takamaka Traders",
+    "category": "fish",
+    "phone": "+248 2 000 088",
+    "email": "genevieve.hollanda909@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2025/0109",
+    "registrationStatus": "active",
+    "registeredOn": "2025-07-04",
+    "expiresOn": "2026-07-04",
+    "history": [
+      {
+        "id": "VN-9-1",
+        "at": "2025-07-04T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ],
+    "stallId": "VM-A03"
+  },
+  {
+    "id": "VND-2025-110",
+    "fullName": "Maxime Larue",
+    "tradeName": "Green Traders",
+    "category": "produce",
+    "phone": "+248 2 000 089",
+    "email": "maxime.larue910@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2025/0110",
+    "registrationStatus": "pending",
+    "registeredOn": "2025-07-29",
+    "expiresOn": "2026-07-29",
+    "history": [
+      {
+        "id": "VN-10-1",
+        "at": "2025-07-29T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ]
+  },
+  {
+    "id": "VND-2026-111",
+    "fullName": "Antoine Camille",
+    "tradeName": "Fresh Growers",
+    "category": "produce",
+    "phone": "+248 2 000 090",
+    "email": "antoine.camille911@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2026/0111",
+    "registrationStatus": "active",
+    "registeredOn": "2026-02-12",
+    "expiresOn": "2027-02-12",
+    "history": [
+      {
+        "id": "VN-11-1",
+        "at": "2026-02-12T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ],
+    "stallId": "VM-A08"
+  },
+  {
+    "id": "VND-2025-112",
+    "fullName": "Nadege Vidot",
+    "tradeName": "Green Growers",
+    "category": "fish",
+    "phone": "+248 2 000 091",
+    "email": "nadege.vidot912@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2025/0112",
+    "registrationStatus": "pending",
+    "registeredOn": "2025-08-06",
+    "expiresOn": "2026-08-06",
+    "history": [
+      {
+        "id": "VN-12-1",
+        "at": "2025-08-06T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ]
+  },
+  {
+    "id": "VND-2024-113",
+    "fullName": "Sylvain Payet",
+    "tradeName": "Coral Provisions",
+    "category": "fish",
+    "phone": "+248 2 000 092",
+    "email": "sylvain.payet913@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2024/0113",
+    "registrationStatus": "pending",
+    "registeredOn": "2024-06-19",
+    "expiresOn": "2025-06-19",
+    "history": [
+      {
+        "id": "VN-13-1",
+        "at": "2024-06-19T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ]
+  },
+  {
+    "id": "VND-2024-114",
+    "fullName": "Angeline Zialor",
+    "tradeName": "Takamaka Harvest",
+    "category": "produce",
+    "phone": "+248 2 000 093",
+    "email": "angeline.zialor914@example.sc",
+    "market": "Victoria Market",
+    "licenceNo": "VM/2024/0114",
+    "registrationStatus": "pending",
+    "registeredOn": "2024-07-28",
+    "expiresOn": "2025-07-28",
+    "history": [
+      {
+        "id": "VN-14-1",
+        "at": "2024-07-28T09:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Vendor registered"
+      }
+    ]
   }
 ]

@@ -1,2006 +1,2038 @@
 [
   {
-    "id": "CLT-0001",
+    "id": "CLT-2026-0001",
     "nin": "999-0412-1-1-07",
     "firstName": "Marie-Ange",
     "lastName": "Hoareau",
     "gender": "F",
-    "dob": "1988-04-12",
-    "phone": "+248 2 000 012",
-    "email": "marieange.h@example.sc",
-    "address": "Chemin Val d’Endor, Anse Boileau",
+    "dateOfBirth": "1987-04-12",
+    "phone": "+248 2 000 001",
+    "email": "marie-ange.hoareau@example.sc",
     "district": "Anse Boileau",
-    "stakeholderType": "both",
-    "seyidVerified": true,
+    "island": "Mahé",
+    "address": "Chemin Rivière Doux, Anse Boileau, Mahé",
+    "stakeholderType": "farmer",
     "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-07-06T09:00:00.000Z",
-    "updatedAt": "2026-07-13T09:00:00.000Z",
+    "registeredOn": "2026-02-02",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "Self-registered via the online portal; identity confirmed against SeyID (simulated).",
     "history": [
       {
-        "at": "2026-07-06T09:00:00.000Z",
-        "by": "Self-service (SeyID)",
-        "field": "record",
-        "from": "",
-        "to": "created via SeyID self-registration"
+        "id": "CH-M-1",
+        "at": "2026-02-02T09:12:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Marie-Ange Hoareau",
+        "action": "Self-registered via online portal"
       },
       {
-        "at": "2026-07-13T09:00:00.000Z",
-        "by": "J. Payet",
+        "id": "CH-M-2",
+        "at": "2026-02-02T09:13:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Marie-Ange Hoareau",
+        "action": "Identity verified via SeyID (simulated)",
+        "field": "seyIdVerified",
+        "from": "false",
+        "to": "true"
+      },
+      {
+        "id": "CH-M-3",
+        "at": "2026-02-09T11:40:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Contact number updated",
         "field": "phone",
-        "from": "+248 2 000 011",
-        "to": "+248 2 000 012"
+        "from": "+248 2 000 099",
+        "to": "+248 2 000 001",
+        "note": "Corrected at counter — farmer presented handset."
       }
     ]
   },
   {
-    "id": "CLT-0002",
+    "id": "CLT-2019-0311",
     "nin": "999-0412-1-1-07",
-    "firstName": "Marieange",
+    "firstName": "Marie Ange",
     "lastName": "Hoareau",
     "gender": "F",
-    "dob": "1988-04-12",
-    "phone": "+248 2 000 012",
-    "email": "m.hoareau@legacy.sc",
-    "address": "Val d Endor, Anse Boileau",
+    "dateOfBirth": "1987-04-12",
+    "phone": "+248 2 000 099",
+    "email": "",
     "district": "Anse Boileau",
+    "island": "Mahé",
+    "address": "Riviere Doux, Anse Boileau",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "migrated",
-    "createdAt": "2025-09-18T09:00:00.000Z",
-    "updatedAt": "2025-09-18T09:00:00.000Z",
+    "registeredOn": "2019-06-14",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from the 2019 paper smallholder register (batch MIG-2019-A). Unverified contact details.",
     "history": [
       {
-        "at": "2025-09-18T09:00:00.000Z",
-        "by": "Data migration (2024 registry)",
-        "field": "record",
-        "from": "",
-        "to": "imported from legacy paper registry"
+        "id": "CH-D-1",
+        "at": "2019-06-14T10:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration (batch MIG-2019-A)",
+        "action": "Record migrated from paper register"
       }
     ]
   },
   {
-    "id": "CLT-0003",
-    "nin": "999-3071-2-4-02",
-    "firstName": "Christelle",
-    "lastName": "Bonne",
-    "gender": "F",
-    "dob": "1966-11-06",
-    "phone": "+248 2 000 013",
-    "email": "christelle.bonne@example.sc",
-    "address": "Mont Uranie, Anse Aux Pins",
-    "district": "Anse Aux Pins",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-01-20T09:00:00.000Z",
-    "updatedAt": "2026-06-01T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-01-20T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0004",
-    "nin": "999-7478-1-2-09",
-    "firstName": "Doris",
-    "lastName": "Faure",
-    "gender": "F",
-    "dob": "1970-10-28",
-    "phone": "+248 2 000 014",
-    "email": "doris.faure@example.sc",
-    "address": "Val Rose, Anse Royale",
-    "district": "Anse Royale",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2025-09-28T09:00:00.000Z",
-    "updatedAt": "2025-10-13T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-09-28T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0005",
-    "nin": "999-6224-1-8-07",
-    "firstName": "Sylvia",
-    "lastName": "Esparon",
-    "gender": "F",
-    "dob": "1976-12-07",
-    "phone": "+248 2 000 015",
-    "email": "sylvia.esparon@example.sc",
-    "address": "Chemin Valentin, Anse Royale",
-    "district": "Anse Royale",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2025-11-26T09:00:00.000Z",
-    "updatedAt": "2026-03-01T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-11-26T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0006",
-    "nin": "999-9246-1-8-01",
-    "firstName": "Sylvia",
-    "lastName": "Bristol",
-    "gender": "F",
-    "dob": "1964-05-04",
-    "phone": "+248 2 000 016",
-    "email": "sylvia.bristol@example.sc",
-    "address": "La Route Quatre, La Digue",
-    "district": "La Digue",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-05-01T09:00:00.000Z",
-    "updatedAt": "2026-07-08T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-05-01T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0007",
-    "nin": "999-2509-1-7-08",
-    "firstName": "Robert",
-    "lastName": "Sinon",
-    "gender": "M",
-    "dob": "1986-10-07",
-    "phone": "+248 2 000 017",
-    "email": "robert.sinon@example.sc",
-    "address": "La Route Dugasse, Port Glaud",
-    "district": "Port Glaud",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-01-30T09:00:00.000Z",
-    "updatedAt": "2026-03-15T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-01-30T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0008",
-    "nin": "999-1010-2-1-05",
-    "firstName": "Steve",
-    "lastName": "Vidot",
-    "gender": "F",
-    "dob": "1956-06-26",
-    "phone": "+248 2 000 018",
-    "email": "steve.vidot@example.sc",
-    "address": "Mont Tirant, Takamaka",
-    "district": "Takamaka",
-    "stakeholderType": "vendor",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2026-01-31T09:00:00.000Z",
-    "updatedAt": "2026-04-07T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-01-31T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0009",
-    "nin": "999-4178-1-7-01",
-    "firstName": "Antoinette",
-    "lastName": "Morel",
-    "gender": "F",
-    "dob": "1989-01-18",
-    "phone": "+248 2 000 019",
-    "email": "antoinette.morel@example.sc",
-    "address": "Val Servina, Baie Lazare",
-    "district": "Baie Lazare",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2026-06-04T09:00:00.000Z",
-    "updatedAt": "2026-06-04T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-06-04T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0010",
-    "nin": "999-9336-2-2-01",
-    "firstName": "Marguerite",
-    "lastName": "Labrosse",
-    "gender": "F",
-    "dob": "1979-05-12",
-    "phone": "+248 2 000 020",
-    "email": "marguerite.labrosse@example.sc",
-    "address": "Mont Sinon, Grand Anse Mahé",
-    "district": "Grand Anse Mahé",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-05-11T09:00:00.000Z",
-    "updatedAt": "2026-06-11T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-05-11T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0011",
-    "nin": "999-0015-2-4-07",
-    "firstName": "Steve",
+    "id": "CLT-2026-0003",
+    "nin": "999-0410-2-6-77",
+    "firstName": "Hubert",
     "lastName": "Rassool",
     "gender": "M",
-    "dob": "1975-01-06",
-    "phone": "+248 2 000 021",
-    "email": "steve.rassool@example.sc",
-    "address": "Val Nibourette, Baie Ste Anne Praslin",
-    "district": "Baie Ste Anne Praslin",
-    "stakeholderType": "vendor",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-04-21T09:00:00.000Z",
-    "updatedAt": "2026-05-15T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-04-21T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0012",
-    "nin": "999-7324-2-1-02",
-    "firstName": "Sylvia",
-    "lastName": "Vidot",
-    "gender": "M",
-    "dob": "1985-01-14",
-    "phone": "+248 2 000 022",
-    "email": "sylvia.vidot@example.sc",
-    "address": "La Route Nibourette, Port Glaud",
-    "district": "Port Glaud",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2026-06-19T09:00:00.000Z",
-    "updatedAt": "2026-07-03T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-06-19T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0013",
-    "nin": "999-8205-1-6-02",
-    "firstName": "Sylvia",
-    "lastName": "Camille",
-    "gender": "F",
-    "dob": "1964-04-04",
-    "phone": "+248 2 000 023",
-    "email": "sylvia.camille@example.sc",
-    "address": "La Route Vidot, Anse Royale",
-    "district": "Anse Royale",
-    "stakeholderType": "both",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-05-06T09:00:00.000Z",
-    "updatedAt": "2026-06-22T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-05-06T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0014",
-    "nin": "999-5867-2-6-09",
-    "firstName": "Roselyne",
-    "lastName": "Souffe",
-    "gender": "M",
-    "dob": "1970-10-02",
-    "phone": "+248 2 000 024",
-    "email": "roselyne.souffe@example.sc",
-    "address": "Chemin Camille, Takamaka",
-    "district": "Takamaka",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2025-11-30T09:00:00.000Z",
-    "updatedAt": "2026-02-12T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-11-30T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0015",
-    "nin": "999-7910-1-7-10",
-    "firstName": "Egbert",
-    "lastName": "Servina",
-    "gender": "F",
-    "dob": "1975-06-11",
-    "phone": "+248 2 000 025",
-    "email": "egbert.servina@example.sc",
-    "address": "Mont Uranie, Port Glaud",
-    "district": "Port Glaud",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2025-09-26T09:00:00.000Z",
-    "updatedAt": "2026-04-26T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-09-26T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0016",
-    "nin": "999-4854-2-7-12",
-    "firstName": "Christelle",
-    "lastName": "Julienne",
-    "gender": "M",
-    "dob": "1967-02-26",
-    "phone": "+248 2 000 026",
-    "email": "christelle.julienne@example.sc",
-    "address": "Mont Dugasse, Anse Royale",
-    "district": "Anse Royale",
-    "stakeholderType": "vendor",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2025-09-15T09:00:00.000Z",
-    "updatedAt": "2025-12-04T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-09-15T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0017",
-    "nin": "999-8258-1-7-04",
-    "firstName": "Robert",
-    "lastName": "Tirant",
-    "gender": "F",
-    "dob": "1967-03-22",
-    "phone": "+248 2 000 027",
-    "email": "robert.tirant@example.sc",
-    "address": "Val Quatre, Baie Lazare",
-    "district": "Baie Lazare",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2025-11-14T09:00:00.000Z",
-    "updatedAt": "2026-05-17T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-11-14T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0018",
-    "nin": "999-4692-1-8-03",
-    "firstName": "Ronny",
-    "lastName": "Zialor",
-    "gender": "M",
-    "dob": "1985-09-01",
-    "phone": "+248 2 000 028",
-    "email": "ronny.zialor@example.sc",
-    "address": "Val Nibourette, La Digue",
-    "district": "La Digue",
-    "stakeholderType": "vendor",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2025-10-04T09:00:00.000Z",
-    "updatedAt": "2026-05-18T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-10-04T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0019",
-    "nin": "999-4695-2-3-05",
-    "firstName": "Cynthia",
-    "lastName": "Confait",
-    "gender": "M",
-    "dob": "1963-04-26",
-    "phone": "+248 2 000 029",
-    "email": "cynthia.confait@example.sc",
-    "address": "Val Dugasse, Port Glaud",
-    "district": "Port Glaud",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-06-05T09:00:00.000Z",
-    "updatedAt": "2026-06-10T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-06-05T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0020",
-    "nin": "999-0995-2-1-01",
-    "firstName": "Steve",
-    "lastName": "Gappy",
-    "gender": "M",
-    "dob": "1986-08-23",
-    "phone": "+248 2 000 030",
-    "email": "steve.gappy@example.sc",
-    "address": "Val Morel, Port Glaud",
-    "district": "Port Glaud",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-03-14T09:00:00.000Z",
-    "updatedAt": "2026-06-29T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-03-14T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0021",
-    "nin": "999-4524-1-7-03",
-    "firstName": "Antoinette",
-    "lastName": "Bristol",
-    "gender": "M",
-    "dob": "1994-12-05",
-    "phone": "+248 2 000 031",
-    "email": "antoinette.bristol@example.sc",
-    "address": "Mont Quatre, Anse Royale",
-    "district": "Anse Royale",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-05-11T09:00:00.000Z",
-    "updatedAt": "2026-05-28T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-05-11T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0022",
-    "nin": "999-8370-1-6-08",
-    "firstName": "Georges",
-    "lastName": "Onezime",
-    "gender": "F",
-    "dob": "1974-11-01",
-    "phone": "+248 2 000 032",
-    "email": "georges.onezime@example.sc",
-    "address": "Mont Morel, Port Glaud",
-    "district": "Port Glaud",
-    "stakeholderType": "both",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-07-06T09:00:00.000Z",
-    "updatedAt": "2026-07-08T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-07-06T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0023",
-    "nin": "999-0751-2-3-01",
-    "firstName": "Marie",
-    "lastName": "Pool",
-    "gender": "F",
-    "dob": "1992-10-03",
-    "phone": "+248 2 000 033",
-    "email": "marie.pool@example.sc",
-    "address": "Val Confait, La Digue",
-    "district": "La Digue",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-04-04T09:00:00.000Z",
-    "updatedAt": "2026-06-04T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-04-04T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0024",
-    "nin": "999-0860-1-2-09",
-    "firstName": "Lucie",
-    "lastName": "Esparon",
-    "gender": "M",
-    "dob": "1979-10-28",
-    "phone": "+248 2 000 034",
-    "email": "lucie.esparon@example.sc",
-    "address": "Mont Pool, Takamaka",
-    "district": "Takamaka",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-04-03T09:00:00.000Z",
-    "updatedAt": "2026-04-06T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-04-03T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0025",
-    "nin": "999-7331-2-4-05",
-    "firstName": "Jean",
-    "lastName": "Julienne",
-    "gender": "M",
-    "dob": "1976-05-11",
-    "phone": "+248 2 000 035",
-    "email": "jean.julienne@example.sc",
-    "address": "Chemin Pool, Baie Lazare",
-    "district": "Baie Lazare",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-06-06T09:00:00.000Z",
-    "updatedAt": "2026-06-22T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-06-06T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0026",
-    "nin": "999-8847-2-6-12",
-    "firstName": "Christelle",
-    "lastName": "Payet",
-    "gender": "F",
-    "dob": "1972-03-06",
-    "phone": "+248 2 000 036",
-    "email": "christelle.payet@example.sc",
-    "address": "Mont Vidot, Grand Anse Mahé",
-    "district": "Grand Anse Mahé",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-06-24T09:00:00.000Z",
-    "updatedAt": "2026-06-28T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-06-24T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0027",
-    "nin": "999-7038-1-2-01",
-    "firstName": "Brian",
-    "lastName": "Confait",
-    "gender": "M",
-    "dob": "1989-10-11",
-    "phone": "+248 2 000 037",
-    "email": "brian.confait@example.sc",
-    "address": "La Route Morel, Anse Boileau",
+    "dateOfBirth": "1977-09-18",
+    "phone": "+248 2 000 018",
+    "email": "hubert.rassool3@example.sc",
     "district": "Anse Boileau",
+    "island": "Mahé",
+    "address": "Route Cascade, Anse Boileau, Mahé",
     "stakeholderType": "farmer",
-    "seyidVerified": true,
     "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-04-12T09:00:00.000Z",
-    "updatedAt": "2026-05-18T09:00:00.000Z",
+    "registeredOn": "2024-05-16",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
     "history": [
       {
-        "at": "2026-04-12T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0003-1",
+        "at": "2024-05-16T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
       }
     ]
   },
   {
-    "id": "CLT-0028",
-    "nin": "999-7427-2-5-04",
-    "firstName": "Danny",
-    "lastName": "Labrosse",
+    "id": "CLT-2021-0204",
+    "nin": "999-1612-2-3-83",
+    "firstName": "Terence",
+    "lastName": "Dogley",
     "gender": "M",
-    "dob": "1974-10-25",
-    "phone": "+248 2 000 038",
-    "email": "danny.labrosse@example.sc",
-    "address": "Chemin Nourrice, La Digue",
-    "district": "La Digue",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2025-10-14T09:00:00.000Z",
-    "updatedAt": "2025-12-23T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-10-14T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0029",
-    "nin": "999-3958-2-8-12",
-    "firstName": "Lucie",
-    "lastName": "Dugasse",
-    "gender": "M",
-    "dob": "1972-10-16",
-    "phone": "+248 2 000 039",
-    "email": "lucie.dugasse@example.sc",
-    "address": "Val Mancienne, Grand Anse Praslin",
-    "district": "Grand Anse Praslin",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-06-30T09:00:00.000Z",
-    "updatedAt": "2026-07-15T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-06-30T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0030",
-    "nin": "999-7152-1-1-09",
-    "firstName": "Lucie",
-    "lastName": "Camille",
-    "gender": "F",
-    "dob": "1972-06-04",
-    "phone": "+248 2 000 040",
-    "email": "lucie.camille@example.sc",
-    "address": "Mont Souffe, Baie Ste Anne Praslin",
-    "district": "Baie Ste Anne Praslin",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-04-11T09:00:00.000Z",
-    "updatedAt": "2026-05-29T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-04-11T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0031",
-    "nin": "999-2630-1-3-06",
-    "firstName": "Marguerite",
-    "lastName": "Radegonde",
-    "gender": "M",
-    "dob": "1968-09-15",
-    "phone": "+248 2 000 041",
-    "email": "marguerite.radegonde@example.sc",
-    "address": "Val Morel, Anse Aux Pins",
-    "district": "Anse Aux Pins",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-04-02T09:00:00.000Z",
-    "updatedAt": "2026-06-27T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-04-02T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0032",
-    "nin": "999-3878-1-5-11",
-    "firstName": "Emmanuelle",
-    "lastName": "Bonne",
-    "gender": "M",
-    "dob": "1963-03-03",
-    "phone": "+248 2 000 042",
-    "email": "emmanuelle.bonne@example.sc",
-    "address": "La Route Onezime, Grand Anse Mahé",
+    "dateOfBirth": "1983-01-23",
+    "phone": "+248 2 000 019",
+    "email": "",
     "district": "Grand Anse Mahé",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
+    "island": "Mahé",
+    "address": "Sentier Barbarons, Grand Anse Mahé, Mahé",
+    "stakeholderType": "cooperative",
     "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-05-15T09:00:00.000Z",
-    "updatedAt": "2026-06-28T09:00:00.000Z",
+    "registeredOn": "2021-03-12",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
     "history": [
       {
-        "at": "2026-05-15T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2021-0204-1",
+        "at": "2021-03-12T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
       }
     ]
   },
   {
-    "id": "CLT-0033",
-    "nin": "999-0852-1-7-02",
-    "firstName": "Ronny",
-    "lastName": "Bonne",
-    "gender": "M",
-    "dob": "1975-06-25",
-    "phone": "+248 2 000 043",
-    "email": "ronny.bonne@example.sc",
-    "address": "Val Vidot, Baie Ste Anne Praslin",
-    "district": "Baie Ste Anne Praslin",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2025-12-23T09:00:00.000Z",
-    "updatedAt": "2026-03-25T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-12-23T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0034",
-    "nin": "999-1368-2-5-01",
-    "firstName": "Robert",
-    "lastName": "Pool",
-    "gender": "F",
-    "dob": "1965-01-12",
-    "phone": "+248 2 000 044",
-    "email": "robert.pool@example.sc",
-    "address": "La Route Valentin, Grand Anse Mahé",
-    "district": "Grand Anse Mahé",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-04-16T09:00:00.000Z",
-    "updatedAt": "2026-05-25T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-04-16T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0035",
-    "nin": "999-5612-1-9-06",
-    "firstName": "Marie",
-    "lastName": "Uranie",
-    "gender": "F",
-    "dob": "1989-04-07",
-    "phone": "+248 2 000 045",
-    "email": "marie.uranie@example.sc",
-    "address": "Val Larue, Baie Lazare",
-    "district": "Baie Lazare",
-    "stakeholderType": "vendor",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-07-08T09:00:00.000Z",
-    "updatedAt": "2026-07-12T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-07-08T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0036",
-    "nin": "999-6999-2-7-05",
+    "id": "CLT-2019-0205",
+    "nin": "999-1105-1-8-63",
     "firstName": "Yolande",
-    "lastName": "Julienne",
-    "gender": "M",
-    "dob": "1966-03-02",
-    "phone": "+248 2 000 046",
-    "email": "yolande.julienne@example.sc",
-    "address": "Val Souffe, Baie Ste Anne Praslin",
-    "district": "Baie Ste Anne Praslin",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2025-08-26T09:00:00.000Z",
-    "updatedAt": "2026-02-23T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-08-26T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0037",
-    "nin": "999-0573-2-7-11",
-    "firstName": "Robert",
-    "lastName": "Uranie",
-    "gender": "M",
-    "dob": "1989-06-03",
-    "phone": "+248 2 000 047",
-    "email": "robert.uranie@example.sc",
-    "address": "Chemin Bristol, Takamaka",
-    "district": "Takamaka",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2025-08-24T09:00:00.000Z",
-    "updatedAt": "2026-01-17T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-08-24T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0038",
-    "nin": "999-4416-2-7-05",
-    "firstName": "Antoinette",
-    "lastName": "Bristol",
-    "gender": "F",
-    "dob": "1997-11-03",
-    "phone": "+248 2 000 048",
-    "email": "antoinette.bristol@example.sc",
-    "address": "Chemin Nourrice, Port Glaud",
-    "district": "Port Glaud",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2025-09-18T09:00:00.000Z",
-    "updatedAt": "2026-01-17T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-09-18T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0039",
-    "nin": "999-9103-2-3-06",
-    "firstName": "Marie",
-    "lastName": "Camille",
-    "gender": "M",
-    "dob": "1988-02-17",
-    "phone": "+248 2 000 049",
-    "email": "marie.camille@example.sc",
-    "address": "La Route Sinon, Anse Aux Pins",
-    "district": "Anse Aux Pins",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-05-13T09:00:00.000Z",
-    "updatedAt": "2026-06-17T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-05-13T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0040",
-    "nin": "999-2814-1-4-02",
-    "firstName": "Robert",
-    "lastName": "Adrienne",
-    "gender": "F",
-    "dob": "1977-02-05",
-    "phone": "+248 2 000 050",
-    "email": "robert.adrienne@example.sc",
-    "address": "Chemin Faure, Baie Lazare",
-    "district": "Baie Lazare",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-01-20T09:00:00.000Z",
-    "updatedAt": "2026-06-06T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-01-20T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0041",
-    "nin": "999-6821-2-1-02",
-    "firstName": "Marguerite",
     "lastName": "Camille",
     "gender": "F",
-    "dob": "1963-03-17",
-    "phone": "+248 2 000 051",
-    "email": "marguerite.camille@example.sc",
-    "address": "Val Nibourette, La Digue",
+    "dateOfBirth": "1963-12-13",
+    "phone": "+248 2 000 020",
+    "email": "",
     "district": "La Digue",
-    "stakeholderType": "vendor",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2026-06-30T09:00:00.000Z",
-    "updatedAt": "2026-07-15T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-06-30T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0042",
-    "nin": "999-0346-1-9-07",
-    "firstName": "Jenny",
-    "lastName": "Radegonde",
-    "gender": "F",
-    "dob": "1957-04-14",
-    "phone": "+248 2 000 052",
-    "email": "jenny.radegonde@example.sc",
-    "address": "La Route Gappy, Grand Anse Mahé",
-    "district": "Grand Anse Mahé",
+    "island": "La Digue",
+    "address": "Chemin Montagne Posée, La Digue, La Digue",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-05-29T09:00:00.000Z",
-    "updatedAt": "2026-07-03T09:00:00.000Z",
+    "registeredOn": "2019-01-14",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
     "history": [
       {
-        "at": "2026-05-29T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2019-0205-1",
+        "at": "2019-01-14T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
       }
     ]
   },
   {
-    "id": "CLT-0043",
-    "nin": "999-0165-1-6-01",
-    "firstName": "Jean",
-    "lastName": "Bonne",
-    "gender": "F",
-    "dob": "1959-04-25",
-    "phone": "+248 2 000 053",
-    "email": "jean.bonne@example.sc",
-    "address": "Chemin Faure, Port Glaud",
-    "district": "Port Glaud",
+    "id": "CLT-2026-0006",
+    "nin": "999-2009-2-5-95",
+    "firstName": "Damien",
+    "lastName": "Confait",
+    "gender": "M",
+    "dateOfBirth": "1995-08-28",
+    "phone": "+248 2 000 021",
+    "email": "damien.confait6@example.sc",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "Chemin Val d’Endor, Baie Ste Anne Praslin, Praslin",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "self_service",
-    "createdAt": "2025-08-22T09:00:00.000Z",
-    "updatedAt": "2026-02-14T09:00:00.000Z",
+    "registeredOn": "2025-09-06",
+    "registeredVia": "self-service",
+    "seyIdVerified": false,
+    "notes": "",
     "history": [
       {
-        "at": "2025-08-22T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0006-1",
+        "at": "2025-09-06T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Damien Confait",
+        "action": "Self-registered via online portal"
       }
     ]
   },
   {
-    "id": "CLT-0044",
-    "nin": "999-8400-2-4-08",
-    "firstName": "Josephine",
-    "lastName": "Faure",
+    "id": "CLT-2021-0207",
+    "nin": "999-1511-1-7-96",
+    "firstName": "Josianne",
+    "lastName": "Hoareau",
     "gender": "F",
-    "dob": "1998-07-07",
-    "phone": "+248 2 000 054",
-    "email": "josephine.faure@example.sc",
-    "address": "La Route Faure, Takamaka",
-    "district": "Takamaka",
+    "dateOfBirth": "1996-05-14",
+    "phone": "+248 2 000 022",
+    "email": "josianne.hoareau7@example.sc",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "address": "Chemin Les Canelles, Baie Lazare, Mahé",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-05-15T09:00:00.000Z",
-    "updatedAt": "2026-06-29T09:00:00.000Z",
+    "registeredOn": "2021-03-25",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
     "history": [
       {
-        "at": "2026-05-15T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2021-0207-1",
+        "at": "2021-03-25T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
       }
     ]
   },
   {
-    "id": "CLT-0045",
-    "nin": "999-8737-1-5-04",
-    "firstName": "Georges",
-    "lastName": "Tirant",
+    "id": "CLT-2017-0208",
+    "nin": "999-0409-1-4-59",
+    "firstName": "Therese",
+    "lastName": "Hollanda",
     "gender": "F",
-    "dob": "1955-07-08",
-    "phone": "+248 2 000 055",
-    "email": "georges.tirant@example.sc",
-    "address": "Mont Zialor, Anse Boileau",
+    "dateOfBirth": "1959-09-06",
+    "phone": "+248 2 000 023",
+    "email": "therese.hollanda8@example.sc",
     "district": "Anse Boileau",
-    "stakeholderType": "vendor",
-    "seyidVerified": true,
+    "island": "Mahé",
+    "address": "Route Les Canelles, Anse Boileau, Mahé",
+    "stakeholderType": "farmer",
     "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-03-17T09:00:00.000Z",
-    "updatedAt": "2026-04-11T09:00:00.000Z",
+    "registeredOn": "2017-05-19",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
     "history": [
       {
-        "at": "2026-03-17T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2017-0208-1",
+        "at": "2017-05-19T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
       }
     ]
   },
   {
-    "id": "CLT-0046",
-    "nin": "999-7928-2-7-05",
-    "firstName": "Andy",
-    "lastName": "Vidot",
+    "id": "CLT-2026-0009",
+    "nin": "999-0411-2-4-68",
+    "firstName": "Alcide",
+    "lastName": "Confait",
+    "gender": "M",
+    "dateOfBirth": "1968-08-27",
+    "phone": "+248 2 000 024",
+    "email": "alcide.confait9@example.sc",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "address": "Sentier Les Canelles, Grand Anse Mahé, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2026-03-06",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0009-1",
+        "at": "2026-03-06T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0010",
+    "nin": "999-1610-2-7-72",
+    "firstName": "Egbert",
+    "lastName": "Dogley",
+    "gender": "M",
+    "dateOfBirth": "1972-11-14",
+    "phone": "+248 2 000 025",
+    "email": "",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "Sentier Fond Ferdinand, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-04-11",
+    "registeredVia": "self-service",
+    "seyIdVerified": false,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0010-1",
+        "at": "2025-04-11T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Egbert Dogley",
+        "action": "Self-registered via online portal"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2021-0211",
+    "nin": "999-0405-1-5-60",
+    "firstName": "Yolande",
+    "lastName": "Marengo",
     "gender": "F",
-    "dob": "1985-10-27",
-    "phone": "+248 2 000 056",
-    "email": "andy.vidot@example.sc",
-    "address": "Val Zialor, Grand Anse Praslin",
-    "district": "Grand Anse Praslin",
-    "stakeholderType": "vendor",
-    "seyidVerified": true,
+    "dateOfBirth": "1960-10-02",
+    "phone": "+248 2 000 026",
+    "email": "yolande.marengo11@example.sc",
+    "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "address": "Sentier Montagne Posée, Anse Aux Pins, Mahé",
+    "stakeholderType": "farmer",
     "status": "active",
-    "source": "officer",
-    "createdAt": "2026-03-21T09:00:00.000Z",
-    "updatedAt": "2026-04-17T09:00:00.000Z",
+    "registeredOn": "2021-01-02",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
     "history": [
       {
-        "at": "2026-03-21T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2021-0211-1",
+        "at": "2021-01-02T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
       }
     ]
   },
   {
-    "id": "CLT-0047",
-    "nin": "999-6523-2-1-09",
-    "firstName": "Murielle",
+    "id": "CLT-2021-0212",
+    "nin": "999-2510-2-7-67",
+    "firstName": "Emmanuel",
     "lastName": "Servina",
     "gender": "M",
-    "dob": "1956-05-09",
-    "phone": "+248 2 000 057",
-    "email": "murielle.servina@example.sc",
-    "address": "Mont Valentin, Baie Ste Anne Praslin",
-    "district": "Baie Ste Anne Praslin",
+    "dateOfBirth": "1967-08-25",
+    "phone": "+248 2 000 027",
+    "email": "",
+    "district": "Anse Boileau",
+    "island": "Mahé",
+    "address": "Sentier Montagne Posée, Anse Boileau, Mahé",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "officer",
-    "createdAt": "2025-08-09T09:00:00.000Z",
-    "updatedAt": "2026-04-06T09:00:00.000Z",
+    "registeredOn": "2021-02-22",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
     "history": [
       {
-        "at": "2025-08-09T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2021-0212-1",
+        "at": "2021-02-22T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
       }
     ]
   },
   {
-    "id": "CLT-0048",
-    "nin": "999-0716-1-7-05",
-    "firstName": "Danny",
-    "lastName": "Camille",
+    "id": "CLT-2026-0013",
+    "nin": "999-0909-1-6-95",
+    "firstName": "Christiane",
+    "lastName": "Confait",
     "gender": "F",
-    "dob": "1967-01-08",
-    "phone": "+248 2 000 058",
-    "email": "danny.camille@example.sc",
-    "address": "La Route Rassool, Grand Anse Mahé",
-    "district": "Grand Anse Mahé",
+    "dateOfBirth": "1995-02-10",
+    "phone": "+248 2 000 028",
+    "email": "christiane.confait13@example.sc",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "address": "Route Montagne Posée, Baie Lazare, Mahé",
     "stakeholderType": "farmer",
-    "seyidVerified": true,
     "status": "active",
-    "source": "migrated",
-    "createdAt": "2025-09-05T09:00:00.000Z",
-    "updatedAt": "2026-03-25T09:00:00.000Z",
+    "registeredOn": "2024-08-23",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": false,
+    "notes": "",
     "history": [
       {
-        "at": "2025-09-05T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0013-1",
+        "at": "2024-08-23T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
       }
     ]
   },
   {
-    "id": "CLT-0049",
-    "nin": "999-0477-2-9-05",
-    "firstName": "Gilbert",
+    "id": "CLT-2026-0014",
+    "nin": "999-0210-1-8-66",
+    "firstName": "Lucienne",
+    "lastName": "Zialor",
+    "gender": "F",
+    "dateOfBirth": "1966-11-15",
+    "phone": "+248 2 000 029",
+    "email": "lucienne.zialor14@example.sc",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "address": "Sentier Fond Ferdinand, Grand Anse Mahé, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2023-12-24",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0014-1",
+        "at": "2023-12-24T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Lucienne Zialor",
+        "action": "Self-registered via online portal"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2018-0215",
+    "nin": "999-2206-2-8-75",
+    "firstName": "Lucien",
+    "lastName": "Bonnelame",
+    "gender": "M",
+    "dateOfBirth": "1975-07-17",
+    "phone": "+248 2 000 030",
+    "email": "lucien.bonnelame15@example.sc",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "La Route Cascade, Anse Royale, Mahé",
+    "stakeholderType": "cooperative",
+    "status": "active",
+    "registeredOn": "2018-06-12",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2018-0215-1",
+        "at": "2018-06-12T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0016",
+    "nin": "999-1411-1-4-83",
+    "firstName": "Simone",
+    "lastName": "Vidot",
+    "gender": "F",
+    "dateOfBirth": "1983-12-24",
+    "phone": "+248 2 000 031",
+    "email": "simone.vidot16@example.sc",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "address": "Chemin Les Canelles, Grand Anse Mahé, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-12-12",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": false,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0016-1",
+        "at": "2024-12-12T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0017",
+    "nin": "999-2612-2-8-67",
+    "firstName": "Damien",
+    "lastName": "Belmont",
+    "gender": "M",
+    "dateOfBirth": "1967-04-26",
+    "phone": "+248 2 000 032",
+    "email": "damien.belmont17@example.sc",
+    "district": "La Digue",
+    "island": "La Digue",
+    "address": "La Route Montagne Posée, La Digue, La Digue",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-07-14",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0017-1",
+        "at": "2024-07-14T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Damien Belmont",
+        "action": "Self-registered via online portal"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0018",
+    "nin": "999-0703-1-2-65",
+    "firstName": "Christiane",
+    "lastName": "Belmont",
+    "gender": "F",
+    "dateOfBirth": "1965-01-16",
+    "phone": "+248 2 000 033",
+    "email": "christiane.belmont18@example.sc",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "Route Montagne Posée, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-04-27",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0018-1",
+        "at": "2025-04-27T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0019",
+    "nin": "999-0111-2-5-73",
+    "firstName": "Wilfred",
+    "lastName": "Hoareau",
+    "gender": "M",
+    "dateOfBirth": "1973-02-12",
+    "phone": "+248 2 000 034",
+    "email": "wilfred.hoareau19@example.sc",
+    "district": "Anse Boileau",
+    "island": "Mahé",
+    "address": "Route Anse Kerlan, Anse Boileau, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-12-30",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0019-1",
+        "at": "2025-12-30T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2021-0220",
+    "nin": "999-2408-2-5-65",
+    "firstName": "Emmanuel",
     "lastName": "Quatre",
     "gender": "M",
-    "dob": "1969-03-15",
-    "phone": "+248 2 000 059",
-    "email": "gilbert.quatre@example.sc",
-    "address": "Chemin Valentin, Port Glaud",
-    "district": "Port Glaud",
+    "dateOfBirth": "1965-11-22",
+    "phone": "+248 2 000 035",
+    "email": "emmanuel.quatre20@example.sc",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "address": "Route Anse Kerlan, Baie Lazare, Mahé",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "self_service",
-    "createdAt": "2025-09-28T09:00:00.000Z",
-    "updatedAt": "2026-03-18T09:00:00.000Z",
+    "registeredOn": "2021-08-20",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
     "history": [
       {
-        "at": "2025-09-28T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2021-0220-1",
+        "at": "2021-08-20T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
       }
     ]
   },
   {
-    "id": "CLT-0050",
-    "nin": "999-2886-2-8-11",
-    "firstName": "Marguerite",
-    "lastName": "Nibourette",
-    "gender": "F",
-    "dob": "1984-10-27",
-    "phone": "+248 2 000 060",
-    "email": "marguerite.nibourette@example.sc",
-    "address": "Chemin Quatre, Anse Boileau",
-    "district": "Anse Boileau",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2025-08-16T09:00:00.000Z",
-    "updatedAt": "2025-10-07T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-08-16T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0051",
-    "nin": "999-6447-1-3-01",
-    "firstName": "Bernard",
-    "lastName": "Pool",
+    "id": "CLT-2026-0021",
+    "nin": "999-1708-2-1-77",
+    "firstName": "Antoine",
+    "lastName": "Adrienne",
     "gender": "M",
-    "dob": "1981-11-23",
-    "phone": "+248 2 000 061",
-    "email": "bernard.pool@example.sc",
-    "address": "Mont Sinon, La Digue",
-    "district": "La Digue",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2026-02-01T09:00:00.000Z",
-    "updatedAt": "2026-03-10T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-02-01T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0052",
-    "nin": "999-9148-2-4-06",
-    "firstName": "Roselyne",
-    "lastName": "Nourrice",
-    "gender": "F",
-    "dob": "1970-01-09",
-    "phone": "+248 2 000 062",
-    "email": "roselyne.nourrice@example.sc",
-    "address": "La Route Confait, La Digue",
-    "district": "La Digue",
-    "stakeholderType": "vendor",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2026-04-01T09:00:00.000Z",
-    "updatedAt": "2026-05-01T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-04-01T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0053",
-    "nin": "999-9856-1-6-07",
-    "firstName": "Steve",
-    "lastName": "Nourrice",
-    "gender": "M",
-    "dob": "1975-04-22",
-    "phone": "+248 2 000 063",
-    "email": "steve.nourrice@example.sc",
-    "address": "Val Souffe, Anse Royale",
+    "dateOfBirth": "1977-04-07",
+    "phone": "+248 2 000 036",
+    "email": "antoine.adrienne21@example.sc",
     "district": "Anse Royale",
-    "stakeholderType": "vendor",
-    "seyidVerified": false,
+    "island": "Mahé",
+    "address": "La Route Cascade, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
     "status": "active",
-    "source": "migrated",
-    "createdAt": "2025-09-03T09:00:00.000Z",
-    "updatedAt": "2025-09-19T09:00:00.000Z",
+    "registeredOn": "2025-06-28",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": false,
+    "notes": "",
     "history": [
       {
-        "at": "2025-09-03T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0021-1",
+        "at": "2025-06-28T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
       }
     ]
   },
   {
-    "id": "CLT-0054",
-    "nin": "999-4288-2-8-09",
-    "firstName": "Danny",
-    "lastName": "Dugasse",
+    "id": "CLT-2026-0022",
+    "nin": "999-1311-2-4-89",
+    "firstName": "Maxime",
+    "lastName": "Hollanda",
     "gender": "M",
-    "dob": "1996-10-20",
-    "phone": "+248 2 000 064",
-    "email": "danny.dugasse@example.sc",
-    "address": "La Route Zialor, Baie Ste Anne Praslin",
+    "dateOfBirth": "1989-12-05",
+    "phone": "+248 2 000 037",
+    "email": "maxime.hollanda22@example.sc",
     "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "Chemin Cascade, Baie Ste Anne Praslin, Praslin",
     "stakeholderType": "farmer",
-    "seyidVerified": true,
     "status": "active",
-    "source": "officer",
-    "createdAt": "2026-01-22T09:00:00.000Z",
-    "updatedAt": "2026-07-12T09:00:00.000Z",
+    "registeredOn": "2025-05-13",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
     "history": [
       {
-        "at": "2026-01-22T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0022-1",
+        "at": "2025-05-13T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Maxime Hollanda",
+        "action": "Self-registered via online portal"
       }
     ]
   },
   {
-    "id": "CLT-0055",
-    "nin": "999-3424-1-3-09",
-    "firstName": "Brian",
-    "lastName": "Zialor",
-    "gender": "F",
-    "dob": "1964-02-13",
-    "phone": "+248 2 000 065",
-    "email": "brian.zialor@example.sc",
-    "address": "Val Nibourette, Grand Anse Mahé",
-    "district": "Grand Anse Mahé",
-    "stakeholderType": "both",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2025-11-02T09:00:00.000Z",
-    "updatedAt": "2026-04-04T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-11-02T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0056",
-    "nin": "999-3333-2-2-10",
-    "firstName": "Doris",
-    "lastName": "Morel",
-    "gender": "F",
-    "dob": "1995-03-28",
-    "phone": "+248 2 000 066",
-    "email": "doris.morel@example.sc",
-    "address": "Val Souffe, La Digue",
-    "district": "La Digue",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2025-11-07T09:00:00.000Z",
-    "updatedAt": "2026-01-12T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-11-07T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0057",
-    "nin": "999-3547-1-4-12",
-    "firstName": "Sabrina",
-    "lastName": "Radegonde",
+    "id": "CLT-2026-0023",
+    "nin": "999-2811-2-9-70",
+    "firstName": "Roland",
+    "lastName": "Melanie",
     "gender": "M",
-    "dob": "1962-08-08",
-    "phone": "+248 2 000 067",
-    "email": "sabrina.radegonde@example.sc",
-    "address": "La Route Adrienne, Baie Ste Anne Praslin",
-    "district": "Baie Ste Anne Praslin",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-01-03T09:00:00.000Z",
-    "updatedAt": "2026-03-17T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-01-03T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0058",
-    "nin": "999-0577-1-4-08",
-    "firstName": "Roselyne",
-    "lastName": "Vidot",
-    "gender": "M",
-    "dob": "1967-08-28",
-    "phone": "+248 2 000 068",
-    "email": "roselyne.vidot@example.sc",
-    "address": "Val Servina, La Digue",
+    "dateOfBirth": "1970-11-09",
+    "phone": "+248 2 000 038",
+    "email": "roland.melanie23@example.sc",
     "district": "La Digue",
+    "island": "La Digue",
+    "address": "Route Anse Kerlan, La Digue, La Digue",
     "stakeholderType": "farmer",
-    "seyidVerified": true,
     "status": "active",
-    "source": "self_service",
-    "createdAt": "2025-08-31T09:00:00.000Z",
-    "updatedAt": "2026-03-19T09:00:00.000Z",
+    "registeredOn": "2025-08-18",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
     "history": [
       {
-        "at": "2025-08-31T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0023-1",
+        "at": "2025-08-18T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Roland Melanie",
+        "action": "Self-registered via online portal"
       }
     ]
   },
   {
-    "id": "CLT-0059",
-    "nin": "999-2435-2-9-08",
-    "firstName": "Emmanuelle",
+    "id": "CLT-2018-0224",
+    "nin": "999-0304-2-3-72",
+    "firstName": "Antoine",
+    "lastName": "Fanchette",
+    "gender": "M",
+    "dateOfBirth": "1972-09-13",
+    "phone": "+248 2 000 039",
+    "email": "",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "Route Cascade, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2018-07-25",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2018-0224-1",
+        "at": "2018-07-25T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0025",
+    "nin": "999-2010-1-4-89",
+    "firstName": "Lisette",
+    "lastName": "Denousse",
+    "gender": "F",
+    "dateOfBirth": "1989-12-15",
+    "phone": "+248 2 000 040",
+    "email": "lisette.denousse25@example.sc",
+    "district": "La Digue",
+    "island": "La Digue",
+    "address": "Sentier Fond Ferdinand, La Digue, La Digue",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-08-06",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": false,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0025-1",
+        "at": "2024-08-06T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2020-0226",
+    "nin": "999-1811-2-6-88",
+    "firstName": "Maxime",
+    "lastName": "Labiche",
+    "gender": "M",
+    "dateOfBirth": "1988-11-23",
+    "phone": "+248 2 000 041",
+    "email": "maxime.labiche26@example.sc",
+    "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "address": "Chemin Cascade, Anse Aux Pins, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2020-11-18",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2020-0226-1",
+        "at": "2020-11-18T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0027",
+    "nin": "999-0401-2-2-57",
+    "firstName": "Roland",
+    "lastName": "Pillay",
+    "gender": "M",
+    "dateOfBirth": "1957-11-25",
+    "phone": "+248 2 000 042",
+    "email": "",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "address": "La Route Fond Ferdinand, Baie Lazare, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-03-23",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": false,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0027-1",
+        "at": "2024-03-23T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2017-0228",
+    "nin": "999-1410-2-6-97",
+    "firstName": "Fabien",
+    "lastName": "Kilindo",
+    "gender": "M",
+    "dateOfBirth": "1997-12-19",
+    "phone": "+248 2 000 043",
+    "email": "",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "Route Belle Vue, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2017-01-10",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2017-0228-1",
+        "at": "2017-01-10T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2016-0229",
+    "nin": "999-1704-2-7-76",
+    "firstName": "Sylvain",
     "lastName": "Camille",
     "gender": "M",
-    "dob": "1984-01-21",
-    "phone": "+248 2 000 069",
-    "email": "emmanuelle.camille@example.sc",
-    "address": "Mont Bristol, Anse Royale",
-    "district": "Anse Royale",
+    "dateOfBirth": "1976-12-20",
+    "phone": "+248 2 000 044",
+    "email": "",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "Chemin Fond Ferdinand, Baie Ste Anne Praslin, Praslin",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "officer",
-    "createdAt": "2026-04-07T09:00:00.000Z",
-    "updatedAt": "2026-07-10T09:00:00.000Z",
+    "registeredOn": "2016-11-24",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
     "history": [
       {
-        "at": "2026-04-07T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2016-0229-1",
+        "at": "2016-11-24T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
       }
     ]
   },
   {
-    "id": "CLT-0060",
-    "nin": "999-4837-2-8-03",
-    "firstName": "Vincent",
-    "lastName": "Dugasse",
-    "gender": "M",
-    "dob": "1985-08-21",
-    "phone": "+248 2 000 070",
-    "email": "vincent.dugasse@example.sc",
-    "address": "Chemin Tirant, Baie Lazare",
-    "district": "Baie Lazare",
-    "stakeholderType": "both",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2025-12-23T09:00:00.000Z",
-    "updatedAt": "2026-04-07T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-12-23T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0061",
-    "nin": "999-0435-2-4-11",
-    "firstName": "Wilna",
-    "lastName": "Rassool",
-    "gender": "M",
-    "dob": "1967-04-22",
-    "phone": "+248 2 000 071",
-    "email": "wilna.rassool@example.sc",
-    "address": "La Route Larue, Anse Royale",
-    "district": "Anse Royale",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-04-21T09:00:00.000Z",
-    "updatedAt": "2026-05-06T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-04-21T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0062",
-    "nin": "999-9334-1-1-10",
-    "firstName": "Murielle",
-    "lastName": "Sinon",
-    "gender": "M",
-    "dob": "1962-07-23",
-    "phone": "+248 2 000 072",
-    "email": "murielle.sinon@example.sc",
-    "address": "La Route Zialor, Grand Anse Praslin",
-    "district": "Grand Anse Praslin",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2026-05-28T09:00:00.000Z",
-    "updatedAt": "2026-07-03T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-05-28T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0063",
-    "nin": "999-0961-1-9-02",
-    "firstName": "Georges",
-    "lastName": "Servina",
-    "gender": "F",
-    "dob": "1982-05-08",
-    "phone": "+248 2 000 073",
-    "email": "georges.servina@example.sc",
-    "address": "Mont Nourrice, Baie Lazare",
-    "district": "Baie Lazare",
-    "stakeholderType": "farmer",
-    "seyidVerified": false,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2026-06-17T09:00:00.000Z",
-    "updatedAt": "2026-07-10T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-06-17T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0064",
-    "nin": "999-1109-2-5-11",
-    "firstName": "Robert",
+    "id": "CLT-2026-0030",
+    "nin": "999-2809-2-5-65",
+    "firstName": "Roland",
     "lastName": "Nourrice",
     "gender": "M",
-    "dob": "1956-01-14",
-    "phone": "+248 2 000 074",
-    "email": "robert.nourrice@example.sc",
-    "address": "Mont Hoareau, La Digue",
-    "district": "La Digue",
-    "stakeholderType": "vendor",
-    "seyidVerified": false,
+    "dateOfBirth": "1965-06-22",
+    "phone": "+248 2 000 045",
+    "email": "roland.nourrice30@example.sc",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "Chemin Cascade, Baie Ste Anne Praslin, Praslin",
+    "stakeholderType": "farmer",
     "status": "active",
-    "source": "self_service",
-    "createdAt": "2025-09-14T09:00:00.000Z",
-    "updatedAt": "2026-05-20T09:00:00.000Z",
+    "registeredOn": "2025-09-08",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
     "history": [
       {
-        "at": "2025-09-14T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0030-1",
+        "at": "2025-09-08T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Roland Nourrice",
+        "action": "Self-registered via online portal"
       }
     ]
   },
   {
-    "id": "CLT-0065",
-    "nin": "999-5437-1-9-01",
-    "firstName": "Nadege",
-    "lastName": "Larue",
+    "id": "CLT-2026-0031",
+    "nin": "999-1906-1-8-93",
+    "firstName": "Rosita",
+    "lastName": "Marengo",
+    "gender": "F",
+    "dateOfBirth": "1993-02-01",
+    "phone": "+248 2 000 046",
+    "email": "rosita.marengo31@example.sc",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "address": "Sentier Val d’Endor, Grand Anse Mahé, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-07-09",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": false,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0031-1",
+        "at": "2025-07-09T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2018-0232",
+    "nin": "999-2111-2-2-96",
+    "firstName": "Bernard",
+    "lastName": "Dogley",
     "gender": "M",
-    "dob": "1990-11-17",
-    "phone": "+248 2 000 075",
-    "email": "nadege.larue@example.sc",
-    "address": "Val Onezime, Anse Aux Pins",
+    "dateOfBirth": "1996-05-05",
+    "phone": "+248 2 000 047",
+    "email": "",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "La Route Fond Ferdinand, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2018-02-24",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2018-0232-1",
+        "at": "2018-02-24T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0033",
+    "nin": "999-1011-1-5-73",
+    "firstName": "Josianne",
+    "lastName": "Camille",
+    "gender": "F",
+    "dateOfBirth": "1973-04-26",
+    "phone": "+248 2 000 048",
+    "email": "josianne.camille33@example.sc",
     "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "address": "Sentier Montagne Posée, Anse Aux Pins, Mahé",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "migrated",
-    "createdAt": "2025-09-10T09:00:00.000Z",
-    "updatedAt": "2025-09-27T09:00:00.000Z",
+    "registeredOn": "2024-08-14",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
     "history": [
       {
-        "at": "2025-09-10T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0033-1",
+        "at": "2024-08-14T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
       }
     ]
   },
   {
-    "id": "CLT-0066",
-    "nin": "999-8379-2-4-12",
-    "firstName": "Marguerite",
-    "lastName": "Rose",
-    "gender": "F",
-    "dob": "1981-11-14",
-    "phone": "+248 2 000 076",
-    "email": "marguerite.rose@example.sc",
-    "address": "La Route Gappy, Baie Lazare",
-    "district": "Baie Lazare",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-06-29T09:00:00.000Z",
-    "updatedAt": "2026-07-12T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-06-29T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0067",
-    "nin": "999-2092-1-2-05",
-    "firstName": "Lucie",
+    "id": "CLT-2026-0034",
+    "nin": "999-1501-1-2-75",
+    "firstName": "Bernadette",
     "lastName": "Payet",
-    "gender": "M",
-    "dob": "1955-02-12",
-    "phone": "+248 2 000 077",
-    "email": "lucie.payet@example.sc",
-    "address": "Mont Camille, Baie Lazare",
-    "district": "Baie Lazare",
-    "stakeholderType": "vendor",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2025-09-27T09:00:00.000Z",
-    "updatedAt": "2026-02-19T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-09-27T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0068",
-    "nin": "999-3026-2-5-03",
-    "firstName": "Roselyne",
-    "lastName": "Rassool",
-    "gender": "M",
-    "dob": "1960-12-23",
-    "phone": "+248 2 000 078",
-    "email": "roselyne.rassool@example.sc",
-    "address": "La Route Confait, Takamaka",
-    "district": "Takamaka",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "self_service",
-    "createdAt": "2026-07-06T09:00:00.000Z",
-    "updatedAt": "2026-07-08T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-07-06T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0069",
-    "nin": "999-1342-2-5-11",
-    "firstName": "Christelle",
-    "lastName": "Morel",
     "gender": "F",
-    "dob": "1959-01-18",
-    "phone": "+248 2 000 079",
-    "email": "christelle.morel@example.sc",
-    "address": "La Route Dugasse, Grand Anse Praslin",
-    "district": "Grand Anse Praslin",
+    "dateOfBirth": "1975-11-07",
+    "phone": "+248 2 000 049",
+    "email": "bernadette.payet34@example.sc",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "Sentier Cascade, Baie Ste Anne Praslin, Praslin",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "self_service",
-    "createdAt": "2025-09-19T09:00:00.000Z",
-    "updatedAt": "2025-10-18T09:00:00.000Z",
+    "registeredOn": "2023-11-26",
+    "registeredVia": "self-service",
+    "seyIdVerified": false,
+    "notes": "",
     "history": [
       {
-        "at": "2025-09-19T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0034-1",
+        "at": "2023-11-26T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Bernadette Payet",
+        "action": "Self-registered via online portal"
       }
     ]
   },
   {
-    "id": "CLT-0070",
-    "nin": "999-6615-1-1-10",
-    "firstName": "Jean",
+    "id": "CLT-2026-0035",
+    "nin": "999-0211-2-9-88",
+    "firstName": "Clement",
     "lastName": "Hoareau",
     "gender": "M",
-    "dob": "1990-09-10",
-    "phone": "+248 2 000 080",
-    "email": "jean.hoareau@example.sc",
-    "address": "Val Radegonde, Anse Aux Pins",
-    "district": "Anse Aux Pins",
-    "stakeholderType": "both",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "officer",
-    "createdAt": "2025-09-27T09:00:00.000Z",
-    "updatedAt": "2026-05-14T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2025-09-27T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0071",
-    "nin": "999-9216-2-6-11",
-    "firstName": "Ronny",
-    "lastName": "Nibourette",
-    "gender": "M",
-    "dob": "1983-12-21",
-    "phone": "+248 2 000 081",
-    "email": "ronny.nibourette@example.sc",
-    "address": "Val Bristol, Grand Anse Praslin",
-    "district": "Grand Anse Praslin",
+    "dateOfBirth": "1988-06-16",
+    "phone": "+248 2 000 050",
+    "email": "clement.hoareau35@example.sc",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "Sentier Fond Ferdinand, Baie Ste Anne Praslin, Praslin",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "self_service",
-    "createdAt": "2025-12-25T09:00:00.000Z",
-    "updatedAt": "2026-02-20T09:00:00.000Z",
+    "registeredOn": "2024-12-31",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
     "history": [
       {
-        "at": "2025-12-25T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0035-1",
+        "at": "2024-12-31T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Clement Hoareau",
+        "action": "Self-registered via online portal"
       }
     ]
   },
   {
-    "id": "CLT-0072",
-    "nin": "999-8292-2-1-02",
-    "firstName": "Georges",
+    "id": "CLT-2017-0236",
+    "nin": "999-0901-1-6-61",
+    "firstName": "Sylvianne",
+    "lastName": "Belmont",
+    "gender": "F",
+    "dateOfBirth": "1961-04-26",
+    "phone": "+248 2 000 051",
+    "email": "",
+    "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "address": "Chemin Belle Vue, Anse Aux Pins, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2017-05-01",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2017-0236-1",
+        "at": "2017-05-01T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2016-0237",
+    "nin": "999-2211-2-6-74",
+    "firstName": "Antoine",
+    "lastName": "Confait",
+    "gender": "M",
+    "dateOfBirth": "1974-12-16",
+    "phone": "+248 2 000 052",
+    "email": "antoine.confait37@example.sc",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "address": "La Route Fond Ferdinand, Baie Lazare, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2016-02-24",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2016-0237-1",
+        "at": "2016-02-24T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0038",
+    "nin": "999-1403-1-3-64",
+    "firstName": "Marielle",
+    "lastName": "Camille",
+    "gender": "F",
+    "dateOfBirth": "1964-03-25",
+    "phone": "+248 2 000 053",
+    "email": "marielle.camille38@example.sc",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "La Route Fond Ferdinand, Baie Ste Anne Praslin, Praslin",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-09-20",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0038-1",
+        "at": "2025-09-20T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2017-0239",
+    "nin": "999-1807-2-6-81",
+    "firstName": "Michel",
+    "lastName": "Belmont",
+    "gender": "M",
+    "dateOfBirth": "1981-11-17",
+    "phone": "+248 2 000 054",
+    "email": "",
+    "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "address": "Chemin Val d’Endor, Anse Aux Pins, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2017-10-09",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2017-0239-1",
+        "at": "2017-10-09T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2018-0240",
+    "nin": "999-2703-2-5-69",
+    "firstName": "Norbert",
+    "lastName": "Hoareau",
+    "gender": "M",
+    "dateOfBirth": "1969-11-12",
+    "phone": "+248 2 000 055",
+    "email": "",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "address": "Chemin Montagne Posée, Baie Lazare, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2018-12-04",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2018-0240-1",
+        "at": "2018-12-04T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0041",
+    "nin": "999-0610-1-6-63",
+    "firstName": "Josianne",
+    "lastName": "Kilindo",
+    "gender": "F",
+    "dateOfBirth": "1963-09-13",
+    "phone": "+248 2 000 056",
+    "email": "josianne.kilindo41@example.sc",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "address": "La Route Montagne Posée, Grand Anse Mahé, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-05-26",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0041-1",
+        "at": "2024-05-26T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Josianne Kilindo",
+        "action": "Self-registered via online portal"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2016-0242",
+    "nin": "999-0309-1-1-80",
+    "firstName": "Marielle",
+    "lastName": "Adrienne",
+    "gender": "F",
+    "dateOfBirth": "1980-12-13",
+    "phone": "+248 2 000 057",
+    "email": "marielle.adrienne42@example.sc",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "address": "Chemin Les Canelles, Grand Anse Mahé, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2016-10-04",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2016-0242-1",
+        "at": "2016-10-04T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0043",
+    "nin": "999-1203-2-9-79",
+    "firstName": "Barnabe",
+    "lastName": "Bonnelame",
+    "gender": "M",
+    "dateOfBirth": "1979-04-14",
+    "phone": "+248 2 000 058",
+    "email": "",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "Route Cascade, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-10-07",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0043-1",
+        "at": "2024-10-07T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Barnabe Bonnelame",
+        "action": "Self-registered via online portal"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0044",
+    "nin": "999-2001-2-3-62",
+    "firstName": "Gerard",
+    "lastName": "Zialor",
+    "gender": "M",
+    "dateOfBirth": "1962-07-27",
+    "phone": "+248 2 000 059",
+    "email": "gerard.zialor44@example.sc",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "Sentier Fond Ferdinand, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-01-19",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0044-1",
+        "at": "2025-01-19T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0045",
+    "nin": "999-0706-2-4-71",
+    "firstName": "Roland",
+    "lastName": "Labiche",
+    "gender": "M",
+    "dateOfBirth": "1971-01-15",
+    "phone": "+248 2 000 060",
+    "email": "roland.labiche45@example.sc",
+    "district": "La Digue",
+    "island": "La Digue",
+    "address": "Chemin Les Canelles, La Digue, La Digue",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-11-10",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0045-1",
+        "at": "2025-11-10T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0046",
+    "nin": "999-1903-2-6-97",
+    "firstName": "Fabien",
+    "lastName": "Vidot",
+    "gender": "M",
+    "dateOfBirth": "1997-04-16",
+    "phone": "+248 2 000 061",
+    "email": "fabien.vidot46@example.sc",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "Chemin Belle Vue, Baie Ste Anne Praslin, Praslin",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2023-11-14",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0046-1",
+        "at": "2023-11-14T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Fabien Vidot",
+        "action": "Self-registered via online portal"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0047",
+    "nin": "999-0404-2-8-92",
+    "firstName": "Sylvain",
+    "lastName": "Bristol",
+    "gender": "M",
+    "dateOfBirth": "1992-07-15",
+    "phone": "+248 2 000 062",
+    "email": "sylvain.bristol47@example.sc",
+    "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "address": "Sentier Montagne Posée, Anse Aux Pins, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-03-19",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0047-1",
+        "at": "2024-03-19T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0048",
+    "nin": "999-0209-2-9-98",
+    "firstName": "Wilfred",
+    "lastName": "Fanchette",
+    "gender": "M",
+    "dateOfBirth": "1998-07-11",
+    "phone": "+248 2 000 063",
+    "email": "",
+    "district": "Anse Boileau",
+    "island": "Mahé",
+    "address": "Route Belle Vue, Anse Boileau, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-09-05",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": false,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0048-1",
+        "at": "2025-09-05T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2017-0249",
+    "nin": "999-0309-1-4-71",
+    "firstName": "Nadege",
+    "lastName": "Isaac",
+    "gender": "F",
+    "dateOfBirth": "1971-11-28",
+    "phone": "+248 2 000 064",
+    "email": "",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "address": "Chemin Barbarons, Grand Anse Mahé, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2017-10-05",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2017-0249-1",
+        "at": "2017-10-05T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0050",
+    "nin": "999-0710-1-5-97",
+    "firstName": "Marthe",
+    "lastName": "Pillay",
+    "gender": "F",
+    "dateOfBirth": "1997-03-08",
+    "phone": "+248 2 000 065",
+    "email": "marthe.pillay50@example.sc",
+    "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "address": "Sentier Anse Kerlan, Anse Aux Pins, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-08-22",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0050-1",
+        "at": "2024-08-22T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0051",
+    "nin": "999-1103-1-2-80",
+    "firstName": "Anne-Marie",
+    "lastName": "Julienne",
+    "gender": "F",
+    "dateOfBirth": "1980-08-23",
+    "phone": "+248 2 000 066",
+    "email": "annemarie.julienne51@example.sc",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "Sentier Cascade, Baie Ste Anne Praslin, Praslin",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-06-30",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0051-1",
+        "at": "2025-06-30T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2019-0252",
+    "nin": "999-0912-1-4-93",
+    "firstName": "Marielle",
     "lastName": "Sinon",
     "gender": "F",
-    "dob": "1985-03-12",
-    "phone": "+248 2 000 082",
-    "email": "georges.sinon@example.sc",
-    "address": "La Route Rose, Grand Anse Praslin",
-    "district": "Grand Anse Praslin",
-    "stakeholderType": "farmer",
-    "seyidVerified": true,
-    "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-07-09T09:00:00.000Z",
-    "updatedAt": "2026-07-14T09:00:00.000Z",
-    "history": [
-      {
-        "at": "2026-07-09T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
-      }
-    ]
-  },
-  {
-    "id": "CLT-0073",
-    "nin": "999-4938-2-2-01",
-    "firstName": "Ronny",
-    "lastName": "Onezime",
-    "gender": "F",
-    "dob": "1994-10-14",
-    "phone": "+248 2 000 083",
-    "email": "ronny.onezime@example.sc",
-    "address": "Mont Esparon, Anse Royale",
+    "dateOfBirth": "1993-10-08",
+    "phone": "+248 2 000 067",
+    "email": "marielle.sinon52@example.sc",
     "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "La Route Fond Ferdinand, Anse Royale, Mahé",
     "stakeholderType": "farmer",
-    "seyidVerified": true,
     "status": "active",
-    "source": "officer",
-    "createdAt": "2025-09-28T09:00:00.000Z",
-    "updatedAt": "2025-12-28T09:00:00.000Z",
+    "registeredOn": "2019-08-08",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
     "history": [
       {
-        "at": "2025-09-28T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2019-0252-1",
+        "at": "2019-08-08T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
       }
     ]
   },
   {
-    "id": "CLT-0074",
-    "nin": "999-0580-2-3-04",
-    "firstName": "Michel",
-    "lastName": "Bonne",
+    "id": "CLT-2026-0053",
+    "nin": "999-0307-1-4-80",
+    "firstName": "Josianne",
+    "lastName": "Sinon",
     "gender": "F",
-    "dob": "1955-08-26",
-    "phone": "+248 2 000 084",
-    "email": "michel.bonne@example.sc",
-    "address": "Chemin Dugasse, Anse Boileau",
-    "district": "Anse Boileau",
+    "dateOfBirth": "1980-02-15",
+    "phone": "+248 2 000 068",
+    "email": "josianne.sinon53@example.sc",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "Sentier Anse Kerlan, Baie Ste Anne Praslin, Praslin",
     "stakeholderType": "farmer",
-    "seyidVerified": false,
     "status": "active",
-    "source": "migrated",
-    "createdAt": "2026-05-18T09:00:00.000Z",
-    "updatedAt": "2026-06-14T09:00:00.000Z",
+    "registeredOn": "2024-10-20",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
     "history": [
       {
-        "at": "2026-05-18T09:00:00.000Z",
-        "by": "Registration",
-        "field": "record",
-        "from": "",
-        "to": "created"
+        "id": "CH-CLT-2026-0053-1",
+        "at": "2024-10-20T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0054",
+    "nin": "999-1705-2-7-92",
+    "firstName": "Placide",
+    "lastName": "Quatre",
+    "gender": "M",
+    "dateOfBirth": "1992-12-19",
+    "phone": "+248 2 000 069",
+    "email": "placide.quatre54@example.sc",
+    "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "address": "La Route Anse Kerlan, Anse Aux Pins, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-11-29",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0054-1",
+        "at": "2025-11-29T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Placide Quatre",
+        "action": "Self-registered via online portal"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0055",
+    "nin": "999-2702-2-6-64",
+    "firstName": "Damien",
+    "lastName": "Bonnelame",
+    "gender": "M",
+    "dateOfBirth": "1964-02-25",
+    "phone": "+248 2 000 070",
+    "email": "damien.bonnelame55@example.sc",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "address": "Sentier Cascade, Baie Lazare, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2026-02-20",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0055-1",
+        "at": "2026-02-20T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0056",
+    "nin": "999-2307-1-1-57",
+    "firstName": "Yolande",
+    "lastName": "Melanie",
+    "gender": "F",
+    "dateOfBirth": "1957-07-09",
+    "phone": "+248 2 000 071",
+    "email": "yolande.melanie56@example.sc",
+    "district": "La Digue",
+    "island": "La Digue",
+    "address": "Sentier Belle Vue, La Digue, La Digue",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-11-29",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0056-1",
+        "at": "2024-11-29T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2018-0257",
+    "nin": "999-1907-2-3-62",
+    "firstName": "Jean-Claude",
+    "lastName": "Bonnelame",
+    "gender": "M",
+    "dateOfBirth": "1962-10-12",
+    "phone": "+248 2 000 072",
+    "email": "",
+    "district": "La Digue",
+    "island": "La Digue",
+    "address": "Route Barbarons, La Digue, La Digue",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2018-02-19",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2018-0257-1",
+        "at": "2018-02-19T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0058",
+    "nin": "999-0609-2-2-70",
+    "firstName": "Alcide",
+    "lastName": "Rassool",
+    "gender": "M",
+    "dateOfBirth": "1970-07-02",
+    "phone": "+248 2 000 073",
+    "email": "alcide.rassool58@example.sc",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "address": "La Route Les Canelles, Grand Anse Mahé, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-06-15",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0058-1",
+        "at": "2024-06-15T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0059",
+    "nin": "999-0707-1-8-72",
+    "firstName": "Marguerite",
+    "lastName": "Labiche",
+    "gender": "F",
+    "dateOfBirth": "1972-02-27",
+    "phone": "+248 2 000 074",
+    "email": "marguerite.labiche59@example.sc",
+    "district": "Baie Ste Anne Praslin",
+    "island": "Praslin",
+    "address": "La Route Cascade, Baie Ste Anne Praslin, Praslin",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-07-01",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": false,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0059-1",
+        "at": "2024-07-01T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0060",
+    "nin": "999-1010-2-3-97",
+    "firstName": "Bernard",
+    "lastName": "Servina",
+    "gender": "M",
+    "dateOfBirth": "1997-05-20",
+    "phone": "+248 2 000 075",
+    "email": "bernard.servina60@example.sc",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "Sentier Anse Kerlan, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-12-31",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0060-1",
+        "at": "2025-12-31T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2021-0261",
+    "nin": "999-1804-1-4-92",
+    "firstName": "Angeline",
+    "lastName": "Nourrice",
+    "gender": "F",
+    "dateOfBirth": "1992-12-27",
+    "phone": "+248 2 000 076",
+    "email": "angeline.nourrice61@example.sc",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "Sentier Belle Vue, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2021-10-03",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2021-0261-1",
+        "at": "2021-10-03T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0062",
+    "nin": "999-2802-2-1-73",
+    "firstName": "Fabien",
+    "lastName": "Rassool",
+    "gender": "M",
+    "dateOfBirth": "1973-08-15",
+    "phone": "+248 2 000 077",
+    "email": "",
+    "district": "Anse Boileau",
+    "island": "Mahé",
+    "address": "Chemin Barbarons, Anse Boileau, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-07-18",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0062-1",
+        "at": "2025-07-18T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0063",
+    "nin": "999-1509-2-7-94",
+    "firstName": "Cyril",
+    "lastName": "Denousse",
+    "gender": "M",
+    "dateOfBirth": "1994-08-14",
+    "phone": "+248 2 000 078",
+    "email": "cyril.denousse63@example.sc",
+    "district": "Baie Lazare",
+    "island": "Mahé",
+    "address": "Sentier Belle Vue, Baie Lazare, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-06-21",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0063-1",
+        "at": "2024-06-21T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Cyril Denousse",
+        "action": "Self-registered via online portal"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0064",
+    "nin": "999-2204-2-3-56",
+    "firstName": "Gerard",
+    "lastName": "Dogley",
+    "gender": "M",
+    "dateOfBirth": "1956-07-02",
+    "phone": "+248 2 000 079",
+    "email": "gerard.dogley64@example.sc",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "Chemin Les Canelles, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-06-03",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0064-1",
+        "at": "2024-06-03T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0065",
+    "nin": "999-1608-1-6-82",
+    "firstName": "Rosita",
+    "lastName": "Bristol",
+    "gender": "F",
+    "dateOfBirth": "1982-02-20",
+    "phone": "+248 2 000 080",
+    "email": "rosita.bristol65@example.sc",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "La Route Anse Kerlan, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2023-12-27",
+    "registeredVia": "officer-assisted",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0065-1",
+        "at": "2023-12-27T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Registered by officer at district office"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2016-0266",
+    "nin": "999-2607-1-6-68",
+    "firstName": "Dominique",
+    "lastName": "Zialor",
+    "gender": "F",
+    "dateOfBirth": "1968-11-05",
+    "phone": "+248 2 000 081",
+    "email": "",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "Sentier Les Canelles, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2016-06-09",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2016-0266-1",
+        "at": "2016-06-09T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2019-0267",
+    "nin": "999-2603-2-3-74",
+    "firstName": "Hubert",
+    "lastName": "Gappy",
+    "gender": "M",
+    "dateOfBirth": "1974-11-20",
+    "phone": "+248 2 000 082",
+    "email": "",
+    "district": "La Digue",
+    "island": "La Digue",
+    "address": "Sentier Barbarons, La Digue, La Digue",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2019-10-11",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2019-0267-1",
+        "at": "2019-10-11T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0068",
+    "nin": "999-1910-2-7-69",
+    "firstName": "Roland",
+    "lastName": "Rosalie",
+    "gender": "M",
+    "dateOfBirth": "1969-02-22",
+    "phone": "+248 2 000 083",
+    "email": "roland.rosalie68@example.sc",
+    "district": "Anse Boileau",
+    "island": "Mahé",
+    "address": "Route Val d’Endor, Anse Boileau, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-09-19",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0068-1",
+        "at": "2024-09-19T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Roland Rosalie",
+        "action": "Self-registered via online portal"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0069",
+    "nin": "999-0807-1-1-76",
+    "firstName": "Rosita",
+    "lastName": "Vidot",
+    "gender": "F",
+    "dateOfBirth": "1976-09-20",
+    "phone": "+248 2 000 084",
+    "email": "rosita.vidot69@example.sc",
+    "district": "Anse Royale",
+    "island": "Mahé",
+    "address": "La Route Cascade, Anse Royale, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2025-01-30",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0069-1",
+        "at": "2025-01-30T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Rosita Vidot",
+        "action": "Self-registered via online portal"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2017-0270",
+    "nin": "999-2705-2-1-59",
+    "firstName": "Roland",
+    "lastName": "Kilindo",
+    "gender": "M",
+    "dateOfBirth": "1959-10-02",
+    "phone": "+248 2 000 085",
+    "email": "roland.kilindo70@example.sc",
+    "district": "Grand Anse Mahé",
+    "island": "Mahé",
+    "address": "Sentier Val d’Endor, Grand Anse Mahé, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2017-12-09",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2017-0270-1",
+        "at": "2017-12-09T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2017-0271",
+    "nin": "999-1108-2-2-64",
+    "firstName": "Alcide",
+    "lastName": "Isaac",
+    "gender": "M",
+    "dateOfBirth": "1964-10-05",
+    "phone": "+248 2 000 086",
+    "email": "alcide.isaac71@example.sc",
+    "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "address": "Chemin Montagne Posée, Anse Aux Pins, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2017-07-08",
+    "registeredVia": "migrated",
+    "seyIdVerified": false,
+    "notes": "Migrated from legacy paper register.",
+    "history": [
+      {
+        "id": "CH-CLT-2017-0271-1",
+        "at": "2017-07-08T09:00:00.000Z",
+        "actorUserId": "MIGRATION",
+        "actorName": "Data migration",
+        "action": "Record migrated from paper register"
+      }
+    ]
+  },
+  {
+    "id": "CLT-2026-0072",
+    "nin": "999-1212-1-1-58",
+    "firstName": "Rosita",
+    "lastName": "Gappy",
+    "gender": "F",
+    "dateOfBirth": "1958-09-05",
+    "phone": "+248 2 000 087",
+    "email": "rosita.gappy72@example.sc",
+    "district": "Anse Aux Pins",
+    "island": "Mahé",
+    "address": "Route Belle Vue, Anse Aux Pins, Mahé",
+    "stakeholderType": "farmer",
+    "status": "active",
+    "registeredOn": "2024-10-23",
+    "registeredVia": "self-service",
+    "seyIdVerified": true,
+    "notes": "",
+    "history": [
+      {
+        "id": "CH-CLT-2026-0072-1",
+        "at": "2024-10-23T09:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Rosita Gappy",
+        "action": "Self-registered via online portal"
       }
     ]
   }

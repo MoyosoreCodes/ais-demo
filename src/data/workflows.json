@@ -1,50 +1,55 @@
 [
   {
-    "id": "loan",
-    "name": "Loan Approval",
+    "id": "loan-approval",
+    "name": "Agricultural loan approval",
+    "entity": "loan",
     "stages": [
       {
-        "id": "screening",
-        "name": "Screening",
+        "id": "stg-assess",
+        "name": "Technical assessment",
         "actorRole": "agriculture_officer",
-        "order": 1
+        "slaDays": 10,
+        "description": "Officer verifies the farm, documents and repayment capacity."
       },
       {
-        "id": "assessment",
-        "name": "Technical Assessment",
-        "actorRole": "agriculture_officer",
-        "order": 2
-      },
-      {
-        "id": "approval",
-        "name": "Loan Committee",
+        "id": "stg-committee",
+        "name": "Loan committee decision",
         "actorRole": "supervisor",
-        "order": 3
+        "slaDays": 14,
+        "description": "Committee approves, rejects or refers the application."
       }
-    ]
+    ],
+    "updatedOn": "2025-12-02",
+    "updatedByUserId": "USR-001"
   },
   {
-    "id": "land",
-    "name": "Land Allocation",
+    "id": "land-allocation",
+    "name": "State land allocation",
+    "entity": "land",
     "stages": [
       {
-        "id": "review",
-        "name": "Application Review",
+        "id": "stg-screen",
+        "name": "Eligibility screening",
         "actorRole": "agriculture_officer",
-        "order": 1
+        "slaDays": 7,
+        "description": "Confirm applicant eligibility and completeness of the file."
       },
       {
-        "id": "assessment",
-        "name": "Site Assessment",
+        "id": "stg-site",
+        "name": "Site assessment",
         "actorRole": "field_officer",
-        "order": 2
+        "slaDays": 14,
+        "description": "Physical assessment of the parcel and access."
       },
       {
-        "id": "decision",
-        "name": "Allocation Decision",
+        "id": "stg-decision",
+        "name": "Allocation decision",
         "actorRole": "supervisor",
-        "order": 3
+        "slaDays": 21,
+        "description": "Final allocation decision and lease issuance."
       }
-    ]
+    ],
+    "updatedOn": "2025-12-02",
+    "updatedByUserId": "USR-001"
   }
 ]

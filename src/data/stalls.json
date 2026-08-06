@@ -1,201 +1,270 @@
 [
   {
-    "id": "ST-A01",
-    "section": "A",
+    "id": "VM-A01",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "A",
     "number": 1,
-    "status": "allocated",
-    "vendorId": "VD-2026-001"
+    "status": "vacant",
+    "monthlyFeeScr": 900
   },
   {
-    "id": "ST-A02",
-    "section": "A",
+    "id": "VM-A02",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "A",
     "number": 2,
-    "status": "allocated",
-    "vendorId": "VD-2026-005"
+    "status": "vacant",
+    "monthlyFeeScr": 900
   },
   {
-    "id": "ST-A03",
-    "section": "A",
+    "id": "VM-A03",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "A",
     "number": 3,
     "status": "allocated",
-    "vendorId": "VD-2026-007"
+    "monthlyFeeScr": 900,
+    "vendorId": "VND-2025-109",
+    "allocatedOn": "2025-07-04"
   },
   {
-    "id": "ST-A04",
-    "section": "A",
+    "id": "VM-A04",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "A",
     "number": 4,
     "status": "allocated",
-    "vendorId": "VD-2026-009"
+    "monthlyFeeScr": 900,
+    "vendorId": "VND-2026-009",
+    "allocatedOn": "2026-03-16"
   },
   {
-    "id": "ST-A05",
-    "section": "A",
+    "id": "VM-A05",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "A",
     "number": 5,
-    "status": "allocated",
-    "vendorId": "VD-2026-010"
+    "status": "vacant",
+    "monthlyFeeScr": 900
   },
   {
-    "id": "ST-A06",
-    "section": "A",
+    "id": "VM-A06",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "A",
     "number": 6,
-    "status": "allocated",
-    "vendorId": "VD-2026-012"
+    "status": "maintenance",
+    "monthlyFeeScr": 900
   },
   {
-    "id": "ST-A07",
-    "section": "A",
+    "id": "VM-A07",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "A",
     "number": 7,
-    "status": "allocated",
-    "vendorId": "VD-2026-015"
+    "status": "vacant",
+    "monthlyFeeScr": 900
   },
   {
-    "id": "ST-A08",
-    "section": "A",
+    "id": "VM-A08",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "A",
     "number": 8,
-    "status": "vacant"
+    "status": "allocated",
+    "monthlyFeeScr": 900,
+    "vendorId": "VND-2026-111",
+    "allocatedOn": "2026-02-12"
   },
   {
-    "id": "ST-B01",
-    "section": "B",
+    "id": "VM-B01",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "B",
     "number": 1,
-    "status": "vacant"
+    "status": "reserved",
+    "monthlyFeeScr": 900
   },
   {
-    "id": "ST-B02",
-    "section": "B",
+    "id": "VM-B02",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "B",
     "number": 2,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 900
   },
   {
-    "id": "ST-B03",
-    "section": "B",
+    "id": "VM-B03",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "B",
     "number": 3,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 900
   },
   {
-    "id": "ST-B04",
-    "section": "B",
+    "id": "VM-B04",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "B",
     "number": 4,
-    "status": "vacant"
+    "status": "allocated",
+    "monthlyFeeScr": 900,
+    "vendorId": "VND-2026-105",
+    "allocatedOn": "2026-02-26"
   },
   {
-    "id": "ST-B05",
-    "section": "B",
+    "id": "VM-B05",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "B",
     "number": 5,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 900
   },
   {
-    "id": "ST-B06",
-    "section": "B",
+    "id": "VM-B06",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "B",
     "number": 6,
-    "status": "vacant"
+    "status": "allocated",
+    "monthlyFeeScr": 900,
+    "vendorId": "VND-2024-107",
+    "allocatedOn": "2024-12-04"
   },
   {
-    "id": "ST-B07",
-    "section": "B",
+    "id": "VM-B07",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "B",
     "number": 7,
-    "status": "vacant"
+    "status": "allocated",
+    "monthlyFeeScr": 900,
+    "vendorId": "VND-2025-106",
+    "allocatedOn": "2025-03-14"
   },
   {
-    "id": "ST-B08",
-    "section": "B",
+    "id": "VM-B08",
+    "market": "Victoria Market",
+    "section": "Produce Hall",
+    "row": "B",
     "number": 8,
-    "status": "vacant"
+    "status": "allocated",
+    "monthlyFeeScr": 900,
+    "vendorId": "VND-2025-101",
+    "allocatedOn": "2025-04-14"
   },
   {
-    "id": "ST-C01",
-    "section": "C",
+    "id": "VM-C01",
+    "market": "Victoria Market",
+    "section": "Fish Market",
+    "row": "C",
     "number": 1,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 1200
   },
   {
-    "id": "ST-C02",
-    "section": "C",
+    "id": "VM-C02",
+    "market": "Victoria Market",
+    "section": "Fish Market",
+    "row": "C",
     "number": 2,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 1200
   },
   {
-    "id": "ST-C03",
-    "section": "C",
+    "id": "VM-C03",
+    "market": "Victoria Market",
+    "section": "Fish Market",
+    "row": "C",
     "number": 3,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 1200
   },
   {
-    "id": "ST-C04",
-    "section": "C",
+    "id": "VM-C04",
+    "market": "Victoria Market",
+    "section": "Fish Market",
+    "row": "C",
     "number": 4,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 1200
   },
   {
-    "id": "ST-C05",
-    "section": "C",
+    "id": "VM-C05",
+    "market": "Victoria Market",
+    "section": "Fish Market",
+    "row": "C",
     "number": 5,
-    "status": "vacant"
+    "status": "allocated",
+    "monthlyFeeScr": 1200,
+    "vendorId": "VND-2024-102",
+    "allocatedOn": "2024-05-25"
   },
   {
-    "id": "ST-C06",
-    "section": "C",
+    "id": "VM-C06",
+    "market": "Victoria Market",
+    "section": "Fish Market",
+    "row": "C",
     "number": 6,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 1200
   },
   {
-    "id": "ST-C07",
-    "section": "C",
-    "number": 7,
-    "status": "vacant"
-  },
-  {
-    "id": "ST-C08",
-    "section": "C",
-    "number": 8,
-    "status": "vacant"
-  },
-  {
-    "id": "ST-D01",
-    "section": "D",
+    "id": "VM-D01",
+    "market": "Victoria Market",
+    "section": "Craft & Value-added",
+    "row": "D",
     "number": 1,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 750
   },
   {
-    "id": "ST-D02",
-    "section": "D",
+    "id": "VM-D02",
+    "market": "Victoria Market",
+    "section": "Craft & Value-added",
+    "row": "D",
     "number": 2,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 750
   },
   {
-    "id": "ST-D03",
-    "section": "D",
+    "id": "VM-D03",
+    "market": "Victoria Market",
+    "section": "Craft & Value-added",
+    "row": "D",
     "number": 3,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 750
   },
   {
-    "id": "ST-D04",
-    "section": "D",
+    "id": "VM-D04",
+    "market": "Victoria Market",
+    "section": "Craft & Value-added",
+    "row": "D",
     "number": 4,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 750
   },
   {
-    "id": "ST-D05",
-    "section": "D",
+    "id": "VM-D05",
+    "market": "Victoria Market",
+    "section": "Craft & Value-added",
+    "row": "D",
     "number": 5,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 750
   },
   {
-    "id": "ST-D06",
-    "section": "D",
+    "id": "VM-D06",
+    "market": "Victoria Market",
+    "section": "Craft & Value-added",
+    "row": "D",
     "number": 6,
-    "status": "vacant"
-  },
-  {
-    "id": "ST-D07",
-    "section": "D",
-    "number": 7,
-    "status": "vacant"
-  },
-  {
-    "id": "ST-D08",
-    "section": "D",
-    "number": 8,
-    "status": "vacant"
+    "status": "vacant",
+    "monthlyFeeScr": 750
   }
 ]

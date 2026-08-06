@@ -1,229 +1,329 @@
 [
   {
-    "id": "DOC-2026-001",
-    "title": "Lease agreement — Rivière Doux (2019)",
+    "id": "DOC-2019-0044",
+    "title": "Lease Agreement — Parcel PR/AB/1042 — M. Hoareau (2019)",
     "category": "lease",
-    "clientId": "CLT-0001",
+    "clientId": "CLT-2026-0001",
     "farmId": "FRM-2026-00001",
+    "originalDate": "2019-07-01",
+    "scannedOn": "2025-11-12",
+    "scannedByUserId": "USR-001",
+    "pages": 6,
     "tags": [
       "lease",
       "Anse Boileau",
+      "PR/AB/1042",
+      "state land",
       "Hoareau",
       "2019"
     ],
-    "fullText": "STATE LAND LEASE AGREEMENT between the Department of Agriculture and Marie-Ange Hoareau for parcel at Val d Endor, Anse Boileau, area 1.6 hectares, term 15 years from 2019, purpose agriculture (banana and poultry).",
-    "year": 2019,
-    "source": "migrated",
-    "addedAt": "2026-07-09T09:00:00.000Z"
+    "ocrText": "REPUBLIC OF SEYCHELLES DEPARTMENT OF AGRICULTURE AGRICULTURAL LEASE AGREEMENT made this first day of July two thousand and nineteen BETWEEN the Government of Seychelles (the Lessor) AND Marie Ange Hoareau of Riviere Doux, Anse Boileau, Mahe (the Lessee) WHEREAS the Lessor is desirous of leasing the parcel known as PR/AB/1042 measuring one point six hectares situated at Anse Boileau on the island of Mahe for agricultural purposes TERM ten years commencing 1 July 2019 and expiring 30 June 2029 ANNUAL RENT two thousand four hundred Seychelles Rupees payable in advance CONDITIONS the Lessee shall cultivate the parcel continuously shall not sub-let without written consent and shall maintain the watercourse buffer of not less than fifteen metres SIGNED for and on behalf of the Department of Agriculture",
+    "migrationBatch": "MIG-2019-A",
+    "validation": "pass",
+    "swatch": "a1",
+    "simulated": true
   },
   {
-    "id": "DOC-2026-002",
-    "title": "Farm permit — poultry",
-    "category": "permit",
-    "clientId": "CLT-0049",
+    "id": "DOC-1998-0100",
+    "title": "Smallholder Register — Anse Boileau (1998 volume 3)",
+    "category": "land-record",
+    "originalDate": "1998-12-05",
+    "scannedOn": "2025-08-17",
+    "scannedByUserId": "USR-001",
+    "pages": 11,
     "tags": [
-      "permit",
-      "Port Glaud",
-      "Quatre"
+      "register",
+      "Anse Boileau",
+      "1998"
     ],
-    "fullText": "Farm permit — poultry for Gilbert Quatre, Port Glaud. Migrated from paper archive.",
-    "year": 2019,
-    "source": "uploaded",
-    "addedAt": "2026-04-30T09:00:00.000Z"
+    "ocrText": "SMALLHOLDER REGISTER ANSE BOILEAU DISTRICT VOLUME THREE entries numbered two hundred and eleven to three hundred and forty holdings recorded by the district agricultural assistant parcel references acreage in arpents and names of occupiers as at thirty first December nineteen ninety eight",
+    "migrationBatch": "MIG-2019-A",
+    "validation": "pass",
+    "swatch": "a1",
+    "simulated": true
   },
   {
-    "id": "DOC-2026-003",
-    "title": "National ID scan",
-    "category": "id",
-    "clientId": "CLT-0071",
+    "id": "DOC-2016-0101",
+    "title": "Farm Registration Form — Grand Anse Mahé (2016)",
+    "category": "registration-form",
+    "clientId": "CLT-2026-0059",
+    "originalDate": "2016-07-25",
+    "scannedOn": "2025-12-02",
+    "scannedByUserId": "USR-001",
+    "pages": 11,
     "tags": [
-      "id",
-      "Grand Anse Praslin",
-      "Nibourette"
-    ],
-    "fullText": "National ID scan for Ronny Nibourette, Grand Anse Praslin. Migrated from paper archive.",
-    "year": 2016,
-    "source": "uploaded",
-    "addedAt": "2026-04-24T09:00:00.000Z"
-  },
-  {
-    "id": "DOC-2026-004",
-    "title": "Soil survey report 2021",
-    "category": "report",
-    "clientId": "CLT-0031",
-    "tags": [
-      "report",
-      "Anse Aux Pins",
-      "Radegonde"
-    ],
-    "fullText": "Soil survey report 2021 for Marguerite Radegonde, Anse Aux Pins. Migrated from paper archive.",
-    "year": 2018,
-    "source": "migrated",
-    "addedAt": "2026-04-23T09:00:00.000Z"
-  },
-  {
-    "id": "DOC-2026-005",
-    "title": "Correspondence — irrigation request",
-    "category": "correspondence",
-    "clientId": "CLT-0010",
-    "tags": [
-      "correspondence",
+      "registration",
       "Grand Anse Mahé",
-      "Labrosse"
+      "2016"
     ],
-    "fullText": "Correspondence — irrigation request for Marguerite Labrosse, Grand Anse Mahé. Migrated from paper archive.",
-    "year": 2016,
-    "source": "uploaded",
-    "addedAt": "2026-04-15T09:00:00.000Z"
+    "ocrText": "DEPARTMENT OF AGRICULTURE FARM REGISTRATION FORM applicant details holding name area under cultivation principal crops banana cassava sweet potato livestock kept number of head water source rainwater tank declaration signed by applicant and countersigned by the district officer",
+    "migrationBatch": "MIG-2019-B",
+    "validation": "pass",
+    "swatch": "a2",
+    "simulated": true
   },
   {
-    "id": "DOC-2026-006",
-    "title": "Parcel sketch map",
-    "category": "map",
-    "clientId": "CLT-0070",
+    "id": "DOC-2014-0102",
+    "title": "Agricultural Loan File — Ledger 7 (2014–2017)",
+    "category": "loan-file",
+    "clientId": "CLT-2026-0006",
+    "originalDate": "2014-11-12",
+    "scannedOn": "2025-09-13",
+    "scannedByUserId": "USR-001",
+    "pages": 24,
     "tags": [
-      "map",
-      "Anse Aux Pins",
-      "Hoareau"
+      "loan",
+      "ledger",
+      "2014",
+      "2017"
     ],
-    "fullText": "Parcel sketch map for Jean Hoareau, Anse Aux Pins. Migrated from paper archive.",
-    "year": 2020,
-    "source": "migrated",
-    "addedAt": "2026-04-25T09:00:00.000Z"
+    "ocrText": "AGRICULTURAL CREDIT SCHEME LEDGER SEVEN advances to smallholders for irrigation equipment poultry housing and planting material amounts in Seychelles Rupees repayment schedules and arrears noted in the right hand column certified correct by the scheme accountant",
+    "migrationBatch": "MIG-2019-A",
+    "validation": "pass",
+    "swatch": "b1",
+    "simulated": true
   },
   {
-    "id": "DOC-2026-007",
-    "title": "Lease renewal notice",
+    "id": "DOC-2018-0103",
+    "title": "Water Sample Report — Baie Lazare Borehole (2018)",
+    "category": "lab-report",
+    "originalDate": "2018-09-14",
+    "scannedOn": "2025-10-18",
+    "scannedByUserId": "USR-001",
+    "pages": 23,
+    "tags": [
+      "laboratory",
+      "water",
+      "Baie Lazare",
+      "2018"
+    ],
+    "ocrText": "LABORATORY REPORT WATER SAMPLE borehole at Baie Lazare pH seven point one turbidity one point four NTU nitrate two point three milligrams per litre E coli not detected total dissolved solids three hundred and twelve milligrams per litre sample fit for irrigation use analyst signature",
+    "migrationBatch": "MIG-2019-B",
+    "validation": "pass",
+    "swatch": "b2",
+    "simulated": true
+  },
+  {
+    "id": "DOC-2012-0104",
+    "title": "Lease Agreement — Parcel PR/AR/2210 (2012)",
     "category": "lease",
-    "clientId": "CLT-0054",
+    "originalDate": "2012-02-24",
+    "scannedOn": "2025-07-23",
+    "scannedByUserId": "USR-001",
+    "pages": 22,
     "tags": [
       "lease",
-      "Baie Ste Anne Praslin",
-      "Dugasse"
+      "Anse Royale",
+      "PR/AR/2210",
+      "2012"
     ],
-    "fullText": "Lease renewal notice for Danny Dugasse, Baie Ste Anne Praslin. Migrated from paper archive.",
-    "year": 2018,
-    "source": "uploaded",
-    "addedAt": "2026-04-24T09:00:00.000Z"
+    "ocrText": "AGRICULTURAL LEASE AGREEMENT parcel PR AR 2210 Anse Royale measuring two point four hectares term fifteen years commencing first March two thousand and twelve annual rent three thousand six hundred rupees lessee shall maintain boundary markers and shall permit inspection by authorised officers",
+    "migrationBatch": "MIG-2019-A",
+    "validation": "warn",
+    "validationNote": "Parcel reference could not be matched to a registered farm.",
+    "swatch": "c1",
+    "simulated": true
   },
   {
-    "id": "DOC-2026-008",
-    "title": "Livestock movement permit",
+    "id": "DOC-2020-0105",
+    "title": "Livestock Movement Permit — Praslin (2020)",
     "category": "permit",
-    "clientId": "CLT-0037",
+    "clientId": "CLT-2026-0019",
+    "originalDate": "2020-03-06",
+    "scannedOn": "2025-10-07",
+    "scannedByUserId": "USR-001",
+    "pages": 8,
     "tags": [
       "permit",
-      "Takamaka",
-      "Uranie"
+      "livestock",
+      "Praslin",
+      "2020"
     ],
-    "fullText": "Livestock movement permit for Robert Uranie, Takamaka. Migrated from paper archive.",
-    "year": 2023,
-    "source": "migrated",
-    "addedAt": "2026-04-12T09:00:00.000Z"
+    "ocrText": "LIVESTOCK MOVEMENT PERMIT authorising the movement of twelve goats from Baie Ste Anne Praslin to Mahe subject to veterinary inspection at the point of embarkation permit valid for seven days from date of issue veterinary officer signature and stamp",
+    "migrationBatch": "MIG-2026-C",
+    "validation": "pass",
+    "swatch": "c2",
+    "simulated": true
   },
   {
-    "id": "DOC-2026-009",
-    "title": "Inspection report 2022",
-    "category": "report",
-    "clientId": "CLT-0041",
+    "id": "DOC-2015-0106",
+    "title": "Land Allocation Minute — Allocation Committee (2015)",
+    "category": "land-record",
+    "originalDate": "2015-12-06",
+    "scannedOn": "2025-10-18",
+    "scannedByUserId": "USR-001",
+    "pages": 20,
     "tags": [
-      "report",
-      "La Digue",
-      "Camille"
+      "land",
+      "committee",
+      "minute",
+      "2015"
     ],
-    "fullText": "Inspection report 2022 for Marguerite Camille, La Digue. Migrated from paper archive.",
-    "year": 2024,
-    "source": "migrated",
-    "addedAt": "2026-06-22T09:00:00.000Z"
+    "ocrText": "MINUTES OF THE LAND ALLOCATION COMMITTEE meeting held at the Department of Agriculture present the chairman the district officers and the land surveyor eleven applications considered six approved three deferred pending site assessment two rejected on grounds of competing public purpose",
+    "migrationBatch": "MIG-2019-B",
+    "validation": "pass",
+    "swatch": "d1",
+    "simulated": true
   },
   {
-    "id": "DOC-2026-010",
-    "title": "Loan disbursement letter",
-    "category": "correspondence",
-    "clientId": "CLT-0070",
+    "id": "DOC-2009-0107",
+    "title": "Soil Survey Extract — Anse Aux Pins (2009)",
+    "category": "lab-report",
+    "clientId": "CLT-2019-0205",
+    "originalDate": "2009-01-17",
+    "scannedOn": "2025-11-13",
+    "scannedByUserId": "USR-001",
+    "pages": 13,
     "tags": [
-      "correspondence",
+      "soil",
+      "survey",
       "Anse Aux Pins",
-      "Hoareau"
+      "2009"
     ],
-    "fullText": "Loan disbursement letter for Jean Hoareau, Anse Aux Pins. Migrated from paper archive.",
-    "year": 2022,
-    "source": "uploaded",
-    "addedAt": "2026-05-23T09:00:00.000Z"
+    "ocrText": "SOIL SURVEY OF MAHE EXTRACT ANSE AUX PINS soils of the coastal plateau are predominantly sandy clay loams of moderate fertility with pH between five point two and six point one organic matter content declining under continuous cultivation liming recommended on the more acid phases",
+    "migrationBatch": "MIG-2019-A",
+    "validation": "pass",
+    "swatch": "d2",
+    "simulated": true
   },
   {
-    "id": "DOC-2026-011",
-    "title": "Land allocation certificate",
-    "category": "permit",
-    "clientId": "CLT-0067",
-    "tags": [
-      "permit",
-      "Baie Lazare",
-      "Payet"
-    ],
-    "fullText": "Land allocation certificate for Lucie Payet, Baie Lazare. Migrated from paper archive.",
-    "year": 2018,
-    "source": "migrated",
-    "addedAt": "2026-07-05T09:00:00.000Z"
-  },
-  {
-    "id": "DOC-2026-012",
-    "title": "Water sampling report",
-    "category": "report",
-    "clientId": "CLT-0053",
-    "tags": [
-      "report",
-      "Anse Royale",
-      "Nourrice"
-    ],
-    "fullText": "Water sampling report for Steve Nourrice, Anse Royale. Migrated from paper archive.",
-    "year": 2019,
-    "source": "migrated",
-    "addedAt": "2026-04-23T09:00:00.000Z"
-  },
-  {
-    "id": "DOC-2026-013",
-    "title": "Vendor registration form",
+    "id": "DOC-2017-0108",
+    "title": "Correspondence — Irrigation Scheme Enquiry (2017)",
     "category": "correspondence",
-    "clientId": "CLT-0013",
+    "clientId": "CLT-2019-0205",
+    "originalDate": "2017-01-12",
+    "scannedOn": "2025-09-16",
+    "scannedByUserId": "USR-001",
+    "pages": 6,
     "tags": [
       "correspondence",
-      "Anse Royale",
-      "Camille"
+      "irrigation",
+      "2017"
     ],
-    "fullText": "Vendor registration form for Sylvia Camille, Anse Royale. Migrated from paper archive.",
-    "year": 2015,
-    "source": "uploaded",
-    "addedAt": "2026-03-27T09:00:00.000Z"
+    "ocrText": "letter from the district agricultural officer to the principal secretary concerning the extension of the irrigation main to serve seven smallholdings at Val d Endor estimated cost and proposed timetable attached for consideration",
+    "migrationBatch": "MIG-2019-B",
+    "validation": "pass",
+    "swatch": "a1",
+    "simulated": true
   },
   {
-    "id": "DOC-2026-014",
-    "title": "Boundary survey",
-    "category": "map",
-    "clientId": "CLT-0035",
+    "id": "DOC-2013-0109",
+    "title": "Farm Registration Form — La Digue (2013)",
+    "category": "registration-form",
+    "originalDate": "2013-11-15",
+    "scannedOn": "2025-08-19",
+    "scannedByUserId": "USR-001",
+    "pages": 23,
     "tags": [
-      "map",
-      "Baie Lazare",
-      "Uranie"
+      "registration",
+      "La Digue",
+      "2013"
     ],
-    "fullText": "Boundary survey for Marie Uranie, Baie Lazare. Migrated from paper archive.",
-    "year": 2024,
-    "source": "migrated",
-    "addedAt": "2026-06-05T09:00:00.000Z"
+    "ocrText": "FARM REGISTRATION FORM La Digue district holding of zero point eight hectares principal crops breadfruit papaya and chilli six goats kept water source rainwater collection declaration signed thirteenth of May two thousand and thirteen",
+    "migrationBatch": "MIG-2019-A",
+    "validation": "pass",
+    "swatch": "a2",
+    "simulated": true
   },
   {
-    "id": "DOC-2026-015",
-    "title": "Old paper registry card",
-    "category": "id",
-    "clientId": "CLT-0061",
+    "id": "DOC-2021-0110",
+    "title": "Pesticide Import Permit — Cooperative (2021)",
+    "category": "permit",
+    "originalDate": "2021-09-28",
+    "scannedOn": "2025-08-20",
+    "scannedByUserId": "USR-001",
+    "pages": 9,
     "tags": [
-      "id",
-      "Anse Royale",
-      "Rassool"
+      "permit",
+      "pesticide",
+      "cooperative",
+      "2021"
     ],
-    "fullText": "Old paper registry card for Wilna Rassool, Anse Royale. Migrated from paper archive.",
-    "year": 2019,
-    "source": "migrated",
-    "addedAt": "2026-04-02T09:00:00.000Z"
+    "ocrText": "PERMIT TO IMPORT PLANT PROTECTION PRODUCTS issued to the growers cooperative for the importation of approved fungicide formulations quantities and active ingredients as scheduled overleaf permit subject to the conditions of the plant protection act",
+    "migrationBatch": "MIG-2026-C",
+    "validation": "fail",
+    "validationNote": "Scanned pages 3–4 illegible; document flagged for re-scanning.",
+    "swatch": "b1",
+    "simulated": true
+  },
+  {
+    "id": "DOC-2011-0111",
+    "title": "Lease Payment Register — 2011 to 2015",
+    "category": "land-record",
+    "originalDate": "2011-04-06",
+    "scannedOn": "2025-08-12",
+    "scannedByUserId": "USR-001",
+    "pages": 1,
+    "tags": [
+      "lease",
+      "payments",
+      "register",
+      "2011"
+    ],
+    "ocrText": "LEASE PAYMENT REGISTER annual rents received in respect of agricultural leases receipt numbers dates and amounts entered chronologically arrears carried forward and noted in red certified by the revenue clerk",
+    "migrationBatch": "MIG-2019-A",
+    "validation": "pass",
+    "swatch": "b2",
+    "simulated": true
+  },
+  {
+    "id": "DOC-2016-0112",
+    "title": "Loan Application — Poultry Housing (2016)",
+    "category": "loan-file",
+    "clientId": "CLT-2026-0062",
+    "originalDate": "2016-06-11",
+    "scannedOn": "2025-11-14",
+    "scannedByUserId": "USR-001",
+    "pages": 17,
+    "tags": [
+      "loan",
+      "poultry",
+      "2016"
+    ],
+    "ocrText": "APPLICATION FOR AGRICULTURAL CREDIT purpose construction of a poultry house of one hundred and fifty square metres amount requested sixty thousand rupees term thirty six months security the applicant holding and the proposed structure supporting quotations attached",
+    "migrationBatch": "MIG-2019-B",
+    "validation": "pass",
+    "swatch": "c1",
+    "simulated": true
+  },
+  {
+    "id": "DOC-2019-0113",
+    "title": "Plant Health Certificate — Banana Suckers (2019)",
+    "category": "permit",
+    "originalDate": "2019-09-12",
+    "scannedOn": "2025-07-24",
+    "scannedByUserId": "USR-001",
+    "pages": 4,
+    "tags": [
+      "plant health",
+      "banana",
+      "2019"
+    ],
+    "ocrText": "PHYTOSANITARY CERTIFICATE certifying that the banana planting material described below has been inspected and is considered free from quarantine pests and conforms with the current phytosanitary requirements of the importing country",
+    "migrationBatch": "MIG-2019-B",
+    "validation": "pass",
+    "swatch": "c2",
+    "simulated": true
+  },
+  {
+    "id": "DOC-2022-0114",
+    "title": "Correspondence — Newcastle Disease Advisory (2022)",
+    "category": "correspondence",
+    "clientId": "CLT-2026-0068",
+    "originalDate": "2022-04-16",
+    "scannedOn": "2025-10-02",
+    "scannedByUserId": "USR-001",
+    "pages": 6,
+    "tags": [
+      "correspondence",
+      "newcastle",
+      "veterinary",
+      "2022"
+    ],
+    "ocrText": "circular to all registered poultry keepers advising on the signs of newcastle disease respiratory distress greenish diarrhoea nervous signs and sudden mortality keepers are reminded of the vaccination schedule and are required to report suspected cases to the veterinary services without delay",
+    "migrationBatch": "MIG-2026-C",
+    "validation": "pass",
+    "swatch": "d1",
+    "simulated": true
   }
 ]

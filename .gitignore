@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Annex TECH-8(6) captures and generated exports.
+# Kept out of the published repository: the prototype itself is public so it can
+# be served from GitHub Pages, but the bid captures are not. Regenerate with
+# `npm run screenshots`.
+screenshots/

@@ -1,0 +1,273 @@
+[
+  {
+    "id": "SUR-2026-004",
+    "clientId": "CLT-2026-0001",
+    "farmId": "FRM-2026-00001",
+    "suspectedDisease": "Newcastle disease",
+    "species": "broiler",
+    "reportedOn": "2026-03-26",
+    "reportedBy": "Marie-Ange Hoareau",
+    "reportedVia": "farmer-portal",
+    "assignedOfficerUserId": "USR-002",
+    "status": "sampled",
+    "linkedSampleId": "LAB-2026-0044",
+    "affectedCount": 14,
+    "mortalityCount": 3,
+    "notes": "Farmer reported sudden respiratory distress and greenish diarrhoea in the broiler flock, with three overnight deaths. Follows the mild respiratory signs noted at the routine visit LSV-2026-0018.",
+    "history": [
+      {
+        "id": "CH-S-1",
+        "at": "2026-03-26T07:55:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Marie-Ange Hoareau",
+        "action": "Suspected case reported via farmer portal"
+      },
+      {
+        "id": "CH-S-2",
+        "at": "2026-03-26T09:10:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Case assigned to officer",
+        "field": "assignedOfficerUserId",
+        "to": "J. Payet"
+      },
+      {
+        "id": "CH-S-3",
+        "at": "2026-03-27T13:20:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Farm visited; diagnostic samples collected"
+      },
+      {
+        "id": "CH-S-4",
+        "at": "2026-03-27T13:40:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Laboratory submission linked (LAB-2026-0044)"
+      },
+      {
+        "id": "CH-S-5",
+        "at": "2026-03-28T09:05:00.000Z",
+        "actorUserId": "SYSTEM",
+        "actorName": "Workflow engine",
+        "action": "Status changed",
+        "field": "status",
+        "from": "investigating",
+        "to": "sampled"
+      }
+    ]
+  },
+  {
+    "id": "SUR-2025-101",
+    "clientId": "CLT-2026-0050",
+    "farmId": "FRM-2026-00053",
+    "suspectedDisease": "Newcastle disease",
+    "species": "goat",
+    "reportedOn": "2025-10-28",
+    "reportedBy": "Marthe Pillay",
+    "reportedVia": "farmer-portal",
+    "assignedOfficerUserId": "USR-007",
+    "status": "assigned",
+    "affectedCount": 60,
+    "mortalityCount": 6,
+    "notes": "Follow-up on a previously closed case at the same holding.",
+    "history": [
+      {
+        "id": "CH-SUR-2025-101-1",
+        "at": "2025-10-28T08:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Reporter",
+        "action": "Suspected case reported"
+      },
+      {
+        "id": "CH-SUR-2025-101-2",
+        "at": "2025-10-29T09:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Case assigned to officer"
+      }
+    ]
+  },
+  {
+    "id": "SUR-2025-102",
+    "clientId": "CLT-2026-0014",
+    "farmId": "FRM-2026-00014",
+    "suspectedDisease": "Newcastle disease",
+    "species": "goat",
+    "reportedOn": "2025-05-12",
+    "reportedBy": "Lucienne Zialor",
+    "reportedVia": "officer",
+    "assignedOfficerUserId": "USR-007",
+    "status": "closed",
+    "linkedSampleId": "LAB-2025-0119",
+    "affectedCount": 9,
+    "mortalityCount": 6,
+    "notes": "Reported via the veterinary hotline by a neighbouring smallholder.",
+    "history": [
+      {
+        "id": "CH-SUR-2025-102-1",
+        "at": "2025-05-12T08:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Reporter",
+        "action": "Suspected case reported"
+      },
+      {
+        "id": "CH-SUR-2025-102-2",
+        "at": "2025-05-13T09:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Case assigned to officer"
+      }
+    ]
+  },
+  {
+    "id": "SUR-2025-103",
+    "clientId": "CLT-2026-0014",
+    "farmId": "FRM-2026-00014",
+    "suspectedDisease": "Newcastle disease",
+    "species": "goat",
+    "reportedOn": "2025-10-17",
+    "reportedBy": "Lucienne Zialor",
+    "reportedVia": "hotline",
+    "assignedOfficerUserId": "USR-007",
+    "status": "closed",
+    "linkedSampleId": "LAB-2025-0119",
+    "affectedCount": 12,
+    "mortalityCount": 12,
+    "notes": "Reported by the farmer following unusual mortality in the flock.",
+    "history": [
+      {
+        "id": "CH-SUR-2025-103-1",
+        "at": "2025-10-17T08:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Reporter",
+        "action": "Suspected case reported"
+      },
+      {
+        "id": "CH-SUR-2025-103-2",
+        "at": "2025-10-18T09:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Case assigned to officer"
+      }
+    ]
+  },
+  {
+    "id": "SUR-2024-104",
+    "clientId": "CLT-2026-0014",
+    "farmId": "FRM-2026-00014",
+    "suspectedDisease": "Newcastle disease",
+    "species": "goat",
+    "reportedOn": "2024-12-31",
+    "reportedBy": "Lucienne Zialor",
+    "reportedVia": "farmer-portal",
+    "assignedOfficerUserId": "USR-002",
+    "status": "confirmed",
+    "linkedSampleId": "LAB-2025-0110",
+    "affectedCount": 40,
+    "mortalityCount": 11,
+    "notes": "Reported by the farmer following unusual mortality in the flock.",
+    "history": [
+      {
+        "id": "CH-SUR-2024-104-1",
+        "at": "2024-12-31T08:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Reporter",
+        "action": "Suspected case reported"
+      },
+      {
+        "id": "CH-SUR-2024-104-2",
+        "at": "2025-01-01T09:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Case assigned to officer"
+      }
+    ]
+  },
+  {
+    "id": "SUR-2025-105",
+    "clientId": "CLT-2016-0237",
+    "farmId": "FRM-2016-00238",
+    "suspectedDisease": "Foot rot",
+    "species": "goat",
+    "reportedOn": "2025-08-08",
+    "reportedBy": "Antoine Confait",
+    "reportedVia": "officer",
+    "assignedOfficerUserId": "USR-002",
+    "status": "assigned",
+    "affectedCount": 55,
+    "mortalityCount": 6,
+    "notes": "Reported by the farmer following unusual mortality in the flock.",
+    "history": [
+      {
+        "id": "CH-SUR-2025-105-1",
+        "at": "2025-08-08T08:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Reporter",
+        "action": "Suspected case reported"
+      },
+      {
+        "id": "CH-SUR-2025-105-2",
+        "at": "2025-08-09T09:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Case assigned to officer"
+      }
+    ]
+  },
+  {
+    "id": "SUR-2025-106",
+    "clientId": "CLT-2016-0229",
+    "farmId": "FRM-2016-00204",
+    "suspectedDisease": "Infectious bronchitis",
+    "species": "pig",
+    "reportedOn": "2025-11-17",
+    "reportedBy": "Sylvain Camille",
+    "reportedVia": "farmer-portal",
+    "status": "reported",
+    "affectedCount": 15,
+    "mortalityCount": 3,
+    "notes": "Reported via the veterinary hotline by a neighbouring smallholder.",
+    "history": [
+      {
+        "id": "CH-SUR-2025-106-1",
+        "at": "2025-11-17T08:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Reporter",
+        "action": "Suspected case reported"
+      }
+    ]
+  },
+  {
+    "id": "SUR-2025-107",
+    "clientId": "CLT-2020-0226",
+    "farmId": "FRM-2020-00255",
+    "suspectedDisease": "Newcastle disease",
+    "species": "pig",
+    "reportedOn": "2025-05-15",
+    "reportedBy": "Maxime Labiche",
+    "reportedVia": "officer",
+    "assignedOfficerUserId": "USR-002",
+    "status": "closed",
+    "linkedSampleId": "LAB-2025-0122",
+    "affectedCount": 5,
+    "mortalityCount": 3,
+    "notes": "Reported via the veterinary hotline by a neighbouring smallholder.",
+    "history": [
+      {
+        "id": "CH-SUR-2025-107-1",
+        "at": "2025-05-15T08:00:00.000Z",
+        "actorUserId": "SELF",
+        "actorName": "Reporter",
+        "action": "Suspected case reported"
+      },
+      {
+        "id": "CH-SUR-2025-107-2",
+        "at": "2025-05-16T09:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Case assigned to officer"
+      }
+    ]
+  }
+]

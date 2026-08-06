@@ -57,7 +57,11 @@ link to her farm and the lab work; a Victoria Market stall is allocated; a field
 offline and synced; the admin shows users/RBAC/workflow/audit; the dashboard closes with KPIs, charts, a
 PDF/Excel report, and a document search that finds her scanned 2019 lease.
 
-## 6. Build order (waves)
+## 6. Build status
+
+**All thirteen screens (S01–S13) and all 91 Appendix A6 rows are built.** This repo holds the source
+behind the submitted **Annex TECH-8(6)**; `ANNEX_SPEC.md` distils the annex and, with the 67 captures
+in `screenshots/`, is the acceptance reference. Historic wave order:
 
 - **Wave A (done):** shell, store, seed, S01, S02, S03, S11 (RBAC + workflow + audit), S12 KPIs.
 - **Wave B:** S04 Land, S05 Loans, S06 Lab.

@@ -1,0 +1,605 @@
+[
+  {
+    "id": "LSV-2026-0018",
+    "type": "routine",
+    "clientId": "CLT-2026-0001",
+    "farmId": "FRM-2026-00001",
+    "species": "broiler",
+    "scheduledOn": "2026-03-23",
+    "visitedOn": "2026-03-23",
+    "officerUserId": "USR-002",
+    "status": "closed",
+    "observations": "Flock of 240 broilers at 28 days. Housing dry and well ventilated. Feed and water lines clean. Litter depth adequate. Two birds showing mild respiratory rales isolated in the sick pen.",
+    "findings": "Flock condition generally good. Mild respiratory signs in 2 of 240 birds. Vaccination record for Newcastle disease is up to date (last dose day 18).",
+    "actionTaken": "Advised on ventilation at night and increased litter turning. Isolated birds to be monitored daily; report any spread within 48 hours.",
+    "followUpOn": "2026-03-30",
+    "history": [
+      {
+        "id": "VH-1",
+        "at": "2026-03-20T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      },
+      {
+        "id": "VH-2",
+        "at": "2026-03-23T10:30:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      },
+      {
+        "id": "VH-3",
+        "at": "2026-03-30T08:15:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Follow-up recorded; visit closed"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0101",
+    "type": "routine",
+    "clientId": "CLT-2017-0239",
+    "farmId": "FRM-2017-00250",
+    "species": "broiler",
+    "scheduledOn": "2025-04-16",
+    "officerUserId": "USR-007",
+    "status": "registered",
+    "observations": "",
+    "findings": "",
+    "actionTaken": "",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0101-1",
+        "at": "2025-04-16T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0102",
+    "type": "routine",
+    "clientId": "CLT-2026-0048",
+    "farmId": "FRM-2026-00042",
+    "species": "pig",
+    "scheduledOn": "2025-07-20",
+    "officerUserId": "USR-007",
+    "status": "registered",
+    "observations": "",
+    "findings": "",
+    "actionTaken": "",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0102-1",
+        "at": "2025-07-20T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0103",
+    "type": "routine",
+    "clientId": "CLT-2017-0239",
+    "farmId": "FRM-2017-00250",
+    "species": "broiler",
+    "scheduledOn": "2025-10-11",
+    "visitedOn": "2025-10-12",
+    "officerUserId": "USR-002",
+    "status": "closed",
+    "observations": "Water source clean. Minor overcrowding observed in the rear pen.",
+    "findings": "No notifiable disease signs observed.",
+    "actionTaken": "Advice given on housing and biosecurity. No treatment required.",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0103-1",
+        "at": "2025-10-11T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      },
+      {
+        "id": "VH-LSV-2025-0103-2",
+        "at": "2025-10-12T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0104",
+    "type": "complaint",
+    "clientId": "CLT-2021-0261",
+    "farmId": "FRM-2026-00047",
+    "species": "pig",
+    "scheduledOn": "2025-04-05",
+    "visitedOn": "2025-04-06",
+    "officerUserId": "USR-002",
+    "status": "in-progress",
+    "complaintSummary": "Unexplained mortality of 6 broilers overnight.",
+    "observations": "Housing in fair condition; ventilation adequate. Stock alert and feeding normally.",
+    "findings": "No notifiable disease signs observed.",
+    "actionTaken": "Anthelmintic treatment administered; follow-up in 21 days.",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0104-1",
+        "at": "2025-04-05T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Complaint registered"
+      },
+      {
+        "id": "VH-LSV-2025-0104-2",
+        "at": "2025-04-06T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2026-0105",
+    "type": "routine",
+    "clientId": "CLT-2026-0051",
+    "farmId": "FRM-2026-00035",
+    "species": "pig",
+    "scheduledOn": "2026-02-22",
+    "visitedOn": "2026-02-23",
+    "officerUserId": "USR-007",
+    "status": "in-progress",
+    "observations": "Body condition scores within normal range across the sampled animals.",
+    "findings": "Sub-clinical parasitism suspected; faecal sample taken.",
+    "actionTaken": "Referred for laboratory sampling.",
+    "history": [
+      {
+        "id": "VH-LSV-2026-0105-1",
+        "at": "2026-02-22T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      },
+      {
+        "id": "VH-LSV-2026-0105-2",
+        "at": "2026-02-23T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0106",
+    "type": "routine",
+    "clientId": "CLT-2017-0239",
+    "farmId": "FRM-2017-00250",
+    "species": "broiler",
+    "scheduledOn": "2025-07-30",
+    "officerUserId": "USR-002",
+    "status": "assigned",
+    "observations": "",
+    "findings": "",
+    "actionTaken": "",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0106-1",
+        "at": "2025-07-30T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2026-0107",
+    "type": "routine",
+    "clientId": "CLT-2026-0060",
+    "farmId": "FRM-2026-00036",
+    "species": "layer",
+    "scheduledOn": "2026-02-11",
+    "visitedOn": "2026-02-12",
+    "officerUserId": "USR-002",
+    "status": "closed",
+    "observations": "Water source clean. Minor overcrowding observed in the rear pen.",
+    "findings": "Sub-clinical parasitism suspected; faecal sample taken.",
+    "actionTaken": "Referred for laboratory sampling.",
+    "followUpOn": "2026-03-04",
+    "history": [
+      {
+        "id": "VH-LSV-2026-0107-1",
+        "at": "2026-02-11T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      },
+      {
+        "id": "VH-LSV-2026-0107-2",
+        "at": "2026-02-12T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0108",
+    "type": "routine",
+    "clientId": "CLT-2020-0226",
+    "farmId": "FRM-2020-00255",
+    "species": "pig",
+    "scheduledOn": "2025-11-16",
+    "visitedOn": "2025-11-17",
+    "officerUserId": "USR-002",
+    "status": "closed",
+    "observations": "Bedding damp in two sections; drainage channel partially blocked.",
+    "findings": "Sub-clinical parasitism suspected; faecal sample taken.",
+    "actionTaken": "Ration adjustment advised; follow-up visit scheduled.",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0108-1",
+        "at": "2025-11-16T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      },
+      {
+        "id": "VH-LSV-2025-0108-2",
+        "at": "2025-11-17T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0109",
+    "type": "routine",
+    "clientId": "CLT-2021-0211",
+    "farmId": "FRM-2021-00258",
+    "species": "layer",
+    "scheduledOn": "2025-08-21",
+    "visitedOn": "2025-08-22",
+    "officerUserId": "USR-002",
+    "status": "closed",
+    "observations": "Bedding damp in two sections; drainage channel partially blocked.",
+    "findings": "Nutritional deficiency likely; ration reviewed with the farmer.",
+    "actionTaken": "Advice given on housing and biosecurity. No treatment required.",
+    "followUpOn": "2025-09-11",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0109-1",
+        "at": "2025-08-21T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      },
+      {
+        "id": "VH-LSV-2025-0109-2",
+        "at": "2025-08-22T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0110",
+    "type": "complaint",
+    "clientId": "CLT-2016-0237",
+    "farmId": "FRM-2026-00034",
+    "species": "goat",
+    "scheduledOn": "2025-09-22",
+    "officerUserId": "USR-007",
+    "status": "registered",
+    "complaintSummary": "Sudden drop in egg production reported by the farmer.",
+    "observations": "",
+    "findings": "",
+    "actionTaken": "",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0110-1",
+        "at": "2025-09-22T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Complaint registered"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0111",
+    "type": "routine",
+    "clientId": "CLT-2017-0239",
+    "farmId": "FRM-2017-00250",
+    "species": "broiler",
+    "scheduledOn": "2025-09-04",
+    "visitedOn": "2025-09-05",
+    "officerUserId": "USR-007",
+    "status": "resolved",
+    "observations": "Bedding damp in two sections; drainage channel partially blocked.",
+    "findings": "Management-related issue rather than disease.",
+    "actionTaken": "Anthelmintic treatment administered; follow-up in 21 days.",
+    "followUpOn": "2025-09-25",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0111-1",
+        "at": "2025-09-04T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      },
+      {
+        "id": "VH-LSV-2025-0111-2",
+        "at": "2025-09-05T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0112",
+    "type": "complaint",
+    "clientId": "CLT-2018-0232",
+    "farmId": "FRM-2018-00232",
+    "species": "layer",
+    "scheduledOn": "2025-11-13",
+    "officerUserId": "USR-007",
+    "status": "registered",
+    "complaintSummary": "Suspected feed contamination — birds off feed for two days.",
+    "observations": "",
+    "findings": "",
+    "actionTaken": "",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0112-1",
+        "at": "2025-11-13T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Complaint registered"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0113",
+    "type": "routine",
+    "clientId": "CLT-2026-0016",
+    "farmId": "FRM-2026-00046",
+    "species": "pig",
+    "scheduledOn": "2025-12-21",
+    "visitedOn": "2025-12-22",
+    "officerUserId": "USR-007",
+    "status": "resolved",
+    "observations": "Housing in fair condition; ventilation adequate. Stock alert and feeding normally.",
+    "findings": "Nutritional deficiency likely; ration reviewed with the farmer.",
+    "actionTaken": "Anthelmintic treatment administered; follow-up in 21 days.",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0113-1",
+        "at": "2025-12-21T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      },
+      {
+        "id": "VH-LSV-2025-0113-2",
+        "at": "2025-12-22T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0114",
+    "type": "complaint",
+    "clientId": "CLT-2026-0051",
+    "farmId": "FRM-2026-00035",
+    "species": "pig",
+    "scheduledOn": "2025-06-03",
+    "visitedOn": "2025-06-04",
+    "officerUserId": "USR-002",
+    "status": "closed",
+    "complaintSummary": "Unexplained mortality of 6 broilers overnight.",
+    "observations": "Water source clean. Minor overcrowding observed in the rear pen.",
+    "findings": "Management-related issue rather than disease.",
+    "actionTaken": "Ration adjustment advised; follow-up visit scheduled.",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0114-1",
+        "at": "2025-06-03T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Complaint registered"
+      },
+      {
+        "id": "VH-LSV-2025-0114-2",
+        "at": "2025-06-04T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0115",
+    "type": "complaint",
+    "clientId": "CLT-2018-0232",
+    "farmId": "FRM-2018-00232",
+    "species": "layer",
+    "scheduledOn": "2025-12-17",
+    "visitedOn": "2025-12-18",
+    "officerUserId": "USR-007",
+    "status": "in-progress",
+    "complaintSummary": "Unexplained mortality of 6 broilers overnight.",
+    "observations": "Housing in fair condition; ventilation adequate. Stock alert and feeding normally.",
+    "findings": "Sub-clinical parasitism suspected; faecal sample taken.",
+    "actionTaken": "Referred for laboratory sampling.",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0115-1",
+        "at": "2025-12-17T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Complaint registered"
+      },
+      {
+        "id": "VH-LSV-2025-0115-2",
+        "at": "2025-12-18T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0116",
+    "type": "routine",
+    "clientId": "CLT-2026-0038",
+    "farmId": "FRM-2026-00005",
+    "species": "layer",
+    "scheduledOn": "2025-09-07",
+    "officerUserId": "USR-007",
+    "status": "registered",
+    "observations": "",
+    "findings": "",
+    "actionTaken": "",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0116-1",
+        "at": "2025-09-07T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0117",
+    "type": "routine",
+    "clientId": "CLT-2017-0239",
+    "farmId": "FRM-2017-00230",
+    "species": "goat",
+    "scheduledOn": "2025-10-21",
+    "visitedOn": "2025-10-22",
+    "officerUserId": "USR-002",
+    "status": "closed",
+    "observations": "Bedding damp in two sections; drainage channel partially blocked.",
+    "findings": "Management-related issue rather than disease.",
+    "actionTaken": "Advice given on housing and biosecurity. No treatment required.",
+    "followUpOn": "2025-11-11",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0117-1",
+        "at": "2025-10-21T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      },
+      {
+        "id": "VH-LSV-2025-0117-2",
+        "at": "2025-10-22T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0118",
+    "type": "complaint",
+    "clientId": "CLT-2026-0060",
+    "farmId": "FRM-2026-00036",
+    "species": "layer",
+    "scheduledOn": "2025-08-15",
+    "visitedOn": "2025-08-16",
+    "officerUserId": "USR-002",
+    "status": "closed",
+    "complaintSummary": "Sudden drop in egg production reported by the farmer.",
+    "observations": "Housing in fair condition; ventilation adequate. Stock alert and feeding normally.",
+    "findings": "Management-related issue rather than disease.",
+    "actionTaken": "Anthelmintic treatment administered; follow-up in 21 days.",
+    "followUpOn": "2025-09-05",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0118-1",
+        "at": "2025-08-15T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Complaint registered"
+      },
+      {
+        "id": "VH-LSV-2025-0118-2",
+        "at": "2025-08-16T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0119",
+    "type": "complaint",
+    "clientId": "CLT-2026-0001",
+    "farmId": "FRM-2026-00001",
+    "species": "broiler",
+    "scheduledOn": "2025-04-18",
+    "visitedOn": "2025-04-19",
+    "officerUserId": "USR-007",
+    "status": "closed",
+    "complaintSummary": "Neighbour complaint regarding odour from the piggery.",
+    "observations": "Body condition scores within normal range across the sampled animals.",
+    "findings": "No notifiable disease signs observed.",
+    "actionTaken": "Anthelmintic treatment administered; follow-up in 21 days.",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0119-1",
+        "at": "2025-04-18T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Complaint registered"
+      },
+      {
+        "id": "VH-LSV-2025-0119-2",
+        "at": "2025-04-19T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  },
+  {
+    "id": "LSV-2025-0120",
+    "type": "routine",
+    "clientId": "CLT-2016-0266",
+    "farmId": "FRM-2026-00040",
+    "species": "layer",
+    "scheduledOn": "2025-03-19",
+    "visitedOn": "2025-03-20",
+    "officerUserId": "USR-002",
+    "status": "closed",
+    "observations": "Water source clean. Minor overcrowding observed in the rear pen.",
+    "findings": "Sub-clinical parasitism suspected; faecal sample taken.",
+    "actionTaken": "Referred for laboratory sampling.",
+    "followUpOn": "2025-04-09",
+    "history": [
+      {
+        "id": "VH-LSV-2025-0120-1",
+        "at": "2025-03-19T09:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Routine visit scheduled"
+      },
+      {
+        "id": "VH-LSV-2025-0120-2",
+        "at": "2025-03-20T11:00:00.000Z",
+        "actorUserId": "USR-002",
+        "actorName": "J. Payet",
+        "action": "Visit completed; observations recorded"
+      }
+    ]
+  }
+]

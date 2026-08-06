@@ -1,260 +1,802 @@
 [
   {
-    "id": "INS-2026-001",
-    "farmId": "FRM-2026-00001",
-    "clientId": "CLT-0001",
-    "type": "farm",
-    "scheduledFor": "2026-07-16T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "scheduled",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-002",
-    "farmId": "FRM-2026-00012",
-    "clientId": "CLT-0014",
-    "type": "land",
-    "scheduledFor": "2026-05-30T09:00:00.000Z",
-    "assignedTo": "USR-FIELD2",
-    "status": "in_progress",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-003",
-    "farmId": "FRM-2026-00013",
-    "clientId": "CLT-0015",
-    "type": "land",
-    "scheduledFor": "2026-03-27T09:00:00.000Z",
-    "assignedTo": "USR-OFFICER",
-    "status": "pending_sync",
-    "findings": "Minor irrigation issue noted",
-    "photos": [
-      {
-        "id": "P-1",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-06-18T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 1698,
-        "simulated": true
-      }
-    ],
-    "capturedOffline": true,
-    "completedAt": "2026-06-24T09:00:00.000Z"
-  },
-  {
-    "id": "INS-2026-004",
-    "farmId": "FRM-2026-00047",
-    "clientId": "CLT-0057",
-    "type": "land",
-    "scheduledFor": "2026-06-15T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "in_progress",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-005",
-    "farmId": "FRM-2026-00025",
-    "clientId": "CLT-0029",
-    "type": "land",
-    "scheduledFor": "2026-05-20T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "in_progress",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-006",
-    "farmId": "FRM-2026-00058",
-    "clientId": "CLT-0070",
-    "type": "compliance",
-    "scheduledFor": "2026-06-16T09:00:00.000Z",
-    "assignedTo": "USR-OFFICER",
-    "status": "pending_sync",
-    "findings": "Minor irrigation issue noted",
-    "photos": [
-      {
-        "id": "P-4",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-07-10T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 2189,
-        "simulated": true
-      }
-    ],
-    "capturedOffline": true,
-    "completedAt": "2026-07-14T09:00:00.000Z"
-  },
-  {
-    "id": "INS-2026-007",
-    "farmId": "FRM-2026-00011",
-    "clientId": "CLT-0013",
-    "type": "land",
-    "scheduledFor": "2026-05-27T09:00:00.000Z",
-    "assignedTo": "USR-OFFICER",
-    "status": "in_progress",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-008",
-    "farmId": "FRM-2026-00035",
-    "clientId": "CLT-0040",
-    "type": "compliance",
-    "scheduledFor": "2026-07-27T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "scheduled",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-009",
-    "farmId": "FRM-2026-00021",
-    "clientId": "CLT-0025",
-    "type": "compliance",
-    "scheduledFor": "2026-06-20T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "pending_sync",
-    "findings": "Minor irrigation issue noted",
-    "photos": [
-      {
-        "id": "P-7",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-07-10T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 1657,
-        "simulated": true
-      }
-    ],
-    "capturedOffline": true,
-    "completedAt": "2026-06-27T09:00:00.000Z"
-  },
-  {
-    "id": "INS-2026-010",
-    "farmId": "FRM-2026-00028",
-    "clientId": "CLT-0032",
-    "type": "land",
-    "scheduledFor": "2026-03-17T09:00:00.000Z",
-    "assignedTo": "USR-FIELD2",
-    "status": "in_progress",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-011",
-    "farmId": "FRM-2026-00021",
-    "clientId": "CLT-0025",
-    "type": "farm",
-    "scheduledFor": "2026-06-02T09:00:00.000Z",
-    "assignedTo": "USR-FIELD2",
-    "status": "completed",
-    "findings": "Minor irrigation issue noted",
-    "photos": [
-      {
-        "id": "P-9",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-07-13T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 1095,
-        "simulated": true
-      }
-    ],
-    "capturedOffline": false,
-    "completedAt": "2026-07-12T09:00:00.000Z"
-  },
-  {
     "id": "INS-2026-012",
-    "farmId": "FRM-2026-00009",
-    "clientId": "CLT-0010",
-    "type": "land",
-    "scheduledFor": "2026-06-29T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "in_progress",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-013",
-    "farmId": "FRM-2026-00042",
-    "clientId": "CLT-0050",
-    "type": "farm",
-    "scheduledFor": "2026-07-26T09:00:00.000Z",
-    "assignedTo": "USR-FIELD2",
-    "status": "scheduled",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-014",
-    "farmId": "FRM-2026-00041",
-    "clientId": "CLT-0049",
-    "type": "farm",
-    "scheduledFor": "2026-07-19T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "scheduled",
-    "findings": "",
-    "photos": [],
-    "capturedOffline": false
-  },
-  {
-    "id": "INS-2026-015",
-    "farmId": "FRM-2026-00053",
-    "clientId": "CLT-0063",
-    "type": "land",
-    "scheduledFor": "2026-05-31T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
+    "clientId": "CLT-2026-0001",
+    "farmId": "FRM-2026-00001",
+    "type": "loan-verification",
+    "scheduledOn": "2026-03-12",
+    "officerUserId": "USR-003",
     "status": "completed",
-    "findings": "Boundary matches lease",
+    "completedOn": "2026-03-13",
+    "observations": "Proposed poultry-house footprint pegged out on the upper terrace, clear of the river buffer. Existing broiler shed in sound condition. Access track passable by pickup in dry weather.",
+    "findings": "Site is suitable for the proposed 200 m² poultry house. Setback from the watercourse measured at 22 m, above the 15 m minimum. No drainage concerns observed.",
+    "outcome": "compliant",
     "photos": [
       {
-        "id": "P-13",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-06-17T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 1854,
+        "id": "PH-1",
+        "caption": "Proposed poultry-house footprint, upper terrace",
+        "takenOn": "2026-03-13",
+        "swatch": "a1",
         "simulated": true
-      }
-    ],
-    "capturedOffline": false,
-    "completedAt": "2026-07-04T09:00:00.000Z"
-  },
-  {
-    "id": "INS-2026-016",
-    "farmId": "FRM-2026-00057",
-    "clientId": "CLT-0069",
-    "type": "land",
-    "scheduledFor": "2026-05-09T09:00:00.000Z",
-    "assignedTo": "USR-FIELD",
-    "status": "pending_sync",
-    "findings": "Minor irrigation issue noted",
-    "photos": [
+      },
       {
-        "id": "P-14",
-        "name": "field-photo-1.jpg",
-        "category": "report",
-        "uploadedAt": "2026-07-13T09:00:00.000Z",
-        "verified": true,
-        "sizeKb": 489,
+        "id": "PH-2",
+        "caption": "Existing broiler shed — south elevation",
+        "takenOn": "2026-03-13",
+        "swatch": "b3",
+        "simulated": true
+      },
+      {
+        "id": "PH-3",
+        "caption": "Watercourse setback measurement",
+        "takenOn": "2026-03-13",
+        "swatch": "c2",
         "simulated": true
       }
     ],
     "capturedOffline": true,
-    "completedAt": "2026-07-10T09:00:00.000Z"
+    "syncedOn": "2026-03-13T16:42:00.000Z",
+    "history": [
+      {
+        "id": "IH-1",
+        "at": "2026-03-08T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned",
+        "field": "officer",
+        "to": "R. Confait"
+      },
+      {
+        "id": "IH-2",
+        "at": "2026-03-13T11:05:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Captured on device while offline (simulated)"
+      },
+      {
+        "id": "IH-3",
+        "at": "2026-03-13T16:42:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Queued submission synchronised on reconnect"
+      }
+    ]
+  },
+  {
+    "id": "INS-2026-101",
+    "clientId": "CLT-2026-0003",
+    "farmId": "FRM-2026-00048",
+    "type": "biosecurity",
+    "scheduledOn": "2026-03-17",
+    "officerUserId": "USR-003",
+    "status": "completed",
+    "completedOn": "2026-03-17",
+    "observations": "Holding boundaries consistent with the registered parcel. Crop stands healthy.",
+    "findings": "Holding is compliant with the registration conditions.",
+    "outcome": "compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2026-101-0",
+        "caption": "Crop stand detail",
+        "takenOn": "2026-03-17",
+        "swatch": "a2",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": true,
+    "syncedOn": "2026-03-17T17:05:00.000Z",
+    "history": [
+      {
+        "id": "IH-INS-2026-101-1",
+        "at": "2026-03-13T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2026-101-2",
+        "at": "2026-03-17T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-102",
+    "clientId": "CLT-2017-0239",
+    "farmId": "FRM-2017-00230",
+    "type": "biosecurity",
+    "scheduledOn": "2025-03-21",
+    "officerUserId": "USR-008",
+    "status": "in-progress",
+    "observations": "",
+    "findings": "",
+    "outcome": "not-assessed",
+    "photos": [],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2025-102-1",
+        "at": "2025-03-17T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-103",
+    "clientId": "CLT-2026-0038",
+    "farmId": "FRM-2026-00017",
+    "type": "land-lease",
+    "scheduledOn": "2025-09-11",
+    "officerUserId": "USR-008",
+    "status": "completed",
+    "completedOn": "2025-09-11",
+    "observations": "Irrigation lines in service. Minor leak at the header tank noted.",
+    "findings": "Loan-funded assets verified present and in use.",
+    "outcome": "compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2025-103-0",
+        "caption": "Irrigation infrastructure",
+        "takenOn": "2025-09-11",
+        "swatch": "a2",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": true,
+    "syncedOn": "2025-09-11T17:05:00.000Z",
+    "history": [
+      {
+        "id": "IH-INS-2025-103-1",
+        "at": "2025-09-07T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2025-103-2",
+        "at": "2025-09-11T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-104",
+    "clientId": "CLT-2026-0050",
+    "farmId": "FRM-2026-00053",
+    "type": "farm-compliance",
+    "scheduledOn": "2025-04-27",
+    "officerUserId": "USR-008",
+    "status": "completed",
+    "completedOn": "2025-04-27",
+    "observations": "Irrigation lines in service. Minor leak at the header tank noted.",
+    "findings": "Loan-funded assets verified present and in use.",
+    "outcome": "compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2025-104-0",
+        "caption": "Irrigation infrastructure",
+        "takenOn": "2025-04-27",
+        "swatch": "a1",
+        "simulated": true
+      },
+      {
+        "id": "PH-INS-2025-104-1",
+        "caption": "Livestock housing",
+        "takenOn": "2025-04-27",
+        "swatch": "d1",
+        "simulated": true
+      },
+      {
+        "id": "PH-INS-2025-104-2",
+        "caption": "General view of the holding",
+        "takenOn": "2025-04-27",
+        "swatch": "b2",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": true,
+    "syncedOn": "2025-04-27T17:05:00.000Z",
+    "history": [
+      {
+        "id": "IH-INS-2025-104-1",
+        "at": "2025-04-23T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2025-104-2",
+        "at": "2025-04-27T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-105",
+    "clientId": "CLT-2026-0033",
+    "farmId": "FRM-2026-00039",
+    "type": "land-lease",
+    "scheduledOn": "2025-09-21",
+    "officerUserId": "USR-008",
+    "status": "completed",
+    "completedOn": "2025-09-21",
+    "observations": "Boundary fence damaged along the northern edge; livestock straying risk.",
+    "findings": "Minor issues noted; farmer advised, no formal action required.",
+    "outcome": "compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2025-105-0",
+        "caption": "Irrigation infrastructure",
+        "takenOn": "2025-09-21",
+        "swatch": "d1",
+        "simulated": true
+      },
+      {
+        "id": "PH-INS-2025-105-1",
+        "caption": "Crop stand detail",
+        "takenOn": "2025-09-21",
+        "swatch": "c2",
+        "simulated": true
+      },
+      {
+        "id": "PH-INS-2025-105-2",
+        "caption": "Livestock housing",
+        "takenOn": "2025-09-21",
+        "swatch": "d4",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2025-105-1",
+        "at": "2025-09-17T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2025-105-2",
+        "at": "2025-09-21T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-106",
+    "clientId": "CLT-2026-0023",
+    "farmId": "FRM-2026-00021",
+    "type": "land-lease",
+    "scheduledOn": "2025-12-02",
+    "officerUserId": "USR-008",
+    "status": "completed",
+    "completedOn": "2025-12-02",
+    "observations": "Boundary fence damaged along the northern edge; livestock straying risk.",
+    "findings": "Loan-funded assets verified present and in use.",
+    "outcome": "non-compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2025-106-0",
+        "caption": "Crop stand detail",
+        "takenOn": "2025-12-02",
+        "swatch": "d3",
+        "simulated": true
+      },
+      {
+        "id": "PH-INS-2025-106-1",
+        "caption": "Crop stand detail",
+        "takenOn": "2025-12-02",
+        "swatch": "c2",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2025-106-1",
+        "at": "2025-11-28T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2025-106-2",
+        "at": "2025-12-02T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-107",
+    "clientId": "CLT-2026-0009",
+    "farmId": "FRM-2026-00022",
+    "type": "biosecurity",
+    "scheduledOn": "2025-11-18",
+    "officerUserId": "USR-008",
+    "status": "completed",
+    "completedOn": "2025-11-18",
+    "observations": "Storage shed clean and pest-free. Chemical store locked and labelled.",
+    "findings": "Holding is compliant with the registration conditions.",
+    "outcome": "compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2025-107-0",
+        "caption": "Crop stand detail",
+        "takenOn": "2025-11-18",
+        "swatch": "a4",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2025-107-1",
+        "at": "2025-11-14T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2025-107-2",
+        "at": "2025-11-18T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-108",
+    "clientId": "CLT-2016-0237",
+    "farmId": "FRM-2016-00206",
+    "type": "loan-verification",
+    "scheduledOn": "2025-11-07",
+    "officerUserId": "USR-003",
+    "status": "completed",
+    "completedOn": "2025-11-07",
+    "observations": "Boundary fence damaged along the northern edge; livestock straying risk.",
+    "findings": "Loan-funded assets verified present and in use.",
+    "outcome": "non-compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2025-108-0",
+        "caption": "General view of the holding",
+        "takenOn": "2025-11-07",
+        "swatch": "b3",
+        "simulated": true
+      },
+      {
+        "id": "PH-INS-2025-108-1",
+        "caption": "Livestock housing",
+        "takenOn": "2025-11-07",
+        "swatch": "b1",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2025-108-1",
+        "at": "2025-11-03T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2025-108-2",
+        "at": "2025-11-07T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-109",
+    "clientId": "CLT-2026-0018",
+    "farmId": "FRM-2026-00010",
+    "type": "farm-compliance",
+    "scheduledOn": "2025-11-26",
+    "officerUserId": "USR-003",
+    "status": "completed",
+    "completedOn": "2025-11-26",
+    "observations": "Storage shed clean and pest-free. Chemical store locked and labelled.",
+    "findings": "Non-compliance with fencing condition; remedial notice issued.",
+    "outcome": "non-compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2025-109-0",
+        "caption": "Boundary and access",
+        "takenOn": "2025-11-26",
+        "swatch": "d4",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": true,
+    "syncedOn": "2025-11-26T17:05:00.000Z",
+    "history": [
+      {
+        "id": "IH-INS-2025-109-1",
+        "at": "2025-11-22T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2025-109-2",
+        "at": "2025-11-26T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-110",
+    "clientId": "CLT-2026-0018",
+    "farmId": "FRM-2026-00010",
+    "type": "land-lease",
+    "scheduledOn": "2025-04-20",
+    "officerUserId": "USR-003",
+    "status": "completed",
+    "completedOn": "2025-04-20",
+    "observations": "Storage shed clean and pest-free. Chemical store locked and labelled.",
+    "findings": "Non-compliance with fencing condition; remedial notice issued.",
+    "outcome": "compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2025-110-0",
+        "caption": "Crop stand detail",
+        "takenOn": "2025-04-20",
+        "swatch": "d3",
+        "simulated": true
+      },
+      {
+        "id": "PH-INS-2025-110-1",
+        "caption": "General view of the holding",
+        "takenOn": "2025-04-20",
+        "swatch": "b2",
+        "simulated": true
+      },
+      {
+        "id": "PH-INS-2025-110-2",
+        "caption": "Irrigation infrastructure",
+        "takenOn": "2025-04-20",
+        "swatch": "b1",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2025-110-1",
+        "at": "2025-04-16T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2025-110-2",
+        "at": "2025-04-20T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2026-111",
+    "clientId": "CLT-2026-0018",
+    "farmId": "FRM-2026-00010",
+    "type": "loan-verification",
+    "scheduledOn": "2026-02-21",
+    "officerUserId": "USR-008",
+    "status": "completed",
+    "completedOn": "2026-02-21",
+    "observations": "Storage shed clean and pest-free. Chemical store locked and labelled.",
+    "findings": "Holding is compliant with the registration conditions.",
+    "outcome": "compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2026-111-0",
+        "caption": "Livestock housing",
+        "takenOn": "2026-02-21",
+        "swatch": "d4",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": true,
+    "syncedOn": "2026-02-21T17:05:00.000Z",
+    "history": [
+      {
+        "id": "IH-INS-2026-111-1",
+        "at": "2026-02-17T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2026-111-2",
+        "at": "2026-02-21T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-112",
+    "clientId": "CLT-2016-0237",
+    "farmId": "FRM-2016-00206",
+    "type": "biosecurity",
+    "scheduledOn": "2025-04-07",
+    "officerUserId": "USR-008",
+    "status": "completed",
+    "completedOn": "2025-04-07",
+    "observations": "Holding boundaries consistent with the registered parcel. Crop stands healthy.",
+    "findings": "Holding is compliant with the registration conditions.",
+    "outcome": "compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2025-112-0",
+        "caption": "General view of the holding",
+        "takenOn": "2025-04-07",
+        "swatch": "a3",
+        "simulated": true
+      },
+      {
+        "id": "PH-INS-2025-112-1",
+        "caption": "Livestock housing",
+        "takenOn": "2025-04-07",
+        "swatch": "a4",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2025-112-1",
+        "at": "2025-04-03T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2025-112-2",
+        "at": "2025-04-07T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-113",
+    "clientId": "CLT-2020-0226",
+    "farmId": "FRM-2020-00218",
+    "type": "biosecurity",
+    "scheduledOn": "2025-10-25",
+    "officerUserId": "USR-003",
+    "status": "completed",
+    "completedOn": "2025-10-25",
+    "observations": "Irrigation lines in service. Minor leak at the header tank noted.",
+    "findings": "Holding is compliant with the registration conditions.",
+    "outcome": "non-compliant",
+    "photos": [
+      {
+        "id": "PH-INS-2025-113-0",
+        "caption": "Livestock housing",
+        "takenOn": "2025-10-25",
+        "swatch": "d4",
+        "simulated": true
+      },
+      {
+        "id": "PH-INS-2025-113-1",
+        "caption": "Livestock housing",
+        "takenOn": "2025-10-25",
+        "swatch": "d1",
+        "simulated": true
+      }
+    ],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2025-113-1",
+        "at": "2025-10-21T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      },
+      {
+        "id": "IH-INS-2025-113-2",
+        "at": "2025-10-25T12:00:00.000Z",
+        "actorUserId": "USR-003",
+        "actorName": "R. Confait",
+        "action": "Findings recorded"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-114",
+    "clientId": "CLT-2026-0044",
+    "farmId": "FRM-2026-00011",
+    "type": "loan-verification",
+    "scheduledOn": "2025-10-24",
+    "officerUserId": "USR-003",
+    "status": "cancelled",
+    "observations": "",
+    "findings": "",
+    "outcome": "not-assessed",
+    "photos": [],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2025-114-1",
+        "at": "2025-10-20T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      }
+    ]
+  },
+  {
+    "id": "INS-2025-115",
+    "clientId": "CLT-2016-0237",
+    "farmId": "FRM-2026-00034",
+    "type": "loan-verification",
+    "scheduledOn": "2025-02-18",
+    "officerUserId": "USR-008",
+    "status": "cancelled",
+    "observations": "",
+    "findings": "",
+    "outcome": "not-assessed",
+    "photos": [],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2025-115-1",
+        "at": "2025-02-14T08:00:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned"
+      }
+    ]
+  },
+  {
+    "id": "INS-2026-120",
+    "clientId": "CLT-2026-0001",
+    "farmId": "FRM-2026-00001",
+    "type": "farm-compliance",
+    "scheduledOn": "2026-04-03",
+    "officerUserId": "USR-003",
+    "status": "scheduled",
+    "observations": "",
+    "findings": "",
+    "outcome": "not-assessed",
+    "photos": [],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2026-120-1",
+        "at": "2026-03-29T08:30:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned",
+        "field": "officer",
+        "to": "R. Confait"
+      }
+    ]
+  },
+  {
+    "id": "INS-2026-121",
+    "clientId": "CLT-2026-0050",
+    "farmId": "FRM-2026-00013",
+    "type": "biosecurity",
+    "scheduledOn": "2026-04-06",
+    "officerUserId": "USR-008",
+    "status": "scheduled",
+    "observations": "",
+    "findings": "",
+    "outcome": "not-assessed",
+    "photos": [],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2026-121-1",
+        "at": "2026-03-29T08:30:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned",
+        "field": "officer",
+        "to": "T. Larue"
+      }
+    ]
+  },
+  {
+    "id": "INS-2026-122",
+    "clientId": "CLT-2026-0023",
+    "farmId": "FRM-2026-00021",
+    "type": "land-lease",
+    "scheduledOn": "2026-04-10",
+    "officerUserId": "USR-003",
+    "status": "scheduled",
+    "observations": "",
+    "findings": "",
+    "outcome": "not-assessed",
+    "photos": [],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2026-122-1",
+        "at": "2026-03-29T08:30:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned",
+        "field": "officer",
+        "to": "R. Confait"
+      }
+    ]
+  },
+  {
+    "id": "INS-2026-123",
+    "clientId": "CLT-2017-0239",
+    "farmId": "FRM-2017-00230",
+    "type": "loan-verification",
+    "scheduledOn": "2026-04-15",
+    "officerUserId": "USR-008",
+    "status": "scheduled",
+    "observations": "",
+    "findings": "",
+    "outcome": "not-assessed",
+    "photos": [],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2026-123-1",
+        "at": "2026-03-29T08:30:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned",
+        "field": "officer",
+        "to": "T. Larue"
+      }
+    ]
+  },
+  {
+    "id": "INS-2026-124",
+    "clientId": "CLT-2016-0237",
+    "farmId": "FRM-2016-00238",
+    "type": "farm-compliance",
+    "scheduledOn": "2026-04-22",
+    "officerUserId": "USR-003",
+    "status": "scheduled",
+    "observations": "",
+    "findings": "",
+    "outcome": "not-assessed",
+    "photos": [],
+    "capturedOffline": false,
+    "history": [
+      {
+        "id": "IH-INS-2026-124-1",
+        "at": "2026-03-29T08:30:00.000Z",
+        "actorUserId": "USR-005",
+        "actorName": "B. Adrienne",
+        "action": "Inspection scheduled and assigned",
+        "field": "officer",
+        "to": "R. Confait"
+      }
+    ]
   }
 ]

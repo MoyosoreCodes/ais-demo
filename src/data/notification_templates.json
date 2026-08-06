@@ -1,0 +1,66 @@
+[
+  {
+    "id": "TPL-STATUS-SMS",
+    "name": "Application status update (SMS)",
+    "channel": "sms",
+    "event": "application.status.changed",
+    "subject": "AIS status update",
+    "body": "AIS: Your {{applicationType}} {{applicationId}} is now {{status}}. Check the portal for details."
+  },
+  {
+    "id": "TPL-STATUS-EMAIL",
+    "name": "Application status update (Email)",
+    "channel": "email",
+    "event": "application.status.changed",
+    "subject": "Your {{applicationType}} {{applicationId}} — status update",
+    "body": "Dear {{firstName}},\n\nThe status of your {{applicationType}} {{applicationId}} has changed to {{status}}.\n\n{{detail}}\n\nAgriculture Information System\nDepartment of Agriculture"
+  },
+  {
+    "id": "TPL-LAB-SMS",
+    "name": "Laboratory results ready (SMS)",
+    "channel": "sms",
+    "event": "lab.results.ready",
+    "subject": "AIS lab results",
+    "body": "AIS: Results for sample {{sampleId}} ({{sampleType}}) are ready. Sign in to view your report."
+  },
+  {
+    "id": "TPL-LAB-EMAIL",
+    "name": "Laboratory results ready (Email)",
+    "channel": "email",
+    "event": "lab.results.ready",
+    "subject": "Laboratory results for sample {{sampleId}}",
+    "body": "Dear {{firstName}},\n\nThe laboratory has completed testing on sample {{sampleId}} ({{sampleType}}) collected from {{farmName}}.\n\n{{interpretation}}\n\nThe full report is available in the portal.\n\nAgriculture Information System"
+  },
+  {
+    "id": "TPL-LEASE-EXPIRY",
+    "name": "Lease expiry reminder (SMS)",
+    "channel": "sms",
+    "event": "lease.expiring",
+    "subject": "AIS lease reminder",
+    "body": "AIS: Lease {{leaseId}} for parcel {{parcelRef}} expires on {{endDate}}. Contact your district office to renew."
+  },
+  {
+    "id": "TPL-LEASE-PAYMENT",
+    "name": "Lease payment reminder (Email)",
+    "channel": "email",
+    "event": "lease.payment.due",
+    "subject": "Lease payment due — {{leaseId}}",
+    "body": "Dear {{firstName}},\n\nThe annual rent of SCR {{amount}} for lease {{leaseId}} is due on {{dueDate}}.\n\nAgriculture Information System"
+  },
+  {
+    "id": "TPL-INSPECTION",
+    "name": "Inspection scheduled (In-app)",
+    "channel": "in-app",
+    "event": "inspection.scheduled",
+    "subject": "Inspection scheduled",
+    "body": "A {{inspectionType}} inspection of {{farmName}} is scheduled for {{scheduledOn}}."
+  },
+  {
+    "id": "TPL-CASE",
+    "name": "Surveillance case update (In-app)",
+    "channel": "in-app",
+    "event": "surveillance.case.updated",
+    "subject": "Surveillance case {{caseId}}",
+    "body": "Case {{caseId}} ({{disease}}) is now {{status}}."
+  }
+]

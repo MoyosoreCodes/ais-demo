@@ -1,0 +1,46 @@
+[
+  {
+    "id": "FB-0001",
+    "fromClientId": "CLT-2026-0001",
+    "fromName": "Marie-Ange Hoareau",
+    "subject": "Question about my soil test recommendation",
+    "body": "Thank you for the results. Where can I obtain agricultural lime, and is there any subsidy available for it?",
+    "category": "question",
+    "sentOn": "2026-03-22T19:12:00.000Z",
+    "status": "acknowledged",
+    "response": "Agricultural lime is available from the Grand Anse depot. A 40% input subsidy applies to smallholders under 2 ha — your district officer can process the form.",
+    "respondedOn": "2026-03-23T10:30:00.000Z"
+  },
+  {
+    "id": "FB-0002",
+    "fromClientId": "CLT-2021-0207",
+    "fromName": "Josianne Hoareau",
+    "subject": "Portal login on mobile",
+    "body": "The registration page is difficult to complete on a small phone screen. Could the form be simplified?",
+    "category": "suggestion",
+    "sentOn": "2026-03-10T12:00:00.000Z",
+    "status": "new"
+  },
+  {
+    "id": "FB-0003",
+    "fromClientId": "CLT-2021-0212",
+    "fromName": "Emmanuel Servina",
+    "subject": "Delay on lease renewal",
+    "body": "I submitted my renewal two months ago and have not had a response from the district office.",
+    "category": "complaint",
+    "sentOn": "2026-02-25T09:45:00.000Z",
+    "status": "resolved",
+    "response": "Apologies for the delay. Your renewal was completed and the updated lease is now visible in your portal.",
+    "respondedOn": "2026-03-02T14:00:00.000Z"
+  },
+  {
+    "id": "FB-0004",
+    "fromClientId": "CLT-2021-0220",
+    "fromName": "Emmanuel Quatre",
+    "subject": "Requesting a water sample test",
+    "body": "How long does a water quality test usually take once the sample is collected?",
+    "category": "question",
+    "sentOn": "2026-03-26T16:20:00.000Z",
+    "status": "new"
+  }
+]

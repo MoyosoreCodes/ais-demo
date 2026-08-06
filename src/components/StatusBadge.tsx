@@ -1,79 +1,97 @@
-// Coloured status pill. Centralised status→tone map so every screen renders the
-// same colour for the same state.
-import { titleCase } from '../lib/format';
-import { cx } from './ui';
+import { statusLabel } from '../lib/workflow'
 
-const TONES = {
-  green: 'bg-green-100 text-green-700',
-  amber: 'bg-amber-100 text-amber-700',
-  red: 'bg-red-100 text-red-700',
-  blue: 'bg-blue-100 text-blue-700',
-  violet: 'bg-violet-100 text-violet-700',
-  slate: 'bg-slate-100 text-slate-600',
-} as const;
+type Tone = 'neutral' | 'progress' | 'good' | 'warn' | 'bad' | 'muted'
 
-type Tone = keyof typeof TONES;
+const TONE_CLASS: Record<Tone, string> = {
+  neutral: 'border-ink-300 bg-ink-100 text-ink-700',
+  progress: 'border-brand-200 bg-brand-50 text-brand-700',
+  good: 'border-brand-300 bg-brand-100 text-brand-800',
+  warn: 'border-warn-200 bg-warn-50 text-warn-700',
+  bad: 'border-danger-200 bg-danger-50 text-danger-700',
+  muted: 'border-ink-200 bg-white text-ink-500',
+}
 
 const STATUS_TONE: Record<string, Tone> = {
-  active: 'green',
-  approved: 'green',
-  completed: 'green',
-  verified: 'green',
-  resolved: 'green',
-  disbursed: 'green',
-  sent: 'green',
-  released: 'green',
-  allocated: 'green',
-  leased: 'green',
-  paid: 'green',
-  pending: 'amber',
-  submitted: 'amber',
-  screening: 'amber',
-  assessment: 'amber',
-  approval: 'amber',
-  committee: 'amber',
-  testing: 'amber',
-  registered: 'amber',
-  collected: 'amber',
-  requested: 'amber',
-  result_entered: 'amber',
-  assigned: 'amber',
-  investigating: 'amber',
-  in_progress: 'amber',
-  under_review: 'amber',
-  decision: 'amber',
-  scheduled: 'amber',
-  queued: 'amber',
-  reported: 'amber',
-  pending_sync: 'amber',
-  expired: 'amber',
-  due: 'amber',
-  notice_served: 'amber',
-  enforcement: 'red',
-  open: 'amber',
-  rejected: 'red',
-  suspended: 'red',
-  confirmed: 'red',
-  retracted: 'red',
-  overdue: 'red',
-  inactive: 'slate',
-  merged: 'slate',
-  ruled_out: 'slate',
-  closed: 'slate',
-  draft: 'slate',
-  read: 'slate',
-};
+  // workflow
+  draft: 'muted',
+  submitted: 'neutral',
+  'under-review': 'progress',
+  approved: 'good',
+  rejected: 'bad',
+  withdrawn: 'muted',
+  pending: 'neutral',
+  'in-progress': 'progress',
+  skipped: 'muted',
+  // loans
+  disbursed: 'good',
+  repaying: 'progress',
+  closed: 'muted',
+  // clients / users / farms
+  active: 'good',
+  inactive: 'muted',
+  merged: 'muted',
+  registered: 'good',
+  suspended: 'warn',
+  deactivated: 'muted',
+  // leases
+  expired: 'bad',
+  terminated: 'bad',
+  current: 'good',
+  due: 'warn',
+  overdue: 'bad',
+  // laboratory
+  requested: 'neutral',
+  collected: 'progress',
+  testing: 'progress',
+  completed: 'good',
+  cancelled: 'muted',
+  // surveillance
+  reported: 'warn',
+  assigned: 'progress',
+  investigating: 'progress',
+  sampled: 'progress',
+  confirmed: 'bad',
+  negative: 'good',
+  resolved: 'good',
+  // field ops
+  scheduled: 'neutral',
+  compliant: 'good',
+  'minor-issues': 'warn',
+  'non-compliant': 'bad',
+  'not-assessed': 'muted',
+  // market
+  vacant: 'muted',
+  allocated: 'good',
+  reserved: 'warn',
+  maintenance: 'neutral',
+  // documents
+  pass: 'good',
+  warn: 'warn',
+  fail: 'bad',
+  verified: 'good',
+  // results
+  normal: 'good',
+  low: 'warn',
+  high: 'warn',
+}
 
-export function StatusBadge({ status, label }: { status: string; label?: string }) {
-  const tone = STATUS_TONE[status] ?? 'slate';
+export function StatusBadge({
+  status,
+  tone,
+  label,
+  className = '',
+}: {
+  status: string
+  tone?: Tone
+  label?: string
+  className?: string
+}) {
+  const resolved = tone ?? STATUS_TONE[status] ?? 'neutral'
   return (
     <span
-      className={cx(
-        'inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium',
-        TONES[tone],
-      )}
+      className={`inline-flex items-center whitespace-nowrap rounded-full border px-2.5 py-0.5 text-xs font-semibold ${TONE_CLASS[resolved]} ${className}`}
     >
-      {label ?? titleCase(status)}
+      {label ?? statusLabel(status)}
     </span>
-  );
+  )
 }

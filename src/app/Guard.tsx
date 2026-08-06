@@ -1,45 +1,87 @@
-// Route guards that actually enforce RBAC (req xi.3/xi.5). Switching demo user
-// changes which routes resolve and which redirect.
-import type { ReactNode } from 'react';
-import { Link, Navigate, useLocation } from 'react-router-dom';
+/**
+ * Route guards (i.2, xi.3, xi.5).
+ *
+ * These are the enforcement point, not a decoration: a farmer session cannot
+ * reach an officer or admin route even by typing the URL. The same
+ * `ROLE_PERMISSIONS` matrix backs both this guard and the S11 display.
+ */
 
-import { canAccess, landingPath, type ScreenKey } from '../lib/rbac';
-import { useAuth } from './auth';
+import { Link, Navigate, useLocation } from 'react-router-dom'
+import type { ReactNode } from 'react'
+import { useAuth } from './AuthContext'
+import { canAny } from '../lib/rbac'
+import type { Permission } from '../lib/rbac'
+import { ROLE_LABELS } from '../lib/types'
 
-export function RequireStaff({ children }: { children: ReactNode }) {
-  const { user } = useAuth();
-  const location = useLocation();
-  if (!user) return <Navigate to="/login" replace state={{ from: location.pathname }} />;
-  if (user.role === 'farmer') return <Navigate to="/portal" replace />;
-  return <>{children}</>;
+export function RequireAuth({ children }: { children: ReactNode }) {
+  const { user } = useAuth()
+  const location = useLocation()
+  if (!user) {
+    return <Navigate to="/signin" replace state={{ from: location.pathname + location.search }} />
+  }
+  return <>{children}</>
 }
 
-export function RequireFarmer({ children }: { children: ReactNode }) {
-  const { user } = useAuth();
-  if (!user) return <Navigate to="/login" replace />;
-  if (user.role !== 'farmer') return <Navigate to="/app/dashboard" replace />;
-  return <>{children}</>;
+export function RequirePermission({
+  permissions,
+  children,
+}: {
+  permissions: Permission[]
+  children: ReactNode
+}) {
+  const { user, role } = useAuth()
+  const location = useLocation()
+
+  if (!user) {
+    return <Navigate to="/signin" replace state={{ from: location.pathname + location.search }} />
+  }
+
+  if (!canAny(role, permissions)) {
+    return <AccessDenied path={location.pathname} />
+  }
+
+  return <>{children}</>
 }
 
-export function RequireScreen({ screen, children }: { screen: ScreenKey; children: ReactNode }) {
-  const { user } = useAuth();
-  if (!user) return <Navigate to="/login" replace />;
-  if (!canAccess(user.role, screen)) return <Forbidden />;
-  return <>{children}</>;
-}
+export function AccessDenied({ path }: { path: string }) {
+  const { user, role } = useAuth()
+  const home = role === 'farmer' ? '/portal' : '/dashboard'
 
-function Forbidden() {
-  const { user } = useAuth();
   return (
-    <div className="mx-auto max-w-md py-16 text-center">
-      <h1 className="text-2xl font-bold text-slate-800">403 — Access restricted</h1>
-      <p className="mt-2 text-sm text-slate-500">
-        Your role ({user?.role}) does not have permission to view this area. This is RBAC being
-        enforced, not a bug — switch the demo user to an authorised role.
-      </p>
-      <Link to={user ? landingPath(user.role) : '/login'} className="btn-primary mt-6">
-        Back to my dashboard
-      </Link>
+    <div className="mx-auto max-w-2xl px-4 py-12">
+      <div className="ais-card border-danger-200 p-6">
+        <div className="flex items-start gap-3">
+          <span className="mt-0.5 rounded-full bg-danger-50 p-2 text-danger-600">
+            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+              <path d="M12 3l8 4v5c0 5-3.4 8-8 9-4.6-1-8-4-8-9V7z" />
+              <path d="M12 9v4M12 16h.01" strokeLinecap="round" />
+            </svg>
+          </span>
+          <div>
+            <h1 className="text-lg font-semibold text-ink-900">Access denied</h1>
+            <p className="mt-1 text-sm text-ink-600">
+              Your role does not carry permission to open{' '}
+              <code className="rounded bg-ink-100 px-1 py-0.5 font-mono text-xs">{path}</code>.
+            </p>
+            <dl className="mt-4 grid grid-cols-[auto,1fr] gap-x-4 gap-y-1 text-sm">
+              <dt className="text-ink-500">Signed in as</dt>
+              <dd className="font-medium text-ink-900">{user?.fullName}</dd>
+              <dt className="text-ink-500">Role</dt>
+              <dd className="font-medium text-ink-900">{role ? ROLE_LABELS[role] : '—'}</dd>
+            </dl>
+            <p className="mt-4 text-sm text-ink-600">
+              Role-based access control is enforced by the router, not only hidden in the menu — this
+              is requirement <span className="font-mono text-xs font-semibold">xi.5</span> in effect.
+              An administrator can review the permission matrix on the Administration screen.
+            </p>
+            <div className="mt-5 flex flex-wrap gap-2">
+              <Link to={home} className="ais-btn-primary">
+                Return to my home screen
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  )
 }

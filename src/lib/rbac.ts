@@ -1,183 +1,184 @@
-// Role-based access control. The route guard (app/Guard.tsx) enforces this, and
-// the S11 admin matrix renders it — so switching demo user actually changes what
-// is visible/reachable.
-import type { Role } from './types';
+/**
+ * Role-based access control (i.2, xi.3, xi.5).
+ *
+ * The matrix below is the one the S11 screen renders and the one the route
+ * guards enforce — there is no second, decorative copy. Switching demo user
+ * therefore genuinely changes what is reachable.
+ */
 
-export const SCREEN_KEYS = [
-  'dashboard',
-  'clients',
-  'farms',
-  'land',
-  'loans',
-  'lab',
-  'livestock',
-  'surveillance',
-  'vendors',
-  'field-ops',
-  'notifications',
-  'documents',
-  'admin',
-] as const;
-export type ScreenKey = (typeof SCREEN_KEYS)[number];
+import type { Role } from './types'
 
-export interface ScreenMeta {
-  key: ScreenKey;
-  code: string; // S0x
-  label: string;
-  path: string;
-  module: string;
-  desc: string;
+export const PERMISSIONS = [
+  // Client & farm registries
+  'clients.view',
+  'clients.edit',
+  'clients.merge',
+  'farms.view',
+  'farms.edit',
+  // Land
+  'land.view',
+  'land.edit',
+  'land.decide',
+  // Loans
+  'loans.view',
+  'loans.assess',
+  'loans.decide',
+  // Laboratory
+  'lab.view',
+  'lab.register',
+  'lab.results',
+  // Livestock & surveillance
+  'livestock.view',
+  'livestock.edit',
+  'surveillance.view',
+  'surveillance.edit',
+  'surveillance.assign',
+  // Vendors & market
+  'vendors.view',
+  'vendors.edit',
+  // Field operations
+  'fieldops.view',
+  'fieldops.capture',
+  'fieldops.schedule',
+  // Dashboard, notifications, documents
+  'dashboard.national',
+  'notifications.manage',
+  'documents.view',
+  'documents.manage',
+  // Administration
+  'admin.users',
+  'admin.workflows',
+  'admin.audit',
+  'admin.policy',
+  // Farmer self-service
+  'portal.self',
+] as const
+
+export type Permission = (typeof PERMISSIONS)[number]
+
+const ALL_STAFF_READ: Permission[] = [
+  'clients.view',
+  'farms.view',
+  'land.view',
+  'loans.view',
+  'lab.view',
+  'livestock.view',
+  'surveillance.view',
+  'vendors.view',
+  'fieldops.view',
+  'dashboard.national',
+  'documents.view',
+]
+
+export const ROLE_PERMISSIONS: Record<Role, Permission[]> = {
+  // Everything except the farmer self-service view: an administrator has no
+  // client record behind it, so granting it would only surface an empty screen.
+  admin: PERMISSIONS.filter((p) => p !== 'portal.self'),
+
+  agriculture_officer: [
+    ...ALL_STAFF_READ,
+    'clients.edit',
+    'clients.merge',
+    'farms.edit',
+    'land.edit',
+    'loans.assess',
+    'lab.register',
+    'livestock.edit',
+    'surveillance.edit',
+    'vendors.edit',
+    'fieldops.schedule',
+    'notifications.manage',
+  ],
+
+  field_officer: [
+    'clients.view',
+    'farms.view',
+    'land.view',
+    'lab.view',
+    'livestock.view',
+    'surveillance.view',
+    'fieldops.view',
+    'fieldops.capture',
+    'documents.view',
+    'dashboard.national',
+  ],
+
+  lab_staff: [
+    'clients.view',
+    'farms.view',
+    'lab.view',
+    'lab.register',
+    'lab.results',
+    'surveillance.view',
+    'documents.view',
+    'dashboard.national',
+  ],
+
+  supervisor: [
+    ...ALL_STAFF_READ,
+    'land.decide',
+    'loans.decide',
+    'surveillance.assign',
+    'fieldops.schedule',
+    'notifications.manage',
+    'admin.audit',
+  ],
+
+  farmer: ['portal.self'],
 }
 
-export const SCREENS: ScreenMeta[] = [
-  {
-    key: 'dashboard',
-    code: 'S12',
-    label: 'Dashboard',
-    path: '/app/dashboard',
-    module: 'xii',
-    desc: 'KPIs, charts & report export',
-  },
-  {
-    key: 'clients',
-    code: 'S02',
-    label: 'Client Registry',
-    path: '/app/clients',
-    module: 'ii',
-    desc: 'Farmer & stakeholder master registry',
-  },
-  {
-    key: 'farms',
-    code: 'S03',
-    label: 'Farm Registration',
-    path: '/app/farms',
-    module: 'iii',
-    desc: 'Farm intake, GPS & duplicate checks',
-  },
-  {
-    key: 'land',
-    code: 'S04',
-    label: 'Land Management',
-    path: '/app/land',
-    module: 'iv',
-    desc: 'Allocation, leases & evictions',
-  },
-  {
-    key: 'loans',
-    code: 'S05',
-    label: 'Loan Management',
-    path: '/app/loans',
-    module: 'v',
-    desc: 'Applications & multi-stage approval',
-  },
-  {
-    key: 'lab',
-    code: 'S06',
-    label: 'Sampling & Lab',
-    path: '/app/lab',
-    module: 'vi',
-    desc: 'Soil/water/plant/compost samples',
-  },
-  {
-    key: 'livestock',
-    code: 'S07',
-    label: 'Livestock Services',
-    path: '/app/livestock',
-    module: 'vii',
-    desc: 'Complaint & routine visits',
-  },
-  {
-    key: 'surveillance',
-    code: 'S08',
-    label: 'Passive Surveillance',
-    path: '/app/surveillance',
-    module: 'viii',
-    desc: 'Suspected disease cases',
-  },
-  {
-    key: 'vendors',
-    code: 'S09',
-    label: 'Vendor & Market',
-    path: '/app/vendors',
-    module: 'ix',
-    desc: 'Vendor registry & stall allocation',
-  },
-  {
-    key: 'field-ops',
-    code: 'S10',
-    label: 'Field Operations',
-    path: '/app/field-ops',
-    module: 'x',
-    desc: 'Inspections, offline capture',
-  },
-  {
-    key: 'notifications',
-    code: 'S13',
-    label: 'Notifications & Docs',
-    path: '/app/notifications',
-    module: 'xiii',
-    desc: 'Messages & digitized documents',
-  },
-  {
-    key: 'documents',
-    code: 'S13',
-    label: 'Document Repository',
-    path: '/app/documents',
-    module: 'xiv',
-    desc: 'Searchable digitized records',
-  },
-  {
-    key: 'admin',
-    code: 'S11',
-    label: 'Administration',
-    path: '/app/admin',
-    module: 'xi',
-    desc: 'Users, RBAC, workflow, audit',
-  },
-];
+export const can = (role: Role | undefined, permission: Permission): boolean =>
+  role !== undefined && ROLE_PERMISSIONS[role].includes(permission)
 
-// Which screens each role may reach. Admin sees everything; farmer uses the
-// self-service portal only (not the back-office app).
-export const ACCESS: Record<Role, ScreenKey[]> = {
-  admin: [...SCREEN_KEYS],
-  supervisor: [
-    'dashboard',
-    'clients',
-    'farms',
-    'land',
-    'loans',
-    'lab',
-    'livestock',
-    'surveillance',
-    'vendors',
-    'field-ops',
-    'notifications',
-    'documents',
-  ],
-  agriculture_officer: [
-    'dashboard',
-    'clients',
-    'farms',
-    'land',
-    'loans',
-    'lab',
-    'livestock',
-    'surveillance',
-    'vendors',
-    'field-ops',
-    'notifications',
-    'documents',
-  ],
-  field_officer: ['dashboard', 'farms', 'field-ops', 'notifications', 'documents'],
-  lab_staff: ['dashboard', 'lab', 'notifications', 'documents'],
-  farmer: [], // farmers are confined to /portal
-};
+export const canAny = (role: Role | undefined, permissions: Permission[]): boolean =>
+  permissions.some((p) => can(role, p))
 
-export const canAccess = (role: Role, screen: ScreenKey): boolean => ACCESS[role].includes(screen);
+/** Human-readable grouping used by the S11 matrix. */
+export const PERMISSION_GROUPS: { group: string; permissions: Permission[] }[] = [
+  { group: 'Client & farm registries', permissions: ['clients.view', 'clients.edit', 'clients.merge', 'farms.view', 'farms.edit'] },
+  { group: 'Land management', permissions: ['land.view', 'land.edit', 'land.decide'] },
+  { group: 'Loan management', permissions: ['loans.view', 'loans.assess', 'loans.decide'] },
+  { group: 'Laboratory', permissions: ['lab.view', 'lab.register', 'lab.results'] },
+  { group: 'Livestock & surveillance', permissions: ['livestock.view', 'livestock.edit', 'surveillance.view', 'surveillance.edit', 'surveillance.assign'] },
+  { group: 'Vendors & market', permissions: ['vendors.view', 'vendors.edit'] },
+  { group: 'Field operations', permissions: ['fieldops.view', 'fieldops.capture', 'fieldops.schedule'] },
+  { group: 'Dashboard & records', permissions: ['dashboard.national', 'notifications.manage', 'documents.view', 'documents.manage'] },
+  { group: 'Administration', permissions: ['admin.users', 'admin.workflows', 'admin.audit', 'admin.policy'] },
+  { group: 'Farmer self-service', permissions: ['portal.self'] },
+]
 
-export const screensFor = (role: Role): ScreenMeta[] =>
-  SCREENS.filter((s) => canAccess(role, s.key));
-
-// Landing route per role after login.
-export const landingPath = (role: Role): string =>
-  role === 'farmer' ? '/portal' : '/app/dashboard';
+export const PERMISSION_LABELS: Record<Permission, string> = {
+  'clients.view': 'View client registry',
+  'clients.edit': 'Create / edit clients',
+  'clients.merge': 'Merge duplicate clients',
+  'farms.view': 'View farm registry',
+  'farms.edit': 'Register / edit farms',
+  'land.view': 'View land records',
+  'land.edit': 'Capture assessments & leases',
+  'land.decide': 'Decide land applications',
+  'loans.view': 'View loan pipeline',
+  'loans.assess': 'Perform technical assessment',
+  'loans.decide': 'Committee decision',
+  'lab.view': 'View sample registry',
+  'lab.register': 'Register samples',
+  'lab.results': 'Enter & validate results',
+  'livestock.view': 'View livestock services',
+  'livestock.edit': 'Record visits',
+  'surveillance.view': 'View surveillance cases',
+  'surveillance.edit': 'Update cases',
+  'surveillance.assign': 'Assign cases to officers',
+  'vendors.view': 'View vendor registry',
+  'vendors.edit': 'Register vendors & allocate stalls',
+  'fieldops.view': 'View inspections',
+  'fieldops.capture': 'Capture inspection findings',
+  'fieldops.schedule': 'Schedule & assign inspections',
+  'dashboard.national': 'National dashboard',
+  'notifications.manage': 'Send & manage notifications',
+  'documents.view': 'Search digitized documents',
+  'documents.manage': 'Index & manage documents',
+  'admin.users': 'User account lifecycle',
+  'admin.workflows': 'Configure approval workflows',
+  'admin.audit': 'View audit log',
+  'admin.policy': 'Edit security policy',
+  'portal.self': 'Own records (farmer portal)',
+}
