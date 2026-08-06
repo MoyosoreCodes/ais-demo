@@ -36,7 +36,11 @@ jobs:
       - name: Type-check and build
         run: npm run build
 
+      # `enablement` turns Pages on for the repository and sets it to build from
+      # this workflow, so the first run needs no manual Settings change.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
