@@ -61,7 +61,7 @@ export type Crop = (typeof CROPS)[number]
 export const LIVESTOCK_TYPES = ['broiler', 'layer', 'pig', 'goat'] as const
 export type LivestockType = (typeof LIVESTOCK_TYPES)[number]
 
-export const SAMPLE_TYPES = ['soil', 'water', 'plant', 'compost'] as const
+export const SAMPLE_TYPES = ['soil', 'water', 'plant', 'compost', 'avian_tissue'] as const
 export type SampleType = (typeof SAMPLE_TYPES)[number]
 
 /* ------------------------------------------------------------------ *

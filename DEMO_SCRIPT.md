@@ -238,7 +238,8 @@ Open **`http://localhost:5173/?refs=1`**.
 32. **Switch to S. Dogley (Laboratory Staff)** and open **Sampling &
     laboratory**. Show the KPI row — in progress, in testing, results out of
     range, and **awaiting notification** — then the type tabs: **Soil, Water,
-    Plant, Compost**, one register, one lifecycle (`vi.2`–`vi.4`).
+    Plant, Compost, Avian tissue / swab**, one register, one lifecycle
+    (`vi.2`–`vi.4`).
 
 33. Open **LAB-2026-0031**, Marie-Ange's completed soil test. Walk the
     **lifecycle**: requested → collected → registered → testing → completed,
@@ -249,9 +250,19 @@ Open **`http://localhost:5173/?refs=1`**.
     behind the Newcastle-disease case, still in **testing**. Press
     **Enter results** (`vi.5`).
 
-    Type a leaf nitrogen of `1.9` — it flags **low** as you type. Set the
-    **pathogen screen** to *Newcastle disease virus detected* — it flags too, and
-    a banner names every parameter outside its range.
+    The panel is the **avian tissue / swab** one — the parameters a veterinary
+    diagnosis actually needs, not the agronomic set. Set **Newcastle disease
+    virus (RT-PCR)** to *Detected* — it flags as you choose it — and the
+    **haemagglutination inhibition titre** to *log2 8*. Leave **avian influenza
+    virus type A** at *Not detected*, and record the **post-mortem findings** as
+    *Consistent with velogenic ND*. A banner names every parameter outside its
+    range.
+
+    Worth saying aloud: the titre matters because livestock visit
+    **LSV-2026-0018** records this flock's Newcastle vaccination as up to date.
+    Distinguishing an active infection from a vaccinal titre is the clinical
+    question here, and the two records are linked so the vet can see both.
+
     Write the interpretation and recommendation, then **Validate and complete**.
 
 35. **The report** (`vi.7`). Press **Laboratory report (PDF)**. Open it: the
@@ -340,7 +351,7 @@ Open **`http://localhost:5173/?refs=1`**.
     case resolves to `LAB-2026-0044` *and* to the holding. Press **Link
     laboratory submission** to show that only samples from this holding are
     offered, so a case cannot be attached to the wrong farm's result.
-    > *"If you entered the plant-sample result in Act 6, the pathogen screen now
+    > *"If you entered the avian-tissue result in Act 6, the RT-PCR screen now
     > reads Newcastle disease virus detected. Press Confirm disease and the
     > holder is notified."*
 

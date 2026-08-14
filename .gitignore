@@ -28,3 +28,4 @@ dist-ssr
 # be served from GitHub Pages, but the bid captures are not. Regenerate with
 # `npm run screenshots`.
 screenshots/
+.claude/

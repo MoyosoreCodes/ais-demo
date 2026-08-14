@@ -43,7 +43,7 @@ export const LAB_PANELS: Record<SampleType, PanelParameter[]> = {
     { parameter: 'Leaf potassium', unit: '%', method: 'ICP-OES', referenceRange: '2.0 – 4.0', kind: 'number', step: 0.01 },
     {
       parameter: 'Pathogen screen', unit: '', method: 'Culture + microscopy', referenceRange: 'Not detected',
-      kind: 'text', options: ['Not detected', 'Fusarium spp. detected', 'Newcastle disease virus detected', 'Colletotrichum spp. detected'],
+      kind: 'text', options: ['Not detected', 'Fusarium spp. detected', 'Colletotrichum spp. detected'],
     },
   ],
   compost: [
@@ -52,7 +52,37 @@ export const LAB_PANELS: Record<SampleType, PanelParameter[]> = {
     { parameter: 'C:N ratio', unit: '', method: 'Dry combustion', referenceRange: '15 – 25', kind: 'number', step: 0.1 },
     { parameter: 'Maturity (Solvita)', unit: 'index', method: 'Solvita', referenceRange: '≥ 6', kind: 'number', step: 1 },
   ],
+  /*
+   * Veterinary diagnostic panel. A suspected Newcastle-disease case is confirmed
+   * from bird tissue and swabs, not from an agronomic plant panel, so this is a
+   * distinct sample type with the parameters a poultry diagnosis actually needs.
+   * The HI titre separates an active infection from a vaccinal response — the
+   * flock in LSV-2026-0018 is recorded as vaccinated, which is the whole
+   * clinical question the analyst has to answer.
+   */
+  avian_tissue: [
+    {
+      parameter: 'Newcastle disease virus (RT-PCR)', unit: '', method: 'RT-PCR', referenceRange: 'Not detected',
+      kind: 'text', options: ['Not detected', 'Detected'],
+    },
+    {
+      parameter: 'Haemagglutination inhibition titre', unit: '', method: 'HI test', referenceRange: '< log2 4',
+      kind: 'text', options: ['log2 2', 'log2 4', 'log2 8', 'log2 16'],
+    },
+    {
+      parameter: 'Avian influenza virus type A', unit: '', method: 'RT-PCR', referenceRange: 'Not detected',
+      kind: 'text', options: ['Not detected', 'Detected'],
+    },
+    {
+      parameter: 'Post-mortem findings', unit: '', method: 'Gross pathology', referenceRange: '—',
+      kind: 'text',
+      options: ['No significant findings', 'Consistent with velogenic ND', 'Consistent with respiratory infection'],
+    },
+  ],
 }
+
+/** Matches a "log2 N" serological titre in either a value or a reference range. */
+const LOG2_TITRE = /log2\s*(-?\d+(?:\.\d+)?)/i
 
 /**
  * Assess a result against its reference range.
@@ -65,6 +95,18 @@ export function flagResult(result: Omit<LabResult, 'flag'>): LabResult {
   const raw = result.referenceRange.trim()
 
   if (typeof result.value !== 'number') {
+    // Serological titres read as "log2 8" against a "< log2 4" reference, so they
+    // are compared numerically — a titre below the threshold is a normal result,
+    // not merely one that fails to match the reference text.
+    const refTitre = LOG2_TITRE.exec(raw)
+    const valueTitre = LOG2_TITRE.exec(String(result.value))
+    if (refTitre && valueTitre) {
+      return flagResult({
+        ...result,
+        value: Number(valueTitre[1]),
+        referenceRange: raw.replace(LOG2_TITRE, refTitre[1]),
+      })
+    }
     return { ...result, flag: String(result.value).trim() === raw ? 'normal' : 'high' }
   }
 
@@ -94,6 +136,7 @@ export const SAMPLE_TYPE_LABELS: Record<SampleType, string> = {
   water: 'Water',
   plant: 'Plant',
   compost: 'Compost',
+  avian_tissue: 'Avian tissue / swab',
 }
 
 export const SAMPLE_PURPOSES = [

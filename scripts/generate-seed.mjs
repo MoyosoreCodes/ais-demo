@@ -625,12 +625,31 @@ const COMPOST_PANEL = () => [
   { parameter: 'C:N ratio', value: round(rand(9, 34), 1), unit: '', method: 'Dry combustion', referenceRange: '15 – 25' },
   { parameter: 'Maturity (Solvita)', value: randInt(4, 8), unit: 'index', method: 'Solvita', referenceRange: '≥ 6' },
 ]
-const PANELS = { soil: SOIL_PANEL, water: WATER_PANEL, plant: PLANT_PANEL, compost: COMPOST_PANEL }
+/* Veterinary diagnostic panel — a poultry diagnosis, not an agronomic one. */
+const AVIAN_PANEL = () => [
+  { parameter: 'Newcastle disease virus (RT-PCR)', value: 'Not detected', unit: '', method: 'RT-PCR', referenceRange: 'Not detected' },
+  { parameter: 'Haemagglutination inhibition titre', value: 'log2 2', unit: '', method: 'HI test', referenceRange: '< log2 4' },
+  { parameter: 'Avian influenza virus type A', value: 'Not detected', unit: '', method: 'RT-PCR', referenceRange: 'Not detected' },
+  { parameter: 'Post-mortem findings', value: 'No significant findings', unit: '', method: 'Gross pathology', referenceRange: '—' },
+]
+const PANELS = { soil: SOIL_PANEL, water: WATER_PANEL, plant: PLANT_PANEL, compost: COMPOST_PANEL, avian_tissue: AVIAN_PANEL }
 
 /** Flag a numeric result against a "a – b", "< a" or "> a" reference range. */
 function flagResult(r) {
   const v = typeof r.value === 'number' ? r.value : null
-  if (v === null) return { ...r, flag: String(r.value) === r.referenceRange ? 'normal' : 'high' }
+  if (v === null) {
+    // Mirrors src/lib/labPanels.ts: "log2 N" titres compare numerically.
+    const refTitre = /log2\s*(-?\d+(?:\.\d+)?)/i.exec(r.referenceRange)
+    const valueTitre = /log2\s*(-?\d+(?:\.\d+)?)/i.exec(String(r.value))
+    if (refTitre && valueTitre) {
+      return flagResult({
+        ...r,
+        value: Number(valueTitre[1]),
+        referenceRange: r.referenceRange.replace(/log2\s*(-?\d+(?:\.\d+)?)/i, refTitre[1]),
+      })
+    }
+    return { ...r, flag: String(r.value) === r.referenceRange ? 'normal' : 'high' }
+  }
   const range = r.referenceRange.replace(/[≥≤]/g, '').trim()
   let lo = null
   let hi = null
@@ -824,7 +843,7 @@ for (let i = 1; i < 21; i++) {
 const NCD_SAMPLE_ID = 'LAB-2026-0044'
 samples.push({
   id: NCD_SAMPLE_ID,
-  type: 'plant',
+  type: 'avian_tissue',
   clientId: MARIE.id,
   farmId: MARIE_FARM.id,
   requestedOn: day(daysAgo(5)),
