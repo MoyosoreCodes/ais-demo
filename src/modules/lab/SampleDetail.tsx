@@ -13,7 +13,7 @@ import { SimChip } from '../../components/SimChip'
 import { StatusBadge } from '../../components/StatusBadge'
 import { Timeline } from '../../components/Timeline'
 import { exportLabReportPdf } from '../../lib/export'
-import { LAB_PANELS, SAMPLE_LIFECYCLE, SAMPLE_TYPE_LABELS, flagResult } from '../../lib/labPanels'
+import { LAB_PANELS, SAMPLE_LIFECYCLE, SAMPLE_TYPE_LABELS, flagResult, panelExample } from '../../lib/labPanels'
 import {
   DEMO_TODAY, clientName, formatCoords, formatDate, formatDateTime, formatHa, localId,
 } from '../../lib/format'
@@ -744,14 +744,14 @@ function ResultEntryDialog({
           rows={3}
           value={interpretation}
           onChange={(e) => setInterpretation(e.target.value)}
-          placeholder="e.g. Moderately acidic soil with good organic matter. Available phosphorus is below the target range."
+          placeholder={`e.g. ${panelExample(sampleType).interpretation}`}
         />
         <TextAreaField
           label="Recommendation"
           rows={3}
           value={recommendation}
           onChange={(e) => setRecommendation(e.target.value)}
-          placeholder="e.g. Apply agricultural lime at 1.5 t/ha. Re-test in 9 months."
+          placeholder={`e.g. ${panelExample(sampleType).recommendation}`}
         />
 
         {!complete && (

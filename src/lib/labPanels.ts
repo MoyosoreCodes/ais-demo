@@ -139,6 +139,34 @@ export const SAMPLE_TYPE_LABELS: Record<SampleType, string> = {
   avian_tissue: 'Avian tissue / swab',
 }
 
+/**
+ * Example wording for the interpretation and recommendation fields. The
+ * agronomic panels share one example; the veterinary panel carries its own,
+ * because soil advice is meaningless on a poultry diagnosis.
+ */
+export interface PanelExample {
+  interpretation: string
+  recommendation: string
+}
+
+const AGRONOMIC_EXAMPLE: PanelExample = {
+  interpretation:
+    'Moderately acidic soil with good organic matter. Available phosphorus is below the target range.',
+  recommendation: 'Apply agricultural lime at 1.5 t/ha. Re-test in 9 months.',
+}
+
+const PANEL_EXAMPLES: Partial<Record<SampleType, PanelExample>> = {
+  avian_tissue: {
+    interpretation:
+      'Newcastle disease virus detected in tracheal and cloacal swabs. The titre is consistent with active infection rather than a vaccinal response.',
+    recommendation:
+      'Quarantine the affected house and suspend bird movement. Notify Veterinary Services.',
+  },
+}
+
+export const panelExample = (type: SampleType): PanelExample =>
+  PANEL_EXAMPLES[type] ?? AGRONOMIC_EXAMPLE
+
 export const SAMPLE_PURPOSES = [
   'Routine fertility monitoring',
   'Pre-planting assessment',
