@@ -294,7 +294,9 @@ for (let i = clients.length; i < TARGET_CLIENTS; i++) {
   const registeredOn = migrated
     ? day(new Date(`${randInt(2016, 2021)}-${pad(randInt(1, 12), 2)}-${pad(randInt(1, 28), 2)}`))
     : day(daysAgo(randInt(20, 900)))
-  const id = migrated ? `CLT-${registeredOn.slice(0, 4)}-${pad(200 + seq, 4)}` : `CLT-2026-${pad(seq, 4)}`
+  /* The Client ID carries the year the record was created, for every intake
+   * channel — a record registered in 2024 is a CLT-2024-…, not a CLT-2026-…. */
+  const id = `CLT-${registeredOn.slice(0, 4)}-${pad(migrated ? 200 + seq : seq, 4)}`
   const seyId = !migrated && chance(0.72)
 
   clients.push({
@@ -888,29 +890,56 @@ surveillanceCases.push({
   ],
 })
 
-const DISEASES = [
-  { name: 'Newcastle disease', species: 'broiler' },
-  { name: 'Infectious bronchitis', species: 'layer' },
-  { name: 'African swine fever (rule-out)', species: 'pig' },
-  { name: 'Contagious ecthyma (orf)', species: 'goat' },
-  { name: 'Fowl pox', species: 'layer' },
-  { name: 'Coccidiosis outbreak', species: 'broiler' },
-  { name: 'Foot rot', species: 'goat' },
-]
+/*
+ * Diseases that actually occur in each species. The suspected disease must be
+ * one the animal on the holding can contract: Newcastle disease is a poultry
+ * disease and cannot be raised against a goat, and swine erysipelas cannot be
+ * raised against a flock. Raised in review by the client's Agricultural
+ * Specialist, so the pairing is enforced by construction here.
+ */
+const DISEASES_BY_SPECIES = {
+  broiler: ['Newcastle disease', 'Infectious bronchitis', 'Coccidiosis outbreak', 'Fowl pox'],
+  layer: ['Infectious bronchitis', 'Fowl pox', 'Newcastle disease', 'Coccidiosis outbreak'],
+  goat: ['Contagious ecthyma (orf)', 'Enterotoxaemia', 'Peste des petits ruminants', 'Foot rot'],
+  pig: ['Swine erysipelas', 'African swine fever (suspected)', 'Classical swine fever (suspected)'],
+}
+
+/*
+ * The seven historical cases are pinned, so the register matches the recorded
+ * walk-through and the captures in Annex TECH-8(6). Each is a disease of the
+ * species on the holding; cases raised during the demonstration draw from
+ * DISEASES_BY_SPECIES above.
+ */
+const PINNED_CASE_DISEASES = {
+  101: 'Contagious ecthyma (orf)',
+  102: 'Enterotoxaemia',
+  103: 'Enterotoxaemia',
+  104: 'Peste des petits ruminants',
+  105: 'Foot rot',
+  106: 'Swine erysipelas',
+  107: 'African swine fever (suspected)',
+}
+
+/* Two cases were seeded against the same submission; 103 carries its own. */
+const PINNED_CASE_SAMPLES = { 103: 'LAB-2026-0120' }
 const SUR_STATES = ['reported', 'assigned', 'investigating', 'confirmed', 'negative', 'closed', 'closed']
 for (let i = 1; i < 8; i++) {
   const farm = pick(livestockFarms)
-  const d = pick(DISEASES)
+  const species = farm.livestock[0].type
+  /* Drawn from the species' own list; the draw is kept even where the case is
+   * pinned below, so the rest of the sequence is unaffected. */
+  const drawnDisease = pick(DISEASES_BY_SPECIES[species] ?? DISEASES_BY_SPECIES.goat)
   const reported = daysAgo(randInt(10, 500))
   const status = pick(SUR_STATES)
   const id = `SUR-${day(reported).slice(0, 4)}-${pad(100 + i, 3)}`
-  const linked = ['confirmed', 'negative', 'closed'].includes(status) ? pick(samples).id : undefined
+  const drawnSample = ['confirmed', 'negative', 'closed'].includes(status) ? pick(samples).id : undefined
+  const linked = PINNED_CASE_SAMPLES[100 + i] ?? drawnSample
   surveillanceCases.push({
     id,
     clientId: farm.clientId,
     farmId: farm.id,
-    suspectedDisease: d.name,
-    species: farm.livestock[0].type,
+    suspectedDisease: PINNED_CASE_DISEASES[100 + i] ?? drawnDisease,
+    species,
     reportedOn: day(reported),
     reportedBy: `${farmOf(farm).firstName} ${farmOf(farm).lastName}`,
     reportedVia: pick(['farmer-portal', 'officer', 'hotline']),

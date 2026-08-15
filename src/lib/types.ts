@@ -61,6 +61,23 @@ export type Crop = (typeof CROPS)[number]
 export const LIVESTOCK_TYPES = ['broiler', 'layer', 'pig', 'goat'] as const
 export type LivestockType = (typeof LIVESTOCK_TYPES)[number]
 
+/**
+ * Conditions that can be raised against each species. A suspected disease is
+ * only meaningful for an animal that can contract it — Newcastle disease is a
+ * poultry disease and cannot be raised against a goat. Raised in review by the
+ * client's Agricultural Specialist. `scripts/generate-seed.mjs` mirrors this map.
+ */
+export const DISEASES_BY_SPECIES: Record<LivestockType, readonly string[]> = {
+  broiler: ['Newcastle disease', 'Infectious bronchitis', 'Coccidiosis outbreak', 'Fowl pox'],
+  layer: ['Infectious bronchitis', 'Fowl pox', 'Newcastle disease', 'Coccidiosis outbreak'],
+  goat: ['Contagious ecthyma (orf)', 'Enterotoxaemia', 'Peste des petits ruminants', 'Foot rot'],
+  pig: [
+    'Swine erysipelas',
+    'African swine fever (suspected)',
+    'Classical swine fever (suspected)',
+  ],
+}
+
 export const SAMPLE_TYPES = ['soil', 'water', 'plant', 'compost', 'avian_tissue'] as const
 export type SampleType = (typeof SAMPLE_TYPES)[number]
 

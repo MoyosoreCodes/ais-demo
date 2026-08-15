@@ -9,24 +9,16 @@ import { PageHeader } from '../../components/PageHeader'
 import { ReqBadge } from '../../components/ReqBadge'
 import { SimChip } from '../../components/SimChip'
 import { DEMO_TODAY, clientName, localId, nextCaseId } from '../../lib/format'
-import { LIVESTOCK_TYPES } from '../../lib/types'
+import { DISEASES_BY_SPECIES, LIVESTOCK_TYPES } from '../../lib/types'
 import type { LivestockType, SurveillanceCase } from '../../lib/types'
 
 /**
- * Notifiable and commonly reported conditions. A free-text option is kept
- * because passive surveillance depends on people reporting what they *see*, not
- * on them knowing the right name for it.
+ * Kept as the last option for every species, because passive surveillance
+ * depends on people reporting what they *see*, not on them knowing the right
+ * name for it. The conditions offered above it are those the selected species
+ * can actually contract (DISEASES_BY_SPECIES).
  */
-const SUSPECTED_CONDITIONS = [
-  'Newcastle disease',
-  'Infectious bronchitis',
-  'Fowl pox',
-  'Coccidiosis outbreak',
-  'African swine fever (rule-out)',
-  'Contagious ecthyma (orf)',
-  'Foot rot',
-  'Unidentified — signs described below',
-]
+const UNIDENTIFIED = 'Unidentified — signs described below'
 
 const SIGN_PROMPTS = [
   'Sudden or unusual mortality',
@@ -54,8 +46,14 @@ export function CaseReport() {
   const isFarmer = role === 'farmer'
   const [clientId, setClientId] = useState(user?.clientId ?? '')
   const [farmId, setFarmId] = useState('')
-  const [disease, setDisease] = useState(SUSPECTED_CONDITIONS[0])
+  const [disease, setDisease] = useState<string>(DISEASES_BY_SPECIES.broiler[0])
   const [species, setSpecies] = useState<LivestockType>('broiler')
+
+  /* Only conditions of the selected species are offered, and the value is
+   * derived rather than stored, so changing the species can never leave a
+   * disease selected that the animal cannot contract. */
+  const conditions = useMemo(() => [...DISEASES_BY_SPECIES[species], UNIDENTIFIED], [species])
+  const suspectedCondition = conditions.includes(disease) ? disease : conditions[0]
   const [affected, setAffected] = useState('')
   const [mortality, setMortality] = useState('')
   const [signs, setSigns] = useState<string[]>([])
@@ -109,7 +107,7 @@ export function CaseReport() {
       id,
       clientId: client.id,
       farmId: farm.id,
-      suspectedDisease: disease,
+      suspectedDisease: suspectedCondition,
       species,
       reportedOn: DEMO_TODAY.toISOString().slice(0, 10),
       reportedBy: isFarmer ? clientName(client) : user.fullName,
@@ -135,7 +133,7 @@ export function CaseReport() {
       audit: {
         actorUserId: user.id, actorName: user.fullName, actorRole: user.role,
         action: 'surveillance.case.reported', entityType: 'surveillance', entityId: id,
-        detail: `Suspected ${disease} reported at ${farm.name} (${farm.id}) — ${affectedCount} affected, ${mortalityCount} mortality`,
+        detail: `Suspected ${suspectedCondition} reported at ${farm.name} (${farm.id}) — ${affectedCount} affected, ${mortalityCount} mortality`,
       },
     })
 
@@ -256,11 +254,11 @@ export function CaseReport() {
             </SelectField>
             <SelectField
               label="Suspected condition"
-              value={disease}
+              value={suspectedCondition}
               onChange={(e) => setDisease(e.target.value)}
               hint="Choose the last option if you are unsure — describe the signs instead."
             >
-              {SUSPECTED_CONDITIONS.map((d) => (
+              {conditions.map((d) => (
                 <option key={d} value={d}>{d}</option>
               ))}
             </SelectField>
