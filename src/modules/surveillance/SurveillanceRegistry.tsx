@@ -106,7 +106,7 @@ export function SurveillanceRegistry() {
       { label: 'Confirmed', value: String(kpis.confirmed) },
     ],
     notes: [
-      `${kpis.unassigned} reported cases are awaiting assignment to an officer.`,
+      `${kpis.unassigned} reported case${kpis.unassigned === 1 ? '' : 's'} ${kpis.unassigned === 1 ? 'is' : 'are'} awaiting assignment to an officer.`,
       `Cumulative mortality across all recorded cases: ${kpis.mortality} animals.`,
     ],
     orientation: 'landscape' as const,

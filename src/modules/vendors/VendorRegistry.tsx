@@ -98,8 +98,8 @@ export function VendorRegistry() {
       { label: 'Monthly stall fees', value: formatScr(kpis.monthlyFees) },
     ],
     notes: [
-      `${kpis.expiring} active registrations expire within 60 days.`,
-      `${kpis.linked} vendors are linked to a client record in the central registry, so their farm and market activity resolve together.`,
+      `${kpis.expiring} active registration${kpis.expiring === 1 ? '' : 's'} expire${kpis.expiring === 1 ? 's' : ''} within 60 days.`,
+      `${kpis.linked} vendor${kpis.linked === 1 ? '' : 's'} ${kpis.linked === 1 ? 'is' : 'are'} linked to a client record in the central registry, so their farm and market activity resolve together.`,
     ],
     orientation: 'landscape' as const,
     fileStem: 'vendor-market-report',

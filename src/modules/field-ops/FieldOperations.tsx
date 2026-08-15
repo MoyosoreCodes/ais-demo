@@ -128,7 +128,7 @@ export function FieldOperations() {
       { label: 'Non-compliant outcomes', value: String(kpis.nonCompliant) },
     ],
     notes: [
-      `${kpis.offlineCaptured} completed inspections were captured offline and synchronised on reconnection.`,
+      `${kpis.offlineCaptured} completed inspection${kpis.offlineCaptured === 1 ? '' : 's'} ${kpis.offlineCaptured === 1 ? 'was' : 'were'} captured offline and synchronised on reconnection.`,
     ],
     orientation: 'landscape' as const,
     fileStem: 'field-inspection-report',

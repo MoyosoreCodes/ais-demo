@@ -105,7 +105,7 @@ export function LivestockServices() {
       { label: 'Open', value: String(filtered.filter((v) => !['resolved', 'closed'].includes(v.status)).length) },
     ],
     notes: [
-      `${kpis.openComplaints} complaint visits are open across the service; ${kpis.unassigned} visits have not yet been assigned to an officer.`,
+      `${kpis.openComplaints} complaint visit${kpis.openComplaints === 1 ? '' : 's'} ${kpis.openComplaints === 1 ? 'is' : 'are'} open across the service; ${kpis.unassigned} visit${kpis.unassigned === 1 ? '' : 's'} ${kpis.unassigned === 1 ? 'has' : 'have'} not yet been assigned to an officer.`,
     ],
     orientation: 'landscape' as const,
     fileStem: 'livestock-service-report',
