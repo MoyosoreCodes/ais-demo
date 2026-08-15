@@ -16,7 +16,7 @@ import { clientName, formatDate, formatScr } from '../../lib/format'
 import { can } from '../../lib/rbac'
 import { totalHectares } from '../../lib/reports'
 import { statusLabel } from '../../lib/workflow'
-import { DISTRICTS, ROLE_LABELS } from '../../lib/types'
+import { DISTRICTS, ROLE_LABELS, SAMPLE_TYPES } from '../../lib/types'
 
 const CHART_COLOURS = ['#0F6B4F', '#1B7D62', '#3F9A80', '#6FB8A2', '#A2D2C2', '#C77700', '#C62828']
 
@@ -107,9 +107,11 @@ export function Dashboard() {
 
   const samplesByType = useMemo(
     () =>
-      (['soil', 'water', 'plant', 'compost'] as const).map((t) => ({
+      /* Driven by SAMPLE_TYPES so a new sample type cannot be silently dropped
+       * from the chart while still counting towards the samples KPI. */
+      SAMPLE_TYPES.map((t) => ({
         key: t,
-        type: statusLabel(t),
+        type: statusLabel(t).replace(/_/g, ' '),
         completed: db.samples.filter((s) => s.type === t && s.status === 'completed').length,
         inProgress: db.samples.filter((s) => s.type === t && !['completed', 'cancelled'].includes(s.status)).length,
       })),

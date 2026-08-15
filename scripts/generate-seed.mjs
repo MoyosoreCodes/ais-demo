@@ -920,8 +920,11 @@ const PINNED_CASE_DISEASES = {
   107: 'African swine fever (suspected)',
 }
 
-/* Two cases were seeded against the same submission; 103 carries its own. */
-const PINNED_CASE_SAMPLES = { 103: 'LAB-2026-0120' }
+/*
+ * Sample types that can support an animal-disease investigation. An agronomic
+ * soil, water, plant or compost panel cannot: it says nothing about the animal.
+ */
+const VETERINARY_SAMPLE_TYPES = ['avian_tissue']
 const SUR_STATES = ['reported', 'assigned', 'investigating', 'confirmed', 'negative', 'closed', 'closed']
 for (let i = 1; i < 8; i++) {
   const farm = pick(livestockFarms)
@@ -932,8 +935,17 @@ for (let i = 1; i < 8; i++) {
   const reported = daysAgo(randInt(10, 500))
   const status = pick(SUR_STATES)
   const id = `SUR-${day(reported).slice(0, 4)}-${pad(100 + i, 3)}`
-  const drawnSample = ['confirmed', 'negative', 'closed'].includes(status) ? pick(samples).id : undefined
-  const linked = PINNED_CASE_SAMPLES[100 + i] ?? drawnSample
+  /* A case may only cite a diagnostic submission taken from its own holding —
+   * the rule S08 enforces in the link dialog — and that submission has to be a
+   * veterinary one. Where the holding has none, the case carries no laboratory
+   * link: closing a case on clinical grounds is normal in passive surveillance,
+   * and is honest about what was actually tested. */
+  const holdingSubmissions = samples.filter(
+    (s) => s.farmId === farm.id && VETERINARY_SAMPLE_TYPES.includes(s.type),
+  )
+  const linked = ['confirmed', 'negative', 'closed'].includes(status)
+    ? pick(holdingSubmissions)?.id
+    : undefined
   surveillanceCases.push({
     id,
     clientId: farm.clientId,

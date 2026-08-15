@@ -215,7 +215,7 @@ export function SampleRegistry() {
       <PageHeader
         screen="S06"
         title="Sampling & laboratory"
-        description="Soil, water, plant and compost samples from request through collection, registration and testing to a reported result."
+        description="Soil, water, plant, compost and veterinary samples from request through collection, registration and testing to a reported result."
         refs={['vi.2', 'vi.3', 'vi.4']}
         actions={
           <>

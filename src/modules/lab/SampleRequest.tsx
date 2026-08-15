@@ -115,7 +115,7 @@ export function SampleRequest() {
       <PageHeader
         screen="S06"
         title="Request a sample analysis"
-        description="Soil, water, plant and compost analysis. The request is linked to your holding, so results attach to the right farm automatically."
+        description="Soil, water, plant, compost and veterinary analysis. The request is linked to your holding, so results attach to the right farm automatically."
         refs={['vi.1']}
         actions={<Link to={isFarmer ? '/portal' : '/lab'} className="ais-btn-secondary">Cancel</Link>}
       />

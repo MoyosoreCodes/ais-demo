@@ -159,7 +159,7 @@ export const DATASETS: DatasetDef[] = [
   {
     id: 'samples',
     label: 'Laboratory samples',
-    description: 'Soil, water, plant and compost analyses and their results.',
+    description: 'Soil, water, plant, compost and veterinary analyses and their results.',
     permission: 'lab.view',
     refs: ['xii.4', 'vi.7'],
     columns: [
